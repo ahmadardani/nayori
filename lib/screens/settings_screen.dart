@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../main.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -10,62 +11,56 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
-          _buildSettingsItem(
-            icon: Icons.dark_mode_outlined,
-            title: 'Dark Mode',
-            trailing: Switch(
-              value: false,
-              onChanged: (val) {},
-              activeColor: Colors.black,
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: ValueListenableBuilder<ThemeMode>(
+              valueListenable: themeNotifier,
+              builder: (_, ThemeMode currentMode, __) {
+                bool isDark = currentMode == ThemeMode.dark || 
+                             (currentMode == ThemeMode.system && MediaQuery.of(context).platformBrightness == Brightness.dark);
+                
+                return SwitchListTile(
+                  title: const Text('Dark Mode', style: TextStyle(fontWeight: FontWeight.w600)),
+                  subtitle: const Text('Enable dark theme for the application'),
+                  secondary: Icon(isDark ? Icons.dark_mode_rounded : Icons.light_mode_rounded),
+                  value: isDark,
+                  onChanged: (value) {
+                    themeNotifier.value = value ? ThemeMode.dark : ThemeMode.light;
+                  },
+                );
+              },
             ),
           ),
-          const SizedBox(height: 16),
-          _buildSettingsItem(
-            icon: Icons.info_outline,
-            title: 'About Nayori',
-            trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.black),
-            onTap: () {
-              showDialog(
-                context: context,
-                builder: (context) => AlertDialog(
-                  title: const Text('Nayori', style: TextStyle(fontWeight: FontWeight.bold)),
-                  content: const Text('A minimalist Japanese learning application.\n\nVersion 1.0.0'),
-                  actions: [
-                    TextButton(
-                      onPressed: () => Navigator.pop(context),
-                      child: const Text('OK', style: TextStyle(color: Colors.black)),
-                    )
-                  ],
-                ),
-              );
-            },
+          const SizedBox(height: 12),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: ListTile(
+              leading: const Icon(Icons.info_outline_rounded),
+              title: const Text('About Nayori', style: TextStyle(fontWeight: FontWeight.w600)),
+              subtitle: const Text('Version 1.0.0'),
+              trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    icon: const Icon(Icons.menu_book_rounded, size: 48, color: Colors.teal),
+                    title: const Text('Nayori'),
+                    content: const Text(
+                      'A minimalist and open-source Japanese learning application.\n\nBuilt with Flutter.',
+                      textAlign: TextAlign.center,
+                    ),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text('Close'),
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
           ),
         ],
-      ),
-    );
-  }
-
-  Widget _buildSettingsItem({
-    required IconData icon,
-    required String title,
-    Widget? trailing,
-    VoidCallback? onTap,
-  }) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.black, width: 1.5),
-        ),
-        child: Row(
-          children: [
-            Icon(icon, size: 28, color: Colors.black),
-            const SizedBox(width: 16),
-            Expanded(child: Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500))),
-            if (trailing != null) trailing,
-          ],
-        ),
       ),
     );
   }

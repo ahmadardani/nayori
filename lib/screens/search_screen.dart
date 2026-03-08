@@ -26,11 +26,15 @@ class _SearchScreenState extends State<SearchScreen> {
     final List<dynamic> data = json.decode(response);
     setState(() {
       _allData = data.map((json) => KanjiData.fromJson(json)).toList();
-      _filteredData = _allData;
     });
   }
 
   void _filterSearch(String query) {
+    if (query.trim().isEmpty) {
+      setState(() => _filteredData = []);
+      return;
+    }
+    
     setState(() {
       _filteredData = _allData
           .where((item) => item.example.toLowerCase().contains(query.toLowerCase()) || 
@@ -43,28 +47,37 @@ class _SearchScreenState extends State<SearchScreen> {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
+      showDragHandle: true,
       builder: (context) {
-        return Container(
-          decoration: const BoxDecoration(
-            border: Border(top: BorderSide(color: Colors.black, width: 2)),
-          ),
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Kanji: ${data.kanji}', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 16),
-              Text(data.example, style: const TextStyle(fontSize: 20)),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 16.0),
-                child: Divider(color: Colors.black54, thickness: 1),
-              ),
-              const Text('Meaning & Reading', style: TextStyle(color: Colors.grey, fontSize: 12, letterSpacing: 2)),
-              const SizedBox(height: 8),
-              Text(data.readMeaning, style: const TextStyle(fontSize: 16, height: 1.5)),
-              const SizedBox(height: 40),
-            ],
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.secondaryContainer,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(data.kanji, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.onSecondaryContainer)),
+                    ),
+                    const SizedBox(width: 16),
+                    const Expanded(child: Text('Kanji Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Text(data.example, style: const TextStyle(fontSize: 20)),
+                const Divider(height: 32),
+                Text('Reading & Meaning', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                Text(data.readMeaning, style: const TextStyle(fontSize: 16, height: 1.5)),
+              ],
+            ),
           ),
         );
       },
@@ -82,43 +95,55 @@ class _SearchScreenState extends State<SearchScreen> {
             child: TextField(
               controller: _searchController,
               onChanged: _filterSearch,
-              decoration: const InputDecoration(
-                labelText: 'Search kanji or vocabulary...',
-                labelStyle: TextStyle(color: Colors.grey),
+              decoration: InputDecoration(
+                hintText: 'Enter a word or kanji...',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchController.text.isNotEmpty 
+                  ? IconButton(
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        _searchController.clear();
+                        _filterSearch('');
+                      },
+                    )
+                  : null,
+                filled: true,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.zero,
-                  borderSide: BorderSide(color: Colors.black, width: 1.5),
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide.none,
                 ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.zero,
-                  borderSide: BorderSide(color: Colors.black, width: 2.0),
-                ),
-                prefixIcon: Icon(Icons.search, color: Colors.black),
               ),
             ),
           ),
           Expanded(
-            child: ListView.separated(
-              itemCount: _filteredData.length,
-              separatorBuilder: (context, index) => const Divider(height: 1, color: Colors.black26),
-              itemBuilder: (context, index) {
-                final item = _filteredData[index];
-                return InkWell(
-                  onTap: () => _showReadMeaning(item),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+            child: _searchController.text.isEmpty
+                ? Center(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(item.example, style: const TextStyle(fontSize: 18)),
-                        const SizedBox(height: 8),
-                        Text('Kanji: ${item.kanji}', style: const TextStyle(fontSize: 14, color: Colors.grey)),
+                        Icon(Icons.manage_search_rounded, size: 80, color: Colors.grey.withOpacity(0.5)),
+                        const SizedBox(height: 16),
+                        const Text('Start typing to search', style: TextStyle(color: Colors.grey, fontSize: 16)),
                       ],
                     ),
-                  ),
-                );
-              },
-            ),
+                  )
+                : _filteredData.isEmpty
+                    ? const Center(child: Text('No results found.'))
+                    : ListView.builder(
+                        itemCount: _filteredData.length,
+                        itemBuilder: (context, index) {
+                          final item = _filteredData[index];
+                          return Card(
+                            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                            child: ListTile(
+                              title: Text(item.example, style: const TextStyle(fontSize: 16)),
+                              subtitle: Text('Kanji: ${item.kanji}', style: TextStyle(color: Theme.of(context).colorScheme.primary)),
+                              trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
+                              onTap: () => _showReadMeaning(item),
+                            ),
+                          );
+                        },
+                      ),
           ),
         ],
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/main_screen.dart';
 
+final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.system);
+
 void main() {
   runApp(const NayoriApp());
 }
@@ -10,47 +12,50 @@ class NayoriApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Nayori',
-      debugShowCheckedModeBanner: false, 
-      theme: ThemeData(
-        brightness: Brightness.light,
-        scaffoldBackgroundColor: Colors.white,
-        primaryColor: Colors.black,
-        
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-          elevation: 0.0,
-          centerTitle: false,
-          shape: Border(bottom: BorderSide(color: Colors.black, width: 1.5)),
-        ),
-        
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          backgroundColor: Colors.white,
-          selectedItemColor: Colors.black,
-          unselectedItemColor: Colors.grey,
-          elevation: 8.0,
-          type: BottomNavigationBarType.fixed,
-        ),
-        
-        // Perbaikan ada di baris ini: CardTheme diubah menjadi CardThemeData
-        cardTheme: const CardThemeData(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-          elevation: 0.0,
-          margin: EdgeInsets.zero,
-        ),
-        
-        dialogTheme: const DialogThemeData(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-        ),
-        
-        bottomSheetTheme: const BottomSheetThemeData(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-          backgroundColor: Colors.white,
-        ),
-      ),
-      home: const MainScreen(),
+    return ValueListenableBuilder<ThemeMode>(
+      valueListenable: themeNotifier,
+      builder: (_, ThemeMode currentMode, __) {
+        return MaterialApp(
+          title: 'Nayori',
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.teal,
+              brightness: Brightness.light,
+            ),
+            useMaterial3: true,
+            appBarTheme: const AppBarTheme(
+              centerTitle: true,
+              elevation: 0,
+              scrolledUnderElevation: 2,
+            ),
+            cardTheme: CardThemeData(
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+                side: BorderSide(color: Colors.grey.withOpacity(0.2)),
+              ),
+            ),
+          ),
+          darkTheme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.teal,
+              brightness: Brightness.dark,
+            ),
+            useMaterial3: true,
+            appBarTheme: const AppBarTheme(centerTitle: true, elevation: 0),
+            cardTheme: CardThemeData(
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+                side: BorderSide(color: Colors.grey.withOpacity(0.2)),
+              ),
+            ),
+          ),
+          themeMode: currentMode, 
+          home: const MainScreen(),
+        );
+      },
     );
   }
 }

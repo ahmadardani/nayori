@@ -39,29 +39,31 @@ class _AllKanjiScreenState extends State<AllKanjiScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('All Kanji')),
       body: GridView.builder(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(12),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
-          crossAxisSpacing: 16,
-          mainAxisSpacing: 16,
+          crossAxisSpacing: 12,
+          mainAxisSpacing: 12,
         ),
         itemCount: _uniqueKanjiList.length,
         itemBuilder: (context, index) {
           final kanjiStr = _uniqueKanjiList[index];
-          return InkWell(
-            onTap: () {
-              final kanjiSentences = _allData.where((k) => k.kanji == kanjiStr).toList();
-              Navigator.push(
-                context, 
-                MaterialPageRoute(builder: (_) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences))
-              );
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black, width: 1.5),
-              ),
+          return Card(
+            elevation: 1,
+            clipBehavior: Clip.antiAlias,
+            child: InkWell(
+              onTap: () {
+                final kanjiSentences = _allData.where((k) => k.kanji == kanjiStr).toList();
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (_) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences))
+                );
+              },
               child: Center(
-                child: Text(kanjiStr, style: const TextStyle(fontSize: 32)),
+                child: Text(
+                  kanjiStr, 
+                  style: TextStyle(fontSize: 32, color: Theme.of(context).colorScheme.primary),
+                ),
               ),
             ),
           );

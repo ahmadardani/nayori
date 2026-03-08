@@ -1,38 +1,12 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../models/kanji_model.dart';
 import 'kanji_detail_screen.dart';
 
-class AllKanjiScreen extends StatefulWidget {
-  const AllKanjiScreen({super.key});
+class AllKanjiScreen extends StatelessWidget {
+  final List<KanjiData> allData;
+  final List<String> uniqueKanjis;
 
-  @override
-  State<AllKanjiScreen> createState() => _AllKanjiScreenState();
-}
-
-class _AllKanjiScreenState extends State<AllKanjiScreen> {
-  List<KanjiData> _allData = [];
-  List<String> _uniqueKanjiList = [];
-
-  @override
-  void initState() {
-    super.initState();
-    _loadData();
-  }
-
-  Future<void> _loadData() async {
-    final String response = await rootBundle.loadString('assets/data.json');
-    final List<dynamic> data = json.decode(response);
-    final parsedData = data.map((json) => KanjiData.fromJson(json)).toList();
-    
-    final uniqueKanjis = parsedData.map((e) => e.kanji).toSet().toList();
-
-    setState(() {
-      _allData = parsedData;
-      _uniqueKanjiList = uniqueKanjis;
-    });
-  }
+  const AllKanjiScreen({super.key, required this.allData, required this.uniqueKanjis});
 
   @override
   Widget build(BuildContext context) {
@@ -45,18 +19,22 @@ class _AllKanjiScreenState extends State<AllKanjiScreen> {
           crossAxisSpacing: 12,
           mainAxisSpacing: 12,
         ),
-        itemCount: _uniqueKanjiList.length,
+        itemCount: uniqueKanjis.length,
         itemBuilder: (context, index) {
-          final kanjiStr = _uniqueKanjiList[index];
+          final kanjiStr = uniqueKanjis[index];
           return Card(
             elevation: 1,
             clipBehavior: Clip.antiAlias,
             child: InkWell(
               onTap: () {
-                final kanjiSentences = _allData.where((k) => k.kanji == kanjiStr).toList();
+                final kanjiSentences = allData.where((k) => k.kanji == kanjiStr).toList();
                 Navigator.push(
                   context, 
-                  MaterialPageRoute(builder: (_) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences))
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
                 );
               },
               child: Center(

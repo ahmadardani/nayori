@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/kanji_model.dart';
+import 'kanji_detail_screen.dart';
 
 class SearchResultScreen extends StatefulWidget {
   final List<KanjiData> allData;
@@ -44,13 +45,37 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
               children: [
                 Row(
                   children: [
-                    Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.secondaryContainer,
-                        borderRadius: BorderRadius.circular(8),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context); 
+                        
+                        final kanjiSentences = widget.allData.where((k) => k.kanji == data.kanji).toList();
+                        
+                        Navigator.push(
+                          context,
+                          PageRouteBuilder(
+                            pageBuilder: (context, animation, secondaryAnimation) => KanjiDetailScreen(kanji: data.kanji, dataList: kanjiSentences),
+                            transitionDuration: Duration.zero,
+                            reverseTransitionDuration: Duration.zero,
+                          ),
+                        );
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Theme.of(context).colorScheme.outlineVariant, width: 1),
+                        ),
+                        child: Text(
+                          data.kanji, 
+                          style: TextStyle(
+                            fontSize: 24, 
+                            fontWeight: FontWeight.bold, 
+                            color: Theme.of(context).colorScheme.onSecondaryContainer
+                          )
+                        ),
                       ),
-                      child: Text(data.kanji, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.onSecondaryContainer)),
                     ),
                     const SizedBox(width: 16),
                     const Expanded(child: Text('Kanji Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))),

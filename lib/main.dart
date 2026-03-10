@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/main_screen.dart';
 
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.system);
+final ValueNotifier<Color> colorNotifier = ValueNotifier(Colors.teal);
 
 void main() {
   runApp(const NayoriApp());
@@ -12,15 +13,18 @@ class NayoriApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<ThemeMode>(
-      valueListenable: themeNotifier,
-      builder: (_, ThemeMode currentMode, __) {
+    return ListenableBuilder(
+      listenable: Listenable.merge([themeNotifier, colorNotifier]),
+      builder: (context, _) {
+        final currentMode = themeNotifier.value;
+        final currentColor = colorNotifier.value;
+
         return MaterialApp(
           title: 'Nayori',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.teal,
+              seedColor: currentColor,
               brightness: Brightness.light,
             ),
             useMaterial3: true,
@@ -39,7 +43,7 @@ class NayoriApp extends StatelessWidget {
           ),
           darkTheme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.teal,
+              seedColor: currentColor,
               brightness: Brightness.dark,
             ),
             useMaterial3: true,

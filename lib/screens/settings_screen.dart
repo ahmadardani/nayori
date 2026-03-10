@@ -4,6 +4,15 @@ import '../main.dart';
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
+  final List<Color> availableColors = const [
+    Colors.teal,
+    Colors.blue,
+    Colors.deepPurple,
+    Colors.pink,
+    Colors.orange,
+    Colors.green,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,6 +43,52 @@ class SettingsScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Card(
             clipBehavior: Clip.antiAlias,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    child: Text('Theme Color', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16)),
+                  ),
+                  SizedBox(
+                    height: 50,
+                    child: ValueListenableBuilder<Color>(
+                      valueListenable: colorNotifier,
+                      builder: (_, Color currentColor, __) {
+                        return ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                          itemCount: availableColors.length,
+                          itemBuilder: (context, index) {
+                            final color = availableColors[index];
+                            final isSelected = currentColor.value == color.value;
+                            return GestureDetector(
+                              onTap: () => colorNotifier.value = color,
+                              child: Container(
+                                margin: const EdgeInsets.symmetric(horizontal: 6.0),
+                                width: 44,
+                                decoration: BoxDecoration(
+                                  color: color,
+                                  shape: BoxShape.circle,
+                                  border: isSelected ? Border.all(color: Theme.of(context).colorScheme.onSurface, width: 3) : null,
+                                ),
+                                child: isSelected ? const Icon(Icons.check, color: Colors.white, size: 24) : null,
+                              ),
+                            );
+                          },
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Card(
+            clipBehavior: Clip.antiAlias,
             child: ListTile(
               leading: const Icon(Icons.info_outline_rounded),
               title: const Text('About Nayori', style: TextStyle(fontWeight: FontWeight.w600)),
@@ -43,7 +98,7 @@ class SettingsScreen extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
-                    icon: const Icon(Icons.menu_book_rounded, size: 48, color: Colors.teal),
+                    icon: Icon(Icons.menu_book_rounded, size: 48, color: Theme.of(context).colorScheme.primary),
                     title: const Text('Nayori'),
                     content: const Text(
                       'A minimalist and open-source Japanese learning application.\n\nBuilt with Flutter.',

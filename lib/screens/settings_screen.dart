@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -12,6 +13,18 @@ class SettingsScreen extends StatelessWidget {
     Colors.orange,
     Colors.green,
   ];
+
+  Future<void> _saveThemeMode(bool isDark) async {
+    themeNotifier.value = isDark ? ThemeMode.dark : ThemeMode.light;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('theme_mode', isDark ? 'dark' : 'light');
+  }
+
+  Future<void> _saveColor(Color color) async {
+    colorNotifier.value = color;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('theme_color', color.value);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +46,7 @@ class SettingsScreen extends StatelessWidget {
                   subtitle: const Text('Enable dark theme for the application'),
                   secondary: Icon(isDark ? Icons.dark_mode_rounded : Icons.light_mode_rounded),
                   value: isDark,
-                  onChanged: (value) {
-                    themeNotifier.value = value ? ThemeMode.dark : ThemeMode.light;
-                  },
+                  onChanged: (value) => _saveThemeMode(value),
                 );
               },
             ),
@@ -65,7 +76,7 @@ class SettingsScreen extends StatelessWidget {
                             final color = availableColors[index];
                             final isSelected = currentColor.value == color.value;
                             return GestureDetector(
-                              onTap: () => colorNotifier.value = color,
+                              onTap: () => _saveColor(color),
                               child: Container(
                                 margin: const EdgeInsets.symmetric(horizontal: 6.0),
                                 width: 44,

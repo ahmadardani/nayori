@@ -1,10 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/main_screen.dart';
 
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.system);
 final ValueNotifier<Color> colorNotifier = ValueNotifier(Colors.teal);
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  final prefs = await SharedPreferences.getInstance();
+  
+  final isDarkStr = prefs.getString('theme_mode');
+  if (isDarkStr == 'dark') {
+    themeNotifier.value = ThemeMode.dark;
+  } else if (isDarkStr == 'light') {
+    themeNotifier.value = ThemeMode.light;
+  }
+
+  final colorValue = prefs.getInt('theme_color');
+  if (colorValue != null) {
+    colorNotifier.value = Color(colorValue);
+  }
+
   runApp(const NayoriApp());
 }
 

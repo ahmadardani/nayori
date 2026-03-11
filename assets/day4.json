@@ -1,0 +1,5618 @@
+[
+    {
+        "kanji": "口",
+        "Found_in_Characters": "入り口",
+        "Found_in_Meaning": "Entrance",
+        "Found_in_Reading": "いりぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口",
+        "Found_in_Meaning": "Mouth",
+        "Found_in_Reading": "くち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "人口",
+        "Found_in_Meaning": "Population",
+        "Found_in_Reading": "じんこう"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "出口",
+        "Found_in_Meaning": "Exit",
+        "Found_in_Reading": "でぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "戸口",
+        "Found_in_Meaning": "Doorway",
+        "Found_in_Reading": "とぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口にする",
+        "Found_in_Meaning": "To Mention",
+        "Found_in_Reading": "くちにする"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "早口",
+        "Found_in_Meaning": "Fast Talker",
+        "Found_in_Reading": "はやくち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "東口",
+        "Found_in_Meaning": "East Exit",
+        "Found_in_Reading": "ひがしぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "南口",
+        "Found_in_Meaning": "South Exit",
+        "Found_in_Reading": "みなみぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "辛口",
+        "Found_in_Meaning": "Spicy Taste",
+        "Found_in_Reading": "からくち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口調",
+        "Found_in_Meaning": "Tone",
+        "Found_in_Reading": "くちょう"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "悪口",
+        "Found_in_Meaning": "Bad-Mouthing",
+        "Found_in_Reading": "わるぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "非常口",
+        "Found_in_Meaning": "Emergency Exit",
+        "Found_in_Reading": "ひじょうぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口笛",
+        "Found_in_Meaning": "Whistling",
+        "Found_in_Reading": "くちぶえ"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "裏口",
+        "Found_in_Meaning": "Back Door",
+        "Found_in_Reading": "うらぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "窓口",
+        "Found_in_Meaning": "Ticket Window",
+        "Found_in_Reading": "まどぐち"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口紅",
+        "Found_in_Meaning": "Lipstick",
+        "Found_in_Reading": "くちべに"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口笛を吹く",
+        "Found_in_Meaning": "To Whistle",
+        "Found_in_Reading": "くちぶえをふく"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "口癖",
+        "Found_in_Meaning": "Favorite Phrase",
+        "Found_in_Reading": "くちぐせ"
+    },
+    {
+        "kanji": "口",
+        "Found_in_Characters": "蛇口",
+        "Found_in_Meaning": "Faucet",
+        "Found_in_Reading": "じゃぐち"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "川",
+        "Found_in_Meaning": "River",
+        "Found_in_Reading": "かわ"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "川底",
+        "Found_in_Meaning": "Riverbed",
+        "Found_in_Reading": "かわぞこ"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "川崎",
+        "Found_in_Meaning": "Kawasaki",
+        "Found_in_Reading": "かわさき"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "徳川",
+        "Found_in_Meaning": "Tokugawa",
+        "Found_in_Reading": "とくがわ"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "神奈川県",
+        "Found_in_Meaning": "Kanagawa Prefecture",
+        "Found_in_Reading": "かながわけん"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "香川県",
+        "Found_in_Meaning": "Kagawa Prefecture",
+        "Found_in_Reading": "かがわけん"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "滝川",
+        "Found_in_Meaning": "Rapids",
+        "Found_in_Reading": "たきがわ"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "川柳",
+        "Found_in_Meaning": "Comic Haiku",
+        "Found_in_Reading": "せんりゅう"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "淀川",
+        "Found_in_Meaning": "Yodogawa",
+        "Found_in_Reading": "よどがわ"
+    },
+    {
+        "kanji": "川",
+        "Found_in_Characters": "梓川",
+        "Found_in_Meaning": "Azusa River",
+        "Found_in_Reading": "あずさがわ"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土",
+        "Found_in_Meaning": "Dirt",
+        "Found_in_Reading": "つち"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土地",
+        "Found_in_Meaning": "Land",
+        "Found_in_Reading": "とち"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土星",
+        "Found_in_Meaning": "Saturn",
+        "Found_in_Reading": "どせい"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土曜日",
+        "Found_in_Meaning": "Saturday",
+        "Found_in_Reading": "どようび"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "お土産",
+        "Found_in_Meaning": "Souvenir",
+        "Found_in_Reading": "おみやげ"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "領土",
+        "Found_in_Meaning": "Territory",
+        "Found_in_Reading": "りょうど"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土砂",
+        "Found_in_Meaning": "Sediment",
+        "Found_in_Reading": "どしゃ"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土俵",
+        "Found_in_Meaning": "Ring",
+        "Found_in_Reading": "どひょう"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "粘土",
+        "Found_in_Meaning": "Clay",
+        "Found_in_Reading": "ねんど"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土塀",
+        "Found_in_Meaning": "Mud Wall",
+        "Found_in_Reading": "どべい"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土俵際",
+        "Found_in_Meaning": "Edge Of A Sumo Ring",
+        "Found_in_Reading": "どひょうぎわ"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "浄土",
+        "Found_in_Meaning": "Pure Land",
+        "Found_in_Reading": "じょうど"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "土壌",
+        "Found_in_Meaning": "Soil",
+        "Found_in_Reading": "どじょう"
+    },
+    {
+        "kanji": "土",
+        "Found_in_Characters": "冥土",
+        "Found_in_Meaning": "Realm Of The Dead",
+        "Found_in_Reading": "めいど"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "一千",
+        "Found_in_Meaning": "One Thousand",
+        "Found_in_Reading": "いっせん"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "千円",
+        "Found_in_Meaning": "One Thousand Yen",
+        "Found_in_Reading": "せんえん"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "千",
+        "Found_in_Meaning": "Thousand",
+        "Found_in_Reading": "せん"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "四千",
+        "Found_in_Meaning": "Four Thousand",
+        "Found_in_Reading": "よんせん"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "何千",
+        "Found_in_Meaning": "Thousands",
+        "Found_in_Reading": "なんぜん"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "千円札",
+        "Found_in_Meaning": "Thousand Yen Bill",
+        "Found_in_Reading": "せんえんさつ"
+    },
+    {
+        "kanji": "千",
+        "Found_in_Characters": "千葉",
+        "Found_in_Meaning": "Chiba",
+        "Found_in_Reading": "ちば"
+    },
+    {
+        "kanji": "夕",
+        "Found_in_Characters": "夕べ",
+        "Found_in_Meaning": "Last Night",
+        "Found_in_Reading": "ゆうべ"
+    },
+    {
+        "kanji": "夕",
+        "Found_in_Characters": "夕焼け",
+        "Found_in_Meaning": "Sunset",
+        "Found_in_Reading": "ゆうやけ"
+    },
+    {
+        "kanji": "夕",
+        "Found_in_Characters": "夕刊",
+        "Found_in_Meaning": "Evening Edition",
+        "Found_in_Reading": "ゆうかん"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木",
+        "Found_in_Meaning": "Tree",
+        "Found_in_Reading": "き"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木星",
+        "Found_in_Meaning": "Jupiter",
+        "Found_in_Reading": "もくせい"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "材木",
+        "Found_in_Meaning": "Lumber",
+        "Found_in_Reading": "ざいもく"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木材",
+        "Found_in_Meaning": "Wood",
+        "Found_in_Reading": "もくざい"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木曜日",
+        "Found_in_Meaning": "Thursday",
+        "Found_in_Reading": "もくようび"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木製",
+        "Found_in_Meaning": "Wooden",
+        "Found_in_Reading": "もくせい"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "木綿",
+        "Found_in_Meaning": "Cotton",
+        "Found_in_Reading": "もめん"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "枯れ木",
+        "Found_in_Meaning": "Dead Tree",
+        "Found_in_Reading": "かれき"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "苗木",
+        "Found_in_Meaning": "Seedling",
+        "Found_in_Reading": "なえぎ"
+    },
+    {
+        "kanji": "木",
+        "Found_in_Characters": "栃木県",
+        "Found_in_Meaning": "Tochigi Prefecture",
+        "Found_in_Reading": "とちぎけん"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水中",
+        "Found_in_Meaning": "Underwater",
+        "Found_in_Reading": "すいちゅう"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水",
+        "Found_in_Meaning": "Water",
+        "Found_in_Reading": "みず"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水色",
+        "Found_in_Meaning": "Sky Blue",
+        "Found_in_Reading": "みずいろ"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水星",
+        "Found_in_Meaning": "Mercury",
+        "Found_in_Reading": "すいせい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水道",
+        "Found_in_Meaning": "Water Supply",
+        "Found_in_Reading": "すいどう"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水泳",
+        "Found_in_Meaning": "Swimming",
+        "Found_in_Reading": "すいえい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水深",
+        "Found_in_Meaning": "Water Depth",
+        "Found_in_Reading": "すいしん"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水銀",
+        "Found_in_Meaning": "Mercury",
+        "Found_in_Reading": "すいぎん"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水着",
+        "Found_in_Meaning": "Swimsuit",
+        "Found_in_Reading": "みずぎ"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水兵",
+        "Found_in_Meaning": "Navy Sailor",
+        "Found_in_Reading": "すいへい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "塩水",
+        "Found_in_Meaning": "Salt Water",
+        "Found_in_Reading": "しおみず"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水曜日",
+        "Found_in_Meaning": "Wednesday",
+        "Found_in_Reading": "すいようび"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水害",
+        "Found_in_Meaning": "Flood Damage",
+        "Found_in_Reading": "すいがい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "防水",
+        "Found_in_Meaning": "Waterproof",
+        "Found_in_Reading": "ぼうすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "漏水",
+        "Found_in_Meaning": "Water Leakage",
+        "Found_in_Reading": "ろうすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "泥水",
+        "Found_in_Meaning": "Muddy Water",
+        "Found_in_Reading": "でいすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "汚水",
+        "Found_in_Meaning": "Dirty Water",
+        "Found_in_Reading": "おすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "湧水",
+        "Found_in_Meaning": "Spring Water",
+        "Found_in_Reading": "ゆうすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "香水",
+        "Found_in_Meaning": "Perfume",
+        "Found_in_Reading": "こうすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水仙",
+        "Found_in_Meaning": "Daffodil",
+        "Found_in_Reading": "すいせん"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "排水",
+        "Found_in_Meaning": "Drainage",
+        "Found_in_Reading": "はいすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "潜水",
+        "Found_in_Meaning": "Diving",
+        "Found_in_Reading": "せんすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "潜水艦",
+        "Found_in_Meaning": "Submarine",
+        "Found_in_Reading": "せんすいかん"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水晶",
+        "Found_in_Meaning": "Crystal",
+        "Found_in_Reading": "すいしょう"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "排水溝",
+        "Found_in_Meaning": "Drainage",
+        "Found_in_Reading": "はいすいこう"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水泡",
+        "Found_in_Meaning": "Foam",
+        "Found_in_Reading": "すいほう"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水滴",
+        "Found_in_Meaning": "Drop Of Water",
+        "Found_in_Reading": "すいてき"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水溶性",
+        "Found_in_Meaning": "Water Soluble",
+        "Found_in_Reading": "すいようせい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水彩画",
+        "Found_in_Meaning": "Watercolor Painting",
+        "Found_in_Reading": "すいさいが"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "淡水",
+        "Found_in_Meaning": "Fresh Water",
+        "Found_in_Reading": "たんすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "浸水",
+        "Found_in_Meaning": "Submersion",
+        "Found_in_Reading": "しんすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "噴水",
+        "Found_in_Meaning": "Water Fountain",
+        "Found_in_Reading": "ふんすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "浄水",
+        "Found_in_Meaning": "Clean Water",
+        "Found_in_Reading": "じょうすい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "洪水",
+        "Found_in_Meaning": "Flood",
+        "Found_in_Reading": "こうずい"
+    },
+    {
+        "kanji": "水",
+        "Found_in_Characters": "水槽",
+        "Found_in_Meaning": "Fish Tank",
+        "Found_in_Reading": "すいそう"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王",
+        "Found_in_Meaning": "King",
+        "Found_in_Reading": "おう"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王子",
+        "Found_in_Meaning": "Prince",
+        "Found_in_Reading": "おうじ"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王女",
+        "Found_in_Meaning": "Princess",
+        "Found_in_Reading": "おうじょ"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "女王",
+        "Found_in_Meaning": "Queen",
+        "Found_in_Reading": "じょおう"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "国王",
+        "Found_in_Meaning": "King",
+        "Found_in_Reading": "こくおう"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "海王星",
+        "Found_in_Meaning": "Neptune",
+        "Found_in_Reading": "かいおうせい"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王様",
+        "Found_in_Meaning": "King",
+        "Found_in_Reading": "おうさま"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "天王星",
+        "Found_in_Meaning": "Uranus",
+        "Found_in_Reading": "てんのうせい"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王妃",
+        "Found_in_Meaning": "Queen",
+        "Found_in_Reading": "おうひ"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "王冠",
+        "Found_in_Meaning": "Crown",
+        "Found_in_Reading": "おうかん"
+    },
+    {
+        "kanji": "王",
+        "Found_in_Characters": "冥王星",
+        "Found_in_Meaning": "Pluto",
+        "Found_in_Reading": "めいおうせい"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "玉",
+        "Found_in_Meaning": "Ball",
+        "Found_in_Reading": "たま"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "目玉",
+        "Found_in_Meaning": "Eyeball",
+        "Found_in_Reading": "めだま"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "玉ねぎ",
+        "Found_in_Meaning": "Onion",
+        "Found_in_Reading": "たまねぎ"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "ビー玉",
+        "Found_in_Meaning": "Marble",
+        "Found_in_Reading": "びーだま"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "金玉",
+        "Found_in_Meaning": "Testicles",
+        "Found_in_Reading": "きんたま"
+    },
+    {
+        "kanji": "玉",
+        "Found_in_Characters": "埼玉県",
+        "Found_in_Meaning": "Saitama Prefecture",
+        "Found_in_Reading": "さいたまけん"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太字",
+        "Found_in_Meaning": "Bold Letter",
+        "Found_in_Reading": "ふとじ"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太い",
+        "Found_in_Meaning": "Fat",
+        "Found_in_Reading": "ふとい"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太る",
+        "Found_in_Meaning": "To Get Fat",
+        "Found_in_Reading": "ふとる"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太平洋",
+        "Found_in_Meaning": "Pacific Ocean",
+        "Found_in_Reading": "たいへいよう"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太陽",
+        "Found_in_Meaning": "Sun",
+        "Found_in_Reading": "たいよう"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太陽系",
+        "Found_in_Meaning": "Solar System",
+        "Found_in_Reading": "たいようけい"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "皇太子",
+        "Found_in_Meaning": "Crown Prince",
+        "Found_in_Reading": "こうたいし"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "皇太子妃",
+        "Found_in_Meaning": "Crown Princess",
+        "Found_in_Reading": "こうたいしひ"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "遼太",
+        "Found_in_Meaning": "Ryota",
+        "Found_in_Reading": "りょうた"
+    },
+    {
+        "kanji": "太",
+        "Found_in_Characters": "太鼓",
+        "Found_in_Meaning": "Drum",
+        "Found_in_Reading": "たいこ"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少し",
+        "Found_in_Meaning": "A Little",
+        "Found_in_Reading": "すこし"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少ない",
+        "Found_in_Meaning": "Few",
+        "Found_in_Reading": "すくない"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少女",
+        "Found_in_Meaning": "Girl",
+        "Found_in_Reading": "しょうじょ"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少年",
+        "Found_in_Meaning": "Boy",
+        "Found_in_Reading": "しょうねん"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少佐",
+        "Found_in_Meaning": "Major",
+        "Found_in_Reading": "しょうさ"
+    },
+    {
+        "kanji": "少",
+        "Found_in_Characters": "少尉",
+        "Found_in_Meaning": "Second Lieutenant",
+        "Found_in_Reading": "しょうい"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半",
+        "Found_in_Meaning": "Half",
+        "Found_in_Reading": "はん"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半分",
+        "Found_in_Meaning": "Half",
+        "Found_in_Reading": "はんぶん"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "二時半",
+        "Found_in_Meaning": "Two Thirty",
+        "Found_in_Reading": "にじはん"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半額",
+        "Found_in_Meaning": "Half Price",
+        "Found_in_Reading": "はんがく"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半袖",
+        "Found_in_Meaning": "Short Sleeves",
+        "Found_in_Reading": "はんそで"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "中途半端",
+        "Found_in_Meaning": "Half Finished",
+        "Found_in_Reading": "ちゅうとはんぱ"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半径",
+        "Found_in_Meaning": "Radius",
+        "Found_in_Reading": "はんけい"
+    },
+    {
+        "kanji": "半",
+        "Found_in_Characters": "半裸",
+        "Found_in_Meaning": "Half Naked",
+        "Found_in_Reading": "はんら"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "男",
+        "Found_in_Meaning": "Man",
+        "Found_in_Reading": "おとこ"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "男の子",
+        "Found_in_Meaning": "Boy",
+        "Found_in_Reading": "おとこのこ"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "男の人",
+        "Found_in_Meaning": "Man",
+        "Found_in_Reading": "おとこのひと"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "男性",
+        "Found_in_Meaning": "Male",
+        "Found_in_Reading": "だんせい"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "狼男",
+        "Found_in_Meaning": "Werewolf",
+        "Found_in_Reading": "おおかみおとこ"
+    },
+    {
+        "kanji": "男",
+        "Found_in_Characters": "男優",
+        "Found_in_Meaning": "Actor",
+        "Found_in_Reading": "だんゆう"
+    },
+    {
+        "kanji": "赤",
+        "Found_in_Characters": "赤ちゃん",
+        "Found_in_Meaning": "Baby",
+        "Found_in_Reading": "あかちゃん"
+    },
+    {
+        "kanji": "赤",
+        "Found_in_Characters": "赤",
+        "Found_in_Meaning": "Red",
+        "Found_in_Reading": "あか"
+    },
+    {
+        "kanji": "赤",
+        "Found_in_Characters": "赤い",
+        "Found_in_Meaning": "Red",
+        "Found_in_Reading": "あかい"
+    },
+    {
+        "kanji": "赤",
+        "Found_in_Characters": "赤ん坊",
+        "Found_in_Meaning": "Baby",
+        "Found_in_Reading": "あかんぼう"
+    },
+    {
+        "kanji": "赤",
+        "Found_in_Characters": "赤痢",
+        "Found_in_Meaning": "Dysentery",
+        "Found_in_Reading": "せきり"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車",
+        "Found_in_Meaning": "Car",
+        "Found_in_Reading": "くるま"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車内",
+        "Found_in_Meaning": "Inside The Car",
+        "Found_in_Reading": "しゃない"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "空車",
+        "Found_in_Meaning": "Open Taxi",
+        "Found_in_Reading": "くうしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車両",
+        "Found_in_Meaning": "Railroad Car",
+        "Found_in_Reading": "しゃりょう"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "電車",
+        "Found_in_Meaning": "Train",
+        "Found_in_Reading": "でんしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "自転車",
+        "Found_in_Meaning": "Bicycle",
+        "Found_in_Reading": "じてんしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "戦車",
+        "Found_in_Meaning": "Tank",
+        "Found_in_Reading": "せんしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車輪",
+        "Found_in_Meaning": "Tire",
+        "Found_in_Reading": "しゃりん"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "自動車",
+        "Found_in_Meaning": "Automobile",
+        "Found_in_Reading": "じどうしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "洗車",
+        "Found_in_Meaning": "Car Wash",
+        "Found_in_Reading": "せんしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "汽車",
+        "Found_in_Meaning": "Steam Train",
+        "Found_in_Reading": "きしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "降車",
+        "Found_in_Meaning": "Getting Off",
+        "Found_in_Reading": "こうしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "各駅停車",
+        "Found_in_Meaning": "Local Train",
+        "Found_in_Reading": "かくえきていしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車庫",
+        "Found_in_Meaning": "Garage",
+        "Found_in_Reading": "しゃこ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "乗車券",
+        "Found_in_Meaning": "Passenger Ticket",
+        "Found_in_Reading": "じょうしゃけん"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "救急車",
+        "Found_in_Meaning": "Ambulance",
+        "Found_in_Reading": "きゅうきゅうしゃ"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "駐車場",
+        "Found_in_Meaning": "Parking Lot",
+        "Found_in_Reading": "ちゅうしゃじょう"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車掌",
+        "Found_in_Meaning": "Train Conductor",
+        "Found_in_Reading": "しゃしょう"
+    },
+    {
+        "kanji": "車",
+        "Found_in_Characters": "車椅子",
+        "Found_in_Meaning": "Wheelchair",
+        "Found_in_Reading": "くるまいす"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光",
+        "Found_in_Meaning": "Light",
+        "Found_in_Reading": "ひかり"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "月光",
+        "Found_in_Meaning": "Moonlight",
+        "Found_in_Reading": "げっこう"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "日光",
+        "Found_in_Meaning": "Sunlight",
+        "Found_in_Reading": "にっこう"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光る",
+        "Found_in_Meaning": "To Shine",
+        "Found_in_Reading": "ひかる"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "日光浴",
+        "Found_in_Meaning": "Sunbathe",
+        "Found_in_Reading": "にっこうよく"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "観光",
+        "Found_in_Meaning": "Sightseeing",
+        "Found_in_Reading": "かんこう"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "観光客",
+        "Found_in_Meaning": "Tourist",
+        "Found_in_Reading": "かんこうきゃく"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光栄",
+        "Found_in_Meaning": "Honor",
+        "Found_in_Reading": "こうえい"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光景",
+        "Found_in_Meaning": "Scene",
+        "Found_in_Reading": "こうけい"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "栄光",
+        "Found_in_Meaning": "Glory",
+        "Found_in_Reading": "えいこう"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光年",
+        "Found_in_Meaning": "Light-year",
+        "Found_in_Reading": "こうねん"
+    },
+    {
+        "kanji": "光",
+        "Found_in_Characters": "光輝",
+        "Found_in_Meaning": "Brightness",
+        "Found_in_Reading": "こうき"
+    },
+    {
+        "kanji": "羽",
+        "Found_in_Characters": "羽",
+        "Found_in_Meaning": "Feathers",
+        "Found_in_Reading": "はね"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "色",
+        "Found_in_Meaning": "Color",
+        "Found_in_Reading": "いろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "水色",
+        "Found_in_Meaning": "Sky Blue",
+        "Found_in_Reading": "みずいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "色々",
+        "Found_in_Meaning": "Various",
+        "Found_in_Reading": "いろいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "茶色",
+        "Found_in_Meaning": "Brown",
+        "Found_in_Reading": "ちゃいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "黄色",
+        "Found_in_Meaning": "Yellow",
+        "Found_in_Reading": "きいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "緑色",
+        "Found_in_Meaning": "Green",
+        "Found_in_Reading": "みどりいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "銀色",
+        "Found_in_Meaning": "Silver",
+        "Found_in_Reading": "ぎんいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "紫色",
+        "Found_in_Meaning": "Purple",
+        "Found_in_Reading": "むらさきいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "景色",
+        "Found_in_Meaning": "Scenery",
+        "Found_in_Reading": "けしき"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "桜色",
+        "Found_in_Meaning": "Pink",
+        "Found_in_Reading": "さくらいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "灰色",
+        "Found_in_Meaning": "Gray",
+        "Found_in_Reading": "はいいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "桃色",
+        "Found_in_Meaning": "Peach Color",
+        "Found_in_Reading": "ももいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "肌色",
+        "Found_in_Meaning": "Skin Color",
+        "Found_in_Reading": "はだいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "虹色",
+        "Found_in_Meaning": "Rainbow Colored",
+        "Found_in_Reading": "にじいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "色彩",
+        "Found_in_Meaning": "Color",
+        "Found_in_Reading": "しきさい"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "茜色",
+        "Found_in_Meaning": "Madder Red",
+        "Found_in_Reading": "あかねいろ"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "色盲",
+        "Found_in_Meaning": "Color Blindness",
+        "Found_in_Reading": "しきもう"
+    },
+    {
+        "kanji": "色",
+        "Found_in_Characters": "瑠璃色",
+        "Found_in_Meaning": "Bright Blue",
+        "Found_in_Reading": "るりいろ"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "北西",
+        "Found_in_Meaning": "Northwest",
+        "Found_in_Reading": "ほくせい"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "西",
+        "Found_in_Meaning": "West",
+        "Found_in_Reading": "にし"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "西洋",
+        "Found_in_Meaning": "The West",
+        "Found_in_Reading": "せいよう"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "関西",
+        "Found_in_Meaning": "Kansai",
+        "Found_in_Reading": "かんさい"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "西側",
+        "Found_in_Meaning": "West Side",
+        "Found_in_Reading": "にしがわ"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "関西弁",
+        "Found_in_Meaning": "Kansai Dialect",
+        "Found_in_Reading": "かんさいべん"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "西暦",
+        "Found_in_Meaning": "Christian Era",
+        "Found_in_Reading": "せいれき"
+    },
+    {
+        "kanji": "西",
+        "Found_in_Characters": "西瓜",
+        "Found_in_Meaning": "Watermelon",
+        "Found_in_Reading": "すいか"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何日",
+        "Found_in_Meaning": "How Many Days",
+        "Found_in_Reading": "なんにち"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何人",
+        "Found_in_Meaning": "How Many People",
+        "Found_in_Reading": "なんにん"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何回",
+        "Found_in_Meaning": "How Many Times",
+        "Found_in_Reading": "なんかい"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何千",
+        "Found_in_Meaning": "Thousands",
+        "Found_in_Reading": "なんぜん"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何",
+        "Found_in_Meaning": "What",
+        "Found_in_Reading": "なに"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何月",
+        "Found_in_Meaning": "What Month",
+        "Found_in_Reading": "なんがつ"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何年",
+        "Found_in_Meaning": "What Year",
+        "Found_in_Reading": "なんねん"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何時",
+        "Found_in_Meaning": "What Time",
+        "Found_in_Reading": "なんじ"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何度",
+        "Found_in_Meaning": "How Many Times",
+        "Found_in_Reading": "なんど"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何枚",
+        "Found_in_Meaning": "How Many Flat Objects",
+        "Found_in_Reading": "なんまい"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何故",
+        "Found_in_Meaning": "Why",
+        "Found_in_Reading": "なぜ"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何故なら",
+        "Found_in_Meaning": "Because",
+        "Found_in_Reading": "なぜなら"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "幾何学",
+        "Found_in_Meaning": "Geometry",
+        "Found_in_Reading": "きかがく"
+    },
+    {
+        "kanji": "何",
+        "Found_in_Characters": "何遍",
+        "Found_in_Meaning": "How Many Times",
+        "Found_in_Reading": "なんべん"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "図",
+        "Found_in_Meaning": "Diagram",
+        "Found_in_Reading": "ず"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "地図",
+        "Found_in_Meaning": "Map",
+        "Found_in_Reading": "ちず"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "意図的",
+        "Found_in_Meaning": "Intentional",
+        "Found_in_Reading": "いとてき"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "合図",
+        "Found_in_Meaning": "Signal",
+        "Found_in_Reading": "あいず"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "図書館",
+        "Found_in_Meaning": "Library",
+        "Found_in_Reading": "としょかん"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "図説",
+        "Found_in_Meaning": "Illustration",
+        "Found_in_Reading": "ずせつ"
+    },
+    {
+        "kanji": "図",
+        "Found_in_Characters": "略図",
+        "Found_in_Meaning": "Rough Sketch",
+        "Found_in_Reading": "りゃくず"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "角",
+        "Found_in_Meaning": "Corner",
+        "Found_in_Reading": "かど"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "四角",
+        "Found_in_Meaning": "Square",
+        "Found_in_Reading": "しかく"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "三角",
+        "Found_in_Meaning": "Triangle",
+        "Found_in_Reading": "さんかく"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "三角形",
+        "Found_in_Meaning": "Triangle",
+        "Found_in_Reading": "さんかくけい"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "角度",
+        "Found_in_Meaning": "Angle",
+        "Found_in_Reading": "かくど"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "折角",
+        "Found_in_Meaning": "With Trouble",
+        "Found_in_Reading": "せっかく"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "触角",
+        "Found_in_Meaning": "Antenna",
+        "Found_in_Reading": "しょっかく"
+    },
+    {
+        "kanji": "角",
+        "Found_in_Characters": "角膜",
+        "Found_in_Meaning": "Cornea",
+        "Found_in_Reading": "かくまく"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "走る",
+        "Found_in_Meaning": "To Run",
+        "Found_in_Reading": "はしる"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "走行",
+        "Found_in_Meaning": "Traveling",
+        "Found_in_Reading": "そうこう"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "走り回る",
+        "Found_in_Meaning": "To Run Around",
+        "Found_in_Reading": "はしりまわる"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "暴走",
+        "Found_in_Meaning": "Run Wild",
+        "Found_in_Reading": "ぼうそう"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "暴走族",
+        "Found_in_Meaning": "Biker Gang",
+        "Found_in_Reading": "ぼうそうぞく"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "脱走する",
+        "Found_in_Meaning": "To Escape",
+        "Found_in_Reading": "だっそうする"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "疾走",
+        "Found_in_Meaning": "Sprint",
+        "Found_in_Reading": "しっそう"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "奔走",
+        "Found_in_Meaning": "Running About",
+        "Found_in_Reading": "ほんそう"
+    },
+    {
+        "kanji": "走",
+        "Found_in_Characters": "帆走",
+        "Found_in_Meaning": "Sailing",
+        "Found_in_Reading": "はんそう"
+    },
+    {
+        "kanji": "林",
+        "Found_in_Characters": "林",
+        "Found_in_Meaning": "Forest",
+        "Found_in_Reading": "はやし"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空気",
+        "Found_in_Meaning": "Air",
+        "Found_in_Reading": "くうき"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空車",
+        "Found_in_Meaning": "Open Taxi",
+        "Found_in_Reading": "くうしゃ"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空",
+        "Found_in_Meaning": "Sky",
+        "Found_in_Reading": "そら"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "青空",
+        "Found_in_Meaning": "Blue Sky",
+        "Found_in_Reading": "あおぞら"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "大空",
+        "Found_in_Meaning": "Heavens",
+        "Found_in_Reading": "おおぞら"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空間",
+        "Found_in_Meaning": "Space",
+        "Found_in_Reading": "くうかん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空手",
+        "Found_in_Meaning": "Karate",
+        "Found_in_Reading": "からて"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空港",
+        "Found_in_Meaning": "Airport",
+        "Found_in_Reading": "くうこう"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空き缶",
+        "Found_in_Meaning": "Empty Can",
+        "Found_in_Reading": "あきかん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空く",
+        "Found_in_Meaning": "To Become Empty",
+        "Found_in_Reading": "あく"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空席",
+        "Found_in_Meaning": "Open Seat",
+        "Found_in_Reading": "くうせき"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "航空",
+        "Found_in_Meaning": "Aviation",
+        "Found_in_Reading": "こうくう"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "航空券",
+        "Found_in_Meaning": "Airplane Ticket",
+        "Found_in_Reading": "こうくうけん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "航空母艦",
+        "Found_in_Meaning": "Aircraft Carrier",
+        "Found_in_Reading": "こうくうぼかん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空襲",
+        "Found_in_Meaning": "Air Raid",
+        "Found_in_Reading": "くうしゅう"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空洞",
+        "Found_in_Meaning": "Hollow",
+        "Found_in_Reading": "くうどう"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空き瓶",
+        "Found_in_Meaning": "Empty Bottle",
+        "Found_in_Reading": "あきびん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空欄",
+        "Found_in_Meaning": "Blank Space",
+        "Found_in_Reading": "くうらん"
+    },
+    {
+        "kanji": "空",
+        "Found_in_Characters": "空疎",
+        "Found_in_Meaning": "Vain",
+        "Found_in_Reading": "くうそ"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青い",
+        "Found_in_Meaning": "Blue",
+        "Found_in_Reading": "あおい"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青年",
+        "Found_in_Meaning": "Youth",
+        "Found_in_Reading": "せいねん"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青空",
+        "Found_in_Meaning": "Blue Sky",
+        "Found_in_Reading": "あおぞら"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青葉",
+        "Found_in_Meaning": "Fresh Leaves",
+        "Found_in_Reading": "あおば"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青春",
+        "Found_in_Meaning": "Youth",
+        "Found_in_Reading": "せいしゅん"
+    },
+    {
+        "kanji": "青",
+        "Found_in_Characters": "青銅",
+        "Found_in_Meaning": "Bronze",
+        "Found_in_Reading": "せいどう"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "音",
+        "Found_in_Meaning": "Sound",
+        "Found_in_Reading": "おと"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "音楽",
+        "Found_in_Meaning": "Music",
+        "Found_in_Reading": "おんがく"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "発音",
+        "Found_in_Meaning": "Pronunciation",
+        "Found_in_Reading": "はつおん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "音読み",
+        "Found_in_Meaning": "Chinese Reading",
+        "Found_in_Reading": "おんよみ"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "五十音順",
+        "Found_in_Meaning": "Aiueo Order",
+        "Found_in_Reading": "ごじゅうおんじゅん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "音訓",
+        "Found_in_Meaning": "On'yomi And Kun'yomi",
+        "Found_in_Reading": "おんくん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "録音",
+        "Found_in_Meaning": "Sound Recording",
+        "Found_in_Reading": "ろくおん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "騒音",
+        "Found_in_Meaning": "Noise",
+        "Found_in_Reading": "そうおん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "雑音",
+        "Found_in_Meaning": "Noise",
+        "Found_in_Reading": "ざつおん"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "同音異義語",
+        "Found_in_Meaning": "Homonym",
+        "Found_in_Reading": "どうおんいぎご"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "超音波",
+        "Found_in_Meaning": "Ultrasonic Wave",
+        "Found_in_Reading": "ちょうおんぱ"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "音痴",
+        "Found_in_Meaning": "Tone Deafness",
+        "Found_in_Reading": "おんち"
+    },
+    {
+        "kanji": "音",
+        "Found_in_Characters": "方向音痴",
+        "Found_in_Meaning": "No Sense Of Direction",
+        "Found_in_Reading": "ほうこうおんち"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "名曲",
+        "Found_in_Meaning": "Famous Music",
+        "Found_in_Reading": "めいきょく"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "曲",
+        "Found_in_Meaning": "Tune",
+        "Found_in_Reading": "きょく"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "曲げる",
+        "Found_in_Meaning": "To Bend",
+        "Found_in_Reading": "まげる"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "曲がる",
+        "Found_in_Meaning": "To Be Bent",
+        "Found_in_Reading": "まがる"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "曲線",
+        "Found_in_Meaning": "Curve",
+        "Found_in_Reading": "きょくせん"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "歌謡曲",
+        "Found_in_Meaning": "Popular Song",
+        "Found_in_Reading": "かようきょく"
+    },
+    {
+        "kanji": "曲",
+        "Found_in_Characters": "戯曲",
+        "Found_in_Meaning": "Drama",
+        "Found_in_Reading": "ぎきょく"
+    },
+    {
+        "kanji": "夜",
+        "Found_in_Characters": "夜",
+        "Found_in_Meaning": "Night",
+        "Found_in_Reading": "よる"
+    },
+    {
+        "kanji": "夜",
+        "Found_in_Characters": "今夜",
+        "Found_in_Meaning": "Tonight",
+        "Found_in_Reading": "こんや"
+    },
+    {
+        "kanji": "夜",
+        "Found_in_Characters": "深夜",
+        "Found_in_Meaning": "Middle Of The Night",
+        "Found_in_Reading": "しんや"
+    },
+    {
+        "kanji": "夜",
+        "Found_in_Characters": "徹夜",
+        "Found_in_Meaning": "All Night",
+        "Found_in_Reading": "てつや"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "一歩",
+        "Found_in_Meaning": "One Step",
+        "Found_in_Reading": "いっぽ"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "歩く",
+        "Found_in_Meaning": "To Walk",
+        "Found_in_Reading": "あるく"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "歩道",
+        "Found_in_Meaning": "Sidewalk",
+        "Found_in_Reading": "ほどう"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "初歩",
+        "Found_in_Meaning": "Basics",
+        "Found_in_Reading": "しょほ"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "散歩",
+        "Found_in_Meaning": "A Stroll",
+        "Found_in_Reading": "さんぽ"
+    },
+    {
+        "kanji": "歩",
+        "Found_in_Characters": "散歩する",
+        "Found_in_Meaning": "To Go For A Walk",
+        "Found_in_Reading": "さんぽする"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南",
+        "Found_in_Meaning": "South",
+        "Found_in_Reading": "みなみ"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南東",
+        "Found_in_Meaning": "Southeast",
+        "Found_in_Reading": "なんとう"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南米",
+        "Found_in_Meaning": "South America",
+        "Found_in_Reading": "なんべい"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南口",
+        "Found_in_Meaning": "South Exit",
+        "Found_in_Reading": "みなみぐち"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南極",
+        "Found_in_Meaning": "Antarctica",
+        "Found_in_Reading": "なんきょく"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南極圏",
+        "Found_in_Meaning": "Antarctic Circle",
+        "Found_in_Reading": "なんきょくけん"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南緯",
+        "Found_in_Meaning": "Southern Latitude",
+        "Found_in_Reading": "なんい"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南瓜",
+        "Found_in_Meaning": "Pumpkin",
+        "Found_in_Reading": "かぼちゃ"
+    },
+    {
+        "kanji": "南",
+        "Found_in_Characters": "南蛮",
+        "Found_in_Meaning": "Southern Barbarians",
+        "Found_in_Reading": "なんばん"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "〜室",
+        "Found_in_Meaning": "Room",
+        "Found_in_Reading": "しつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "教室",
+        "Found_in_Meaning": "Classroom",
+        "Found_in_Reading": "きょうしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "〜号室",
+        "Found_in_Meaning": "Room Number",
+        "Found_in_Reading": "ごうしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "客室",
+        "Found_in_Meaning": "Guest Room",
+        "Found_in_Reading": "きゃくしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "和室",
+        "Found_in_Meaning": "Japanese Style Room",
+        "Found_in_Reading": "わしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "研究室",
+        "Found_in_Meaning": "Laboratory",
+        "Found_in_Reading": "けんきゅうしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "洋室",
+        "Found_in_Meaning": "Western Style Room",
+        "Found_in_Reading": "ようしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "部室",
+        "Found_in_Meaning": "Clubroom",
+        "Found_in_Reading": "ぶしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "待合室",
+        "Found_in_Meaning": "Waiting Room",
+        "Found_in_Reading": "まちあいしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "会議室",
+        "Found_in_Meaning": "Conference Room",
+        "Found_in_Reading": "かいぎしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "個室",
+        "Found_in_Meaning": "Private Room",
+        "Found_in_Reading": "こしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "更衣室",
+        "Found_in_Meaning": "Changing Room",
+        "Found_in_Reading": "こういしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "皇室",
+        "Found_in_Meaning": "Imperial Family",
+        "Found_in_Reading": "こうしつ"
+    },
+    {
+        "kanji": "室",
+        "Found_in_Characters": "陳列室",
+        "Found_in_Meaning": "Showroom",
+        "Found_in_Reading": "ちんれつしつ"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食べる",
+        "Found_in_Meaning": "To Eat",
+        "Found_in_Reading": "たべる"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "試食",
+        "Found_in_Meaning": "Food Sample",
+        "Found_in_Reading": "ししょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "和食",
+        "Found_in_Meaning": "Japanese Style Food",
+        "Found_in_Reading": "わしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食事",
+        "Found_in_Meaning": "Meal",
+        "Found_in_Reading": "しょくじ"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食べ物",
+        "Found_in_Meaning": "Food",
+        "Found_in_Reading": "たべもの"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "洋食",
+        "Found_in_Meaning": "Western Food",
+        "Found_in_Reading": "ようしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食器",
+        "Found_in_Meaning": "Tableware",
+        "Found_in_Reading": "しょっき"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食べ放題",
+        "Found_in_Meaning": "All You Can Eat",
+        "Found_in_Reading": "たべほうだい"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食中毒",
+        "Found_in_Meaning": "Food Poisoning",
+        "Found_in_Reading": "しょくちゅうどく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食料品",
+        "Found_in_Meaning": "Groceries",
+        "Found_in_Reading": "しょくりょうひん"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食堂",
+        "Found_in_Meaning": "Cafeteria",
+        "Found_in_Reading": "しょくどう"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "菜食",
+        "Found_in_Meaning": "Vegetarian Diet",
+        "Found_in_Reading": "さいしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食欲",
+        "Found_in_Meaning": "Appetite",
+        "Found_in_Reading": "しょくよく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "腐食",
+        "Found_in_Meaning": "Corrosion",
+        "Found_in_Reading": "ふしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食卓",
+        "Found_in_Meaning": "Dining Table",
+        "Found_in_Reading": "しょくたく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "侵食",
+        "Found_in_Meaning": "Erosion",
+        "Found_in_Reading": "しんしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "食糧",
+        "Found_in_Meaning": "Provisions",
+        "Found_in_Reading": "しょくりょう"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "偏食",
+        "Found_in_Meaning": "Unbalanced Diet",
+        "Found_in_Reading": "へんしょく"
+    },
+    {
+        "kanji": "食",
+        "Found_in_Characters": "飽食",
+        "Found_in_Meaning": "Satiation",
+        "Found_in_Reading": "ほうしょく"
+    },
+    {
+        "kanji": "夏",
+        "Found_in_Characters": "夏",
+        "Found_in_Meaning": "Summer",
+        "Found_in_Reading": "なつ"
+    },
+    {
+        "kanji": "夏",
+        "Found_in_Characters": "夏休み",
+        "Found_in_Meaning": "Summer Vacation",
+        "Found_in_Reading": "なつやすみ"
+    },
+    {
+        "kanji": "夏",
+        "Found_in_Characters": "夏至",
+        "Found_in_Meaning": "Summer Solstice",
+        "Found_in_Reading": "げし"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未来",
+        "Found_in_Meaning": "Future",
+        "Found_in_Reading": "みらい"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未決",
+        "Found_in_Meaning": "Pending",
+        "Found_in_Reading": "みけつ"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未だ",
+        "Found_in_Meaning": "Not Yet",
+        "Found_in_Reading": "いまだ"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未婚",
+        "Found_in_Meaning": "Unmarried",
+        "Found_in_Reading": "みこん"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未熟",
+        "Found_in_Meaning": "Unripe",
+        "Found_in_Reading": "みじゅく"
+    },
+    {
+        "kanji": "未",
+        "Found_in_Characters": "未遂",
+        "Found_in_Meaning": "Attempt",
+        "Found_in_Reading": "みすい"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "高校",
+        "Found_in_Meaning": "High School",
+        "Found_in_Reading": "こうこう"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "学校",
+        "Found_in_Meaning": "School",
+        "Found_in_Reading": "がっこう"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "小学校",
+        "Found_in_Meaning": "Elementary School",
+        "Found_in_Reading": "しょうがっこう"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "高校生",
+        "Found_in_Meaning": "High School Student",
+        "Found_in_Reading": "こうこうせい"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "中学校",
+        "Found_in_Meaning": "Middle School",
+        "Found_in_Reading": "ちゅうがっこう"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "高等学校",
+        "Found_in_Meaning": "Senior High School",
+        "Found_in_Reading": "こうとうがっこう"
+    },
+    {
+        "kanji": "校",
+        "Found_in_Characters": "校閲",
+        "Found_in_Meaning": "Revision",
+        "Found_in_Reading": "こうえつ"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "弱い",
+        "Found_in_Meaning": "Weak",
+        "Found_in_Reading": "よわい"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "弱点",
+        "Found_in_Meaning": "Weak Point",
+        "Found_in_Reading": "じゃくてん"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "弱々しい",
+        "Found_in_Meaning": "Weak Looking",
+        "Found_in_Reading": "よわよわしい"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "弱虫",
+        "Found_in_Meaning": "Weakling",
+        "Found_in_Reading": "よわむし"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "薄弱",
+        "Found_in_Meaning": "Weakness",
+        "Found_in_Reading": "はくじゃく"
+    },
+    {
+        "kanji": "弱",
+        "Found_in_Characters": "虚弱",
+        "Found_in_Meaning": "Weak",
+        "Found_in_Reading": "きょじゃく"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "手紙",
+        "Found_in_Meaning": "Letter",
+        "Found_in_Reading": "てがみ"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "紙",
+        "Found_in_Meaning": "Paper",
+        "Found_in_Reading": "かみ"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "折り紙",
+        "Found_in_Meaning": "Origami",
+        "Found_in_Reading": "おりがみ"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "壁紙",
+        "Found_in_Meaning": "Wallpaper",
+        "Found_in_Reading": "かべがみ"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "包み紙",
+        "Found_in_Meaning": "Wrapping Paper",
+        "Found_in_Reading": "つつみがみ"
+    },
+    {
+        "kanji": "紙",
+        "Found_in_Characters": "紙幣",
+        "Found_in_Meaning": "Paper Money",
+        "Found_in_Reading": "しへい"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "風船",
+        "Found_in_Meaning": "Balloon",
+        "Found_in_Reading": "ふうせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "船",
+        "Found_in_Meaning": "Boat",
+        "Found_in_Reading": "ふね"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "船体",
+        "Found_in_Meaning": "Hull",
+        "Found_in_Reading": "せんたい"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "船員",
+        "Found_in_Meaning": "Sailor",
+        "Found_in_Reading": "せんいん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "汽船",
+        "Found_in_Meaning": "Steam Ship",
+        "Found_in_Reading": "きせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "宇宙船",
+        "Found_in_Meaning": "Spaceship",
+        "Found_in_Reading": "うちゅうせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "貨物船",
+        "Found_in_Meaning": "Freighter",
+        "Found_in_Reading": "かもつせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "破船",
+        "Found_in_Meaning": "Shipwreck",
+        "Found_in_Reading": "はせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "漁船",
+        "Found_in_Meaning": "Fishing Boat",
+        "Found_in_Reading": "ぎょせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "船酔い",
+        "Found_in_Meaning": "Seasickness",
+        "Found_in_Reading": "ふなよい"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "艦船",
+        "Found_in_Meaning": "Warship",
+        "Found_in_Reading": "かんせん"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "船舶",
+        "Found_in_Meaning": "Ship",
+        "Found_in_Reading": "せんぱく"
+    },
+    {
+        "kanji": "船",
+        "Found_in_Characters": "帆船",
+        "Found_in_Meaning": "Sailboat",
+        "Found_in_Reading": "はんせん"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒い",
+        "Found_in_Meaning": "Black",
+        "Found_in_Reading": "くろい"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒人",
+        "Found_in_Meaning": "Black Person",
+        "Found_in_Reading": "こくじん"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "白黒",
+        "Found_in_Meaning": "Black And White",
+        "Found_in_Reading": "しろくろ"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "真っ黒",
+        "Found_in_Meaning": "Pitch Black",
+        "Found_in_Reading": "まっくろ"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒煙",
+        "Found_in_Meaning": "Black Smoke",
+        "Found_in_Reading": "こくえん"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒板",
+        "Found_in_Meaning": "Blackboard",
+        "Found_in_Reading": "こくばん"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒幕",
+        "Found_in_Meaning": "Wirepuller",
+        "Found_in_Reading": "くろまく"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒潮",
+        "Found_in_Meaning": "Japan Current",
+        "Found_in_Reading": "くろしお"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "黒い霧",
+        "Found_in_Meaning": "Thick Fog",
+        "Found_in_Reading": "くろいきり"
+    },
+    {
+        "kanji": "黒",
+        "Found_in_Characters": "漆黒",
+        "Found_in_Meaning": "Jet Black",
+        "Found_in_Reading": "しっこく"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風船",
+        "Found_in_Meaning": "Balloon",
+        "Found_in_Reading": "ふうせん"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "台風",
+        "Found_in_Meaning": "Typhoon",
+        "Found_in_Reading": "たいふう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風",
+        "Found_in_Meaning": "Wind",
+        "Found_in_Reading": "かぜ"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "和風",
+        "Found_in_Meaning": "Japanese Style",
+        "Found_in_Reading": "わふう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "洋風",
+        "Found_in_Meaning": "Western Style",
+        "Found_in_Reading": "ようふう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "神風",
+        "Found_in_Meaning": "Kamikaze",
+        "Found_in_Reading": "かみかぜ"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風潮",
+        "Found_in_Meaning": "Tide",
+        "Found_in_Reading": "ふうちょう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "涼風",
+        "Found_in_Meaning": "Cool Breeze",
+        "Found_in_Reading": "りょうふう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "扇風機",
+        "Found_in_Meaning": "Electric Fan",
+        "Found_in_Reading": "せんぷうき"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風邪",
+        "Found_in_Meaning": "Cold",
+        "Found_in_Reading": "かぜ"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "お風呂",
+        "Found_in_Meaning": "Bath",
+        "Found_in_Reading": "おふろ"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風呂場",
+        "Found_in_Meaning": "Bathroom",
+        "Found_in_Reading": "ふろば"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "疾風",
+        "Found_in_Meaning": "Gale",
+        "Found_in_Reading": "しっぷう"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "風呂屋",
+        "Found_in_Meaning": "Public Bathhouse",
+        "Found_in_Reading": "ふろや"
+    },
+    {
+        "kanji": "風",
+        "Found_in_Characters": "旋風",
+        "Found_in_Meaning": "Whirlwind",
+        "Found_in_Reading": "せんぷう"
+    },
+    {
+        "kanji": "池",
+        "Found_in_Characters": "電池",
+        "Found_in_Meaning": "Battery",
+        "Found_in_Reading": "でんち"
+    },
+    {
+        "kanji": "池",
+        "Found_in_Characters": "池",
+        "Found_in_Meaning": "Pond",
+        "Found_in_Reading": "いけ"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "馬",
+        "Found_in_Meaning": "Horse",
+        "Found_in_Reading": "うま"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "馬力",
+        "Found_in_Meaning": "Horsepower",
+        "Found_in_Reading": "ばりき"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "乗馬",
+        "Found_in_Meaning": "Horseback Riding",
+        "Found_in_Reading": "じょうば"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "馬鹿",
+        "Found_in_Meaning": "Idiot",
+        "Found_in_Reading": "ばか"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "馬鹿らしい",
+        "Found_in_Meaning": "Absurd",
+        "Found_in_Reading": "ばからしい"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "馬鹿馬鹿しい",
+        "Found_in_Meaning": "Absurd",
+        "Found_in_Reading": "ばかばかしい"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "群馬県",
+        "Found_in_Meaning": "Gunma Prefecture",
+        "Found_in_Reading": "ぐんまけん"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "騎馬",
+        "Found_in_Meaning": "Riding A Horse",
+        "Found_in_Reading": "きば"
+    },
+    {
+        "kanji": "馬",
+        "Found_in_Characters": "駿馬",
+        "Found_in_Meaning": "Fast Horse",
+        "Found_in_Reading": "しゅんめ"
+    },
+    {
+        "kanji": "森",
+        "Found_in_Characters": "森",
+        "Found_in_Meaning": "Woods",
+        "Found_in_Reading": "もり"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "北海道",
+        "Found_in_Meaning": "Hokkaido",
+        "Found_in_Reading": "ほっかいどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "〜道",
+        "Found_in_Meaning": "Method Of",
+        "Found_in_Reading": "どう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "道",
+        "Found_in_Meaning": "Road",
+        "Found_in_Reading": "みち"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "歩道",
+        "Found_in_Meaning": "Sidewalk",
+        "Found_in_Reading": "ほどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "水道",
+        "Found_in_Meaning": "Water Supply",
+        "Found_in_Reading": "すいどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "道具",
+        "Found_in_Meaning": "Tool",
+        "Found_in_Reading": "どうぐ"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "山道",
+        "Found_in_Meaning": "Mountain Road",
+        "Found_in_Reading": "やまみち"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "道路",
+        "Found_in_Meaning": "Paved Road",
+        "Found_in_Reading": "どうろ"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "近道",
+        "Found_in_Meaning": "Shortcut",
+        "Found_in_Reading": "ちかみち"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "神道",
+        "Found_in_Meaning": "Shinto",
+        "Found_in_Reading": "しんとう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "弓道",
+        "Found_in_Meaning": "Archery",
+        "Found_in_Reading": "きゅうどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "報道",
+        "Found_in_Meaning": "News Report",
+        "Found_in_Reading": "ほうどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "武道",
+        "Found_in_Meaning": "Martial Arts",
+        "Found_in_Reading": "ぶどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "街道",
+        "Found_in_Meaning": "Highway",
+        "Found_in_Reading": "かいどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "道に迷う",
+        "Found_in_Meaning": "To Get Lost",
+        "Found_in_Reading": "みちにまよう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "華道",
+        "Found_in_Meaning": "Flower Arrangement",
+        "Found_in_Reading": "かどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "道徳",
+        "Found_in_Meaning": "Morals",
+        "Found_in_Reading": "どうとく"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "剣道",
+        "Found_in_Meaning": "Kendo",
+        "Found_in_Reading": "けんどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "片道",
+        "Found_in_Meaning": "One Way",
+        "Found_in_Reading": "かたみち"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "戻り道",
+        "Found_in_Meaning": "Way Back",
+        "Found_in_Reading": "もどりみち"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "柔道",
+        "Found_in_Meaning": "Judo",
+        "Found_in_Reading": "じゅうどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "軌道",
+        "Found_in_Meaning": "Orbit",
+        "Found_in_Reading": "きどう"
+    },
+    {
+        "kanji": "道",
+        "Found_in_Characters": "坑道",
+        "Found_in_Meaning": "Tunnel",
+        "Found_in_Reading": "こうどう"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電池",
+        "Found_in_Meaning": "Battery",
+        "Found_in_Reading": "でんち"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電力",
+        "Found_in_Meaning": "Electric Power",
+        "Found_in_Reading": "でんりょく"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電気",
+        "Found_in_Meaning": "Electricity",
+        "Found_in_Reading": "でんき"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電子",
+        "Found_in_Meaning": "Electron",
+        "Found_in_Reading": "でんし"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電話",
+        "Found_in_Meaning": "Telephone",
+        "Found_in_Reading": "でんわ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電車",
+        "Found_in_Meaning": "Train",
+        "Found_in_Reading": "でんしゃ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電鉄",
+        "Found_in_Meaning": "Electric Railway",
+        "Found_in_Reading": "でんてつ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電波",
+        "Found_in_Meaning": "Reception",
+        "Found_in_Reading": "でんぱ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "終電",
+        "Found_in_Meaning": "Last Train",
+        "Found_in_Reading": "しゅうでん"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "留守番電話",
+        "Found_in_Meaning": "Answering Machine",
+        "Found_in_Reading": "るすばんでんわ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電子機器",
+        "Found_in_Meaning": "Electronic Device",
+        "Found_in_Reading": "でんしきき"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "停電",
+        "Found_in_Meaning": "Power Outage",
+        "Found_in_Reading": "ていでん"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電飾",
+        "Found_in_Meaning": "Decorative Lighting",
+        "Found_in_Reading": "でんしょく"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電気柵",
+        "Found_in_Meaning": "Electric Fence",
+        "Found_in_Reading": "でんきさく"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電源",
+        "Found_in_Meaning": "Power Source",
+        "Found_in_Reading": "でんげん"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電磁場",
+        "Found_in_Meaning": "Electromagnetic Field",
+        "Found_in_Reading": "でんじば"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "充電",
+        "Found_in_Meaning": "Recharge",
+        "Found_in_Reading": "じゅうでん"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電柱",
+        "Found_in_Meaning": "Telephone Pole",
+        "Found_in_Reading": "でんちゅう"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "充電する",
+        "Found_in_Meaning": "To Charge A Battery",
+        "Found_in_Reading": "じゅうでんする"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "携帯電話",
+        "Found_in_Meaning": "Portable Phone",
+        "Found_in_Reading": "けいたいでんわ"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電卓",
+        "Found_in_Meaning": "Calculator",
+        "Found_in_Reading": "でんたく"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電灯",
+        "Found_in_Meaning": "Electric Light",
+        "Found_in_Reading": "でんとう"
+    },
+    {
+        "kanji": "電",
+        "Found_in_Characters": "電話帳",
+        "Found_in_Meaning": "Telephone Book",
+        "Found_in_Reading": "でんわちょう"
+    },
+    {
+        "kanji": "具",
+        "Found_in_Characters": "家具",
+        "Found_in_Meaning": "Furniture",
+        "Found_in_Reading": "かぐ"
+    },
+    {
+        "kanji": "具",
+        "Found_in_Characters": "道具",
+        "Found_in_Meaning": "Tool",
+        "Found_in_Reading": "どうぐ"
+    },
+    {
+        "kanji": "具",
+        "Found_in_Characters": "具合",
+        "Found_in_Meaning": "Condition",
+        "Found_in_Reading": "ぐあい"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "服",
+        "Found_in_Meaning": "Clothes",
+        "Found_in_Reading": "ふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "和服",
+        "Found_in_Meaning": "Japanese Style Clothes",
+        "Found_in_Reading": "わふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "洋服",
+        "Found_in_Meaning": "Clothes",
+        "Found_in_Reading": "ようふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "制服",
+        "Found_in_Meaning": "Uniform",
+        "Found_in_Reading": "せいふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "衣服",
+        "Found_in_Meaning": "Clothes",
+        "Found_in_Reading": "いふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "服飾",
+        "Found_in_Meaning": "Attire",
+        "Found_in_Reading": "ふくしょく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "服装",
+        "Found_in_Meaning": "Attire",
+        "Found_in_Reading": "ふくそう"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "克服",
+        "Found_in_Meaning": "Conquest",
+        "Found_in_Reading": "こくふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "喪服",
+        "Found_in_Meaning": "Mourning Dress",
+        "Found_in_Reading": "もふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "克服する",
+        "Found_in_Meaning": "To Conquer",
+        "Found_in_Reading": "こくふくする"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "征服",
+        "Found_in_Meaning": "Conquest",
+        "Found_in_Reading": "せいふく"
+    },
+    {
+        "kanji": "服",
+        "Found_in_Characters": "呉服",
+        "Found_in_Meaning": "Draperies",
+        "Found_in_Reading": "ごふく"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦しい",
+        "Found_in_Meaning": "Painful",
+        "Found_in_Reading": "くるしい"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦い",
+        "Found_in_Meaning": "Bitter Tasting",
+        "Found_in_Reading": "にがい"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦手",
+        "Found_in_Meaning": "Hard To Deal With",
+        "Found_in_Reading": "にがて"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦労",
+        "Found_in_Meaning": "Hardship",
+        "Found_in_Reading": "くろう"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦しむ",
+        "Found_in_Meaning": "To Suffer",
+        "Found_in_Reading": "くるしむ"
+    },
+    {
+        "kanji": "苦",
+        "Found_in_Characters": "苦しめる",
+        "Found_in_Meaning": "To Hurt Someone",
+        "Found_in_Reading": "くるしめる"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "本屋",
+        "Found_in_Meaning": "Bookstore",
+        "Found_in_Reading": "ほんや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "肉屋",
+        "Found_in_Meaning": "Butcher Shop",
+        "Found_in_Reading": "にくや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "魚屋",
+        "Found_in_Meaning": "Fish Shop",
+        "Found_in_Reading": "さかなや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "名古屋",
+        "Found_in_Meaning": "Nagoya",
+        "Found_in_Reading": "なごや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "部屋",
+        "Found_in_Meaning": "Room",
+        "Found_in_Reading": "へや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "〜屋",
+        "Found_in_Meaning": "Store",
+        "Found_in_Reading": "や"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "茶屋",
+        "Found_in_Meaning": "Tea Shop",
+        "Found_in_Reading": "ちゃや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "屋上",
+        "Found_in_Meaning": "Rooftop",
+        "Found_in_Reading": "おくじょう"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "屋根",
+        "Found_in_Meaning": "Roof",
+        "Found_in_Reading": "やね"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "居酒屋",
+        "Found_in_Meaning": "Izakaya",
+        "Found_in_Reading": "いざかや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "靴屋",
+        "Found_in_Meaning": "Shoe Store",
+        "Found_in_Reading": "くつや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "お菓子屋",
+        "Found_in_Meaning": "Candy Store",
+        "Found_in_Reading": "おかしや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "屋敷",
+        "Found_in_Meaning": "Residence",
+        "Found_in_Reading": "やしき"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "洗濯屋",
+        "Found_in_Meaning": "Dry Cleaners",
+        "Found_in_Reading": "せんたくや"
+    },
+    {
+        "kanji": "屋",
+        "Found_in_Characters": "風呂屋",
+        "Found_in_Meaning": "Public Bathhouse",
+        "Found_in_Reading": "ふろや"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返事",
+        "Found_in_Meaning": "Reply",
+        "Found_in_Reading": "へんじ"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返す",
+        "Found_in_Meaning": "To Return Something",
+        "Found_in_Reading": "かえす"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "仕返し",
+        "Found_in_Meaning": "Getting Even",
+        "Found_in_Reading": "しかえし"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返る",
+        "Found_in_Meaning": "To Be Returned",
+        "Found_in_Reading": "かえる"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "見返る",
+        "Found_in_Meaning": "To Look Back At",
+        "Found_in_Reading": "みかえる"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返信",
+        "Found_in_Meaning": "Reply",
+        "Found_in_Reading": "へんしん"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "見返す",
+        "Found_in_Meaning": "To Show Someone What One Can Do",
+        "Found_in_Reading": "みかえす"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "蒸し返す",
+        "Found_in_Meaning": "To Rehash",
+        "Found_in_Reading": "むしかえす"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返還",
+        "Found_in_Meaning": "Return",
+        "Found_in_Reading": "へんかん"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "繰り返す",
+        "Found_in_Meaning": "To Repeat",
+        "Found_in_Reading": "くりかえす"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "返り咲き",
+        "Found_in_Meaning": "Comeback",
+        "Found_in_Reading": "かえりざき"
+    },
+    {
+        "kanji": "返",
+        "Found_in_Characters": "呆れ返る",
+        "Found_in_Meaning": "To Be Utterly Amazed",
+        "Found_in_Reading": "あきれかえる"
+    },
+    {
+        "kanji": "習",
+        "Found_in_Characters": "習う",
+        "Found_in_Meaning": "To Learn",
+        "Found_in_Reading": "ならう"
+    },
+    {
+        "kanji": "習",
+        "Found_in_Characters": "練習",
+        "Found_in_Meaning": "Practice",
+        "Found_in_Reading": "れんしゅう"
+    },
+    {
+        "kanji": "習",
+        "Found_in_Characters": "練習する",
+        "Found_in_Meaning": "To Practice",
+        "Found_in_Reading": "れんしゅうする"
+    },
+    {
+        "kanji": "習",
+        "Found_in_Characters": "習慣",
+        "Found_in_Meaning": "Custom",
+        "Found_in_Reading": "しゅうかん"
+    },
+    {
+        "kanji": "習",
+        "Found_in_Characters": "復習",
+        "Found_in_Meaning": "Review",
+        "Found_in_Reading": "ふくしゅう"
+    },
+    {
+        "kanji": "軽",
+        "Found_in_Characters": "軽い",
+        "Found_in_Meaning": "Lightweight",
+        "Found_in_Reading": "かるい"
+    },
+    {
+        "kanji": "軽",
+        "Found_in_Characters": "手軽",
+        "Found_in_Meaning": "Simple And Easy",
+        "Found_in_Reading": "てがる"
+    },
+    {
+        "kanji": "軽",
+        "Found_in_Characters": "軽蔑",
+        "Found_in_Meaning": "Scorn",
+        "Found_in_Reading": "けいべつ"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "電鉄",
+        "Found_in_Meaning": "Electric Railway",
+        "Found_in_Reading": "でんてつ"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "私鉄",
+        "Found_in_Meaning": "Private Railway",
+        "Found_in_Reading": "してつ"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "鉄人",
+        "Found_in_Meaning": "Strong Man",
+        "Found_in_Reading": "てつじん"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "地下鉄",
+        "Found_in_Meaning": "Subway",
+        "Found_in_Reading": "ちかてつ"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "鉄柵",
+        "Found_in_Meaning": "Iron Fence",
+        "Found_in_Reading": "てっさく"
+    },
+    {
+        "kanji": "鉄",
+        "Found_in_Characters": "鉄鉱",
+        "Found_in_Meaning": "Iron Ore",
+        "Found_in_Reading": "てっこう"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌手",
+        "Found_in_Meaning": "Singer",
+        "Found_in_Reading": "かしゅ"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌",
+        "Found_in_Meaning": "Song",
+        "Found_in_Reading": "うた"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌う",
+        "Found_in_Meaning": "To Sing",
+        "Found_in_Reading": "うたう"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "詩歌",
+        "Found_in_Meaning": "Poetry",
+        "Found_in_Reading": "しいか"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "流行歌",
+        "Found_in_Meaning": "Popular Song",
+        "Found_in_Reading": "りゅうこうか"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "鼻歌",
+        "Found_in_Meaning": "Humming",
+        "Found_in_Reading": "はなうた"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌劇",
+        "Found_in_Meaning": "Opera",
+        "Found_in_Reading": "かげき"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "子守歌",
+        "Found_in_Meaning": "Lullaby",
+        "Found_in_Reading": "こもりうた"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌詞",
+        "Found_in_Meaning": "Song Lyrics",
+        "Found_in_Reading": "かし"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌舞伎",
+        "Found_in_Meaning": "Kabuki",
+        "Found_in_Reading": "かぶき"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "唱歌",
+        "Found_in_Meaning": "Singing",
+        "Found_in_Reading": "しょうか"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌唱",
+        "Found_in_Meaning": "Singing",
+        "Found_in_Reading": "かしょう"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌謡",
+        "Found_in_Meaning": "Song",
+        "Found_in_Reading": "かよう"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "歌謡曲",
+        "Found_in_Meaning": "Popular Song",
+        "Found_in_Reading": "かようきょく"
+    },
+    {
+        "kanji": "歌",
+        "Found_in_Characters": "詠歌",
+        "Found_in_Meaning": "Poem",
+        "Found_in_Reading": "えいか"
+    },
+    {
+        "kanji": "聞",
+        "Found_in_Characters": "新聞",
+        "Found_in_Meaning": "Newspaper",
+        "Found_in_Reading": "しんぶん"
+    },
+    {
+        "kanji": "聞",
+        "Found_in_Characters": "聞く",
+        "Found_in_Meaning": "To Hear",
+        "Found_in_Reading": "きく"
+    },
+    {
+        "kanji": "聞",
+        "Found_in_Characters": "聞こえる",
+        "Found_in_Meaning": "Hearable",
+        "Found_in_Reading": "きこえる"
+    },
+    {
+        "kanji": "聞",
+        "Found_in_Characters": "醜聞",
+        "Found_in_Meaning": "Scandal",
+        "Found_in_Reading": "しゅうぶん"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "フランス語",
+        "Found_in_Meaning": "French Language",
+        "Found_in_Reading": "ふらんすご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "日本語",
+        "Found_in_Meaning": "Japanese Language",
+        "Found_in_Reading": "にほんご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "言語",
+        "Found_in_Meaning": "Language",
+        "Found_in_Reading": "げんご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "スペイン語",
+        "Found_in_Meaning": "Spanish Language",
+        "Found_in_Reading": "すぺいんご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "主語",
+        "Found_in_Meaning": "Subject",
+        "Found_in_Reading": "しゅご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "語る",
+        "Found_in_Meaning": "To Talk",
+        "Found_in_Reading": "かたる"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "物語",
+        "Found_in_Meaning": "Tale",
+        "Found_in_Reading": "ものがたり"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "流行語",
+        "Found_in_Meaning": "Popular Phrase",
+        "Found_in_Reading": "りゅうこうご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "英語",
+        "Found_in_Meaning": "English Language",
+        "Found_in_Reading": "えいご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "単語",
+        "Found_in_Meaning": "Word",
+        "Found_in_Reading": "たんご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "外来語",
+        "Found_in_Meaning": "Foreign Word",
+        "Found_in_Reading": "がいらいご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "略語",
+        "Found_in_Meaning": "Abbreviation",
+        "Found_in_Reading": "りゃくご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "訳語",
+        "Found_in_Meaning": "Translated Term",
+        "Found_in_Reading": "やくご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "熟語",
+        "Found_in_Meaning": "Compound Word",
+        "Found_in_Reading": "じゅくご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "敬語",
+        "Found_in_Meaning": "Honorific",
+        "Found_in_Reading": "けいご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "同音異義語",
+        "Found_in_Meaning": "Homonym",
+        "Found_in_Reading": "どうおんいぎご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "尊敬語",
+        "Found_in_Meaning": "Honorific Japanese",
+        "Found_in_Reading": "そんけいご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "源氏物語",
+        "Found_in_Meaning": "Tale Of Genji",
+        "Found_in_Reading": "げんじものがたり"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "英語圏",
+        "Found_in_Meaning": "English Speaking World",
+        "Found_in_Reading": "えいごけん"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "謙譲語",
+        "Found_in_Meaning": "Humble Japanese",
+        "Found_in_Reading": "けんじょうご"
+    },
+    {
+        "kanji": "語",
+        "Found_in_Characters": "俗語",
+        "Found_in_Meaning": "Colloquialism",
+        "Found_in_Reading": "ぞくご"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "顔付き",
+        "Found_in_Meaning": "Expression",
+        "Found_in_Reading": "かおつき"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "顔",
+        "Found_in_Meaning": "Face",
+        "Found_in_Reading": "かお"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "顔文字",
+        "Found_in_Meaning": "Kaomoji",
+        "Found_in_Reading": "かおもじ"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "顔面",
+        "Found_in_Meaning": "Face Of A Person",
+        "Found_in_Reading": "がんめん"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "笑顔",
+        "Found_in_Meaning": "Smile",
+        "Found_in_Reading": "えがお"
+    },
+    {
+        "kanji": "顔",
+        "Found_in_Characters": "瓜実顔",
+        "Found_in_Meaning": "Oval Face",
+        "Found_in_Reading": "うりざねがお"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老人",
+        "Found_in_Meaning": "Old Person",
+        "Found_in_Reading": "ろうじん"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老眼",
+        "Found_in_Meaning": "Farsightedness",
+        "Found_in_Reading": "ろうがん"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老齢",
+        "Found_in_Meaning": "Old Age",
+        "Found_in_Reading": "ろうれい"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老婆",
+        "Found_in_Meaning": "Old Woman",
+        "Found_in_Reading": "ろうば"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老衰",
+        "Found_in_Meaning": "Senility",
+        "Found_in_Reading": "ろうすい"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老舗",
+        "Found_in_Meaning": "Old Shop",
+        "Found_in_Reading": "しにせ"
+    },
+    {
+        "kanji": "老",
+        "Found_in_Characters": "老朽",
+        "Found_in_Meaning": "Decrepit",
+        "Found_in_Reading": "ろうきゅう"
+    },
+    {
+        "kanji": "努",
+        "Found_in_Characters": "努力",
+        "Found_in_Meaning": "Great Effort",
+        "Found_in_Reading": "どりょく"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "電波",
+        "Found_in_Meaning": "Reception",
+        "Found_in_Reading": "でんぱ"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "波",
+        "Found_in_Meaning": "Wave",
+        "Found_in_Reading": "なみ"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "津波",
+        "Found_in_Meaning": "Tsunami",
+        "Found_in_Reading": "つなみ"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "超音波",
+        "Found_in_Meaning": "Ultrasonic Wave",
+        "Found_in_Reading": "ちょうおんぱ"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "荒波",
+        "Found_in_Meaning": "Stormy Seas",
+        "Found_in_Reading": "あらなみ"
+    },
+    {
+        "kanji": "波",
+        "Found_in_Characters": "波紋",
+        "Found_in_Meaning": "Ripple",
+        "Found_in_Reading": "はもん"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注意",
+        "Found_in_Meaning": "Caution",
+        "Found_in_Reading": "ちゅうい"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注文",
+        "Found_in_Meaning": "Order",
+        "Found_in_Reading": "ちゅうもん"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注ぐ",
+        "Found_in_Meaning": "To Pour",
+        "Found_in_Reading": "そそぐ"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注文する",
+        "Found_in_Meaning": "To Order",
+        "Found_in_Reading": "ちゅうもんする"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注射",
+        "Found_in_Meaning": "Shot",
+        "Found_in_Reading": "ちゅうしゃ"
+    },
+    {
+        "kanji": "注",
+        "Found_in_Characters": "注釈",
+        "Found_in_Meaning": "Notes",
+        "Found_in_Reading": "ちゅうしゃく"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "洋服",
+        "Found_in_Meaning": "Clothes",
+        "Found_in_Reading": "ようふく"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "太平洋",
+        "Found_in_Meaning": "Pacific Ocean",
+        "Found_in_Reading": "たいへいよう"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "西洋",
+        "Found_in_Meaning": "The West",
+        "Found_in_Reading": "せいよう"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "洋食",
+        "Found_in_Meaning": "Western Food",
+        "Found_in_Reading": "ようしょく"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "洋風",
+        "Found_in_Meaning": "Western Style",
+        "Found_in_Reading": "ようふう"
+    },
+    {
+        "kanji": "洋",
+        "Found_in_Characters": "洋室",
+        "Found_in_Meaning": "Western Style Room",
+        "Found_in_Reading": "ようしつ"
+    },
+    {
+        "kanji": "級",
+        "Found_in_Characters": "上級",
+        "Found_in_Meaning": "Advanced Level",
+        "Found_in_Reading": "じょうきゅう"
+    },
+    {
+        "kanji": "級",
+        "Found_in_Characters": "初級",
+        "Found_in_Meaning": "Beginner Level",
+        "Found_in_Reading": "しょきゅう"
+    },
+    {
+        "kanji": "級",
+        "Found_in_Characters": "高級",
+        "Found_in_Meaning": "High-Class",
+        "Found_in_Reading": "こうきゅう"
+    },
+    {
+        "kanji": "級",
+        "Found_in_Characters": "中級",
+        "Found_in_Meaning": "Intermediate Level",
+        "Found_in_Reading": "ちゅうきゅう"
+    },
+    {
+        "kanji": "競",
+        "Found_in_Characters": "競争",
+        "Found_in_Meaning": "Competition",
+        "Found_in_Reading": "きょうそう"
+    },
+    {
+        "kanji": "競",
+        "Found_in_Characters": "競う",
+        "Found_in_Meaning": "To Compete",
+        "Found_in_Reading": "きそう"
+    },
+    {
+        "kanji": "競",
+        "Found_in_Characters": "競艇",
+        "Found_in_Meaning": "Boat Race",
+        "Found_in_Reading": "きょうてい"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "便利",
+        "Found_in_Meaning": "Convenient",
+        "Found_in_Reading": "べんり"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "不便",
+        "Found_in_Meaning": "Inconvenient",
+        "Found_in_Reading": "ふべん"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "便所",
+        "Found_in_Meaning": "Toilet",
+        "Found_in_Reading": "べんじょ"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "郵便",
+        "Found_in_Meaning": "Mail",
+        "Found_in_Reading": "ゆうびん"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "郵便箱",
+        "Found_in_Meaning": "Mailbox",
+        "Found_in_Reading": "ゆうびんばこ"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "郵便番号",
+        "Found_in_Meaning": "Post Number",
+        "Found_in_Reading": "ゆうびんばんごう"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "郵便局",
+        "Found_in_Meaning": "Post Office",
+        "Found_in_Reading": "ゆうびんきょく"
+    },
+    {
+        "kanji": "便",
+        "Found_in_Characters": "便秘",
+        "Found_in_Meaning": "Constipation",
+        "Found_in_Reading": "べんぴ"
+    },
+    {
+        "kanji": "令",
+        "Found_in_Characters": "命令",
+        "Found_in_Meaning": "Order",
+        "Found_in_Reading": "めいれい"
+    },
+    {
+        "kanji": "庭",
+        "Found_in_Characters": "家庭",
+        "Found_in_Meaning": "Family",
+        "Found_in_Reading": "かてい"
+    },
+    {
+        "kanji": "庭",
+        "Found_in_Characters": "庭",
+        "Found_in_Meaning": "Garden",
+        "Found_in_Reading": "にわ"
+    },
+    {
+        "kanji": "庭",
+        "Found_in_Characters": "家庭教師",
+        "Found_in_Meaning": "Tutor",
+        "Found_in_Reading": "かていきょうし"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅",
+        "Found_in_Meaning": "Trip",
+        "Found_in_Reading": "たび"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅行",
+        "Found_in_Meaning": "Trip",
+        "Found_in_Reading": "りょこう"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅館",
+        "Found_in_Meaning": "Japanese Inn",
+        "Found_in_Reading": "りょかん"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅行する",
+        "Found_in_Meaning": "To Travel",
+        "Found_in_Reading": "りょこうする"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅行者",
+        "Found_in_Meaning": "Traveler",
+        "Found_in_Reading": "りょこうしゃ"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "旅券",
+        "Found_in_Meaning": "Passport",
+        "Found_in_Reading": "りょけん"
+    },
+    {
+        "kanji": "旅",
+        "Found_in_Characters": "新婚旅行",
+        "Found_in_Meaning": "Honeymoon",
+        "Found_in_Reading": "しんこんりょこう"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "大根",
+        "Found_in_Meaning": "Daikon",
+        "Found_in_Reading": "だいこん"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "根気",
+        "Found_in_Meaning": "Patience",
+        "Found_in_Reading": "こんき"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "屋根",
+        "Found_in_Meaning": "Roof",
+        "Found_in_Reading": "やね"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "根",
+        "Found_in_Meaning": "Root",
+        "Found_in_Reading": "ね"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "根本",
+        "Found_in_Meaning": "Root",
+        "Found_in_Reading": "こんぽん"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "根拠",
+        "Found_in_Meaning": "Basis",
+        "Found_in_Reading": "こんきょ"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "垣根",
+        "Found_in_Meaning": "Hedge",
+        "Found_in_Reading": "かきね"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "蓮根",
+        "Found_in_Meaning": "Lotus Root",
+        "Found_in_Reading": "れんこん"
+    },
+    {
+        "kanji": "根",
+        "Found_in_Characters": "禍根",
+        "Found_in_Meaning": "Root Of Evil",
+        "Found_in_Reading": "かこん"
+    },
+    {
+        "kanji": "倍",
+        "Found_in_Characters": "二倍",
+        "Found_in_Meaning": "Double",
+        "Found_in_Reading": "にばい"
+    },
+    {
+        "kanji": "倍",
+        "Found_in_Characters": "〜倍",
+        "Found_in_Meaning": "Times",
+        "Found_in_Reading": "ばい"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪い",
+        "Found_in_Meaning": "Bad",
+        "Found_in_Reading": "わるい"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪人",
+        "Found_in_Meaning": "Bad Person",
+        "Found_in_Reading": "あくにん"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "最悪",
+        "Found_in_Meaning": "The Worst",
+        "Found_in_Reading": "さいあく"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "気持ち悪い",
+        "Found_in_Meaning": "Bad Feeling",
+        "Found_in_Reading": "きもちわるい"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪口",
+        "Found_in_Meaning": "Bad-Mouthing",
+        "Found_in_Reading": "わるぐち"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪気",
+        "Found_in_Meaning": "Evil Intent",
+        "Found_in_Reading": "わるぎ"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "意地悪",
+        "Found_in_Meaning": "Malicious",
+        "Found_in_Reading": "いじわる"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪化",
+        "Found_in_Meaning": "Deterioration",
+        "Found_in_Reading": "あっか"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "善悪",
+        "Found_in_Meaning": "Good And Evil",
+        "Found_in_Reading": "ぜんあく"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "嫌悪",
+        "Found_in_Meaning": "Disgust",
+        "Found_in_Reading": "けんお"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪夢",
+        "Found_in_Meaning": "Nightmare",
+        "Found_in_Reading": "あくむ"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "嫌悪感",
+        "Found_in_Meaning": "Unpleasant Feelings",
+        "Found_in_Reading": "けんおかん"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪影響",
+        "Found_in_Meaning": "Bad Influence",
+        "Found_in_Reading": "あくえいきょう"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪例",
+        "Found_in_Meaning": "Bad Example",
+        "Found_in_Reading": "あくれい"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "凶悪",
+        "Found_in_Meaning": "Atrocious",
+        "Found_in_Reading": "きょうあく"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪趣味",
+        "Found_in_Meaning": "Bad Habit",
+        "Found_in_Reading": "あくしゅみ"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪霊",
+        "Found_in_Meaning": "Evil Spirit",
+        "Found_in_Reading": "あくりょう"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪魔",
+        "Found_in_Meaning": "Devil",
+        "Found_in_Reading": "あくま"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "劣悪",
+        "Found_in_Meaning": "Inferiority",
+        "Found_in_Reading": "れつあく"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪賢い",
+        "Found_in_Meaning": "Devious",
+        "Found_in_Reading": "わるがしこい"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "粗悪",
+        "Found_in_Meaning": "Coarse",
+        "Found_in_Reading": "そあく"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪因悪果",
+        "Found_in_Meaning": "Evil Breeds Evil",
+        "Found_in_Reading": "あくいんあっか"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪循環",
+        "Found_in_Meaning": "Vicious Cycle",
+        "Found_in_Reading": "あくじゅんかん"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "悪戯",
+        "Found_in_Meaning": "Tease",
+        "Found_in_Reading": "いたずら"
+    },
+    {
+        "kanji": "悪",
+        "Found_in_Characters": "醜悪",
+        "Found_in_Meaning": "Ugly",
+        "Found_in_Reading": "しゅうあく"
+    },
+    {
+        "kanji": "植",
+        "Found_in_Characters": "植物",
+        "Found_in_Meaning": "Plant",
+        "Found_in_Reading": "しょくぶつ"
+    },
+    {
+        "kanji": "植",
+        "Found_in_Characters": "植える",
+        "Found_in_Meaning": "To Plant Something",
+        "Found_in_Reading": "うえる"
+    },
+    {
+        "kanji": "植",
+        "Found_in_Characters": "植樹",
+        "Found_in_Meaning": "Tree Planting",
+        "Found_in_Reading": "しょくじゅ"
+    },
+    {
+        "kanji": "短",
+        "Found_in_Characters": "短い",
+        "Found_in_Meaning": "Short",
+        "Found_in_Reading": "みじかい"
+    },
+    {
+        "kanji": "短",
+        "Found_in_Characters": "短期",
+        "Found_in_Meaning": "Short Period",
+        "Found_in_Reading": "たんき"
+    },
+    {
+        "kanji": "短",
+        "Found_in_Characters": "短刀",
+        "Found_in_Meaning": "Short Sword",
+        "Found_in_Reading": "たんとう"
+    },
+    {
+        "kanji": "短",
+        "Found_in_Characters": "短銃",
+        "Found_in_Meaning": "Pistol",
+        "Found_in_Reading": "たんじゅう"
+    },
+    {
+        "kanji": "短",
+        "Found_in_Characters": "短距離",
+        "Found_in_Meaning": "Short Distance",
+        "Found_in_Reading": "たんきょり"
+    },
+    {
+        "kanji": "宿",
+        "Found_in_Characters": "宿題",
+        "Found_in_Meaning": "Homework",
+        "Found_in_Reading": "しゅくだい"
+    },
+    {
+        "kanji": "宿",
+        "Found_in_Characters": "宿",
+        "Found_in_Meaning": "Lodging",
+        "Found_in_Reading": "やど"
+    },
+    {
+        "kanji": "宿",
+        "Found_in_Characters": "新宿",
+        "Found_in_Meaning": "Shinjuku",
+        "Found_in_Reading": "しんじゅく"
+    },
+    {
+        "kanji": "宿",
+        "Found_in_Characters": "宿泊",
+        "Found_in_Meaning": "Lodging",
+        "Found_in_Reading": "しゅくはく"
+    },
+    {
+        "kanji": "練",
+        "Found_in_Characters": "練習",
+        "Found_in_Meaning": "Practice",
+        "Found_in_Reading": "れんしゅう"
+    },
+    {
+        "kanji": "練",
+        "Found_in_Characters": "練習する",
+        "Found_in_Meaning": "To Practice",
+        "Found_in_Reading": "れんしゅうする"
+    },
+    {
+        "kanji": "練",
+        "Found_in_Characters": "洗練",
+        "Found_in_Meaning": "Refinement",
+        "Found_in_Reading": "せんれん"
+    },
+    {
+        "kanji": "練",
+        "Found_in_Characters": "訓練",
+        "Found_in_Meaning": "Training",
+        "Found_in_Reading": "くんれん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "入館料",
+        "Found_in_Meaning": "Admission Fee",
+        "Found_in_Reading": "にゅうかんりょう"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "旅館",
+        "Found_in_Meaning": "Japanese Inn",
+        "Found_in_Reading": "りょかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "映画館",
+        "Found_in_Meaning": "Movie Theater",
+        "Found_in_Reading": "えいがかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "本館",
+        "Found_in_Meaning": "Main Building",
+        "Found_in_Reading": "ほんかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "図書館",
+        "Found_in_Meaning": "Library",
+        "Found_in_Reading": "としょかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "美術館",
+        "Found_in_Meaning": "Museum",
+        "Found_in_Reading": "びじゅつかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "博物館",
+        "Found_in_Meaning": "Museum",
+        "Found_in_Reading": "はくぶつかん"
+    },
+    {
+        "kanji": "館",
+        "Found_in_Characters": "迎賓館",
+        "Found_in_Meaning": "Reception Hall",
+        "Found_in_Reading": "げいひんかん"
+    },
+    {
+        "kanji": "億",
+        "Found_in_Characters": "億",
+        "Found_in_Meaning": "Hundred Million",
+        "Found_in_Reading": "おく"
+    },
+    {
+        "kanji": "億",
+        "Found_in_Characters": "一億",
+        "Found_in_Meaning": "One Hundred Million",
+        "Found_in_Reading": "いちおく"
+    },
+    {
+        "kanji": "億",
+        "Found_in_Characters": "一億円",
+        "Found_in_Meaning": "One Hundred Million Yen",
+        "Found_in_Reading": "いちおくえん"
+    },
+    {
+        "kanji": "標",
+        "Found_in_Characters": "目標",
+        "Found_in_Meaning": "Goal",
+        "Found_in_Reading": "もくひょう"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "熱心",
+        "Found_in_Meaning": "Enthusiasm",
+        "Found_in_Reading": "ねっしん"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "熱",
+        "Found_in_Meaning": "Fever",
+        "Found_in_Reading": "ねつ"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "熱い",
+        "Found_in_Meaning": "Hot Thing",
+        "Found_in_Reading": "あつい"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "情熱",
+        "Found_in_Meaning": "Passion",
+        "Found_in_Reading": "じょうねつ"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "熱烈",
+        "Found_in_Meaning": "Impassioned",
+        "Found_in_Reading": "ねつれつ"
+    },
+    {
+        "kanji": "熱",
+        "Found_in_Characters": "耐熱",
+        "Found_in_Meaning": "Heat Resisting",
+        "Found_in_Reading": "たいねつ"
+    },
+    {
+        "kanji": "輪",
+        "Found_in_Characters": "輪",
+        "Found_in_Meaning": "Ring",
+        "Found_in_Reading": "わ"
+    },
+    {
+        "kanji": "輪",
+        "Found_in_Characters": "車輪",
+        "Found_in_Meaning": "Tire",
+        "Found_in_Reading": "しゃりん"
+    },
+    {
+        "kanji": "輪",
+        "Found_in_Characters": "指輪",
+        "Found_in_Meaning": "Ring",
+        "Found_in_Reading": "ゆびわ"
+    },
+    {
+        "kanji": "輪",
+        "Found_in_Characters": "輪ゴム",
+        "Found_in_Meaning": "Rubber Band",
+        "Found_in_Reading": "わごむ"
+    },
+    {
+        "kanji": "輪",
+        "Found_in_Characters": "輪郭",
+        "Found_in_Meaning": "Outline",
+        "Found_in_Reading": "りんかく"
+    },
+    {
+        "kanji": "卒",
+        "Found_in_Characters": "卒業",
+        "Found_in_Meaning": "Graduation",
+        "Found_in_Reading": "そつぎょう"
+    },
+    {
+        "kanji": "卒",
+        "Found_in_Characters": "卒業式",
+        "Found_in_Meaning": "Graduation Ceremony",
+        "Found_in_Reading": "そつぎょうしき"
+    },
+    {
+        "kanji": "卒",
+        "Found_in_Characters": "卒業する",
+        "Found_in_Meaning": "To Graduate",
+        "Found_in_Reading": "そつぎょうする"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "雰囲気",
+        "Found_in_Meaning": "Atmosphere",
+        "Found_in_Reading": "ふんいき"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "周囲",
+        "Found_in_Meaning": "Perimeter",
+        "Found_in_Reading": "しゅうい"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "囲む",
+        "Found_in_Meaning": "To Surround",
+        "Found_in_Reading": "かこむ"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "包囲",
+        "Found_in_Meaning": "Siege",
+        "Found_in_Reading": "ほうい"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "範囲",
+        "Found_in_Meaning": "Extent",
+        "Found_in_Reading": "はんい"
+    },
+    {
+        "kanji": "囲",
+        "Found_in_Characters": "囲碁",
+        "Found_in_Meaning": "Go",
+        "Found_in_Reading": "いご"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "固い",
+        "Found_in_Meaning": "Hard",
+        "Found_in_Reading": "かたい"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "頑固",
+        "Found_in_Meaning": "Stubborn",
+        "Found_in_Reading": "がんこ"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "固める",
+        "Found_in_Meaning": "To Make Something Hard",
+        "Found_in_Reading": "かためる"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "固まる",
+        "Found_in_Meaning": "To Harden",
+        "Found_in_Reading": "かたまる"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "固有名詞",
+        "Found_in_Meaning": "Proper Noun",
+        "Found_in_Reading": "こゆうめいし"
+    },
+    {
+        "kanji": "固",
+        "Found_in_Characters": "凝固",
+        "Found_in_Meaning": "Solidify",
+        "Found_in_Reading": "ぎょうこ"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "完全",
+        "Found_in_Meaning": "Complete",
+        "Found_in_Reading": "かんぜん"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "完了",
+        "Found_in_Meaning": "Completion",
+        "Found_in_Reading": "かんりょう"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "完成",
+        "Found_in_Meaning": "Completion",
+        "Found_in_Reading": "かんせい"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "不完全",
+        "Found_in_Meaning": "Incomplete",
+        "Found_in_Reading": "ふかんぜん"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "完結",
+        "Found_in_Meaning": "Conclusion",
+        "Found_in_Reading": "かんけつ"
+    },
+    {
+        "kanji": "完",
+        "Found_in_Characters": "完璧",
+        "Found_in_Meaning": "Perfect",
+        "Found_in_Reading": "かんぺき"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "芸人",
+        "Found_in_Meaning": "Comedian",
+        "Found_in_Reading": "げいにん"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "芸者",
+        "Found_in_Meaning": "Geisha",
+        "Found_in_Reading": "げいしゃ"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "芸能界",
+        "Found_in_Meaning": "Show Business",
+        "Found_in_Reading": "げいのうかい"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "芸術",
+        "Found_in_Meaning": "Art",
+        "Found_in_Reading": "げいじゅつ"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "芸術家",
+        "Found_in_Meaning": "Artist",
+        "Found_in_Reading": "げいじゅつか"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "演芸",
+        "Found_in_Meaning": "Performing Arts",
+        "Found_in_Reading": "えんげい"
+    },
+    {
+        "kanji": "芸",
+        "Found_in_Characters": "陶芸",
+        "Found_in_Meaning": "Ceramic Art",
+        "Found_in_Reading": "とうげい"
+    },
+    {
+        "kanji": "岩",
+        "Found_in_Characters": "岩",
+        "Found_in_Meaning": "Boulder",
+        "Found_in_Reading": "いわ"
+    },
+    {
+        "kanji": "岩",
+        "Found_in_Characters": "溶岩",
+        "Found_in_Meaning": "Lava",
+        "Found_in_Reading": "ようがん"
+    },
+    {
+        "kanji": "岩",
+        "Found_in_Characters": "岩礁",
+        "Found_in_Meaning": "Reef",
+        "Found_in_Reading": "がんしょう"
+    },
+    {
+        "kanji": "帰",
+        "Found_in_Characters": "帰る",
+        "Found_in_Meaning": "To Return Home",
+        "Found_in_Reading": "かえる"
+    },
+    {
+        "kanji": "帰",
+        "Found_in_Characters": "帰す",
+        "Found_in_Meaning": "To Send Someone Back",
+        "Found_in_Reading": "かえす"
+    },
+    {
+        "kanji": "帰",
+        "Found_in_Characters": "お持ち帰り",
+        "Found_in_Meaning": "Takeout",
+        "Found_in_Reading": "おもちかえり"
+    },
+    {
+        "kanji": "帰",
+        "Found_in_Characters": "帰郷する",
+        "Found_in_Meaning": "To Return To One's Hometown",
+        "Found_in_Reading": "ききょうする"
+    },
+    {
+        "kanji": "春",
+        "Found_in_Characters": "春",
+        "Found_in_Meaning": "Spring",
+        "Found_in_Reading": "はる"
+    },
+    {
+        "kanji": "春",
+        "Found_in_Characters": "春休み",
+        "Found_in_Meaning": "Spring Break",
+        "Found_in_Reading": "はるやすみ"
+    },
+    {
+        "kanji": "春",
+        "Found_in_Characters": "青春",
+        "Found_in_Meaning": "Youth",
+        "Found_in_Reading": "せいしゅん"
+    },
+    {
+        "kanji": "春",
+        "Found_in_Characters": "春巻き",
+        "Found_in_Meaning": "Spring Rolls",
+        "Found_in_Reading": "はるまき"
+    },
+    {
+        "kanji": "秋",
+        "Found_in_Characters": "秋",
+        "Found_in_Meaning": "Autumn",
+        "Found_in_Reading": "あき"
+    },
+    {
+        "kanji": "司",
+        "Found_in_Characters": "上司",
+        "Found_in_Meaning": "Boss",
+        "Found_in_Reading": "じょうし"
+    },
+    {
+        "kanji": "司",
+        "Found_in_Characters": "寿司",
+        "Found_in_Meaning": "Sushi",
+        "Found_in_Reading": "すし"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "曜日",
+        "Found_in_Meaning": "Day Of The Week",
+        "Found_in_Reading": "ようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "金曜日",
+        "Found_in_Meaning": "Friday",
+        "Found_in_Reading": "きんようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "月曜日",
+        "Found_in_Meaning": "Monday",
+        "Found_in_Reading": "げつようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "土曜日",
+        "Found_in_Meaning": "Saturday",
+        "Found_in_Reading": "どようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "日曜日",
+        "Found_in_Meaning": "Sunday",
+        "Found_in_Reading": "にちようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "木曜日",
+        "Found_in_Meaning": "Thursday",
+        "Found_in_Reading": "もくようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "火曜日",
+        "Found_in_Meaning": "Tuesday",
+        "Found_in_Reading": "かようび"
+    },
+    {
+        "kanji": "曜",
+        "Found_in_Characters": "水曜日",
+        "Found_in_Meaning": "Wednesday",
+        "Found_in_Reading": "すいようび"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "公園",
+        "Found_in_Meaning": "Public Park",
+        "Found_in_Reading": "こうえん"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "動物園",
+        "Found_in_Meaning": "Zoo",
+        "Found_in_Reading": "どうぶつえん"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "造園",
+        "Found_in_Meaning": "Landscape Gardening",
+        "Found_in_Reading": "ぞうえん"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "遊園地",
+        "Found_in_Meaning": "Amusement Park",
+        "Found_in_Reading": "ゆうえんち"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "幼稚園",
+        "Found_in_Meaning": "Kindergarten",
+        "Found_in_Reading": "ようちえん"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "園",
+        "Found_in_Meaning": "Garden",
+        "Found_in_Reading": "その"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "霊園",
+        "Found_in_Meaning": "Cemetery",
+        "Found_in_Reading": "れいえん"
+    },
+    {
+        "kanji": "園",
+        "Found_in_Characters": "庄園",
+        "Found_in_Meaning": "Manor",
+        "Found_in_Reading": "しょうえん"
+    },
+    {
+        "kanji": "幸",
+        "Found_in_Characters": "幸運",
+        "Found_in_Meaning": "Good Luck",
+        "Found_in_Reading": "こううん"
+    },
+    {
+        "kanji": "幸",
+        "Found_in_Characters": "幸せ",
+        "Found_in_Meaning": "Happiness",
+        "Found_in_Reading": "しあわせ"
+    },
+    {
+        "kanji": "幸",
+        "Found_in_Characters": "幸福",
+        "Found_in_Meaning": "Happiness",
+        "Found_in_Reading": "こうふく"
+    },
+    {
+        "kanji": "幸",
+        "Found_in_Characters": "不幸",
+        "Found_in_Meaning": "Unhappiness",
+        "Found_in_Reading": "ふこう"
+    },
+    {
+        "kanji": "幸",
+        "Found_in_Characters": "幸い",
+        "Found_in_Meaning": "Happiness",
+        "Found_in_Reading": "さいわい"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠足",
+        "Found_in_Meaning": "Excursion",
+        "Found_in_Reading": "えんそく"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠い",
+        "Found_in_Meaning": "Far",
+        "Found_in_Reading": "とおい"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠く",
+        "Found_in_Meaning": "Far Away",
+        "Found_in_Reading": "とおく"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠視",
+        "Found_in_Meaning": "Farsightedness",
+        "Found_in_Reading": "えんし"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "永遠",
+        "Found_in_Meaning": "Forever",
+        "Found_in_Reading": "えいえん"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠慮",
+        "Found_in_Meaning": "Restraint",
+        "Found_in_Reading": "えんりょ"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠慮する",
+        "Found_in_Meaning": "To Decline",
+        "Found_in_Reading": "えんりょする"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠距離",
+        "Found_in_Meaning": "Long Distance",
+        "Found_in_Reading": "えんきょり"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "遠征",
+        "Found_in_Meaning": "Expedition",
+        "Found_in_Reading": "えんせい"
+    },
+    {
+        "kanji": "遠",
+        "Found_in_Characters": "疎遠",
+        "Found_in_Meaning": "Estrangement",
+        "Found_in_Reading": "そえん"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞典",
+        "Found_in_Meaning": "Dictionary",
+        "Found_in_Reading": "じてん"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞書",
+        "Found_in_Meaning": "Dictionary",
+        "Found_in_Reading": "じしょ"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "お世辞",
+        "Found_in_Meaning": "Flattery",
+        "Found_in_Reading": "おせじ"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞める",
+        "Found_in_Meaning": "To Quit",
+        "Found_in_Reading": "やめる"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞書形",
+        "Found_in_Meaning": "Dictionary Form",
+        "Found_in_Reading": "じしょけい"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞職",
+        "Found_in_Meaning": "Resignation",
+        "Found_in_Reading": "じしょく"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "修辞学",
+        "Found_in_Meaning": "Rhetoric",
+        "Found_in_Reading": "しゅうじがく"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "辞儀する",
+        "Found_in_Meaning": "To Bow",
+        "Found_in_Reading": "じぎする"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "措辞",
+        "Found_in_Meaning": "Wording",
+        "Found_in_Reading": "そじ"
+    },
+    {
+        "kanji": "辞",
+        "Found_in_Characters": "弔辞",
+        "Found_in_Meaning": "Memorial Address",
+        "Found_in_Reading": "ちょうじ"
+    },
+    {
+        "kanji": "喜",
+        "Found_in_Characters": "喜劇",
+        "Found_in_Meaning": "Comedy",
+        "Found_in_Reading": "きげき"
+    },
+    {
+        "kanji": "喜",
+        "Found_in_Characters": "喜ぶ",
+        "Found_in_Meaning": "To Rejoice",
+        "Found_in_Reading": "よろこぶ"
+    },
+    {
+        "kanji": "喜",
+        "Found_in_Characters": "喜び",
+        "Found_in_Meaning": "Joy",
+        "Found_in_Reading": "よろこび"
+    },
+    {
+        "kanji": "喜",
+        "Found_in_Characters": "喜寿",
+        "Found_in_Meaning": "Seventy Seventh Birthday",
+        "Found_in_Reading": "きじゅ"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬物",
+        "Found_in_Meaning": "Drugs",
+        "Found_in_Reading": "やくぶつ"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬用",
+        "Found_in_Meaning": "Medicinal",
+        "Found_in_Reading": "やくよう"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬",
+        "Found_in_Meaning": "Medicine",
+        "Found_in_Reading": "くすり"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬学",
+        "Found_in_Meaning": "Study Of Pharmacy",
+        "Found_in_Reading": "やくがく"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "妙薬",
+        "Found_in_Meaning": "Wonder Drug",
+        "Found_in_Reading": "みょうやく"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "眠り薬",
+        "Found_in_Meaning": "Sleeping Pills",
+        "Found_in_Reading": "ねむりぐすり"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "睡眠薬",
+        "Found_in_Meaning": "Sleeping Pills",
+        "Found_in_Reading": "すいみんやく"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬剤",
+        "Found_in_Meaning": "Medicine",
+        "Found_in_Reading": "やくざい"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬剤師",
+        "Found_in_Meaning": "Pharmacist",
+        "Found_in_Reading": "やくざいし"
+    },
+    {
+        "kanji": "薬",
+        "Found_in_Characters": "薬方",
+        "Found_in_Meaning": "Prescription",
+        "Found_in_Reading": "やくほう"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛知県",
+        "Found_in_Meaning": "Aichi Prefecture",
+        "Found_in_Reading": "あいちけん"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "恋愛",
+        "Found_in_Meaning": "Love",
+        "Found_in_Reading": "れんあい"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛",
+        "Found_in_Meaning": "Love",
+        "Found_in_Reading": "あい"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛情",
+        "Found_in_Meaning": "Love",
+        "Found_in_Reading": "あいじょう"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛人",
+        "Found_in_Meaning": "Lover",
+        "Found_in_Reading": "あいじん"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛国心",
+        "Found_in_Meaning": "Patriotism",
+        "Found_in_Reading": "あいこくしん"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "自愛",
+        "Found_in_Meaning": "Self Love",
+        "Found_in_Reading": "じあい"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛する",
+        "Found_in_Meaning": "To Love",
+        "Found_in_Reading": "あいする"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "可愛い",
+        "Found_in_Meaning": "Cute",
+        "Found_in_Reading": "かわいい"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛憎",
+        "Found_in_Meaning": "Love And Hate",
+        "Found_in_Reading": "あいぞう"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "慈愛",
+        "Found_in_Meaning": "Affection",
+        "Found_in_Reading": "じあい"
+    },
+    {
+        "kanji": "愛",
+        "Found_in_Characters": "愛媛県",
+        "Found_in_Meaning": "Ehime Prefecture",
+        "Found_in_Reading": "えひめけん"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "幻覚",
+        "Found_in_Meaning": "Hallucination",
+        "Found_in_Reading": "げんかく"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "感覚",
+        "Found_in_Meaning": "Sense",
+        "Found_in_Reading": "かんかく"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "覚える",
+        "Found_in_Meaning": "To Memorize",
+        "Found_in_Reading": "おぼえる"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "自覚",
+        "Found_in_Meaning": "Self-Awareness",
+        "Found_in_Reading": "じかく"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "目覚める",
+        "Found_in_Meaning": "To Wake Up",
+        "Found_in_Reading": "めざめる"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "視覚",
+        "Found_in_Meaning": "Sense Of Sight",
+        "Found_in_Reading": "しかく"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "覚悟",
+        "Found_in_Meaning": "Resolution",
+        "Found_in_Reading": "かくご"
+    },
+    {
+        "kanji": "覚",
+        "Found_in_Characters": "錯覚",
+        "Found_in_Meaning": "Illusion",
+        "Found_in_Reading": "さっかく"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "分類",
+        "Found_in_Meaning": "Classification",
+        "Found_in_Reading": "ぶんるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "書類",
+        "Found_in_Meaning": "Document",
+        "Found_in_Reading": "しょるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "種類",
+        "Found_in_Meaning": "Kind",
+        "Found_in_Reading": "しゅるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "人類",
+        "Found_in_Meaning": "Mankind",
+        "Found_in_Reading": "じんるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "親類",
+        "Found_in_Meaning": "Relatives",
+        "Found_in_Reading": "しんるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "人類学",
+        "Found_in_Meaning": "Anthropology",
+        "Found_in_Reading": "じんるいがく"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "獣類",
+        "Found_in_Meaning": "Beasts",
+        "Found_in_Reading": "じゅうるい"
+    },
+    {
+        "kanji": "類",
+        "Found_in_Characters": "穀類",
+        "Found_in_Meaning": "Grains",
+        "Found_in_Reading": "こくるい"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "等しい",
+        "Found_in_Meaning": "Equal",
+        "Found_in_Reading": "ひとしい"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "等号",
+        "Found_in_Meaning": "Equal Sign",
+        "Found_in_Reading": "とうごう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "対等",
+        "Found_in_Meaning": "Equality",
+        "Found_in_Reading": "たいとう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "一等",
+        "Found_in_Meaning": "First Class",
+        "Found_in_Reading": "いっとう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "高等",
+        "Found_in_Meaning": "High Class",
+        "Found_in_Reading": "こうとう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "高等学校",
+        "Found_in_Meaning": "Senior High School",
+        "Found_in_Reading": "こうとうがっこう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "均等",
+        "Found_in_Meaning": "Equality",
+        "Found_in_Reading": "きんとう"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "劣等感",
+        "Found_in_Meaning": "Inferiority Complex",
+        "Found_in_Reading": "れっとうかん"
+    },
+    {
+        "kanji": "等",
+        "Found_in_Characters": "不等",
+        "Found_in_Meaning": "Inequality",
+        "Found_in_Reading": "ふとう"
+    },
+    {
+        "kanji": "借",
+        "Found_in_Characters": "借用",
+        "Found_in_Meaning": "Borrowing",
+        "Found_in_Reading": "しゃくよう"
+    },
+    {
+        "kanji": "借",
+        "Found_in_Characters": "借金",
+        "Found_in_Meaning": "Debt",
+        "Found_in_Reading": "しゃっきん"
+    },
+    {
+        "kanji": "借",
+        "Found_in_Characters": "借家",
+        "Found_in_Meaning": "Rented House",
+        "Found_in_Reading": "しゃくや"
+    },
+    {
+        "kanji": "借",
+        "Found_in_Characters": "借りる",
+        "Found_in_Meaning": "To Borrow",
+        "Found_in_Reading": "かりる"
+    },
+    {
+        "kanji": "借",
+        "Found_in_Characters": "借り手",
+        "Found_in_Meaning": "Borrower",
+        "Found_in_Reading": "かりて"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "平静",
+        "Found_in_Meaning": "Calm",
+        "Found_in_Reading": "へいせい"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "静か",
+        "Found_in_Meaning": "Quiet",
+        "Found_in_Reading": "しずか"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "静止",
+        "Found_in_Meaning": "Still",
+        "Found_in_Reading": "せいし"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "静々",
+        "Found_in_Meaning": "Quietly",
+        "Found_in_Reading": "しずしず"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "冷静",
+        "Found_in_Meaning": "Cool Headed",
+        "Found_in_Reading": "れいせい"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "静粛",
+        "Found_in_Meaning": "Silent",
+        "Found_in_Reading": "せいしゅく"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "静寂",
+        "Found_in_Meaning": "Silence",
+        "Found_in_Reading": "せいじゃく"
+    },
+    {
+        "kanji": "静",
+        "Found_in_Characters": "閑静",
+        "Found_in_Meaning": "Quiet",
+        "Found_in_Reading": "かんせい"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "五十音順",
+        "Found_in_Meaning": "Aiueo Order",
+        "Found_in_Reading": "ごじゅうおんじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "年代順",
+        "Found_in_Meaning": "Chronological Order",
+        "Found_in_Reading": "ねんだいじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "大きい順",
+        "Found_in_Meaning": "Decreasing Order",
+        "Found_in_Reading": "おおきいじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "小さい順",
+        "Found_in_Meaning": "Increasing Order",
+        "Found_in_Reading": "ちいさいじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "順番",
+        "Found_in_Meaning": "Order",
+        "Found_in_Reading": "じゅんばん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "順位",
+        "Found_in_Meaning": "Ranking",
+        "Found_in_Reading": "じゅんい"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "席順",
+        "Found_in_Meaning": "Seating Order",
+        "Found_in_Reading": "せきじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "従順",
+        "Found_in_Meaning": "Obedient",
+        "Found_in_Reading": "じゅうじゅん"
+    },
+    {
+        "kanji": "順",
+        "Found_in_Characters": "順序",
+        "Found_in_Meaning": "Sequence",
+        "Found_in_Reading": "じゅんじょ"
+    },
+    {
+        "kanji": "歴",
+        "Found_in_Characters": "学歴",
+        "Found_in_Meaning": "Academic History",
+        "Found_in_Reading": "がくれき"
+    },
+    {
+        "kanji": "歴",
+        "Found_in_Characters": "歴史",
+        "Found_in_Meaning": "History",
+        "Found_in_Reading": "れきし"
+    },
+    {
+        "kanji": "歴",
+        "Found_in_Characters": "履歴書",
+        "Found_in_Meaning": "Personal History",
+        "Found_in_Reading": "りれきしょ"
+    },
+    {
+        "kanji": "歴",
+        "Found_in_Characters": "遍歴",
+        "Found_in_Meaning": "Experiences",
+        "Found_in_Reading": "へんれき"
+    },
+    {
+        "kanji": "徒",
+        "Found_in_Characters": "信徒",
+        "Found_in_Meaning": "Believer",
+        "Found_in_Reading": "しんと"
+    },
+    {
+        "kanji": "徒",
+        "Found_in_Characters": "仏教徒",
+        "Found_in_Meaning": "Buddhist",
+        "Found_in_Reading": "ぶっきょうと"
+    },
+    {
+        "kanji": "徒",
+        "Found_in_Characters": "生徒",
+        "Found_in_Meaning": "Student",
+        "Found_in_Reading": "せいと"
+    },
+    {
+        "kanji": "停",
+        "Found_in_Characters": "バス停",
+        "Found_in_Meaning": "Bus Stop",
+        "Found_in_Reading": "ばすてい"
+    },
+    {
+        "kanji": "停",
+        "Found_in_Characters": "各駅停車",
+        "Found_in_Meaning": "Local Train",
+        "Found_in_Reading": "かくえきていしゃ"
+    },
+    {
+        "kanji": "停",
+        "Found_in_Characters": "停電",
+        "Found_in_Meaning": "Power Outage",
+        "Found_in_Reading": "ていでん"
+    },
+    {
+        "kanji": "停",
+        "Found_in_Characters": "停止",
+        "Found_in_Meaning": "Stoppage",
+        "Found_in_Reading": "ていし"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "第一印象",
+        "Found_in_Meaning": "First Impression",
+        "Found_in_Reading": "だいいちいんしょう"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "印",
+        "Found_in_Meaning": "Mark",
+        "Found_in_Reading": "しるし"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "矢印",
+        "Found_in_Meaning": "Arrow",
+        "Found_in_Reading": "やじるし"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "印鑑",
+        "Found_in_Meaning": "Seal",
+        "Found_in_Reading": "いんかん"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "印刷",
+        "Found_in_Meaning": "Printing",
+        "Found_in_Reading": "いんさつ"
+    },
+    {
+        "kanji": "印",
+        "Found_in_Characters": "朱印",
+        "Found_in_Meaning": "Red Seal",
+        "Found_in_Reading": "しゅいん"
+    },
+    {
+        "kanji": "康",
+        "Found_in_Characters": "健康",
+        "Found_in_Meaning": "Health",
+        "Found_in_Reading": "けんこう"
+    },
+    {
+        "kanji": "康",
+        "Found_in_Characters": "不健康",
+        "Found_in_Meaning": "Unhealthy",
+        "Found_in_Reading": "ふけんこう"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "減給",
+        "Found_in_Meaning": "Pay Cut",
+        "Found_in_Reading": "げんきゅう"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "給料",
+        "Found_in_Meaning": "Salary",
+        "Found_in_Reading": "きゅうりょう"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "給与",
+        "Found_in_Meaning": "Salary",
+        "Found_in_Reading": "きゅうよ"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "昇給",
+        "Found_in_Meaning": "Pay Raise",
+        "Found_in_Reading": "しょうきゅう"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "供給",
+        "Found_in_Meaning": "Supply",
+        "Found_in_Reading": "きょうきゅう"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "給油",
+        "Found_in_Meaning": "Fueling",
+        "Found_in_Reading": "きゅうゆ"
+    },
+    {
+        "kanji": "給",
+        "Found_in_Characters": "給油所",
+        "Found_in_Meaning": "Gas Station",
+        "Found_in_Reading": "きゅうゆじょ"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷たい",
+        "Found_in_Meaning": "Cold",
+        "Found_in_Reading": "つめたい"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷静",
+        "Found_in_Meaning": "Cool Headed",
+        "Found_in_Reading": "れいせい"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷凍庫",
+        "Found_in_Meaning": "Freezer",
+        "Found_in_Reading": "れいとうこ"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷やす",
+        "Found_in_Meaning": "To Chill Something",
+        "Found_in_Reading": "ひやす"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷える",
+        "Found_in_Meaning": "To Be Chilled",
+        "Found_in_Reading": "ひえる"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷蔵庫",
+        "Found_in_Meaning": "Refrigerator",
+        "Found_in_Reading": "れいぞうこ"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷房",
+        "Found_in_Meaning": "Air Conditioning",
+        "Found_in_Reading": "れいぼう"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷遇",
+        "Found_in_Meaning": "Cold Reception",
+        "Found_in_Reading": "れいぐう"
+    },
+    {
+        "kanji": "冷",
+        "Found_in_Characters": "冷酷",
+        "Found_in_Meaning": "Cruel",
+        "Found_in_Reading": "れいこく"
+    },
+    {
+        "kanji": "清",
+        "Found_in_Characters": "清潔",
+        "Found_in_Meaning": "Clean",
+        "Found_in_Reading": "せいけつ"
+    },
+    {
+        "kanji": "清",
+        "Found_in_Characters": "清い",
+        "Found_in_Meaning": "Pure",
+        "Found_in_Reading": "きよい"
+    },
+    {
+        "kanji": "清",
+        "Found_in_Characters": "清涼",
+        "Found_in_Meaning": "Refreshing",
+        "Found_in_Reading": "せいりょう"
+    },
+    {
+        "kanji": "清",
+        "Found_in_Characters": "清浄",
+        "Found_in_Meaning": "Pure",
+        "Found_in_Reading": "せいじょう"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "児童",
+        "Found_in_Meaning": "Children",
+        "Found_in_Reading": "じどう"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "幼児",
+        "Found_in_Meaning": "Toddler",
+        "Found_in_Reading": "ようじ"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "鹿児島県",
+        "Found_in_Meaning": "Kagoshima Prefecture",
+        "Found_in_Reading": "かごしまけん"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "孤児",
+        "Found_in_Meaning": "Orphan",
+        "Found_in_Reading": "こじ"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "孤児院",
+        "Found_in_Meaning": "Orphanage",
+        "Found_in_Reading": "こじいん"
+    },
+    {
+        "kanji": "児",
+        "Found_in_Characters": "胎児",
+        "Found_in_Meaning": "Embryo",
+        "Found_in_Reading": "たいじ"
+    },
+    {
+        "kanji": "航",
+        "Found_in_Characters": "航空",
+        "Found_in_Meaning": "Aviation",
+        "Found_in_Reading": "こうくう"
+    },
+    {
+        "kanji": "航",
+        "Found_in_Characters": "航法",
+        "Found_in_Meaning": "Navigation",
+        "Found_in_Reading": "こうほう"
+    },
+    {
+        "kanji": "航",
+        "Found_in_Characters": "直航",
+        "Found_in_Meaning": "Nonstop Flight",
+        "Found_in_Reading": "ちょっこう"
+    },
+    {
+        "kanji": "航",
+        "Found_in_Characters": "航空券",
+        "Found_in_Meaning": "Airplane Ticket",
+        "Found_in_Reading": "こうくうけん"
+    },
+    {
+        "kanji": "航",
+        "Found_in_Characters": "航空母艦",
+        "Found_in_Meaning": "Aircraft Carrier",
+        "Found_in_Reading": "こうくうぼかん"
+    },
+    {
+        "kanji": "帯",
+        "Found_in_Characters": "帯",
+        "Found_in_Meaning": "Obi",
+        "Found_in_Reading": "おび"
+    },
+    {
+        "kanji": "帯",
+        "Found_in_Characters": "地帯",
+        "Found_in_Meaning": "Zone",
+        "Found_in_Reading": "ちたい"
+    },
+    {
+        "kanji": "帯",
+        "Found_in_Characters": "携帯",
+        "Found_in_Meaning": "Portable",
+        "Found_in_Reading": "けいたい"
+    },
+    {
+        "kanji": "帯",
+        "Found_in_Characters": "携帯電話",
+        "Found_in_Meaning": "Portable Phone",
+        "Found_in_Reading": "けいたいでんわ"
+    },
+    {
+        "kanji": "帯",
+        "Found_in_Characters": "携帯ストラップ",
+        "Found_in_Meaning": "Cell Phone Strap",
+        "Found_in_Reading": "けいたいすとらっぷ"
+    },
+    {
+        "kanji": "救",
+        "Found_in_Characters": "救急車",
+        "Found_in_Meaning": "Ambulance",
+        "Found_in_Reading": "きゅうきゅうしゃ"
+    },
+    {
+        "kanji": "救",
+        "Found_in_Characters": "救う",
+        "Found_in_Meaning": "To Rescue",
+        "Found_in_Reading": "すくう"
+    },
+    {
+        "kanji": "陸",
+        "Found_in_Characters": "大陸",
+        "Found_in_Meaning": "Continent",
+        "Found_in_Reading": "たいりく"
+    },
+    {
+        "kanji": "陸",
+        "Found_in_Characters": "陸軍",
+        "Found_in_Meaning": "Land Army",
+        "Found_in_Reading": "りくぐん"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "散歩",
+        "Found_in_Meaning": "A Stroll",
+        "Found_in_Reading": "さんぽ"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "解散",
+        "Found_in_Meaning": "Dissolution",
+        "Found_in_Reading": "かいさん"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "散る",
+        "Found_in_Meaning": "To Be Scattered",
+        "Found_in_Reading": "ちる"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "散らし",
+        "Found_in_Meaning": "Leaflet",
+        "Found_in_Reading": "ちらし"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "散歩する",
+        "Found_in_Meaning": "To Go For A Walk",
+        "Found_in_Reading": "さんぽする"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "散らかす",
+        "Found_in_Meaning": "To Scatter",
+        "Found_in_Reading": "ちらかす"
+    },
+    {
+        "kanji": "散",
+        "Found_in_Characters": "閑散",
+        "Found_in_Meaning": "Deserted",
+        "Found_in_Reading": "かんさん"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "原油",
+        "Found_in_Meaning": "Crude Oil",
+        "Found_in_Reading": "げんゆ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "給油",
+        "Found_in_Meaning": "Fueling",
+        "Found_in_Reading": "きゅうゆ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "油断",
+        "Found_in_Meaning": "Inattentiveness",
+        "Found_in_Reading": "ゆだん"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "油",
+        "Found_in_Meaning": "Oil",
+        "Found_in_Reading": "あぶら"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "石油",
+        "Found_in_Meaning": "Oil",
+        "Found_in_Reading": "せきゆ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "油田",
+        "Found_in_Meaning": "Oil Field",
+        "Found_in_Reading": "ゆでん"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "醤油",
+        "Found_in_Meaning": "Shoyu",
+        "Found_in_Reading": "しょうゆ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "給油所",
+        "Found_in_Meaning": "Gas Station",
+        "Found_in_Reading": "きゅうゆじょ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "油絵",
+        "Found_in_Meaning": "Oil Painting",
+        "Found_in_Reading": "あぶらえ"
+    },
+    {
+        "kanji": "油",
+        "Found_in_Characters": "油彩",
+        "Found_in_Meaning": "Oil Painting",
+        "Found_in_Reading": "ゆさい"
+    }
+]

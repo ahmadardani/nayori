@@ -60,6 +60,10 @@ flutter:
   assets:
     - assets/data.json
     - assets/day1.json
+    - assets/day2.json
+    - assets/day3.json
+    - assets/day4.json
+    - assets/day5.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

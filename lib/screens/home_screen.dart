@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 import '../models/kanji_model.dart';
-import '../models/word_model.dart'; 
 import 'search_screen.dart';
 import 'all_kanji_screen.dart';
-import 'day1_words_screen.dart'; 
+import 'all_words_menu_screen.dart'; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,9 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
   List<KanjiData> _allData = [];
   List<String> _uniqueKanjis = [];
-  
-  List<WordData> _day1Words = [];
-  List<String> _day1UniqueKanjis = [];
 
   @override
   void initState() {
@@ -33,27 +29,14 @@ class _HomeScreenState extends State<HomeScreen> {
       final String jsonString = await rootBundle.loadString('assets/data.json');
       final KanjiParsedResult result = await compute(parseKanjiDataInBackground, jsonString);
       
-      _allData = result.allData;
-      _uniqueKanjis = result.uniqueKanjis;
-
-      try {
-        final String day1JsonString = await rootBundle.loadString('assets/day1.json');
-        final WordParsedResult day1Result = await compute(parseWordDataInBackground, day1JsonString);
-        
-        _day1Words = day1Result.allWords;
-        _day1UniqueKanjis = day1Result.uniqueKanjis;
-      } catch (day1Error) {
-        debugPrint("WARNING: Error membaca day1.json -> $day1Error");
-      }
-      
       setState(() {
+        _allData = result.allData;
+        _uniqueKanjis = result.uniqueKanjis;
         _isLoading = false;
       });
     } catch (e) {
-      debugPrint("FATAL ERROR: Gagal load data utama -> $e");
-      setState(() {
-        _isLoading = false; 
-      });
+      debugPrint("Error loading data: $e");
+      setState(() => _isLoading = false);
     }
   }
 
@@ -109,21 +92,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
-              const SizedBox(height: 32),
-              const Text(
-                'All Words',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
               const SizedBox(height: 12),
               _buildMenuCard(
                 context, 
-                'Day 1', 
-                'Learn vocabulary for Day 1',
-                Icons.today_rounded, 
+                'All Words', 
+                'Learn vocabulary day by day',
+                Icons.menu_book_rounded, 
                 () => Navigator.push(
                   context, 
                   PageRouteBuilder(
-                    pageBuilder: (context, animation, secondaryAnimation) => Day1WordsScreen(allWords: _day1Words, uniqueKanjis: _day1UniqueKanjis, allData: _allData),
+                    pageBuilder: (context, animation, secondaryAnimation) => AllWordsMenuScreen(allData: _allData),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

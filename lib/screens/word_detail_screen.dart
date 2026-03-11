@@ -1,16 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; 
 import 'package:url_launcher/url_launcher.dart'; 
+import 'package:flutter_tts/flutter_tts.dart'; // Package suara
 import '../models/word_model.dart';
 import '../models/kanji_model.dart';
 import 'search_result_screen.dart';
 
-class WordDetailScreen extends StatelessWidget {
+class WordDetailScreen extends StatefulWidget {
   final String kanji;
   final List<WordData> wordList;
   final List<KanjiData> allData; 
 
   const WordDetailScreen({super.key, required this.kanji, required this.wordList, required this.allData});
+
+  @override
+  State<WordDetailScreen> createState() => _WordDetailScreenState();
+}
+
+class _WordDetailScreenState extends State<WordDetailScreen> {
+  final FlutterTts flutterTts = FlutterTts();
+
+  @override
+  void initState() {
+    super.initState();
+    _initTts();
+  }
+
+  // Menginisialisasi mesin suara dan mengaturnya ke bahasa Jepang
+  Future<void> _initTts() async {
+    await flutterTts.setLanguage("ja-JP");
+    await flutterTts.setSpeechRate(0.45); // Sedikit diperlambat agar pelafalannya jelas
+  }
+
+  // Fungsi untuk mengucapkan teks
+  Future<void> _speak(String text) async {
+    await flutterTts.speak(text);
+  }
 
   Future<void> _launchGoogleImages(String query) async {
     final url = Uri.parse('https://www.google.com/search?tbm=isch&q=$query');
@@ -35,9 +60,19 @@ class WordDetailScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+                    // Dibungkus Expanded agar tidak nabrak rentetan ikon di sebelahnya
+                    Expanded(
+                      child: Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+                    ),
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
+                        // TOMBOL BARU: Suara (Text to Speech)
+                        IconButton(
+                          icon: const Icon(Icons.volume_up_rounded),
+                          tooltip: 'Listen to pronunciation',
+                          onPressed: () => _speak(data.foundInCharacters),
+                        ),
                         IconButton(
                           icon: const Icon(Icons.copy_rounded),
                           tooltip: 'Copy',
@@ -55,9 +90,7 @@ class WordDetailScreen extends StatelessWidget {
                         IconButton(
                           icon: const Icon(Icons.image_search_rounded), 
                           tooltip: 'See visual in Google Images',
-                          onPressed: () {
-                            _launchGoogleImages(data.foundInCharacters);
-                          },
+                          onPressed: () => _launchGoogleImages(data.foundInCharacters),
                         ),
                         IconButton(
                           icon: const Icon(Icons.search_rounded),
@@ -67,7 +100,7 @@ class WordDetailScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               PageRouteBuilder(
-                                pageBuilder: (context, animation, secondaryAnimation) => SearchResultScreen(allData: allData, query: data.foundInCharacters),
+                                pageBuilder: (context, animation, secondaryAnimation) => SearchResultScreen(allData: widget.allData, query: data.foundInCharacters),
                                 transitionDuration: Duration.zero,
                                 reverseTransitionDuration: Duration.zero,
                               ),
@@ -101,9 +134,15 @@ class WordDetailScreen extends StatelessWidget {
   }
 
   @override
+  void dispose() {
+    flutterTts.stop(); // Matikan suara kalau layar ditutup
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Words with $kanji')),
+      appBar: AppBar(title: Text('Words with ${widget.kanji}')),
       body: Column(
         children: [
           Padding(
@@ -117,7 +156,7 @@ class WordDetailScreen extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  kanji, 
+                  widget.kanji, 
                   style: TextStyle(
                     fontSize: 80, 
                     fontWeight: FontWeight.w300,
@@ -129,9 +168,9 @@ class WordDetailScreen extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: wordList.length,
+              itemCount: widget.wordList.length,
               itemBuilder: (context, index) {
-                final item = wordList[index];
+                final item = widget.wordList[index];
                 return Card(
                   margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                   child: ListTile(

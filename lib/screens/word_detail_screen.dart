@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; 
+import 'package:url_launcher/url_launcher.dart'; 
 import '../models/word_model.dart';
 import '../models/kanji_model.dart';
 import 'search_result_screen.dart';
@@ -10,6 +11,13 @@ class WordDetailScreen extends StatelessWidget {
   final List<KanjiData> allData; 
 
   const WordDetailScreen({super.key, required this.kanji, required this.wordList, required this.allData});
+
+  Future<void> _launchGoogleImages(String query) async {
+    final url = Uri.parse('https://www.google.com/search?tbm=isch&q=$query');
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      debugPrint('Could not launch $url');
+    }
+  }
 
   void _showWordMeaning(BuildContext context, WordData data) {
     showModalBottomSheet(
@@ -42,6 +50,13 @@ class WordDetailScreen extends StatelessWidget {
                                 behavior: SnackBarBehavior.floating,
                               )
                             );
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.image_search_rounded), 
+                          tooltip: 'See visual in Google Images',
+                          onPressed: () {
+                            _launchGoogleImages(data.foundInCharacters);
                           },
                         ),
                         IconButton(

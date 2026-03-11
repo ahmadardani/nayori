@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; 
 import '../models/word_model.dart';
+import '../models/kanji_model.dart';
+import 'search_result_screen.dart';
 
 class WordDetailScreen extends StatelessWidget {
   final String kanji;
   final List<WordData> wordList;
+  final List<KanjiData> allData; 
 
-  const WordDetailScreen({super.key, required this.kanji, required this.wordList});
+  const WordDetailScreen({super.key, required this.kanji, required this.wordList, required this.allData});
 
   void _showWordMeaning(BuildContext context, WordData data) {
     showModalBottomSheet(
@@ -20,7 +24,45 @@ class WordDetailScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(data.foundInCharacters, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+                    Row(
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.copy_rounded),
+                          tooltip: 'Copy',
+                          onPressed: () {
+                            Clipboard.setData(ClipboardData(text: data.foundInCharacters));
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text('${data.foundInCharacters} copied to clipboard'),
+                                duration: const Duration(seconds: 2),
+                                behavior: SnackBarBehavior.floating,
+                              )
+                            );
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.search_rounded),
+                          tooltip: 'Search this word',
+                          onPressed: () {
+                            Navigator.pop(context);
+                            Navigator.push(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (context, animation, secondaryAnimation) => SearchResultScreen(allData: allData, query: data.foundInCharacters),
+                                transitionDuration: Duration.zero,
+                                reverseTransitionDuration: Duration.zero,
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
                 const Divider(height: 32),
                 Text(
                   'Reading', 

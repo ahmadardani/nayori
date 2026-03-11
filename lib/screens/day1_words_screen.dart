@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import '../models/word_model.dart';
+import '../models/kanji_model.dart';
 import 'word_detail_screen.dart';
 
 class Day1WordsScreen extends StatefulWidget {
   final List<WordData> allWords;
   final List<String> uniqueKanjis;
+  final List<KanjiData> allData; 
 
-  const Day1WordsScreen({super.key, required this.allWords, required this.uniqueKanjis});
+  const Day1WordsScreen({super.key, required this.allWords, required this.uniqueKanjis, required this.allData});
 
   @override
   State<Day1WordsScreen> createState() => _Day1WordsScreenState();
@@ -100,7 +102,7 @@ class _Day1WordsScreenState extends State<Day1WordsScreen> {
                       Navigator.push(
                         context,
                         PageRouteBuilder(
-                          pageBuilder: (context, animation, secondaryAnimation) => WordDetailScreen(kanji: kanjiStr, wordList: wordsForKanji),
+                          pageBuilder: (context, animation, secondaryAnimation) => WordDetailScreen(kanji: kanjiStr, wordList: wordsForKanji, allData: widget.allData),
                           transitionDuration: Duration.zero,
                           reverseTransitionDuration: Duration.zero,
                         ),

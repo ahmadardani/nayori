@@ -33,18 +33,27 @@ class _HomeScreenState extends State<HomeScreen> {
       final String jsonString = await rootBundle.loadString('assets/data.json');
       final KanjiParsedResult result = await compute(parseKanjiDataInBackground, jsonString);
       
-      final String day1JsonString = await rootBundle.loadString('assets/day1.json');
-      final WordParsedResult day1Result = await compute(parseWordDataInBackground, day1JsonString);
-      
-      setState(() {
-        _allData = result.allData;
-        _uniqueKanjis = result.uniqueKanjis;
+      _allData = result.allData;
+      _uniqueKanjis = result.uniqueKanjis;
+
+      try {
+        final String day1JsonString = await rootBundle.loadString('assets/day1.json');
+        final WordParsedResult day1Result = await compute(parseWordDataInBackground, day1JsonString);
+        
         _day1Words = day1Result.allWords;
         _day1UniqueKanjis = day1Result.uniqueKanjis;
+      } catch (day1Error) {
+        debugPrint("WARNING: Error membaca day1.json -> $day1Error");
+      }
+      
+      setState(() {
         _isLoading = false;
       });
     } catch (e) {
-      debugPrint("Error loading data: $e");
+      debugPrint("FATAL ERROR: Gagal load data utama -> $e");
+      setState(() {
+        _isLoading = false; 
+      });
     }
   }
 
@@ -114,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 () => Navigator.push(
                   context, 
                   PageRouteBuilder(
-                    pageBuilder: (context, animation, secondaryAnimation) => Day1WordsScreen(allWords: _day1Words, uniqueKanjis: _day1UniqueKanjis),
+                    pageBuilder: (context, animation, secondaryAnimation) => Day1WordsScreen(allWords: _day1Words, uniqueKanjis: _day1UniqueKanjis, allData: _allData),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

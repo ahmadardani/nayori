@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 import '../models/kanji_model.dart';
+import '../models/word_model.dart'; 
 import 'search_screen.dart';
 import 'all_kanji_screen.dart';
+import 'day1_words_screen.dart'; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,6 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
   List<KanjiData> _allData = [];
   List<String> _uniqueKanjis = [];
+  
+  List<WordData> _day1Words = [];
+  List<String> _day1UniqueKanjis = [];
 
   @override
   void initState() {
@@ -28,9 +33,14 @@ class _HomeScreenState extends State<HomeScreen> {
       final String jsonString = await rootBundle.loadString('assets/data.json');
       final KanjiParsedResult result = await compute(parseKanjiDataInBackground, jsonString);
       
+      final String day1JsonString = await rootBundle.loadString('assets/day1.json');
+      final WordParsedResult day1Result = await compute(parseWordDataInBackground, day1JsonString);
+      
       setState(() {
         _allData = result.allData;
         _uniqueKanjis = result.uniqueKanjis;
+        _day1Words = day1Result.allWords;
+        _day1UniqueKanjis = day1Result.uniqueKanjis;
         _isLoading = false;
       });
     } catch (e) {
@@ -46,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
         foregroundColor: Theme.of(context).colorScheme.onPrimary,
         title: const Text('Nayori', style: TextStyle(fontWeight: FontWeight.w600)),
       ),
-      body: Padding(
+      body: SingleChildScrollView( 
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -85,6 +95,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   context, 
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => AllKanjiScreen(allData: _allData, uniqueKanjis: _uniqueKanjis),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 32),
+              const Text(
+                'All Words',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuCard(
+                context, 
+                'Day 1', 
+                'Learn vocabulary for Day 1',
+                Icons.today_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => Day1WordsScreen(allWords: _day1Words, uniqueKanjis: _day1UniqueKanjis),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

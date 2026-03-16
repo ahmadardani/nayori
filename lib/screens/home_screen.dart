@@ -5,6 +5,7 @@ import '../models/kanji_model.dart';
 import 'search_screen.dart';
 import 'all_kanji_screen.dart';
 import 'all_words_menu_screen.dart'; 
+import 'grammar_menu_screen.dart'; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -94,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 32),
               const Text(
-                'Vocabulary',
+                'Vocabulary & Grammar', 
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 12),
@@ -122,6 +123,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   context, 
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => AllWordsMenuScreen(allData: _allData, isDojoMode: true),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 12),
+              _buildMenuCard(
+                context, 
+                'Grammar', 
+                'Sentence translation challenge',
+                Icons.translate_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const GrammarMenuScreen(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

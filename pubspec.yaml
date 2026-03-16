@@ -66,6 +66,7 @@ flutter:
     - assets/day3.json
     - assets/day4.json
     - assets/day5.json
+    - assets/grammar.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

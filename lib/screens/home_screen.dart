@@ -92,6 +92,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
+              const SizedBox(height: 32),
+              const Text(
+                'Vocabulary',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 12),
               _buildMenuCard(
                 context, 
@@ -101,7 +106,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 () => Navigator.push(
                   context, 
                   PageRouteBuilder(
-                    pageBuilder: (context, animation, secondaryAnimation) => AllWordsMenuScreen(allData: _allData),
+                    pageBuilder: (context, animation, secondaryAnimation) => AllWordsMenuScreen(allData: _allData, isDojoMode: false),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 12),
+              _buildMenuCard(
+                context, 
+                'Dojo', 
+                'Practice and test your memory',
+                Icons.fitness_center_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => AllWordsMenuScreen(allData: _allData, isDojoMode: true),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

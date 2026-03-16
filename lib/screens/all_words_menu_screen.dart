@@ -4,27 +4,28 @@ import 'day_words_screen.dart';
 
 class AllWordsMenuScreen extends StatelessWidget {
   final List<KanjiData> allData;
+  final bool isDojoMode; 
 
-  const AllWordsMenuScreen({super.key, required this.allData});
+  const AllWordsMenuScreen({super.key, required this.allData, required this.isDojoMode});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('All Words'),
+        title: Text(isDojoMode ? 'Dojo Training' : 'All Words'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
-          _buildDayCard(context, 1, 'Day 1', 'Beginner vocabulary part 1'),
+          _buildDayCard(context, 1, 'Day 1', isDojoMode ? 'Test Day 1 knowledge' : 'Beginner vocabulary part 1'),
           const SizedBox(height: 12),
-          _buildDayCard(context, 2, 'Day 2', 'Beginner vocabulary part 2'),
+          _buildDayCard(context, 2, 'Day 2', isDojoMode ? 'Test Day 2 knowledge' : 'Beginner vocabulary part 2'),
           const SizedBox(height: 12),
-          _buildDayCard(context, 3, 'Day 3', 'Beginner vocabulary part 3'),
+          _buildDayCard(context, 3, 'Day 3', isDojoMode ? 'Test Day 3 knowledge' : 'Beginner vocabulary part 3'),
           const SizedBox(height: 12),
-          _buildDayCard(context, 4, 'Day 4', 'Intermediate vocabulary part 1'),
+          _buildDayCard(context, 4, 'Day 4', isDojoMode ? 'Test Day 4 knowledge' : 'Intermediate vocabulary part 1'),
           const SizedBox(height: 12),
-          _buildDayCard(context, 5, 'Day 5', 'Intermediate vocabulary part 2'),
+          _buildDayCard(context, 5, 'Day 5', isDojoMode ? 'Test Day 5 knowledge' : 'Intermediate vocabulary part 2'),
         ],
       ),
     );
@@ -42,6 +43,7 @@ class AllWordsMenuScreen extends StatelessWidget {
               pageBuilder: (context, animation, secondaryAnimation) => DayWordsScreen(
                 dayNumber: dayNumber,
                 allData: allData,
+                isDojoMode: isDojoMode, 
               ),
               transitionDuration: Duration.zero,
               reverseTransitionDuration: Duration.zero,
@@ -58,7 +60,11 @@ class AllWordsMenuScreen extends StatelessWidget {
                   color: Theme.of(context).colorScheme.secondaryContainer,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Icon(Icons.today_rounded, size: 26, color: Theme.of(context).colorScheme.onSecondaryContainer),
+                child: Icon(
+                  isDojoMode ? Icons.fitness_center_rounded : Icons.today_rounded, 
+                  size: 26, 
+                  color: Theme.of(context).colorScheme.onSecondaryContainer
+                ),
               ),
               const SizedBox(width: 16),
               Expanded(

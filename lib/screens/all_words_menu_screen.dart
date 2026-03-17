@@ -15,7 +15,12 @@ class AllWordsMenuScreen extends StatelessWidget {
         title: Text(isDojoMode ? 'Dojo Training' : 'All Words'),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(
+          left: 16.0, 
+          right: 16.0, 
+          top: 16.0, 
+          bottom: MediaQuery.of(context).padding.bottom + 16.0
+        ),
         children: [
           _buildDayCard(context, 1, 'Day 1', isDojoMode ? 'Test Day 1 knowledge' : 'Beginner vocabulary part 1'),
           const SizedBox(height: 12),

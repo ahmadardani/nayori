@@ -80,7 +80,7 @@ class _AllKanjiScreenState extends State<AllKanjiScreen> {
                 left: 12,
                 right: 12,
                 top: 0,
-                bottom: MediaQuery.of(context).padding.bottom + 40,
+                bottom: MediaQuery.of(context).padding.bottom + 80.0,
               ),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4,

@@ -50,7 +50,12 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Nayori', style: TextStyle(fontWeight: FontWeight.w600)),
       ),
       body: SingleChildScrollView( 
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(
+          left: 16.0, 
+          right: 16.0, 
+          top: 16.0, 
+          bottom: MediaQuery.of(context).padding.bottom + 32.0
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,

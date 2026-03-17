@@ -65,6 +65,7 @@ class KanjiDetailScreen extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
+              padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom + 16.0),
               itemCount: dataList.length,
               itemBuilder: (context, index) {
                 final item = dataList[index];

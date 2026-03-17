@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; 
 import 'package:url_launcher/url_launcher.dart'; 
-import 'package:flutter_tts/flutter_tts.dart'; // Package suara
+import 'package:flutter_tts/flutter_tts.dart'; 
 import '../models/word_model.dart';
 import '../models/kanji_model.dart';
 import 'search_result_screen.dart';
@@ -26,13 +26,11 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
     _initTts();
   }
 
-  // Menginisialisasi mesin suara dan mengaturnya ke bahasa Jepang
   Future<void> _initTts() async {
     await flutterTts.setLanguage("ja-JP");
-    await flutterTts.setSpeechRate(0.45); // Sedikit diperlambat agar pelafalannya jelas
+    await flutterTts.setSpeechRate(0.45); 
   }
 
-  // Fungsi untuk mengucapkan teks
   Future<void> _speak(String text) async {
     await flutterTts.speak(text);
   }
@@ -60,14 +58,12 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // Dibungkus Expanded agar tidak nabrak rentetan ikon di sebelahnya
                     Expanded(
                       child: Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        // TOMBOL BARU: Suara (Text to Speech)
                         IconButton(
                           icon: const Icon(Icons.volume_up_rounded),
                           tooltip: 'Listen to pronunciation',
@@ -135,7 +131,7 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
 
   @override
   void dispose() {
-    flutterTts.stop(); // Matikan suara kalau layar ditutup
+    flutterTts.stop(); 
     super.dispose();
   }
 
@@ -168,6 +164,7 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
           ),
           Expanded(
             child: ListView.builder(
+              padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom + 16.0),
               itemCount: widget.wordList.length,
               itemBuilder: (context, index) {
                 final item = widget.wordList[index];

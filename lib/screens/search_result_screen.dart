@@ -118,7 +118,7 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
           : ListView.builder(
               padding: EdgeInsets.only(
                 top: 8, 
-                bottom: MediaQuery.of(context).padding.bottom + 40, 
+                bottom: MediaQuery.of(context).padding.bottom + 80.0, 
               ),
               itemCount: _filteredData.length,
               itemBuilder: (context, index) {

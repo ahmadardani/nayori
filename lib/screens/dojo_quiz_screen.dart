@@ -137,7 +137,12 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
       ),
       body: Center(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+          padding: EdgeInsets.only(
+            left: 24.0, 
+            right: 24.0, 
+            top: 16.0, 
+            bottom: MediaQuery.of(context).padding.bottom + 24.0
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -287,7 +292,12 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.only(
+          left: 24.0, 
+          right: 24.0, 
+          top: 24.0, 
+          bottom: MediaQuery.of(context).padding.bottom + 48.0
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,

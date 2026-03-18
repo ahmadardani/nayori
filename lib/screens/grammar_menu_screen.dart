@@ -56,19 +56,19 @@ class _GrammarMenuScreenState extends State<GrammarMenuScreen> {
 
                 return Card(
                   clipBehavior: Clip.antiAlias,
-                  elevation: 1,
-                  margin: const EdgeInsets.only(bottom: 12),
+                  elevation: 1.0,
+                  margin: const EdgeInsets.only(bottom: 12.0),
                   child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
                     leading: Container(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.secondaryContainer,
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Icon(Icons.edit_note_rounded, color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
-                    title: Text(chapter, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+                    title: Text(chapter, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
                     subtitle: Text('${chapterData.length} challenges'),
                     trailing: const Icon(Icons.chevron_right_rounded, color: Colors.grey),
                     onTap: () {

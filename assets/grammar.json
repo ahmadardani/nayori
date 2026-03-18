@@ -140,7 +140,7 @@
   {
     "chapter": "Chapter 2",
     "number": "1",
-    "sentence": "これはなんですか？",
+    "sentence": "これは何ですか？",
     "translation": "Ini apa?"
   },
   {
@@ -152,8 +152,8 @@
   {
     "chapter": "Chapter 2",
     "number": "2",
-    "sentence": "それは「１」ですか、「１」ですか？",
-    "translation": "Itu angka \"1\" atau \"1\"?"
+    "sentence": "それは「１」ですか、「７」ですか？",
+    "translation": "Itu angka \"1\" atau \"7\"?"
   },
   {
     "chapter": "Chapter 2",
@@ -206,7 +206,7 @@
   {
     "chapter": "Chapter 2",
     "number": "4",
-    "sentence": "あれは誰のカバンです",
+    "sentence": "あれは誰のカバンですか？",
     "translation": "Itu tas milik siapa?"
   },
   {
@@ -470,7 +470,7 @@
   {
     "chapter": "Chapter 4",
     "number": "3",
-    "sentence": "昼休みは何時からなんじまでですか？",
+    "sentence": "昼休みは何時から何時までですか？",
     "translation": "Istirahat siang dari jam berapa sampai jam berapa?"
   },
   {

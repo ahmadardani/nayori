@@ -52,8 +52,6 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
   void _checkAnswer() {
     if (_answerController.text.trim().isEmpty) return;
 
-    FocusScope.of(context).unfocus();
-
     final currentWord = _activeQueue[_currentIndex];
     
     final userAnswer = _answerController.text.replaceAll(' ', '').replaceAll('　', '').toLowerCase();
@@ -75,6 +73,8 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
         }
       }
     });
+    
+    _focusNode.requestFocus();
   }
 
   void _nextQuestion() {
@@ -86,9 +86,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
 
       if (_currentIndex < _activeQueue.length - 1) {
         _currentIndex++;
-        Future.delayed(const Duration(milliseconds: 100), () {
-          if (mounted) _focusNode.requestFocus();
-        });
+        _focusNode.requestFocus(); 
       } else {
         _isQuizFinished = true;
         FocusScope.of(context).unfocus(); 
@@ -118,6 +116,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
+    if (_isQuizFinished) return true;
     final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
     final String content = _isQuizFinished 
         ? 'Are you sure you want to return to the menu?' 
@@ -139,6 +138,18 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (_isQuizFinished) {
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('Dojo Results', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+          centerTitle: true,
+        ),
+        body: _buildResultScreen(),
+      );
+    }
+
+    final currentWord = _activeQueue[_currentIndex];
+
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
@@ -150,196 +161,159 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Dojo: ${widget.kanji}', style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+          title: Text('Dojo: ${widget.kanji}', style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(4.0),
             child: LinearProgressIndicator(
-              value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
+              value: (_currentIndex + 1) / _activeQueue.length,
               backgroundColor: Colors.grey.withOpacity(0.2),
             ),
           ),
         ),
-        body: _isQuizFinished 
-            ? _buildResultScreen() 
-            : Column(
-                children: [
-                  Expanded(
-                    child: _buildQuizContent(),
+        body: Center(
+          child: SingleChildScrollView(
+            padding: EdgeInsets.only(
+              left: 24.0, 
+              right: 24.0, 
+              top: 16.0, 
+              bottom: MediaQuery.of(context).padding.bottom + 24.0
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Question ${_currentIndex + 1} of ${_activeQueue.length}',
+                  style: TextStyle(color: Colors.grey.shade500, fontSize: 14.0, fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height: 16.0),
+                Text(
+                  currentWord.foundInCharacters,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 8.0),
+                if (_showHint)
+                  Text(
+                    'Meaning: ${currentWord.foundInMeaning}',
+                    style: const TextStyle(fontSize: 15.0, fontStyle: FontStyle.italic, color: Colors.grey),
+                  )
+                else
+                  TextButton.icon(
+                    onPressed: () => setState(() => _showHint = true),
+                    icon: const Icon(Icons.lightbulb_outline, size: 18.0),
+                    label: const Text('Show Hint', style: TextStyle(fontSize: 14.0)),
+                    style: TextButton.styleFrom(foregroundColor: Colors.grey.shade600),
                   ),
-                  _buildBottomActionPanel(),
-                ],
-              ),
-      ),
-    );
-  }
-
-  Widget _buildQuizContent() {
-    final currentWord = _activeQueue[_currentIndex];
-    
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(24.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Center(
-            child: Text(
-              'Question ${_currentIndex + 1} of ${_activeQueue.length}',
-              style: TextStyle(color: Colors.grey.shade500, fontSize: 14, fontWeight: FontWeight.w600),
-            ),
-          ),
-          const SizedBox(height: 32),
-          Text(
-            currentWord.foundInCharacters,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 32),
-          TextField(
-            controller: _answerController,
-            focusNode: _focusNode,
-            autofocus: true, 
-            readOnly: _isAnswered, 
-            minLines: 1, 
-            maxLines: 3, 
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 18, 
-              color: _isAnswered 
-                  ? (_isCorrect ? Colors.green : Colors.red) 
-                  : Theme.of(context).colorScheme.onSurface
-            ),
-            textInputAction: TextInputAction.done, 
-            onSubmitted: (_) => _handleSubmitted(''), 
-            decoration: InputDecoration(
-              hintText: 'Type reading (hiragana)...',
-              hintStyle: TextStyle(fontSize: 15, color: Colors.grey.shade400),
-              filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
-                borderSide: BorderSide(color: Colors.grey.withOpacity(0.3), width: 1.5),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
-                borderSide: BorderSide(color: Theme.of(context).colorScheme.primary, width: 2),
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          if (_showHint)
-            Center(
-              child: Text(
-                'Meaning: ${currentWord.foundInMeaning}',
-                style: const TextStyle(fontSize: 18, fontStyle: FontStyle.italic, color: Colors.grey),
-              ),
-            )
-          else if (!_isAnswered)
-            Center(
-              child: TextButton.icon(
-                onPressed: () => setState(() => _showHint = true),
-                icon: const Icon(Icons.lightbulb_outline, size: 18),
-                label: const Text('Show Hint', style: TextStyle(fontSize: 14)),
-                style: TextButton.styleFrom(foregroundColor: Colors.grey.shade600),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildBottomActionPanel() {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    if (!_isAnswered) {
-      return SafeArea(
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
-          ),
-          child: SizedBox(
-            width: double.infinity,
-            height: 56,
-            child: ElevatedButton(
-              onPressed: _checkAnswer,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: colorScheme.primary,
-                foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                elevation: 0,
-              ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            ),
-          ),
-        ),
-      );
-    }
-
-    final currentWord = _activeQueue[_currentIndex];
-    final isLast = _currentIndex >= _activeQueue.length - 1;
-    final panelColor = _isCorrect ? Colors.green.shade100 : Colors.red.shade100;
-    final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
-    final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
-
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark 
-        ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) 
-        : panelColor;
-    final finalTextColor = isDark 
-        ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) 
-        : textColor;
-
-    return Container(
-      color: finalPanelColor,
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Row(
-                children: [
-                  Icon(iconData, color: finalTextColor, size: 32),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: finalTextColor),
+                const SizedBox(height: 24.0),
+                
+                TextField(
+                  controller: _answerController,
+                  focusNode: _focusNode,
+                  autofocus: true, 
+                  readOnly: _isAnswered, 
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20.0, 
+                    color: _isAnswered 
+                        ? (_isCorrect ? Colors.green : Colors.red) 
+                        : Theme.of(context).colorScheme.onSurface
+                  ),
+                  textInputAction: TextInputAction.done, 
+                  onSubmitted: _handleSubmitted, 
+                  decoration: InputDecoration(
+                    hintText: 'Type reading (hiragana)...',
+                    hintStyle: const TextStyle(fontSize: 16.0),
+                    filled: true,
+                    contentPadding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      borderSide: BorderSide.none,
                     ),
                   ),
-                ],
-              ),
-              if (!_isCorrect) ...[
-                const SizedBox(height: 12),
-                Text('Correct reading is:', style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14)),
-                const SizedBox(height: 4),
-                Text(
-                  currentWord.foundInReading,
-                  style: TextStyle(color: finalTextColor, fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16.0),
+
+                AnimatedSize(
+                  duration: const Duration(milliseconds: 250),
+                  curve: Curves.easeInOut,
+                  child: Column(
+                    children: [
+                      if (_isAnswered) ...[
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
+                          decoration: BoxDecoration(
+                            color: _isCorrect ? Colors.green.withOpacity(0.1) : Colors.red.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: _isCorrect ? Colors.green.withOpacity(0.5) : Colors.red.withOpacity(0.5),
+                              width: 1.5,
+                            )
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded,
+                                    color: _isCorrect ? Colors.green : Colors.red,
+                                    size: 24.0,
+                                  ),
+                                  const SizedBox(width: 8.0),
+                                  Text(
+                                    _isCorrect ? 'Correct!' : 'Incorrect!',
+                                    style: TextStyle(
+                                      fontSize: 20.0, 
+                                      fontWeight: FontWeight.bold,
+                                      color: _isCorrect ? Colors.green : Colors.red,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              if (!_isCorrect) ...[
+                                const SizedBox(height: 8.0),
+                                const Text('Correct reading is:', style: TextStyle(color: Colors.grey, fontSize: 13.0)),
+                                const SizedBox(height: 2.0),
+                                Text(
+                                  currentWord.foundInReading,
+                                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                                ),
+                              ]
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 16.0),
+                      ],
+
+                      SizedBox(
+                        width: double.infinity,
+                        height: 50.0,
+                        child: ElevatedButton(
+                          onPressed: _isAnswered ? _nextQuestion : _checkAnswer,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: _isAnswered 
+                                ? Theme.of(context).colorScheme.secondaryContainer 
+                                : Theme.of(context).colorScheme.primary,
+                            foregroundColor: _isAnswered 
+                                ? Theme.of(context).colorScheme.onSecondaryContainer 
+                                : Theme.of(context).colorScheme.onPrimary,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                            elevation: 0.0,
+                          ),
+                          child: Text(
+                            _isAnswered 
+                                ? (_currentIndex < _activeQueue.length - 1 ? 'Next' : 'Finish') 
+                                : 'Check', 
+                            style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
-              const SizedBox(height: 24),
-              SizedBox(
-                height: 56,
-                child: ElevatedButton(
-                  onPressed: _nextQuestion,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: _isCorrect ? Colors.green : Colors.red,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                    elevation: 0,
-                  ),
-                  child: Text(
-                    isLast ? 'Finish Challenge' : 'Continue', 
-                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
-                  ),
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
@@ -362,16 +336,16 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
         children: [
           Icon(
             isPerfect ? Icons.workspace_premium_rounded : Icons.fitness_center_rounded,
-            size: 80,
+            size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16.0),
           Text(
             isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -384,29 +358,26 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
             ElevatedButton(
               onPressed: _retryIncorrect,
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 14),
+                padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                elevation: 0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                elevation: 0.0,
               ),
-              child: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              child: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12.0),
           OutlinedButton(
-            onPressed: () async {
-              final shouldPop = await _onWillPop();
-              if (shouldPop && context.mounted) {
-                Navigator.pop(context, true); 
-              }
+            onPressed: () {
+              Navigator.pop(context, true); 
             },
             style: OutlinedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(vertical: 14),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              padding: const EdgeInsets.symmetric(vertical: 14.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
             ),
-            child: const Text('Back to List', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            child: const Text('Back to List', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16.0),
         ],
       ),
     );
@@ -415,8 +386,8 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: color)),
-        Text(label, style: const TextStyle(fontSize: 14, color: Colors.grey)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );
   }

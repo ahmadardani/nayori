@@ -104,12 +104,12 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
               : Column(
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                       child: Text(
                         widget.isDojoMode 
                             ? "Tap a kanji to start the DOJO Quiz." 
                             : "Tap a kanji to view vocabulary list.",
-                        style: TextStyle(color: Colors.grey.shade600, fontSize: 13),
+                        style: TextStyle(color: Colors.grey.shade600, fontSize: 13.0),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -132,25 +132,25 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                               : null,
                           filled: true,
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(12.0),
                             borderSide: BorderSide.none,
                           ),
-                          contentPadding: const EdgeInsets.symmetric(vertical: 0),
+                          contentPadding: const EdgeInsets.symmetric(vertical: 0.0),
                         ),
                       ),
                     ),
                     Expanded(
                       child: GridView.builder(
                         padding: EdgeInsets.only(
-                          left: 12,
-                          right: 12,
-                          top: 8,
+                          left: 12.0,
+                          right: 12.0,
+                          top: 8.0,
                           bottom: MediaQuery.of(context).padding.bottom + 80.0,
                         ),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 4,
-                          crossAxisSpacing: 12,
-                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12.0,
+                          mainAxisSpacing: 12.0,
                         ),
                         itemCount: _filteredKanjis.length,
                         itemBuilder: (context, index) {
@@ -158,7 +158,7 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                           final isMastered = _masteredStatus[kanjiStr] ?? false;
 
                           return Card(
-                            elevation: isMastered ? 0 : 1,
+                            elevation: isMastered ? 0.0 : 1.0,
                             color: isMastered ? Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3) : null,
                             clipBehavior: Clip.antiAlias,
                             child: InkWell(
@@ -199,14 +199,14 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                                   Center(
                                     child: Text(
                                       kanjiStr,
-                                      style: TextStyle(fontSize: 32, color: Theme.of(context).colorScheme.primary),
+                                      style: TextStyle(fontSize: 32.0, color: Theme.of(context).colorScheme.primary),
                                     ),
                                   ),
                                   if (isMastered)
                                     const Positioned(
-                                      right: 4,
-                                      top: 4,
-                                      child: Icon(Icons.check_circle_rounded, color: Colors.green, size: 16),
+                                      right: 4.0,
+                                      top: 4.0,
+                                      child: Icon(Icons.check_circle_rounded, color: Colors.green, size: 16.0),
                                     ),
                                 ],
                               ),

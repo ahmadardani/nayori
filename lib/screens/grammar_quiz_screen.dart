@@ -14,10 +14,10 @@ class GrammarQuizScreen extends StatefulWidget {
 class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   final TextEditingController _answerController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
-
+  
   List<GrammarData> _activeQueue = [];
   List<GrammarData> _incorrectQueue = [];
-
+  
   int _currentIndex = 0;
   bool _showHint = false;
   bool _isAnswered = false;
@@ -51,11 +51,24 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   void _checkAnswer() {
     if (_answerController.text.trim().isEmpty) return;
 
-    FocusScope.of(context).unfocus();
+    FocusScope.of(context).unfocus(); 
 
     final currentData = _activeQueue[_currentIndex];
-    final userAnswer = _answerController.text.replaceAll(' ', '').replaceAll('　', '').toLowerCase();
-    final correctAnswer = currentData.sentence.replaceAll(' ', '').replaceAll('　', '').toLowerCase();
+    
+    String normalizeText(String text) {
+      String normalized = text.replaceAll(' ', '').replaceAll('　', '').replaceAll('。', '').toLowerCase();
+      
+      const fullWidth = 'ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０？！';
+      const halfWidth = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890?!';
+      
+      for (int i = 0; i < fullWidth.length; i++) {
+        normalized = normalized.replaceAll(fullWidth[i], halfWidth[i].toLowerCase());
+      }
+      return normalized;
+    }
+
+    final userAnswer = normalizeText(_answerController.text);
+    final correctAnswer = normalizeText(currentData.sentence);
 
     bool isTextMatch = (userAnswer == correctAnswer);
 
@@ -106,16 +119,12 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
-    final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
-    final String content = _isQuizFinished 
-        ? 'Are you sure you want to return to the menu?' 
-        : 'You have not finished this challenge. Are you sure you want to leave?';
-
+    if (_isQuizFinished) return true;
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(content),
+        title: const Text('Exit Challenge?'),
+        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -138,7 +147,7 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text(widget.chapter, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+          title: Text(widget.chapter, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(4.0),
@@ -172,35 +181,35 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
           Center(
             child: Text(
               'Question ${_currentIndex + 1} of ${_activeQueue.length}',
-              style: TextStyle(color: Colors.grey.shade500, fontSize: 14, fontWeight: FontWeight.w600),
+              style: TextStyle(color: Colors.grey.shade500, fontSize: 14.0, fontWeight: FontWeight.w600),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12.0),
           if (currentData.number.isNotEmpty)
             Center(
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.secondaryContainer,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Text(
                   'Pattern / Part ${currentData.number}',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSecondaryContainer,
                     fontWeight: FontWeight.bold,
-                    fontSize: 12,
+                    fontSize: 12.0,
                   ),
                 ),
               ),
             ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32.0),
           Text(
             currentData.translation,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 1.4),
+            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, height: 1.4),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32.0),
           TextField(
             controller: _answerController,
             focusNode: _focusNode,
@@ -209,7 +218,7 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
             minLines: 1, 
             maxLines: 3, 
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 18.0, 
               color: _isAnswered 
                   ? (_isCorrect ? Colors.green : Colors.red) 
                   : Theme.of(context).colorScheme.onSurface,
@@ -218,34 +227,34 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
             onSubmitted: (_) => _handleSubmitted(''),
             decoration: InputDecoration(
               hintText: 'Type the Japanese sentence...',
-              hintStyle: TextStyle(fontSize: 15, color: Colors.grey.shade400),
+              hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
               fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: BorderSide(color: Colors.grey.withOpacity(0.3), width: 1.5),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
-                borderSide: BorderSide(color: Theme.of(context).colorScheme.primary, width: 2),
+                borderRadius: BorderRadius.circular(16.0),
+                borderSide: BorderSide(color: Theme.of(context).colorScheme.primary, width: 2.0),
               ),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16.0),
           if (_showHint)
             Center(
               child: Text(
                 'Hint: ${currentData.sentence.substring(0, currentData.sentence.length > 2 ? 2 : 1)}...',
-                style: const TextStyle(fontSize: 18, fontStyle: FontStyle.italic, color: Colors.grey),
+                style: const TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic, color: Colors.grey),
               ),
             )
           else if (!_isAnswered)
-            Center( 
+            Center(
               child: TextButton.icon(
                 onPressed: () => setState(() => _showHint = true),
-                icon: const Icon(Icons.lightbulb_outline, size: 18),
-                label: const Text('Show Hint', style: TextStyle(fontSize: 14)),
+                icon: const Icon(Icons.lightbulb_outline, size: 18.0),
+                label: const Text('Show Hint', style: TextStyle(fontSize: 14.0)),
                 style: TextButton.styleFrom(foregroundColor: Colors.grey.shade600),
               ),
             ),
@@ -260,23 +269,23 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
     if (!_isAnswered) {
       return SafeArea(
         child: Container(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
             border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56,
+            height: 56.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                elevation: 0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
@@ -308,39 +317,39 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32),
-                  const SizedBox(width: 12),
+                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                 ],
               ),
               if (!_isCorrect) ...[
-                const SizedBox(height: 12),
-                Text('Correct Answer:', style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14)),
-                const SizedBox(height: 4),
+                const SizedBox(height: 12.0),
+                Text('Correct Answer:', style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14.0)),
+                const SizedBox(height: 4.0),
                 Text(
                   currentData.sentence,
-                  style: TextStyle(color: finalTextColor, fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: finalTextColor, fontSize: 18.0, fontWeight: FontWeight.bold),
                 ),
               ],
-              const SizedBox(height: 24),
+              const SizedBox(height: 24.0),
               SizedBox(
-                height: 56,
+                height: 56.0,
                 child: ElevatedButton(
                   onPressed: _nextQuestion,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                    elevation: 0,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    elevation: 0.0,
                   ),
                   child: Text(
                     isLast ? 'Finish Challenge' : 'Continue', 
-                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -366,16 +375,16 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
         children: [
           Icon(
             isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
-            size: 80,
+            size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16.0),
           Text(
             isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -388,15 +397,15 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
             ElevatedButton(
               onPressed: _retryIncorrect,
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 14),
+                padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                elevation: 0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                elevation: 0.0,
               ),
-              child: const Text('Retry Incorrect Sentences', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              child: const Text('Retry Incorrect Sentences', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12.0),
           OutlinedButton(
             onPressed: () async {
               final shouldPop = await _onWillPop();
@@ -405,12 +414,12 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
               }
             },
             style: OutlinedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(vertical: 14),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              padding: const EdgeInsets.symmetric(vertical: 14.0),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
             ),
-            child: const Text('Back to Menu', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16.0),
         ],
       ),
     );
@@ -419,8 +428,8 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: color)),
-        Text(label, style: const TextStyle(fontSize: 14, color: Colors.grey)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );
   }

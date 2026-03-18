@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const SizedBox(height: 8), 
+            const SizedBox(height: 8.0), 
             if (_isLoading)
               const Center(
                 child: Padding(
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 12.0),
               _buildMenuCard(
                 context, 
                 'All Kanji', 
@@ -98,12 +98,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 32.0),
               const Text(
                 'Vocabulary & Grammar', 
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 12.0),
               _buildMenuCard(
                 context, 
                 'All Words', 
@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 12.0),
               _buildMenuCard(
                 context, 
                 'Dojo', 
@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 12.0),
               _buildMenuCard(
                 context, 
                 'Grammar', 
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildMenuCard(BuildContext context, String title, String subtitle, IconData icon, VoidCallback onTap) {
     return Card(
       clipBehavior: Clip.antiAlias,
-      elevation: 1, 
+      elevation: 1.0, 
       child: InkWell(
         onTap: onTap,
         child: Padding(
@@ -166,31 +166,31 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             children: [
               Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.primaryContainer,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
-                child: Icon(icon, size: 26, color: Theme.of(context).colorScheme.onPrimaryContainer),
+                child: Icon(icon, size: 26.0, color: Theme.of(context).colorScheme.onPrimaryContainer),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 16.0),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-                    const SizedBox(height: 2),
+                    Text(title, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+                    const SizedBox(height: 2.0),
                     Text(
                       subtitle, 
                       style: TextStyle(
-                        fontSize: 13, 
+                        fontSize: 13.0, 
                         color: Theme.of(context).colorScheme.onSurfaceVariant
                       )
                     ),
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded, color: Colors.grey, size: 20),
+              const Icon(Icons.chevron_right_rounded, color: Colors.grey, size: 20.0),
             ],
           ),
         ),

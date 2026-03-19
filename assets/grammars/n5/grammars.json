@@ -1,0 +1,69 @@
+{
+  "id": "grammar_cha_ikenai",
+  "title": "ちゃいけない・じゃいけない",
+  "meaning_id": "Tidak boleh melakukan / dilarang (bahasa lisan)",
+  "meaning_en": "must not do (spoken Japanese)",
+  "explanation_file": "assets/markdown/n5/1_cha_ikenai.md",
+  "quiz_sentences": [
+    {
+      "indonesian": "Kamu tidak boleh melihat HP sebelum tidur.",
+      "english": "You shouldn't look at your smartphone before going to bed.",
+      "japanese": "寝る前にスマホを⾒ちゃダメよ。",
+      "romaji": "neru mae ni sumaho o micha dame yo."
+    },
+    {
+      "indonesian": "Area ini berbahaya, jadi kamu tidak boleh masuk.",
+      "english": "This area is dangerous, so you're not allowed to enter.",
+      "japanese": "ここはきけんなので、⼊っちゃダメだよ。",
+      "romaji": "koko wa kiken nano de, haiccha dame da yo."
+    },
+    {
+      "indonesian": "Aku melakukan hal yang tidak boleh dilakukan...",
+      "english": "I did something I shouldn't have...",
+      "japanese": "やっちゃいけないことをやっちゃった。",
+      "romaji": "yaccha ikenai koto o yacchatta."
+    },
+    {
+      "indonesian": "Kamu tidak boleh kehilangan kepercayaan diri!",
+      "english": "You mustn't lose confidence!",
+      "japanese": "⾃信をなくしちゃいけません！",
+      "romaji": "jishin o naku shicha ikemasen!"
+    },
+    {
+      "indonesian": "Kamu tidak boleh terlalu sering bolos kelas.",
+      "english": "You shouldn't skip class so much.",
+      "japanese": "そんなに授業をさぼっちゃダメよ。",
+      "romaji": "sonna ni jugyou o saboccha dame yo."
+    },
+    {
+      "indonesian": "Kita tidak boleh mempercayainya.",
+      "english": "We cannot trust him.",
+      "japanese": "彼を信⽤しちゃいけない。",
+      "romaji": "kare o shinyou shicha ikenai."
+    },
+    {
+      "indonesian": "Kamu tidak boleh mengabaikan lampu merah!",
+      "english": "You must not ignore red lights!",
+      "japanese": "赤信号をむししちゃいけません！",
+      "romaji": "aka shingou o mushi shicha ikemasen!"
+    },
+    {
+      "indonesian": "Tidak boleh makan hidangan penutup sebelum selesai makan sayur.",
+      "english": "No eating dessert until you finish eating your vegetables.",
+      "japanese": "野菜を⾷べるまでデザートを⾷べちゃいけないよ。",
+      "romaji": "yasai o taberu made dezaato o tabecha ikenai yo."
+    },
+    {
+      "indonesian": "Kita tidak boleh mengucapkan kata-kata buruk di depan anak-anak.",
+      "english": "We must not say bad words in front of children.",
+      "japanese": "⼦どもの前に悪いことばを⾔っちゃいけません。",
+      "romaji": "kodomo no mae ni warui kotoba o iccha ikemasen."
+    },
+    {
+      "indonesian": "Orang yang berusia di bawah 20 tahun tidak boleh minum alkohol.",
+      "english": "People under the age of 20 cannot drink alcohol.",
+      "japanese": "２０歳未満の⼈はお酒を飲んじゃいけません。",
+      "romaji": "hatachi miman no hito wa osake o nonja ikemasen."
+    }
+  ]
+}

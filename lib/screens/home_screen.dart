@@ -6,6 +6,7 @@ import 'search_screen.dart';
 import 'all_kanji_screen.dart';
 import 'all_words_menu_screen.dart'; 
 import 'grammar_menu_screen.dart'; 
+import 'grammar_n5_menu_screen.dart';
 import 'all_verbs_screen.dart'; 
 import 'verb_menu_screen.dart';
 
@@ -145,6 +146,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   context, 
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => const GrammarMenuScreen(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 12.0),
+              _buildMenuCard(
+                context, 
+                'Grammar N5', 
+                'Learn N5 grammar points & quiz',
+                Icons.auto_stories_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const GrammarN5MenuScreen(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

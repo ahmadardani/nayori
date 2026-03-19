@@ -34,7 +34,8 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
   @override
   void initState() {
     super.initState();
-    _activeQueue = List.from(widget.data.quizSentences)..shuffle();
+    // DIHAPUS .shuffle() AGAR URUTAN SESUAI JSON
+    _activeQueue = List.from(widget.data.quizSentences);
     _initTts(); 
   }
 
@@ -140,7 +141,8 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
 
   void _retryIncorrect() {
     setState(() {
-      _activeQueue = List.from(_incorrectQueue)..shuffle();
+      // DIHAPUS .shuffle() AGAR URUTAN MENGULANG TETAP STABIL
+      _activeQueue = List.from(_incorrectQueue);
       _incorrectQueue.clear();
       _currentIndex = 0;
       _totalCorrect = 0;

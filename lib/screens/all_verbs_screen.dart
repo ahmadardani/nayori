@@ -13,8 +13,11 @@ class AllVerbsScreen extends StatefulWidget {
 
 class _AllVerbsScreenState extends State<AllVerbsScreen> {
   bool _isLoading = true;
-  List<VerbData> _allVerbs = [];
-  List<VerbData> _filteredVerbs = [];
+  List<VerbData> _n5Verbs = [];
+  List<VerbData> _n5Filtered = [];
+  List<VerbData> _n4Verbs = [];
+  List<VerbData> _n4Filtered = [];
+  
   final TextEditingController _searchController = TextEditingController();
   final FlutterTts flutterTts = FlutterTts();
 
@@ -36,11 +39,19 @@ class _AllVerbsScreenState extends State<AllVerbsScreen> {
 
   Future<void> _loadData() async {
     try {
-      final String jsonString = await rootBundle.loadString('assets/N5_Verbs_C1.json');
-      final result = await compute(parseVerbDataInBackground, jsonString);
+      final String n5String = await rootBundle.loadString('assets/N5_Verbs_C1.json');
+      final n5Result = await compute(parseVerbDataInBackground, n5String);
+
+      final String n4String = await rootBundle.loadString('assets/N4_Verbs_C1.json');
+      final n4Result = await compute(parseVerbDataInBackground, n4String);
+
       setState(() {
-        _allVerbs = result.allVerbs;
-        _filteredVerbs = _allVerbs;
+        _n5Verbs = n5Result.allVerbs;
+        _n5Filtered = _n5Verbs;
+        
+        _n4Verbs = n4Result.allVerbs;
+        _n4Filtered = _n4Verbs;
+        
         _isLoading = false;
       });
     } catch (e) {
@@ -51,11 +62,17 @@ class _AllVerbsScreenState extends State<AllVerbsScreen> {
   void _filterVerbs(String query) {
     final trimmedQuery = query.toLowerCase();
     if (trimmedQuery.isEmpty) {
-      setState(() => _filteredVerbs = _allVerbs);
+      setState(() {
+        _n5Filtered = _n5Verbs;
+        _n4Filtered = _n4Verbs;
+      });
       return;
     }
     setState(() {
-      _filteredVerbs = _allVerbs
+      _n5Filtered = _n5Verbs
+          .where((v) => v.kanji.contains(trimmedQuery) || v.meaning.toLowerCase().contains(trimmedQuery))
+          .toList();
+      _n4Filtered = _n4Verbs
           .where((v) => v.kanji.contains(trimmedQuery) || v.meaning.toLowerCase().contains(trimmedQuery))
           .toList();
     });
@@ -70,72 +87,95 @@ class _AllVerbsScreenState extends State<AllVerbsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('All Verbs')),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: TextField(
-                    controller: _searchController,
-                    onChanged: _filterVerbs,
-                    decoration: InputDecoration(
-                      hintText: 'Search verb or meaning...',
-                      prefixIcon: const Icon(Icons.search),
-                      suffixIcon: _searchController.text.isNotEmpty
-                          ? IconButton(
-                              icon: const Icon(Icons.clear),
-                              onPressed: () {
-                                _searchController.clear();
-                                _filterVerbs('');
-                              },
-                            )
-                          : null,
-                      filled: true,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12.0),
-                        borderSide: BorderSide.none,
-                      ),
-                      contentPadding: const EdgeInsets.symmetric(vertical: 0.0),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: ListView.builder(
-                    padding: EdgeInsets.only(
-                      left: 16.0,
-                      right: 16.0,
-                      bottom: MediaQuery.of(context).padding.bottom + 80.0,
-                    ),
-                    itemCount: _filteredVerbs.length,
-                    itemBuilder: (context, index) {
-                      final verb = _filteredVerbs[index];
-                      return Card(
-                        margin: const EdgeInsets.only(bottom: 12.0),
-                        child: ExpansionTile(
-                          title: Text(verb.kanji, style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
-                          subtitle: Text(verb.meaning),
-                          childrenPadding: const EdgeInsets.all(16.0),
-                          children: [
-                            _buildFormRow('Dictionary', verb.dictionary),
-                            const Divider(),
-                            _buildFormRow('Nai Form', verb.naiForm),
-                            const Divider(),
-                            _buildFormRow('Ta Form', verb.taForm),
-                            const Divider(),
-                            _buildFormRow('Nakatta Form', verb.nakattaForm),
-                            const Divider(),
-                            _buildFormRow('Te Form', verb.teForm),
-                          ],
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('All Verbs'),
+          bottom: const TabBar(
+            tabs: [
+              Tab(text: 'N5 Verbs'),
+              Tab(text: 'N4 Verbs'),
+            ],
+          ),
+        ),
+        body: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: TextField(
+                      controller: _searchController,
+                      onChanged: _filterVerbs,
+                      decoration: InputDecoration(
+                        hintText: 'Search verb or meaning...',
+                        prefixIcon: const Icon(Icons.search),
+                        suffixIcon: _searchController.text.isNotEmpty
+                            ? IconButton(
+                                icon: const Icon(Icons.clear),
+                                onPressed: () {
+                                  _searchController.clear();
+                                  _filterVerbs('');
+                                },
+                              )
+                            : null,
+                        filled: true,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12.0),
+                          borderSide: BorderSide.none,
                         ),
-                      );
-                    },
+                        contentPadding: const EdgeInsets.symmetric(vertical: 0.0),
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            ),
+                  Expanded(
+                    child: TabBarView(
+                      children: [
+                        _buildVerbList(_n5Filtered),
+                        _buildVerbList(_n4Filtered),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+      ),
+    );
+  }
+
+  Widget _buildVerbList(List<VerbData> verbs) {
+    if (verbs.isEmpty) {
+      return const Center(child: Text('No verbs found.', style: TextStyle(color: Colors.grey)));
+    }
+    return ListView.builder(
+      padding: EdgeInsets.only(
+        left: 16.0,
+        right: 16.0,
+        bottom: MediaQuery.of(context).padding.bottom + 80.0,
+      ),
+      itemCount: verbs.length,
+      itemBuilder: (context, index) {
+        final verb = verbs[index];
+        return Card(
+          margin: const EdgeInsets.only(bottom: 12.0),
+          child: ExpansionTile(
+            title: Text(verb.kanji, style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+            subtitle: Text(verb.meaning),
+            childrenPadding: const EdgeInsets.all(16.0),
+            children: [
+              _buildFormRow('Dictionary', verb.dictionary),
+              const Divider(),
+              _buildFormRow('Nai Form', verb.naiForm),
+              const Divider(),
+              _buildFormRow('Ta Form', verb.taForm),
+              const Divider(),
+              _buildFormRow('Nakatta Form', verb.nakattaForm),
+              const Divider(),
+              _buildFormRow('Te Form', verb.teForm),
+            ],
+          ),
+        );
+      },
     );
   }
 

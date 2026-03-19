@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart'; 
 import '../models/grammar_model.dart';
 
 class GrammarQuizScreen extends StatefulWidget {
@@ -14,9 +15,13 @@ class GrammarQuizScreen extends StatefulWidget {
 class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   final TextEditingController _answerController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
+  final FlutterTts flutterTts = FlutterTts(); 
   
   List<GrammarData> _activeQueue = [];
   List<GrammarData> _incorrectQueue = [];
+  
+  bool _isStarting = true; 
+  bool _autoPlayAudio = true; 
   
   int _currentIndex = 0;
   bool _showHint = false;
@@ -31,12 +36,23 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   void initState() {
     super.initState();
     _activeQueue = List.from(widget.grammarList);
+    _initTts(); 
+  }
+
+  Future<void> _initTts() async {
+    await flutterTts.setLanguage("ja-JP");
+    await flutterTts.setSpeechRate(0.45);
+  }
+
+  Future<void> _speak(String text) async {
+    await flutterTts.speak(text);
   }
 
   @override
   void dispose() {
     _answerController.dispose();
     _focusNode.dispose();
+    flutterTts.stop(); 
     super.dispose();
   }
 
@@ -56,14 +72,27 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
     final currentData = _activeQueue[_currentIndex];
     
     String normalizeText(String text) {
-      String normalized = text.replaceAll(' ', '').replaceAll('　', '').replaceAll('。', '').toLowerCase();
+      String normalized = text
+          .replaceAll(' ', '')
+          .replaceAll('　', '')  
+          .replaceAll('。', '')  
+          .replaceAll('、', '')  
+          .replaceAll(',', '')   
+          .replaceAll('？', '')  
+          .replaceAll('?', '')   
+          .replaceAll('！', '')  
+          .replaceAll('!', '')   
+          .toLowerCase();
       
-      const fullWidth = 'ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０？！';
-      const halfWidth = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890?!';
+      normalized = normalized.replaceAll('才', '歳');
+      
+      const fullWidth = 'ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０';
+      const halfWidth = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
       
       for (int i = 0; i < fullWidth.length; i++) {
         normalized = normalized.replaceAll(fullWidth[i], halfWidth[i].toLowerCase());
       }
+      
       return normalized;
     }
 
@@ -85,6 +114,10 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
         }
       }
     });
+
+    if (_autoPlayAudio) {
+      _speak(currentData.sentence);
+    }
   }
 
   void _nextQuestion() {
@@ -119,7 +152,7 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
-    if (_isQuizFinished) return true;
+    if (_isStarting || _isQuizFinished) return true;
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
@@ -149,25 +182,99 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
         appBar: AppBar(
           title: Text(widget.chapter, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(4.0),
-            child: LinearProgressIndicator(
-              value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
-              backgroundColor: Colors.grey.withOpacity(0.2),
+          bottom: _isStarting 
+            ? null 
+            : PreferredSize(
+                preferredSize: const Size.fromHeight(4.0),
+                child: LinearProgressIndicator(
+                  value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
+                  backgroundColor: Colors.grey.withOpacity(0.2),
+                ),
+              ),
+        ),
+        body: _isStarting 
+            ? _buildStartScreen()
+            : (_isQuizFinished 
+                ? _buildResultScreen() 
+                : Column(
+                    children: [
+                      Expanded(
+                        child: _buildQuizContent(),
+                      ),
+                      _buildBottomActionPanel(),
+                    ],
+                  )),
+      ),
+    );
+  }
+
+  Widget _buildStartScreen() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Icon(Icons.translate_rounded, size: 80.0, color: Theme.of(context).colorScheme.primary),
+                const SizedBox(height: 24.0),
+                Text(
+                  widget.chapter, 
+                  textAlign: TextAlign.center, 
+                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)
+                ),
+                const SizedBox(height: 8.0),
+                const Text(
+                  'Ready to test your grammar?', 
+                  textAlign: TextAlign.center, 
+                  style: TextStyle(fontSize: 16.0, color: Colors.grey)
+                ),
+                const SizedBox(height: 48.0),
+                Card(
+                  elevation: 0.0,
+                  color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+                  child: SwitchListTile(
+                    title: const Text('Auto-play Audio', style: TextStyle(fontWeight: FontWeight.w600)),
+                    subtitle: const Text('Play pronunciation when checking answer'),
+                    value: _autoPlayAudio,
+                    onChanged: (val) => setState(() => _autoPlayAudio = val),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
-        body: _isQuizFinished 
-            ? _buildResultScreen() 
-            : Column(
-                children: [
-                  Expanded(
-                    child: _buildQuizContent(),
-                  ),
-                  _buildBottomActionPanel(),
-                ],
+        SafeArea(
+          child: Padding(
+            padding: EdgeInsets.only(
+              left: 24.0, right: 24.0, top: 16.0, 
+              bottom: MediaQuery.of(context).padding.bottom > 0 ? 8.0 : 24.0
+            ),
+            child: SizedBox(
+              height: 56.0,
+              child: ElevatedButton(
+                onPressed: () {
+                  setState(() => _isStarting = false);
+                  Future.delayed(const Duration(milliseconds: 100), () {
+                    if (mounted) _focusNode.requestFocus();
+                  });
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.primary,
+                  foregroundColor: Theme.of(context).colorScheme.onPrimary,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                  elevation: 0.0,
+                ),
+                child: const Text('Start Challenge', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
               ),
-      ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -324,6 +431,10 @@ class _GrammarQuizScreenState extends State<GrammarQuizScreen> {
                       _isCorrect ? 'Excellent!' : 'Incorrect',
                       style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.volume_up_rounded, color: finalTextColor),
+                    onPressed: () => _speak(currentData.sentence),
                   ),
                 ],
               ),

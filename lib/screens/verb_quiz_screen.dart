@@ -29,6 +29,8 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   List<VerbQuestion> _incorrectQueue = [];
   
   bool _isStudying = true; 
+  bool _autoPlayAudio = true; 
+  
   int _currentIndex = 0;
   bool _showHint = false;
   bool _isAnswered = false;
@@ -134,7 +136,11 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           if (mounted) _focusNode.requestFocus();
         });
       }
-      _speak(currentQ.correctAnswer); 
+      
+      if (_autoPlayAudio) {
+        _speak(currentQ.correctAnswer); 
+      }
+      
     } else {
       if (isTextMatch) {
         _nextQuestion(); 
@@ -247,6 +253,17 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             textAlign: TextAlign.center,
           ),
         ),
+        Card(
+          elevation: 0.0,
+          color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+          margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+          child: SwitchListTile(
+            title: const Text('Auto-play Audio in Quiz', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14.0)),
+            value: _autoPlayAudio,
+            onChanged: (val) => setState(() => _autoPlayAudio = val),
+          ),
+        ),
+        const SizedBox(height: 8.0),
         Expanded(
           child: ListView.builder(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),

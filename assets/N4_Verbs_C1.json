@@ -42,7 +42,7 @@
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "行う", "Dictionary": "行う", "Nai_form": "行わない", "Ta_form": "行った", "Nakatta_form": "行わなかった", "Te_form": "行って", "Meaning": "mengadakan / melakukan" },
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "思う", "Dictionary": "思う", "Nai_form": "思わない", "Ta_form": "思った", "Nakatta_form": "思わなかった", "Te_form": "思って", "Meaning": "berpikir / mengira" },
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "構う", "Dictionary": "構う", "Nai_form": "構わない", "Ta_form": "構った", "Nakatta_form": "構わなかった", "Te_form": "構って", "Meaning": "peduli / memedulikan" },
-  { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "通う", "Dictionary": "通う", "Nai_form": "通わない", "Ta_form": "通った", "Nakatta_form": "通わなかった", "Te_form": "通って", "Meaning": "pulang-pergi (bekerja/sekolah)" },
+  { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "通う", "Dictionary": "通う", "Nai_form": "通わない", "Ta_form": "通った", "Nakatta_form": "通わなかった", "Te_form": "通って", "Meaning": "pulang-pergi (bekerja/sekolah, sesuatu yang rutin/berulang)" },
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "仕舞う", "Dictionary": "仕舞う", "Nai_form": "仕舞わない", "Ta_form": "仕舞った", "Nakatta_form": "仕舞わなかった", "Te_form": "仕舞って", "Meaning": "menyimpan / membereskan" },
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "違う", "Dictionary": "違う", "Nai_form": "違わない", "Ta_form": "違った", "Nakatta_form": "違わなかった", "Te_form": "違って", "Meaning": "berbeda / salah" },
   { "Group": "Godan (1)", "Sub_Group": "～う", "Kanji": "間に合う", "Dictionary": "間に合う", "Nai_form": "間に合わない", "Ta_form": "間に合った", "Nakatta_form": "間に合わなかった", "Te_form": "間に合って", "Meaning": "tepat waktu / keburu" },

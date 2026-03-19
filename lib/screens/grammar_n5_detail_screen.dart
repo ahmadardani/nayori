@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_markdown_plus/flutter_markdown_plus.dart'; 
 import '../models/grammar_n5_model.dart';
 import 'grammar_n5_quiz_screen.dart';
 
@@ -52,9 +53,15 @@ class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
                 top: 24.0, 
                 bottom: MediaQuery.of(context).padding.bottom + 100.0
               ),
-              child: Text(
-                _markdownContent,
-                style: const TextStyle(fontSize: 16.0, height: 1.6),
+              child: MarkdownBody(
+                data: _markdownContent,
+                styleSheet: MarkdownStyleSheet(
+                  p: TextStyle(fontSize: 16.0, height: 1.6, color: Theme.of(context).colorScheme.onSurface),
+                  h1: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
+                  h3: TextStyle(color: Theme.of(context).colorScheme.secondary, fontWeight: FontWeight.w600),
+                  h3Padding: const EdgeInsets.only(top: 16.0), 
+                  listBullet: TextStyle(color: Theme.of(context).colorScheme.primary),
+                ),
               ),
             ),
       floatingActionButton: FloatingActionButton.extended(

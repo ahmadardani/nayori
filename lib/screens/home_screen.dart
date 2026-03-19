@@ -6,6 +6,8 @@ import 'search_screen.dart';
 import 'all_kanji_screen.dart';
 import 'all_words_menu_screen.dart'; 
 import 'grammar_menu_screen.dart'; 
+import 'all_verbs_screen.dart'; 
+import 'verb_menu_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -143,6 +145,41 @@ class _HomeScreenState extends State<HomeScreen> {
                   context, 
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => const GrammarMenuScreen(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 32.0),
+              const Text(
+                'Verbs', 
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 12.0),
+              _buildMenuCard(
+                context, 
+                'All Verbs', 
+                'View all verb conjugations',
+                Icons.view_list_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const AllVerbsScreen(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                )
+              ),
+              const SizedBox(height: 12.0),
+              _buildMenuCard(
+                context, 
+                'Verb Conjugator', 
+                'Practice verb conjugations',
+                Icons.transform_rounded, 
+                () => Navigator.push(
+                  context, 
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const VerbMenuScreen(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),

@@ -21,7 +21,7 @@ class _GrammarN5MenuScreenState extends State<GrammarN5MenuScreen> {
     _loadData();
   }
 
-Future<void> _loadData() async {
+  Future<void> _loadData() async {
     try {
       final String jsonString = await rootBundle.loadString('assets/grammars/n5/grammars.json');
       
@@ -31,7 +31,7 @@ Future<void> _loadData() async {
         _isLoading = false;
       });
     } catch (e) {
-      debugPrint('Error loading N5 Grammar: $e'); 
+      debugPrint('Error loading N5 Grammar JSON: $e'); 
       setState(() => _isLoading = false);
     }
   }
@@ -68,7 +68,6 @@ Future<void> _loadData() async {
                       child: Icon(Icons.auto_stories_rounded, color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
                     title: Text(item.title, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
-                    subtitle: Text(item.meaningId, maxLines: 2, overflow: TextOverflow.ellipsis),
                     trailing: const Icon(Icons.chevron_right_rounded, color: Colors.grey),
                     onTap: () {
                       Navigator.push(

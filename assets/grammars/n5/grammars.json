@@ -1,69 +1,384 @@
-{
-  "id": "grammar_cha_ikenai",
-  "title": "ちゃいけない・じゃいけない",
-  "meaning_id": "Tidak boleh melakukan / dilarang (bahasa lisan)",
-  "meaning_en": "must not do (spoken Japanese)",
-  "explanation_file": "assets/markdown/n5/1_cha_ikenai.md",
-  "quiz_sentences": [
-    {
-      "indonesian": "Kamu tidak boleh melihat HP sebelum tidur.",
-      "english": "You shouldn't look at your smartphone before going to bed.",
-      "japanese": "寝る前にスマホを⾒ちゃダメよ。",
-      "romaji": "neru mae ni sumaho o micha dame yo."
-    },
-    {
-      "indonesian": "Area ini berbahaya, jadi kamu tidak boleh masuk.",
-      "english": "This area is dangerous, so you're not allowed to enter.",
-      "japanese": "ここはきけんなので、⼊っちゃダメだよ。",
-      "romaji": "koko wa kiken nano de, haiccha dame da yo."
-    },
-    {
-      "indonesian": "Aku melakukan hal yang tidak boleh dilakukan...",
-      "english": "I did something I shouldn't have...",
-      "japanese": "やっちゃいけないことをやっちゃった。",
-      "romaji": "yaccha ikenai koto o yacchatta."
-    },
-    {
-      "indonesian": "Kamu tidak boleh kehilangan kepercayaan diri!",
-      "english": "You mustn't lose confidence!",
-      "japanese": "⾃信をなくしちゃいけません！",
-      "romaji": "jishin o naku shicha ikemasen!"
-    },
-    {
-      "indonesian": "Kamu tidak boleh terlalu sering bolos kelas.",
-      "english": "You shouldn't skip class so much.",
-      "japanese": "そんなに授業をさぼっちゃダメよ。",
-      "romaji": "sonna ni jugyou o saboccha dame yo."
-    },
-    {
-      "indonesian": "Kita tidak boleh mempercayainya.",
-      "english": "We cannot trust him.",
-      "japanese": "彼を信⽤しちゃいけない。",
-      "romaji": "kare o shinyou shicha ikenai."
-    },
-    {
-      "indonesian": "Kamu tidak boleh mengabaikan lampu merah!",
-      "english": "You must not ignore red lights!",
-      "japanese": "赤信号をむししちゃいけません！",
-      "romaji": "aka shingou o mushi shicha ikemasen!"
-    },
-    {
-      "indonesian": "Tidak boleh makan hidangan penutup sebelum selesai makan sayur.",
-      "english": "No eating dessert until you finish eating your vegetables.",
-      "japanese": "野菜を⾷べるまでデザートを⾷べちゃいけないよ。",
-      "romaji": "yasai o taberu made dezaato o tabecha ikenai yo."
-    },
-    {
-      "indonesian": "Kita tidak boleh mengucapkan kata-kata buruk di depan anak-anak.",
-      "english": "We must not say bad words in front of children.",
-      "japanese": "⼦どもの前に悪いことばを⾔っちゃいけません。",
-      "romaji": "kodomo no mae ni warui kotoba o iccha ikemasen."
-    },
-    {
-      "indonesian": "Orang yang berusia di bawah 20 tahun tidak boleh minum alkohol.",
-      "english": "People under the age of 20 cannot drink alcohol.",
-      "japanese": "２０歳未満の⼈はお酒を飲んじゃいけません。",
-      "romaji": "hatachi miman no hito wa osake o nonja ikemasen."
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "title": "ちゃいけない・じゃいけない",
+    "explanation_file": "assets/markdown/n5/1_cha_ikenai.md",
+    "quiz_sentences": [
+      {
+        "japanese": "寝る前にスマホを⾒ちゃダメよ。",
+        "indonesian": "Jangan melihat HP sebelum tidur, ya."
+      },
+      {
+        "japanese": "ここはきけんなので、⼊っちゃダメだよ。",
+        "indonesian": "Di sini berbahaya, jadi tidak boleh masuk."
+      },
+      {
+        "japanese": "やっちゃいけないことをやっちゃった。",
+        "indonesian": "Aku melakukan hal yang tidak seharusnya kulakukan."
+      },
+      {
+        "japanese": "⾃信をなくしちゃいけません︕",
+        "indonesian": "Tidak boleh kehilangan rasa percaya diri!"
+      },
+      {
+        "japanese": "そんなに授業をさぼっちゃダメよ。",
+        "indonesian": "Jangan terlalu sering bolos pelajaran, ya."
+      },
+      {
+        "japanese": "彼を信⽤しちゃいけない。",
+        "indonesian": "Kita tidak boleh mempercayainya."
+      },
+      {
+        "japanese": "⾚信号をむししちゃいけません︕",
+        "indonesian": "Tidak boleh mengabaikan lampu merah!"
+      },
+      {
+        "japanese": "野菜を⾷べるまでデザートを⾷べちゃいけないよ。",
+        "indonesian": "Tidak boleh makan hidangan penutup sebelum sayurannya dihabiskan."
+      },
+      {
+        "japanese": "⼦どもの前に悪いことばを⾔っちゃいけません。",
+        "indonesian": "Tidak boleh mengucapkan kata-kata buruk di depan anak-anak."
+      },
+      {
+        "japanese": "２０歳未満の⼈はお酒を飲んじゃいけません。",
+        "indonesian": "Orang di bawah usia 20 tahun tidak boleh minum alkohol."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "だ・です",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "今⽇は暑いだね。",
+        "indonesian": "Hari ini panas, ya."
+      },
+      {
+        "japanese": "かれは私の友だちです。",
+        "indonesian": "Dia adalah teman saya."
+      },
+      {
+        "japanese": "⽇本の⽂化が好きです。",
+        "indonesian": "Saya suka budaya Jepang."
+      },
+      {
+        "japanese": "昔はサッカーが趣味だったが、今はやっていない。",
+        "indonesian": "Dulu sepak bola adalah hobi saya, tapi sekarang sudah tidak main lagi."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "だけ",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "私の持っているお⾦はこれだけだ。",
+        "indonesian": "Uang yang saya miliki cuma segini."
+      },
+      {
+        "japanese": "ちょっと⾒ているだけです。",
+        "indonesian": "Cuma lihat-lihat saja."
+      },
+      {
+        "japanese": "好きじゃない⾷べ物はトマトだけだ。",
+        "indonesian": "Makanan yang tidak saya suka cuma tomat."
+      },
+      {
+        "japanese": "ただ話していただけです。",
+        "indonesian": "Cuma mengobrol saja."
+      },
+      {
+        "japanese": "問題はそれだけだと思うかい︖",
+        "indonesian": "Apa menurutmu masalahnya cuma itu?"
+      },
+      {
+        "japanese": "私は⼀⼈だけでできます。",
+        "indonesian": "Saya bisa melakukannya sendirian."
+      },
+      {
+        "japanese": "出来るだけ新しい漢字を勉強したい。",
+        "indonesian": "Sebisa mungkin saya ingin belajar kanji baru."
+      },
+      {
+        "japanese": "その⼥の⼦はただ泣くだけだった。",
+        "indonesian": "Anak perempuan itu cuma menangis saja."
+      },
+      {
+        "japanese": "彼⼥が信頼できるのは彼だけだ。",
+        "indonesian": "Yang bisa dia percaya cuma laki-laki itu."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "だろう",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "彼はもうすぐ来るだろう。",
+        "indonesian": "Dia mungkin akan segera datang."
+      },
+      {
+        "japanese": "そうだろうと思ったよ。",
+        "indonesian": "Sudah kuduga. / Aku sudah berpikir begitu."
+      },
+      {
+        "japanese": "明⽇はたぶん⾬が降るだろう。空に雲がたくさんあるから。",
+        "indonesian": "Besok mungkin akan turun hujan. Karena ada banyak awan di langit."
+      },
+      {
+        "japanese": "間違いないだろう。",
+        "indonesian": "Pasti tidak salah lagi."
+      },
+      {
+        "japanese": "たぶんこの⾬は１時間ぐらいでやむだろう。",
+        "indonesian": "Mungkin hujan ini akan reda dalam sekitar 1 jam."
+      },
+      {
+        "japanese": "あそこにいる⼈は誰だろう。",
+        "indonesian": "Orang yang ada di sana itu siapa, ya?"
+      },
+      {
+        "japanese": "この⾁は、もう⾷べないほうがいいだろう。もう悪くなってしまった。",
+        "indonesian": "Sebaiknya jangan makan daging ini lagi. Sudah mulai rusak/basi."
+      },
+      {
+        "japanese": "どうして⽇本の夏はこんなに暑いんだろう。",
+        "indonesian": "Kenapa musim panas di Jepang panas sekali, ya?"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "で",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "じてんしゃで⾏きます。",
+        "indonesian": "Pergi dengan sepeda."
+      },
+      {
+        "japanese": "みんなで⾏こう︕",
+        "indonesian": "Ayo pergi bersama semuanya!"
+      },
+      {
+        "japanese": "たまに⼀⼈でカラオケに⾏きます。",
+        "indonesian": "Kadang-kadang saya pergi karaoke sendirian."
+      },
+      {
+        "japanese": "なにかの理由で彼は⾍が怖いんだ。",
+        "indonesian": "Karena suatu alasan, dia takut pada serangga."
+      },
+      {
+        "japanese": "そのシャツどこで買いました︖",
+        "indonesian": "Kemeja itu beli di mana?"
+      },
+      {
+        "japanese": "駅で会いましょうね。",
+        "indonesian": "Mari bertemu di stasiun."
+      },
+      {
+        "japanese": "ここで電話しないでください。",
+        "indonesian": "Tolong jangan menelepon di sini."
+      },
+      {
+        "japanese": "どこで⽇本語を学びましたか︖",
+        "indonesian": "Kamu belajar bahasa Jepang di mana?"
+      },
+      {
+        "japanese": "YouTubeで⽇本語を勉強します",
+        "indonesian": "Saya belajar bahasa Jepang di YouTube."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "でも",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "私は⿂が好すきです。でも⾁も好きです。",
+        "indonesian": "Saya suka ikan. Tapi saya juga suka daging."
+      },
+      {
+        "japanese": "パン屋に⾏きました。でも、何も買いませんでした。",
+        "indonesian": "Saya pergi ke toko roti. Tapi, tidak beli apa-apa."
+      },
+      {
+        "japanese": "動物が好きです。でも、⽝が⼀ばん好きです。",
+        "indonesian": "Saya suka hewan. Tapi, saya paling suka anjing."
+      },
+      {
+        "japanese": "図書館に⾏きました。でも、集中できませんでした。",
+        "indonesian": "Saya pergi ke perpustakaan. Tapi, tidak bisa berkonsentrasi."
+      },
+      {
+        "japanese": "スーパーに⾏きました。でも、財布を忘れました︕",
+        "indonesian": "Saya pergi ke supermarket. Tapi, lupa bawa dompet!"
+      },
+      {
+        "japanese": "今朝学校に⾏きました。でも、休みでした。",
+        "indonesian": "Tadi pagi saya pergi ke sekolah. Tapi, libur."
+      },
+      {
+        "japanese": "⽇本⼈ともっと話したいです。でも、私の⽇本語はあまり上⼿ではありません。",
+        "indonesian": "Saya ingin lebih banyak berbicara dengan orang Jepang. Tapi, bahasa Jepang saya belum terlalu bagus."
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "でしょう",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "あの⼈は誰でしょう︖",
+        "indonesian": "Orang itu siapa, ya?"
+      },
+      {
+        "japanese": "いいでしょう。",
+        "indonesian": "Boleh juga. / Kedengarannya bagus."
+      },
+      {
+        "japanese": "この問題は簡単でしょう︖",
+        "indonesian": "Pertanyaan ini mudah, kan?"
+      },
+      {
+        "japanese": "彼はもうすぐ来るでしょう。",
+        "indonesian": "Dia sepertinya akan segera datang."
+      },
+      {
+        "japanese": "頑張れば、いい⼤学に⾏けるでしょう。",
+        "indonesian": "Kalau berusaha, pasti bisa masuk universitas yang bagus."
+      },
+      {
+        "japanese": "今⽇の試合では、Aチームが勝つでしょう。",
+        "indonesian": "Di pertandingan hari ini, tim A pasti menang."
+      },
+      {
+        "japanese": "この問題は、明⽇したの試験に出るでしょうか。",
+        "indonesian": "Apakah pertanyaan ini akan keluar di ujian besok, ya?"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "どんな",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "ベトナムはどんな国ですか。",
+        "indonesian": "Vietnam itu negara yang seperti apa?"
+      },
+      {
+        "japanese": "どんな仕事をするのですか。",
+        "indonesian": "Pekerjaan seperti apa yang kamu lakukan?"
+      },
+      {
+        "japanese": "どんな⾷べ物が好きですか。",
+        "indonesian": "Kamu suka makanan yang seperti apa?"
+      },
+      {
+        "japanese": "どんなパソコンを持っていますか。",
+        "indonesian": "Komputer seperti apa yang kamu miliki?"
+      },
+      {
+        "japanese": "どんな⾞に乗っていますか︖",
+        "indonesian": "Kamu naik mobil seperti apa?"
+      },
+      {
+        "japanese": "今⽇はどんな天気ですか。",
+        "indonesian": "Hari ini cuacanya bagaimana?"
+      },
+      {
+        "japanese": "新しい先⽣はどんな⼈ですか。",
+        "indonesian": "Guru yang baru orangnya seperti apa?"
+      },
+      {
+        "japanese": "禁煙するためにどんな⽅法を使いましたか。",
+        "indonesian": "Cara seperti apa yang kamu gunakan untuk berhenti merokok?"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "どうして",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "どうして来ないの︖",
+        "indonesian": "Kenapa tidak datang?"
+      },
+      {
+        "japanese": "どうしてそうなったの︖",
+        "indonesian": "Kenapa bisa jadi begitu?"
+      },
+      {
+        "japanese": "どうしてそれを知っている︖",
+        "indonesian": "Kenapa kamu tahu hal itu?"
+      },
+      {
+        "japanese": "どうして⽇本に来たんですか︖",
+        "indonesian": "Kenapa kamu datang ke Jepang?"
+      },
+      {
+        "japanese": "どうして⽇本の夏はこんなに暑いんだろう。",
+        "indonesian": "Kenapa musim panas di Jepang panas sekali, ya?"
+      },
+      {
+        "japanese": "君はどうしてけがをしたか。",
+        "indonesian": "Kenapa kamu bisa terluka?"
+      },
+      {
+        "japanese": "どうしてその事故が起こったのか。",
+        "indonesian": "Kenapa kecelakaan itu bisa terjadi?"
+      },
+      {
+        "japanese": "どうして彼⼥と知り合ったのですか。",
+        "indonesian": "Bagaimana kamu bisa kenal dengan dia?"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "どうやって",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "駅までどうやって⾏きますか。",
+        "indonesian": "Bagaimana caranya pergi ke stasiun?"
+      },
+      {
+        "japanese": "これはどうやって使いますか。",
+        "indonesian": "Ini bagaimana cara menggunakannya?"
+      },
+      {
+        "japanese": "これはどうやって⾷べますか。",
+        "indonesian": "Ini bagaimana cara memakannya?"
+      },
+      {
+        "japanese": "リサさんは毎⽇どうやって学校へ来ますか。",
+        "indonesian": "Lisa setiap hari datang ke sekolah dengan apa (bagaimana)?"
+      },
+      {
+        "japanese": "どうやって彼⼥と出会ったのですか。",
+        "indonesian": "Bagaimana caramu bertemu dengannya?"
+      },
+      {
+        "japanese": "あなたはどうやって漢字を覚えますか。",
+        "indonesian": "Bagaimana caramu menghafal kanji?"
+      },
+      {
+        "japanese": "これはどうやって料理するのですか。",
+        "indonesian": "Ini bagaimana cara memasaknya?"
+      },
+      {
+        "japanese": "私は彼がどうやって⼀⼈でそれをやったのか知らない。",
+        "indonesian": "Saya tidak tahu bagaimana dia bisa melakukan itu sendirian."
+      }
+    ]
+  }
+]

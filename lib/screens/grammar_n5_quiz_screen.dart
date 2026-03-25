@@ -34,7 +34,6 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
   @override
   void initState() {
     super.initState();
-    // DIHAPUS .shuffle() AGAR URUTAN SESUAI JSON
     _activeQueue = List.from(widget.data.quizSentences);
     _initTts(); 
   }
@@ -141,7 +140,6 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
 
   void _retryIncorrect() {
     setState(() {
-      // DIHAPUS .shuffle() AGAR URUTAN MENGULANG TETAP STABIL
       _activeQueue = List.from(_incorrectQueue);
       _incorrectQueue.clear();
       _currentIndex = 0;
@@ -298,12 +296,6 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, height: 1.4),
           ),
-          const SizedBox(height: 12.0),
-          Text(
-            currentData.english,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16.0, color: Colors.grey, height: 1.3),
-          ),
           const SizedBox(height: 32.0),
           TextField(
             controller: _answerController,
@@ -433,11 +425,6 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
                 Text(
                   currentData.japanese,
                   style: TextStyle(color: finalTextColor, fontSize: 18.0, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 4.0),
-                Text(
-                  currentData.romaji,
-                  style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14.0, fontStyle: FontStyle.italic),
                 ),
               ],
               const SizedBox(height: 24.0),

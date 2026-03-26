@@ -3,13 +3,18 @@ import 'dart:convert';
 class GrammarN5Sentence {
   final String japanese;
   final String indonesian;
-  final String romaji; 
 
   GrammarN5Sentence({
     required this.japanese,
     required this.indonesian,
-    this.romaji = '',
   });
+
+  factory GrammarN5Sentence.fromJson(Map<String, dynamic> json) {
+    return GrammarN5Sentence(
+      japanese: json['japanese'] ?? '',
+      indonesian: json['indonesian'] ?? '',
+    );
+  }
 }
 
 class GrammarN5Data {
@@ -24,52 +29,26 @@ class GrammarN5Data {
     required this.explanationFile,
     required this.quizSentences,
   });
+
+  factory GrammarN5Data.fromJson(Map<String, dynamic> json) {
+    var list = json['quiz_sentences'] as List? ?? [];
+    List<GrammarN5Sentence> sentencesList = list.map((i) => GrammarN5Sentence.fromJson(i)).toList();
+
+    return GrammarN5Data(
+      id: json['id'] ?? '',
+      title: json['title'] ?? '',
+      explanationFile: json['explanation_file'] ?? '',
+      quizSentences: sentencesList,
+    );
+  }
 }
 
-
-List<GrammarN5Data> parseGrammarN5DataInBackground(String tsvString) {
-
-  final List<String> lines = const LineSplitter().convert(tsvString);
-  
-  if (lines.isEmpty) return [];
-
-  Map<String, GrammarN5Data> groupedData = {};
-
-  for (int i = 1; i < lines.length; i++) {
-    final line = lines[i].trim();
-    if (line.isEmpty) continue; 
-
-    final parts = line.split('\t');
-
-    if (parts.length >= 4) {
-      final String id = parts[0].trim();
-      final String title = parts[1].trim();
-      final String japanese = parts[2].trim();
-      final String translation = parts[3].trim();
-      final String explanationFile = parts.length > 4 ? parts[4].trim() : '';
-
-      final sentence = GrammarN5Sentence(
-        japanese: japanese,
-        indonesian: translation,
-      );
-
-      if (!groupedData.containsKey(id)) {
-        groupedData[id] = GrammarN5Data(
-          id: id,
-          title: title,
-          explanationFile: explanationFile, 
-          quizSentences: [sentence],
-        );
-      } else {
-
-        groupedData[id]!.quizSentences.add(sentence);
-        
-        if (groupedData[id]!.explanationFile.isEmpty && explanationFile.isNotEmpty) {
- 
-        }
-      }
-    }
+List<GrammarN5Data> parseGrammarN5DataInBackground(String jsonString) {
+  final dynamic parsedJson = json.decode(jsonString);
+  if (parsedJson is List) {
+    return parsedJson.map((json) => GrammarN5Data.fromJson(json)).toList();
+  } else if (parsedJson is Map) {
+    return [GrammarN5Data.fromJson(parsedJson as Map<String, dynamic>)];
   }
-
-  return groupedData.values.toList();
+  return [];
 }

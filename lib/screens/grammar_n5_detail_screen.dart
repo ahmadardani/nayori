@@ -24,6 +24,14 @@ class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
   }
 
   Future<void> _loadMarkdown() async {
+    if (widget.data.explanationFile.trim().isEmpty) {
+      setState(() {
+        _markdownContent = '*Explanation is not available yet. Please study the example sentences below.*';
+        _isLoading = false;
+      });
+      return;
+    }
+
     try {
       final String content = await rootBundle.loadString(widget.data.explanationFile);
       setState(() {

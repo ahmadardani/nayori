@@ -750,5 +750,383 @@
         "indonesian": "Bahasa Jepang saya tidak (begitu) bagus."
       }
     ]
+  },
+  {
+    "id": "21",
+    "title": "か",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "すみません、あなたも学⽣ですか。",
+        "indonesian": "Permisi, apakah kamu juga seorang pelajar?"
+      },
+      {
+        "japanese": "あなたの名前は何ですか。",
+        "indonesian": "Siapa namamu?"
+      },
+      {
+        "japanese": "元気ですか。",
+        "indonesian": "Apa kabar?"
+      },
+      {
+        "japanese": "彼は何才ですか。",
+        "indonesian": "Dia umur berapa?"
+      },
+      {
+        "japanese": "⼤丈夫ですか︖",
+        "indonesian": "Apakah kamu baik-baik saja?"
+      },
+      {
+        "japanese": "私とお昼ご飯を⾷べませんか︖",
+        "indonesian": "Maukah kamu makan siang bersamaku?"
+      },
+      {
+        "japanese": "どうしてこのことを知らないのか︖",
+        "indonesian": "Kenapa kamu tidak tahu tentang hal ini?"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "か〜か",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "明⽇は⾬かどうか分からない。",
+        "indonesian": "Saya tidak tahu apakah besok akan hujan atau tidak."
+      },
+      {
+        "japanese": "お茶かコーヒーが飲みたい。",
+        "indonesian": "Saya ingin minum teh atau kopi."
+      },
+      {
+        "japanese": "当たるかはずれるか。",
+        "indonesian": "Kena atau meleset."
+      },
+      {
+        "japanese": "やるかやらないか早く決めてください。",
+        "indonesian": "Tolong cepat putuskan mau melakukannya atau tidak."
+      },
+      {
+        "japanese": "来週の⽉曜⽇か⽕曜⽇に京都に⾏きます。",
+        "indonesian": "Minggu depan hari Senin atau Selasa, saya akan pergi ke Kyoto."
+      },
+      {
+        "japanese": "死ぬか⽣きるか。",
+        "indonesian": "Hidup atau mati."
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "から",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "天気がいいから、外に⾏きたい。",
+        "indonesian": "Karena cuacanya bagus, saya ingin pergi keluar."
+      },
+      {
+        "japanese": "私はすぐ戻るから、ここでちょっと待ってください。",
+        "indonesian": "Karena saya akan segera kembali, tolong tunggu sebentar di sini."
+      },
+      {
+        "japanese": "これからもよろしくお願いします。",
+        "indonesian": "Mulai sekarang juga, mohon bantuannya."
+      },
+      {
+        "japanese": "ここからあの駅まで歩いてどれぐらいかかりますか︖",
+        "indonesian": "Dari sini ke stasiun itu jalan kaki butuh waktu berapa lama?"
+      },
+      {
+        "japanese": "お店は何時から何時まで開いていますか︖",
+        "indonesian": "Tokonya buka dari jam berapa sampai jam berapa?"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "⽅",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "パソコンの使いかたがわかりません。",
+        "indonesian": "Saya tidak tahu cara menggunakan komputer."
+      },
+      {
+        "japanese": "ケーキの作り⽅を知っていますか︖",
+        "indonesian": "Apakah kamu tahu cara membuat kue?"
+      },
+      {
+        "japanese": "おはしの使い⽅が上⼿ですね。",
+        "indonesian": "Kamu sangat pintar menggunakan sumpit, ya."
+      },
+      {
+        "japanese": "あの先⽣の教え⽅はとてもわかりやすいです。",
+        "indonesian": "Cara mengajar guru itu sangat mudah dimengerti."
+      },
+      {
+        "japanese": "彼の⽣き⽅は、かっこいいです。",
+        "indonesian": "Cara hidupnya sangat keren."
+      },
+      {
+        "japanese": "この漢字の読み⽅を教えてください。",
+        "indonesian": "Tolong ajari saya cara membaca kanji ini."
+      },
+      {
+        "japanese": "ATMの使い⽅を教えていただけませんか",
+        "indonesian": "Bisakah Anda mengajari saya cara menggunakan ATM?"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "けど",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "仕事は⾟いけど楽しい。",
+        "indonesian": "Pekerjaannya berat tapi menyenangkan."
+      },
+      {
+        "japanese": "⾦はないけど夢はある。",
+        "indonesian": "Saya tidak punya uang tapi punya mimpi."
+      },
+      {
+        "japanese": "スポーツは上⼿じゃないけど、好きです。",
+        "indonesian": "Saya tidak pintar olahraga, tapi saya menyukainya."
+      },
+      {
+        "japanese": "悪いけど、明⽇のパーティーに⾏けません。",
+        "indonesian": "Maaf, tapi besok saya tidak bisa pergi ke pesta."
+      },
+      {
+        "japanese": "眠いけど、まだ宿題があるから寝られません。",
+        "indonesian": "Saya mengantuk, tapi karena masih ada PR saya belum bisa tidur."
+      },
+      {
+        "japanese": "たくさん勉強したけど、テストの点はよくないでした。",
+        "indonesian": "Saya sudah belajar banyak, tapi nilai ujian saya tidak bagus."
+      },
+      {
+        "japanese": "泣いたけど後悔はしていません。",
+        "indonesian": "Saya menangis, tapi saya tidak menyesal."
+      },
+      {
+        "japanese": "家賃は⾼いけどこのマンションが⼤好きです。",
+        "indonesian": "Harga sewanya mahal tapi saya sangat suka apartemen ini."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "title": "けれども",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "このカメラは⾼かったけれど、すぐ壊れてしまいました。",
+        "indonesian": "Kamera ini dulu mahal, tapi langsung rusak."
+      },
+      {
+        "japanese": "外は暑いけれど、家の中は暖かいです。",
+        "indonesian": "Di luar panas, tapi di dalam rumah hangat."
+      },
+      {
+        "japanese": "眠いけれど、まだ宿題があるから寝られません。",
+        "indonesian": "Saya mengantuk, tapi karena masih ada PR saya belum bisa tidur."
+      },
+      {
+        "japanese": "雪が降っているけれども、スーパーに⾏きます。",
+        "indonesian": "Meskipun sedang turun salju, saya tetap pergi ke supermarket."
+      },
+      {
+        "japanese": "お⾦はあまり持っていません。けれども、毎⽇幸せです。",
+        "indonesian": "Saya tidak punya banyak uang. Tapi, setiap hari saya bahagia."
+      },
+      {
+        "japanese": "先⽣はクラスでは厳しいけれど、クラスの外ではやさしいです。",
+        "indonesian": "Guru itu galak di kelas, tapi di luar kelas dia baik hati."
+      },
+      {
+        "japanese": "彼は若いけれども経験がある。",
+        "indonesian": "Meskipun masih muda, dia punya pengalaman."
+      },
+      {
+        "japanese": "列⾞が遅れたけれども、なんとか間に合った。",
+        "indonesian": "Meskipun keretanya terlambat, entah bagaimana saya berhasil tepat waktu."
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "title": "まだ",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "まだですか︖",
+        "indonesian": "Apakah masih belum?"
+      },
+      {
+        "japanese": "まだまだ暑いだ。",
+        "indonesian": "Masih panas."
+      },
+      {
+        "japanese": "先⽣はまだ来ていない。",
+        "indonesian": "Guru masih belum datang."
+      },
+      {
+        "japanese": "もう10時ですが弟がまだ寝ている。",
+        "indonesian": "Sudah jam 10, tapi adik laki-laki saya masih tidur."
+      },
+      {
+        "japanese": "まだ1時間もあるよ。",
+        "indonesian": "Masih ada 1 jam lagi, lho."
+      },
+      {
+        "japanese": "あきらめるのはまだ早い︕",
+        "indonesian": "Masih terlalu dini untuk menyerah!"
+      },
+      {
+        "japanese": "私は宿題がまだ終わっていません。",
+        "indonesian": "PR saya masih belum selesai."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "まだ〜ていません",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "バスはまだ来ていません。",
+        "indonesian": "Busnya masih belum datang."
+      },
+      {
+        "japanese": "まだ、決まっていません。",
+        "indonesian": "Masih belum diputuskan."
+      },
+      {
+        "japanese": "私はまだ朝ごはんを⾷べていません。",
+        "indonesian": "Saya masih belum sarapan."
+      },
+      {
+        "japanese": "今週の新しい単語をまだ覚えていません。",
+        "indonesian": "Saya masih belum hafal kosakata baru minggu ini."
+      },
+      {
+        "japanese": "⽗はまだ帰ってきていない。",
+        "indonesian": "Ayah masih belum pulang."
+      },
+      {
+        "japanese": "まだ宿題をやっていない。",
+        "indonesian": "Saya masih belum mengerjakan PR."
+      },
+      {
+        "japanese": "まだ明⽇締め切りのレポートが終わってないので、遊びに⾏けない。",
+        "indonesian": "Laporan yang batas waktunya besok masih belum selesai, jadi saya tidak bisa pergi main."
+      },
+      {
+        "japanese": "俺はまだあきらめてないんだぞ。",
+        "indonesian": "Aku masih belum menyerah, lho!"
+      },
+      {
+        "japanese": "私の知っている限りでは、彼⼥はまだ結婚していません。",
+        "indonesian": "Sejauh yang saya tahu, dia (perempuan) masih belum menikah."
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "title": "まで",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "昨⽇までお休みでした。",
+        "indonesian": "Libur sampai kemarin."
+      },
+      {
+        "japanese": "ここからそこまでは遠いですよ。",
+        "indonesian": "Dari sini sampai ke sana jauh, lho."
+      },
+      {
+        "japanese": "駅まで⾏きたいんですが、どう⾏ったらいいですか。",
+        "indonesian": "Saya ingin pergi ke stasiun, bagaimana rute / cara ke sananya?"
+      },
+      {
+        "japanese": "最後までがんばってね︕",
+        "indonesian": "Semangat berjuang sampai akhir, ya!"
+      },
+      {
+        "japanese": "家まで⾞で送ります。",
+        "indonesian": "Saya akan mengantarmu sampai rumah dengan mobil."
+      },
+      {
+        "japanese": "朝から夜までずっとかんじを勉強しました。",
+        "indonesian": "Saya terus belajar kanji dari pagi sampai malam."
+      },
+      {
+        "japanese": "お店は何時から何時まで開いていますか︖",
+        "indonesian": "Tokonya buka dari jam berapa sampai jam berapa?"
+      },
+      {
+        "japanese": "先⽣、何時まで学校にいらっしゃいますか。",
+        "indonesian": "Guru, Anda ada di sekolah sampai jam berapa?"
+      },
+      {
+        "japanese": "昼ごはんまでにレポートを書いてしまいました。",
+        "indonesian": "Saya telah selesai menulis laporan sebelum batas waktu makan siang."
+      },
+      {
+        "japanese": "⾬が降っているよ。駅まで送ってあげようか︖",
+        "indonesian": "Sedang hujan, lho. Mau kuantar sampai stasiun?"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "前に",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "ドアを開ける前にノックぐらいしてください。",
+        "indonesian": "Setidaknya mengetuklah sebelum membuka pintu."
+      },
+      {
+        "japanese": "コンビニの前にじてんしゃがたくさんあります。",
+        "indonesian": "Ada banyak sepeda di depan minimarket."
+      },
+      {
+        "japanese": "旅⾏の前に切符を買っておきます。",
+        "indonesian": "Saya membeli tiket sebelum jalan-jalan (sebagai persiapan)."
+      },
+      {
+        "japanese": "ご飯の前に⼿を洗いましょう。",
+        "indonesian": "Ayo cuci tangan sebelum makan."
+      },
+      {
+        "japanese": "テストの前に⼀⽣懸命勉強しました。",
+        "indonesian": "Saya belajar dengan sungguh-sungguh sebelum ujian."
+      },
+      {
+        "japanese": "⼤学を卒業する前に留学したいな。",
+        "indonesian": "Saya ingin belajar di luar negeri sebelum lulus universitas."
+      },
+      {
+        "japanese": "23時前に寝なければなりません。",
+        "indonesian": "Saya harus tidur sebelum jam 23.00."
+      },
+      {
+        "japanese": "寝る前に、⻭みがきを忘すれないでね。",
+        "indonesian": "Jangan lupa menggosok gigi sebelum tidur, ya."
+      },
+      {
+        "japanese": "試合の前にまだ⼀週間があるのでもっと練習しょう。",
+        "indonesian": "Masih ada satu minggu sebelum pertandingan, jadi mari berlatih lebih banyak lagi."
+      },
+      {
+        "japanese": "私たちの学校の前には美しい公園があります。",
+        "indonesian": "Di depan sekolah kami ada taman yang indah."
+      }
+    ]
   }
 ]

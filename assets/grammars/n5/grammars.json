@@ -1534,5 +1534,1677 @@
         "indonesian": "Anak SD ke bawah tidak perlu membayar."
       }
     ]
+  },
+  {
+    "id": "41",
+    "title": "なくちゃ",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⾏かなくちゃ。",
+        "indonesian": "Harus pergi. / Aku harus pergi."
+      },
+      {
+        "japanese": "もう寝なくちゃ。",
+        "indonesian": "Sudah harus tidur."
+      },
+      {
+        "japanese": "新しい⾞を買わなくちゃね。",
+        "indonesian": "Harus beli mobil baru ya."
+      },
+      {
+        "japanese": "よく考えなくちゃダメだよ。",
+        "indonesian": "Harus dipikirkan baik-baik lho."
+      },
+      {
+        "japanese": "君でなくちゃダメなんだ。",
+        "indonesian": "Harus kamu (tidak boleh yang lain)."
+      },
+      {
+        "japanese": "彼は返さなくちゃいけない借⾦がある",
+        "indonesian": "Dia punya hutang yang harus dikembalikan."
+      },
+      {
+        "japanese": "なんで僕がやらなくちゃいけないの。",
+        "indonesian": "Kenapa aku yang harus melakukannya?"
+      },
+      {
+        "japanese": "すぐに警察に連絡しなくちゃいけません。",
+        "indonesian": "Harus segera menghubungi polisi."
+      },
+      {
+        "japanese": "世話しなくちゃならない⼦供がいる。",
+        "indonesian": "Ada anak yang harus diurus."
+      },
+      {
+        "japanese": "ごめんなさい。早く帰らなくちゃなりません。",
+        "indonesian": "Maaf. Saya harus cepat pulang."
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "title": "なくてはいけない",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "本当にすぐ⾏かなくてはいけない。",
+        "indonesian": "Benar-benar harus segera pergi."
+      },
+      {
+        "japanese": "急がなくてはいけない。",
+        "indonesian": "Harus buru-buru / bergegas."
+      },
+      {
+        "japanese": "もう10時だ。寝なくてはいけない。",
+        "indonesian": "Sudah jam 10. Harus tidur."
+      },
+      {
+        "japanese": "⽇本語をもっと勉強しなくてはいけない。",
+        "indonesian": "Harus belajar bahasa Jepang lebih banyak lagi."
+      },
+      {
+        "japanese": "花の⽔やりをしなくてはいけません。",
+        "indonesian": "Harus menyiram bunga."
+      },
+      {
+        "japanese": "明⽇、早く起きなくてはいけません。",
+        "indonesian": "Besok harus bangun pagi."
+      },
+      {
+        "japanese": "野菜を⾷べなくてはいけませんよ。",
+        "indonesian": "Harus makan sayur lho."
+      },
+      {
+        "japanese": "JLPTを受けなくてはいけません。",
+        "indonesian": "Harus mengikuti (ujian) JLPT."
+      },
+      {
+        "japanese": "もう帰らなくてはいけません。",
+        "indonesian": "Sudah harus pulang."
+      },
+      {
+        "japanese": "⽇本語⼒を上達させなくてはいけません。",
+        "indonesian": "Harus meningkatkan kemampuan bahasa Jepang."
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "title": "なくてはならない",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "急がなくてはならない。",
+        "indonesian": "Harus bergegas."
+      },
+      {
+        "japanese": "本当にすぐ⾏かなくてはならない。",
+        "indonesian": "Benar-benar harus segera pergi."
+      },
+      {
+        "japanese": "もう10時だ。寝なくてはならない。",
+        "indonesian": "Sudah jam 10. Harus tidur."
+      },
+      {
+        "japanese": "⽇本語をもっと勉強しなくてはいけない。",
+        "indonesian": "Harus belajar bahasa Jepang lebih banyak lagi."
+      },
+      {
+        "japanese": "花の⽔やりをしなくてはなりません。",
+        "indonesian": "Harus menyiram bunga."
+      },
+      {
+        "japanese": "明⽇、早く起きなくてはなりません。",
+        "indonesian": "Besok harus bangun pagi."
+      },
+      {
+        "japanese": "野菜を⾷べなくてはなりませんよ。",
+        "indonesian": "Harus makan sayur lho."
+      },
+      {
+        "japanese": "⽇本語能⼒試験を受けなくてはなりません。",
+        "indonesian": "Harus mengikuti Ujian Kemampuan Bahasa Jepang."
+      },
+      {
+        "japanese": "もう帰らなくてはなりません。",
+        "indonesian": "Sudah harus pulang."
+      },
+      {
+        "japanese": "⽇本語⼒を上達させなくてはなりません。",
+        "indonesian": "Harus meningkatkan kemampuan bahasa Jepang."
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "title": "なる",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⼤きくなっているね︕",
+        "indonesian": "Sudah tambah besar ya!"
+      },
+      {
+        "japanese": "今⽇は暑くなるようだ。",
+        "indonesian": "Sepertinya hari ini akan menjadi panas."
+      },
+      {
+        "japanese": "今年、私は２０歳になります。",
+        "indonesian": "Tahun ini, saya genap (menjadi) berumur 20 tahun."
+      },
+      {
+        "japanese": "暗くなる前に家に帰りたい。",
+        "indonesian": "Ingin pulang ke rumah sebelum gelap."
+      },
+      {
+        "japanese": "もっと強くなるために、毎⽇運動しています。",
+        "indonesian": "Untuk menjadi lebih kuat, saya berolahraga setiap hari."
+      },
+      {
+        "japanese": "⽇本語が上⼿になっていますね。",
+        "indonesian": "Bahasa Jepangnya menjadi makin pintar ya."
+      },
+      {
+        "japanese": "将来、何になりたいですか。",
+        "indonesian": "Di masa depan, ingin menjadi apa?"
+      },
+      {
+        "japanese": "６⽉に⼊って、ちょっと暑くなったね。",
+        "indonesian": "Memasuki bulan Juni, (cuaca) jadi sedikit panas ya."
+      },
+      {
+        "japanese": "暗くなってきましたね。そろそろ帰りましょうか。",
+        "indonesian": "Sudah mulai gelap ya. Mari kita segera pulang?"
+      },
+      {
+        "japanese": "今⽇のイベント wa 中⽌になりました。",
+        "indonesian": "Acara hari ini dibatalkan."
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "title": "んです",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "何を飲みたいんですか。",
+        "indonesian": "(Sebenarnya) ingin minum apa?"
+      },
+      {
+        "japanese": "お茶を飲みたいんです。",
+        "indonesian": "(Alasannya) saya ingin minum teh."
+      },
+      {
+        "japanese": "眠くないんですか。",
+        "indonesian": "Apakah (kamu) tidak mengantuk?"
+      },
+      {
+        "japanese": "気分が良くないんですよ。",
+        "indonesian": "Perasaanku sedang tidak enak lho."
+      },
+      {
+        "japanese": "今からバイトに⾏くんだ。",
+        "indonesian": "Sekarang aku mau pergi kerja paruh waktu lho."
+      },
+      {
+        "japanese": "朝に弱いんだ。",
+        "indonesian": "Aku susah bangun pagi / lemah di pagi hari."
+      },
+      {
+        "japanese": "いつか⽇本に⾏くんだ︕",
+        "indonesian": "Suatu saat nanti, aku pasti pergi ke Jepang!"
+      },
+      {
+        "japanese": "買いたいんですがお⾦がないんだ。",
+        "indonesian": "Ingin beli, tapi uangnya tidak ada."
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "title": "ね",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "かわいいね。",
+        "indonesian": "Imut/lucu ya."
+      },
+      {
+        "japanese": "そうですね。",
+        "indonesian": "Begitu ya / Benar juga ya."
+      },
+      {
+        "japanese": "今⽇の天気はいいですね。",
+        "indonesian": "Cuaca hari ini bagus ya."
+      },
+      {
+        "japanese": "またあとでね︕",
+        "indonesian": "Sampai jumpa lagi nanti ya!"
+      },
+      {
+        "japanese": "またメールするね。",
+        "indonesian": "Nanti aku kirim pesan/email lagi ya."
+      },
+      {
+        "japanese": "それは⼤変ですね。",
+        "indonesian": "Itu merepotkan/berat ya."
+      },
+      {
+        "japanese": "あなたはとても疲れた声をしているね。",
+        "indonesian": "Suaramu terdengar sangat lelah ya."
+      },
+      {
+        "japanese": "⽇本語がお上⼿ですね。",
+        "indonesian": "Bahasa Jepangnya pintar ya."
+      },
+      {
+        "japanese": "あなたはスポーツが下⼿ですね。",
+        "indonesian": "Kamu payah dalam olahraga ya."
+      },
+      {
+        "japanese": "今⽇も⼀⽇、頑張りましょうね。",
+        "indonesian": "Hari ini pun, mari kita bersemangat seharian ya."
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "title": "に",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "来⽉⼤学に⼊る。",
+        "indonesian": "Bulan depan masuk universitas."
+      },
+      {
+        "japanese": "どうやって学校に通っていますか︖",
+        "indonesian": "Bagaimana caramu pergi ke sekolah?"
+      },
+      {
+        "japanese": "あなたは何時にスーパーに⾏きますか︖",
+        "indonesian": "Jam berapa kamu pergi ke supermarket?"
+      },
+      {
+        "japanese": "彼は、⼤学に⼊るための努⼒をしている。",
+        "indonesian": "Dia sedang berusaha untuk masuk universitas."
+      },
+      {
+        "japanese": "⽇本に来たことはありますか︖",
+        "indonesian": "Apakah pernah datang ke Jepang?"
+      },
+      {
+        "japanese": "あの⽊の下に⼤きな⽝がいます.",
+        "indonesian": "Di bawah pohon itu ada anjing yang besar."
+      },
+      {
+        "japanese": "今家の中にいますよ。",
+        "indonesian": "Sekarang ada di dalam rumah lho."
+      },
+      {
+        "japanese": "ここにお名前を書いてください。",
+        "indonesian": "Tolong tulis nama Anda di sini."
+      },
+      {
+        "japanese": "アメリカにはどのくらい滞在しますか︖",
+        "indonesian": "Berapa lama akan tinggal di Amerika?"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "title": "にいく",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "友だちの家に遊びに⾏く。",
+        "indonesian": "Pergi bermain ke rumah teman."
+      },
+      {
+        "japanese": "⽇本に勉強しに⾏くつもりなのです。",
+        "indonesian": "Berniat pergi belajar ke Jepang."
+      },
+      {
+        "japanese": "東京へなにしに⾏くの︖",
+        "indonesian": "Pergi ke Tokyo untuk melakukan apa?"
+      },
+      {
+        "japanese": "私たちは公園にサッカーをしに⾏くつもりだ。",
+        "indonesian": "Kami berniat pergi ke taman untuk bermain sepak bola."
+      },
+      {
+        "japanese": "メキシコへ友だちに会いに⾏きます。",
+        "indonesian": "Pergi ke Meksiko untuk bertemu teman."
+      },
+      {
+        "japanese": "ちょっと⾛りに⾏ってきます。",
+        "indonesian": "Aku mau pergi lari sebentar (dan akan kembali)."
+      },
+      {
+        "japanese": "明⽇、友⼈と⼀緒に⽇本⾷を⾷べに⾏きます。",
+        "indonesian": "Besok, pergi makan makanan Jepang bersama teman."
+      },
+      {
+        "japanese": "私は今度はベトナムへ旅⾏しに⾏きます。",
+        "indonesian": "Kali ini saya akan pergi jalan-jalan ke Vietnam."
+      },
+      {
+        "japanese": "ゴミを捨てに⾏きます。",
+        "indonesian": "Pergi membuang sampah."
+      },
+      {
+        "japanese": "今夜ラーメンを⾷べに⾏きましょう︕",
+        "indonesian": "Malam ini ayo pergi makan ramen!"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "title": "にする",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "飲み物は何にする︖",
+        "indonesian": "Minumannya mau pilih apa?"
+      },
+      {
+        "japanese": "お茶にする。",
+        "indonesian": "(Pilih) teh saja."
+      },
+      {
+        "japanese": "私は明⽇と来週の⽕曜⽇を休みにする。",
+        "indonesian": "Saya memutuskan untuk libur besok dan hari Selasa minggu depan."
+      },
+      {
+        "japanese": "これにします。",
+        "indonesian": "Saya pilih (yang) ini."
+      },
+      {
+        "japanese": "今⽇は部屋をきれいにします。",
+        "indonesian": "Hari ini saya akan merapikan/membersihkan kamar."
+      },
+      {
+        "japanese": "君を幸せにします。",
+        "indonesian": "Aku akan membuatmu bahagia."
+      },
+      {
+        "japanese": "紅茶にしますかそれともコーヒーにしますか。",
+        "indonesian": "Mau teh hitam atau kopi?"
+      },
+      {
+        "japanese": "今年は素晴しい年にします︕",
+        "indonesian": "Tahun ini akan kujadikan tahun yang luar biasa!"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "title": "に/へ",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⽇本に戻りたい。",
+        "indonesian": "Ingin kembali ke Jepang."
+      },
+      {
+        "japanese": "⽇本に来たことはありますか︖",
+        "indonesian": "Apakah pernah datang ke Jepang?"
+      },
+      {
+        "japanese": "どうやって学校に通っていますか︖",
+        "indonesian": "Bagaimana caramu pergi ke sekolah?"
+      },
+      {
+        "japanese": "今⽇は仕事に⾏きたくない。",
+        "indonesian": "Hari ini tidak ingin pergi bekerja."
+      },
+      {
+        "japanese": "どこへ⾏ったんですか︖",
+        "indonesian": "Pergi ke mana?"
+      },
+      {
+        "japanese": "家へ向かっているところです。",
+        "indonesian": "Sedang dalam perjalanan menuju rumah."
+      },
+      {
+        "japanese": "そこへ⾏くには⾞で6時間かかる。",
+        "indonesian": "Untuk pergi ke sana memakan waktu 6 jam dengan mobil."
+      },
+      {
+        "japanese": "毎年北海道へスキーに⾏く。",
+        "indonesian": "Setiap tahun pergi bermain ski ke Hokkaido."
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "title": "の",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "あなたの名前は何ですか︖",
+        "indonesian": "Siapa namamu?"
+      },
+      {
+        "japanese": "あなたの⽝ですか︖",
+        "indonesian": "Apakah ini anjingmu?"
+      },
+      {
+        "japanese": "これはだれのカバンですか︖",
+        "indonesian": "Ini tas milik siapa?"
+      },
+      {
+        "japanese": "私の先⽣はとてもいい先⽣だ。",
+        "indonesian": "Guruku adalah guru yang sangat baik."
+      },
+      {
+        "japanese": "彼⽒の好きな料理はカレーです。",
+        "indonesian": "Makanan kesukaan pacarku (laki-laki) adalah kari."
+      },
+      {
+        "japanese": "彼⼥のお⽗さんはとても怖いです。",
+        "indonesian": "Ayah pacarku (perempuan) sangat menakutkan."
+      },
+      {
+        "japanese": "私の⼀番好きな季節は秋だ。",
+        "indonesian": "Musim yang paling aku sukai adalah musim gugur."
+      },
+      {
+        "japanese": "このカメラは私のではなく、友だちのです。",
+        "indonesian": "Kamera ini bukan milikku, melainkan milik temanku."
+      },
+      {
+        "japanese": "夏の暑さのせいで私は寝不⾜です。",
+        "indonesian": "Gara-gara panasnya musim panas, aku kurang tidur."
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "title": "のです",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "どこへ⾏きたいのですか。",
+        "indonesian": "Kamu mau pergi ke mana?"
+      },
+      {
+        "japanese": "どう違うのだ。",
+        "indonesian": "Apa bedanya?"
+      },
+      {
+        "japanese": "何を⾔いたいのですか。",
+        "indonesian": "Apa yang ingin kamu katakan?"
+      },
+      {
+        "japanese": "あなたは優しいのですね。",
+        "indonesian": "Kamu baik hati ya."
+      },
+      {
+        "japanese": "昼ごはんを⾷べなかったのですね。",
+        "indonesian": "Kamu tidak makan siang ya."
+      },
+      {
+        "japanese": "今⽇は学校に⾏くのですね。",
+        "indonesian": "Hari ini pergi ke sekolah ya."
+      },
+      {
+        "japanese": "あなたが悪いのだ。",
+        "indonesian": "Kamu yang salah."
+      },
+      {
+        "japanese": "⾷べるために⽣きるのではない。⽣きるために⾷べるのだ。",
+        "indonesian": "Bukan hidup untuk makan, melainkan makan untuk hidup."
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "title": "のが下⼿",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "彼はおはしを使うのが下⼿だ。",
+        "indonesian": "Dia (laki-laki) payah menggunakan sumpit."
+      },
+      {
+        "japanese": "⺟は料理をするのが下⼿だ。",
+        "indonesian": "Ibuku payah dalam memasak."
+      },
+      {
+        "japanese": "私は⼈としゃべるのが下⼿だ。",
+        "indonesian": "Aku payah berbicara dengan orang lain."
+      },
+      {
+        "japanese": "かんじを勉強するのが下⼿です。",
+        "indonesian": "Saya payah dalam belajar kanji."
+      },
+      {
+        "japanese": "⽇本語の字を書くのが下⼿だ。",
+        "indonesian": "Aku payah menulis huruf bahasa Jepang."
+      },
+      {
+        "japanese": "姉は歌うのが下⼿だと思います。",
+        "indonesian": "Menurutku kakak perempuanku payah dalam bernyanyi."
+      },
+      {
+        "japanese": "トライアスロンをやってみたいですが泳ぐのが下⼿だ。",
+        "indonesian": "Ingin coba ikut trilomba (triathlon), tapi aku payah berenang."
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "title": "のが上⼿",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "あなたは教えるのが上⼿です。",
+        "indonesian": "Kamu pintar mengajar."
+      },
+      {
+        "japanese": "彼は歌うのが上⼿だ。",
+        "indonesian": "Dia (laki-laki) pintar bernyanyi."
+      },
+      {
+        "japanese": "彼⼥はピアノを弾くのが上⼿。",
+        "indonesian": "Dia (perempuan) pintar bermain piano."
+      },
+      {
+        "japanese": "あなたはお箸を使うのが上⼿ですね。",
+        "indonesian": "Kamu pintar menggunakan sumpit ya."
+      },
+      {
+        "japanese": "私はそんなに⽇本語を話すのが上⼿ではない。",
+        "indonesian": "Aku tidak begitu pintar berbicara bahasa Jepang."
+      },
+      {
+        "japanese": "⾼校のとき、運動をするのが上⼿だったが今は違う。",
+        "indonesian": "Waktu SMA, aku pintar olahraga, tapi sekarang berbeda."
+      },
+      {
+        "japanese": "私は⺟ほど料理をするのが上⼿ではありません。",
+        "indonesian": "Aku tidak sepintar ibuku dalam memasak."
+      },
+      {
+        "japanese": "時間を管理するのが上⼿ではない。",
+        "indonesian": "Tidak pintar mengatur waktu."
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "title": "のが好き",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "私は寝るのが好きです。",
+        "indonesian": "Aku suka tidur."
+      },
+      {
+        "japanese": "漫画を読むのが好きだ。",
+        "indonesian": "Aku suka membaca manga."
+      },
+      {
+        "japanese": "妹は料理をするのが好きです。",
+        "indonesian": "Adik perempuanku suka memasak."
+      },
+      {
+        "japanese": "君、運動するのが好きだね。",
+        "indonesian": "Kamu suka berolahraga ya."
+      },
+      {
+        "japanese": "彼⼥は野球の試合を⾒るのが好きです。",
+        "indonesian": "Dia (perempuan) suka menonton pertandingan bisbol."
+      },
+      {
+        "japanese": "私は何かを⾷べながら映画を観るのが好きです。",
+        "indonesian": "Aku suka menonton film sambil makan sesuatu."
+      },
+      {
+        "japanese": "電⾞とバスのどちらに乗るのが好きですか︖",
+        "indonesian": "Lebih suka naik kereta atau bus?"
+      },
+      {
+        "japanese": "私の夫は私が夜に外出するのが好きではない。",
+        "indonesian": "Suamiku tidak suka kalau aku pergi keluar malam."
+      },
+      {
+        "japanese": "多くの⽇本⼈は多くの⼈の前で⾃分の意⾒を表現するのが好きじゃない",
+        "indonesian": "Banyak orang Jepang yang tidak suka mengungkapkan pendapat mereka di depan banyak orang."
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "title": "の中で[A]が⼀番",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "家族のなかで⽗がいちばん背が⾼いです。",
+        "indonesian": "Di dalam keluarga, ayah adalah yang paling tinggi."
+      },
+      {
+        "japanese": "チームの中で⼭⽥が⼀番強い︕",
+        "indonesian": "Di dalam tim, Yamada yang paling kuat!"
+      },
+      {
+        "japanese": "⽇本の⾷べ物の中でラーメンが⼀番好きだ。",
+        "indonesian": "Di antara makanan Jepang, aku paling suka ramen."
+      },
+      {
+        "japanese": "クラスの中でジェシカが⼀番頭いい。",
+        "indonesian": "Di kelas, Jessica yang paling pintar."
+      },
+      {
+        "japanese": "世界の中で⽇本が⼀番安全な国です。",
+        "indonesian": "Di dunia, Jepang adalah negara yang paling aman."
+      },
+      {
+        "japanese": "彼⼥はクラスの中で字が⼀番きれいだ。",
+        "indonesian": "Di kelas, tulisan dia (perempuan) yang paling rapi."
+      },
+      {
+        "japanese": "友達の中では、クリスが⼀番先輩。",
+        "indonesian": "Di antara teman-teman, Chris adalah yang paling senior."
+      },
+      {
+        "japanese": "読んだ本の中でハリーポッターが⼀番好きだ。",
+        "indonesian": "Di antara buku yang sudah dibaca, aku paling suka Harry Potter."
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "title": "ので",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "ちょっと寒いので、窓を閉めてもいいですか。",
+        "indonesian": "Karena agak dingin, bolehkah saya menutup jendela?"
+      },
+      {
+        "japanese": "ちょっと⽤事があるので、先に帰ります。",
+        "indonesian": "Karena ada sedikit urusan, saya pulang duluan."
+      },
+      {
+        "japanese": "台⾵が来るので、明⽇のクラスに来なくていいです。",
+        "indonesian": "Karena akan datang angin topan, besok tidak perlu datang ke kelas."
+      },
+      {
+        "japanese": "おなかが痛いので、薬をください。",
+        "indonesian": "Karena perutku sakit, tolong beri aku obat."
+      },
+      {
+        "japanese": "彼⼥がとてもきれいなので、すぐ好きになりました。",
+        "indonesian": "Karena dia (perempuan) sangat cantik, aku langsung menyukainya."
+      },
+      {
+        "japanese": "今から⾏きますので、少々お待ちください。",
+        "indonesian": "Karena saya akan pergi sekarang, tolong tunggu sebentar."
+      },
+      {
+        "japanese": "⾬が降っていたので、試合が中⽌になりました。",
+        "indonesian": "Karena turun hujan, pertandingan dibatalkan."
+      },
+      {
+        "japanese": "左⼿で⾷べようとしたが、難しかったのでやめました。",
+        "indonesian": "Tadi mencoba makan dengan tangan kiri, tapi karena sulit, aku berhenti."
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "title": "を",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⽇本語をべんきょうしています。",
+        "indonesian": "Sedang belajar bahasa Jepang."
+      },
+      {
+        "japanese": "⽇本語を話します。",
+        "indonesian": "Berbicara bahasa Jepang."
+      },
+      {
+        "japanese": "今⽇は朝ごはんを⾷べませんでした。",
+        "indonesian": "Hari ini tidak makan sarapan."
+      },
+      {
+        "japanese": "もう宿題をしました。",
+        "indonesian": "Sudah mengerjakan PR."
+      },
+      {
+        "japanese": "毎⽇ランニングをします。",
+        "indonesian": "Lari setiap hari."
+      },
+      {
+        "japanese": "⿂を⾷べたことがない。",
+        "indonesian": "Belum pernah makan ikan."
+      },
+      {
+        "japanese": "毎週新しいかんじを学ぶ。",
+        "indonesian": "Belajar kanji baru setiap minggu."
+      },
+      {
+        "japanese": "ピザを⾷べるのが⼤好きだ。",
+        "indonesian": "Sangat suka makan pizza."
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "title": "をください",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "すみません、お⽔をください。",
+        "indonesian": "Permisi, minta air putih."
+      },
+      {
+        "japanese": "これをください。",
+        "indonesian": "Tolong berikan ini."
+      },
+      {
+        "japanese": "コーヒーを⼆つください。",
+        "indonesian": "Tolong berikan dua kopi."
+      },
+      {
+        "japanese": "少し時間をください。",
+        "indonesian": "Tolong berikan saya sedikit waktu."
+      },
+      {
+        "japanese": "すぐに返信をください。",
+        "indonesian": "Tolong segera balas."
+      },
+      {
+        "japanese": "私たちにアドバイスをください。",
+        "indonesian": "Tolong berikan kami saran."
+      },
+      {
+        "japanese": "駅に着いたら電話をください。",
+        "indonesian": "Kalau sudah sampai di stasiun, tolong telepon."
+      },
+      {
+        "japanese": "おなかが痛いので、薬をください。",
+        "indonesian": "Karena perutku sakit, tolong beri aku obat."
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "title": "しかし",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "しかしなぜ︖",
+        "indonesian": "Tetapi kenapa?"
+      },
+      {
+        "japanese": "⽇本は⼤好きです。しかし、⽇本の夏がとても暑いです。",
+        "indonesian": "Saya sangat suka Jepang. Tetapi, musim panas di Jepang sangat panas."
+      },
+      {
+        "japanese": "今⽇のクラスはむずかしかったです。しかし楽しかったです。",
+        "indonesian": "Kelas hari ini sulit. Tetapi menyenangkan."
+      },
+      {
+        "japanese": "しかし問題があるかもしれない。",
+        "indonesian": "Tetapi mungkin ada masalah."
+      },
+      {
+        "japanese": "冬は寒い、しかし私は好きだ。",
+        "indonesian": "Musim dingin itu dingin, tetapi aku menyukainya."
+      },
+      {
+        "japanese": "しかし、彼は⽇本語を話すことも書くこともできません。",
+        "indonesian": "Tetapi, dia (laki-laki) tidak bisa berbicara maupun menulis bahasa Jepang."
+      },
+      {
+        "japanese": "⽇本料理はもちろんおいしいです。しかし、アメリカ料理の⽅が好きです。",
+        "indonesian": "Makanan Jepang tentu saja enak. Tetapi, saya lebih suka makanan Amerika."
+      },
+      {
+        "japanese": "あなたはたぶん正しいでしょう。しかし、私は少し違った意⾒を持っています。",
+        "indonesian": "Kamu mungkin benar. Tetapi, saya punya pendapat yang sedikit berbeda."
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "title": "すぎる",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "このシャツは⼤きすぎる。",
+        "indonesian": "Kemeja ini terlalu besar."
+      },
+      {
+        "japanese": "今年の夏は暑すぎた。",
+        "indonesian": "Musim panas tahun ini terlalu panas."
+      },
+      {
+        "japanese": "冬の来るのが早すぎた。",
+        "indonesian": "Datangnya musim dingin terlalu cepat."
+      },
+      {
+        "japanese": "この問題は簡単すぎます。",
+        "indonesian": "Masalah ini terlalu mudah."
+      },
+      {
+        "japanese": "幸せすぎて死にそうだ。",
+        "indonesian": "Terlalu bahagia rasanya seperti mau mati."
+      },
+      {
+        "japanese": "かんじを覚えるのが私には難しすぎる。",
+        "indonesian": "Menghafal kanji terlalu sulit untukku."
+      },
+      {
+        "japanese": "このレストランはちょっと⾼すぎる。別のところにしましょう。",
+        "indonesian": "Restoran ini agak terlalu mahal. Mari cari tempat lain."
+      },
+      {
+        "japanese": "この会社は給料が少なすぎます。",
+        "indonesian": "Gaji di perusahaan ini terlalu sedikit."
+      },
+      {
+        "japanese": "ごめんなさい、少し⾔いすぎました。",
+        "indonesian": "Maaf, aku bicara agak keterlaluan."
+      },
+      {
+        "japanese": "昨夜ちょっと飲みすぎました。",
+        "indonesian": "Semalam aku minum agak terlalu banyak."
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "title": "たことがある",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "これを⾒たことがある。",
+        "indonesian": "Aku pernah melihat ini."
+      },
+      {
+        "japanese": "フランスに⾏ったことある。",
+        "indonesian": "Aku pernah pergi ke Prancis."
+      },
+      {
+        "japanese": "それを聞いたことがある。",
+        "indonesian": "Aku pernah mendengar itu."
+      },
+      {
+        "japanese": "⼀度だけカラオケをやったことがあります。",
+        "indonesian": "Saya pernah bernyanyi karaoke hanya sekali."
+      },
+      {
+        "japanese": "⽇本に⾏ったことありますか︖",
+        "indonesian": "Apakah kamu pernah pergi ke Jepang?"
+      },
+      {
+        "japanese": "⽇本は好きですが⾏ったことがない。",
+        "indonesian": "Aku suka Jepang, tapi belum pernah pergi ke sana."
+      },
+      {
+        "japanese": "本当に、⾞を運転したことがないですか︖",
+        "indonesian": "Benarkah kamu belum pernah menyetir mobil?"
+      },
+      {
+        "japanese": "これは誰にも話したことがありません。",
+        "indonesian": "Saya belum pernah membicarakan hal ini kepada siapa pun."
+      },
+      {
+        "japanese": "私は⼀度しかすしを⾷べたことがありません。",
+        "indonesian": "Saya baru pernah makan sushi satu kali."
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "title": "たい",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⽇本語をもっと勉強したいです。",
+        "indonesian": "Saya ingin lebih banyak belajar bahasa Jepang."
+      },
+      {
+        "japanese": "先⽣、聞きたいことがありますが。",
+        "indonesian": "Guru, ada hal yang ingin saya tanyakan."
+      },
+      {
+        "japanese": "早く結婚したい。",
+        "indonesian": "Ingin cepat menikah."
+      },
+      {
+        "japanese": "⾃転⾞がこわれたから、新しいのを買いたい。",
+        "indonesian": "Karena sepeda rusak, aku ingin membeli yang baru."
+      },
+      {
+        "japanese": "⼦どものころから、ずっと⽇本に⾏きたかった。",
+        "indonesian": "Sejak kecil, aku selalu ingin pergi ke Jepang."
+      },
+      {
+        "japanese": "つかれたから、もう勉強したくない。",
+        "indonesian": "Karena lelah, aku sudah tidak ingin belajar lagi."
+      },
+      {
+        "japanese": "将来は⽇本の会社で働きたいです。",
+        "indonesian": "Di masa depan, saya ingin bekerja di perusahaan Jepang."
+      },
+      {
+        "japanese": "お⾦がたくさんあったら、何をしたいですか︖",
+        "indonesian": "Kalau punya banyak uang, apa yang ingin kamu lakukan?"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "title": "たり〜たり",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "休みの⽇は⽔曜⽇だったり、⽇曜⽇だったりです。",
+        "indonesian": "Hari liburnya kadang hari Rabu, kadang hari Minggu."
+      },
+      {
+        "japanese": "⽇曜⽇は買い物したり、映画を⾒たりした。",
+        "indonesian": "Pada hari Minggu, aku berbelanja, menonton film, dan lain-lain."
+      },
+      {
+        "japanese": "私の店は忙しかったり暇だったりです。",
+        "indonesian": "Tokoku kadang sibuk, kadang sepi."
+      },
+      {
+        "japanese": "今⽇は宿題をしたり、部屋の掃除をしたり、忙しいです。",
+        "indonesian": "Hari ini sibuk mengerjakan PR, membersihkan kamar, dan lain-lain."
+      },
+      {
+        "japanese": "冬休みは漢字を勉強したり、運動したりするつもりです。",
+        "indonesian": "Pada liburan musim dingin, saya berniat belajar kanji, berolahraga, dan lain-lain."
+      },
+      {
+        "japanese": "暇なときは映画を⾒たり、⾳楽を聞いたりする。",
+        "indonesian": "Saat waktu luang, aku menonton film, mendengarkan musik, dan lain-lain."
+      },
+      {
+        "japanese": "図書館では本や雑誌を読んだり、勉強したりする⼈が多い。",
+        "indonesian": "Di perpustakaan banyak orang yang membaca buku atau majalah, belajar, dan lain-lain."
+      },
+      {
+        "japanese": "留学中に現地の料理を⾷べたり、旅⾏したりしました。",
+        "indonesian": "Selama belajar di luar negeri, saya makan masakan lokal, jalan-jalan, dan lain-lain."
+      },
+      {
+        "japanese": "誰でも間違いを犯したり、失敗したりします。",
+        "indonesian": "Siapa pun bisa berbuat salah, gagal, dan sebagainya."
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "title": "てある",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "ここには私の名前が書いてあります。",
+        "indonesian": "Di sini tertulis namaku."
+      },
+      {
+        "japanese": "ドアがわざと開けてある。",
+        "indonesian": "Pintunya sengaja dibiarkan terbuka."
+      },
+      {
+        "japanese": "宿題はもうやってあります。",
+        "indonesian": "PR-nya sudah dikerjakan."
+      },
+      {
+        "japanese": "夜には学校の⼊り⼝が閉めてある。",
+        "indonesian": "Pada malam hari, pintu masuk sekolah ditutup."
+      },
+      {
+        "japanese": "ここに何て書いてあるの︖",
+        "indonesian": "Di sini tertulis apa?"
+      },
+      {
+        "japanese": "料理が作ってあるから、今⽇は家で⾷べる。",
+        "indonesian": "Karena makanannya sudah dibuat, hari ini makan di rumah."
+      },
+      {
+        "japanese": "テニスをしよう。１０時３０分にコートを予約してあるから。",
+        "indonesian": "Ayo main tenis. Karena lapangannya sudah dipesan untuk jam 10:30."
+      },
+      {
+        "japanese": "すでに⾔ってあるように、これもあなたの仕事のうちだ",
+        "indonesian": "Seperti yang sudah dikatakan, ini juga bagian dari pekerjaanmu."
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "title": "ている",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "昼ごはんは何を⾷べているの︖",
+        "indonesian": "Makan siang sedang makan apa?"
+      },
+      {
+        "japanese": "私もその本を読んでいる︕",
+        "indonesian": "Aku juga sedang membaca buku itu!"
+      },
+      {
+        "japanese": "いつからサッカーをやっているのですか。",
+        "indonesian": "Sejak kapan kamu bermain sepak bola?"
+      },
+      {
+        "japanese": "今⽇の⽇本は⾬が降っています。",
+        "indonesian": "Hari ini Jepang sedang turun hujan."
+      },
+      {
+        "japanese": "どれくらい⽇本に住んでいますか︖",
+        "indonesian": "Sudah berapa lama tinggal di Jepang?"
+      },
+      {
+        "japanese": "そのお店は何時までやっているのですか︖",
+        "indonesian": "Toko itu buka sampai jam berapa?"
+      },
+      {
+        "japanese": "⼭⽥さんはまだ寝ていると思います。",
+        "indonesian": "Menurutku Yamada masih tidur."
+      },
+      {
+        "japanese": "私もあなたを愛しています",
+        "indonesian": "Aku juga mencintaimu."
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "title": "てから",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "トイレを使ってから、⼿を洗わないといけません。",
+        "indonesian": "Setelah menggunakan toilet, harus mencuci tangan."
+      },
+      {
+        "japanese": "買い物をしてから家に帰ります。",
+        "indonesian": "Setelah berbelanja, saya akan pulang ke rumah."
+      },
+      {
+        "japanese": "ご飯を⾷べてから散歩しました。",
+        "indonesian": "Setelah makan, aku jalan-jalan."
+      },
+      {
+        "japanese": "今⽇は、起きてからまだ何も⾷べていません。",
+        "indonesian": "Hari ini, setelah bangun tidur belum makan apa pun."
+      },
+      {
+        "japanese": "アメリカに帰国してから太りました。",
+        "indonesian": "Setelah kembali ke Amerika, aku bertambah gemuk."
+      },
+      {
+        "japanese": "彼が禁煙してから2ヶ⽉がたった。",
+        "indonesian": "Sudah 2 bulan berlalu sejak dia berhenti merokok."
+      },
+      {
+        "japanese": "電話をしてから来てください。",
+        "indonesian": "Tolong menelepon dulu sebelum datang."
+      },
+      {
+        "japanese": "空き⽸は潰してからゴミとして出してください。",
+        "indonesian": "Tolong hancurkan kaleng kosong sebelum membuangnya sebagai sampah."
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "title": "てください",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "ちょっと待ってください。",
+        "indonesian": "Tolong tunggu sebentar."
+      },
+      {
+        "japanese": "やめてください︕",
+        "indonesian": "Tolong hentikan!"
+      },
+      {
+        "japanese": "もっとゆっくり⾔ってください。",
+        "indonesian": "Tolong bicara lebih pelan lagi."
+      },
+      {
+        "japanese": "静かにしてください。",
+        "indonesian": "Harap tenang."
+      },
+      {
+        "japanese": "やってみてください。",
+        "indonesian": "Tolong coba lakukan."
+      },
+      {
+        "japanese": "どうぞ座ってください。",
+        "indonesian": "Silakan duduk."
+      },
+      {
+        "japanese": "先⽣、この問題分かりません。もう⼀回説明してください。",
+        "indonesian": "Guru, saya tidak mengerti soal ini. Tolong jelaskan sekali lagi."
+      },
+      {
+        "japanese": "⽇本語を教えてください。",
+        "indonesian": "Tolong ajarkan aku bahasa Jepang."
+      },
+      {
+        "japanese": "私に知らせてください。",
+        "indonesian": "Tolong beri tahu aku."
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "title": "てはいけない",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "窓を開けてはいけない。",
+        "indonesian": "Tidak boleh membuka jendela."
+      },
+      {
+        "japanese": "嘘をついてはいけない。",
+        "indonesian": "Tidak boleh berbohong."
+      },
+      {
+        "japanese": "ろうかを⾛ってはいけませんよ。",
+        "indonesian": "Tidak boleh berlari di lorong lho."
+      },
+      {
+        "japanese": "図書館でうるさくしてはいけない。",
+        "indonesian": "Tidak boleh berisik di perpustakaan."
+      },
+      {
+        "japanese": "今⽇試験があるから、遅刻してはいけない。",
+        "indonesian": "Karena hari ini ada ujian, tidak boleh terlambat."
+      },
+      {
+        "japanese": "室内でタバコを吸ってはいけませんよ。",
+        "indonesian": "Tidak boleh merokok di dalam ruangan lho."
+      },
+      {
+        "japanese": "笑ってはいけない冗談だった。",
+        "indonesian": "Itu adalah lelucon yang tidak boleh ditertawakan."
+      },
+      {
+        "japanese": "授業中に携帯電話を使ってはいけません。",
+        "indonesian": "Tidak boleh menggunakan ponsel saat jam pelajaran."
+      },
+      {
+        "japanese": "２０歳未満の⼈はお酒を飲んではいけません。",
+        "indonesian": "Orang di bawah usia 20 tahun tidak boleh minum alkohol."
+      },
+      {
+        "japanese": "禁煙というのはタバコを吸ってはいけないということです",
+        "indonesian": "Dilarang merokok artinya tidak boleh merokok."
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "title": "てもいいです",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "トイレに⾏ってもいいですか︖",
+        "indonesian": "Bolehkah pergi ke toilet?"
+      },
+      {
+        "japanese": "うん、⾏ってもいいですよ︕",
+        "indonesian": "Ya, boleh pergi kok!"
+      },
+      {
+        "japanese": "それを⾷べてもいいですか。",
+        "indonesian": "Bolehkah memakan itu?"
+      },
+      {
+        "japanese": "私も⼀緒に⾏っていい︖",
+        "indonesian": "Bolehkah aku juga ikut pergi bersama?"
+      },
+      {
+        "japanese": "ここに座ってもいいですか︖",
+        "indonesian": "Bolehkah duduk di sini?"
+      },
+      {
+        "japanese": "⼀つ質問を聞いていいですか︖",
+        "indonesian": "Bolehkah bertanya satu pertanyaan?"
+      },
+      {
+        "japanese": "あなたと⼀緒に⾏ってもいいですよ。",
+        "indonesian": "Pergi bersamamu juga boleh kok."
+      },
+      {
+        "japanese": "今話してもいいですか。",
+        "indonesian": "Bolehkah berbicara sekarang?"
+      },
+      {
+        "japanese": "わざわざ家に来なくてもいいですよ。",
+        "indonesian": "Tidak perlu repot-repot datang ke rumah lho."
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "title": "と",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "お⺟さんと買い物に⾏った。",
+        "indonesian": "Pergi berbelanja bersama ibu."
+      },
+      {
+        "japanese": "彼⼥と仲がいいです。",
+        "indonesian": "Hubunganku dengannya (perempuan) baik."
+      },
+      {
+        "japanese": "あなたと話したくない。",
+        "indonesian": "Aku tidak ingin berbicara denganmu."
+      },
+      {
+        "japanese": "これとそれは違います。",
+        "indonesian": "Ini dan itu berbeda."
+      },
+      {
+        "japanese": "彼はベトナム⼈と結婚している。",
+        "indonesian": "Dia (laki-laki) menikah dengan orang Vietnam."
+      },
+      {
+        "japanese": "⽝と遊ぶのが⼤好きです。",
+        "indonesian": "Sangat suka bermain dengan anjing."
+      },
+      {
+        "japanese": "飲み物と⾷べ物禁⽌。",
+        "indonesian": "Dilarang membawa makanan dan minuman."
+      },
+      {
+        "japanese": "私はいつもそこでハンバーガーとフライドポテトを⾷べます。",
+        "indonesian": "Saya selalu makan hamburger dan kentang goreng di sana."
+      },
+      {
+        "japanese": "明⽇同僚と⾷事に⾏く予定です。",
+        "indonesian": "Besok berencana pergi makan bersama rekan kerja."
+      },
+      {
+        "japanese": "⾼校時代にクラスメイトと連絡をとっていますか",
+        "indonesian": "Apakah kamu masih berhubungan dengan teman sekelas saat SMA?"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "title": "とき",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "分からないときは、早く先⽣に聞きましょうね。",
+        "indonesian": "Saat tidak mengerti, ayo cepat tanya ke guru ya."
+      },
+      {
+        "japanese": "道を渡るとき、⾞に気をつけてください。",
+        "indonesian": "Saat menyeberang jalan, tolong hati-hati dengan mobil."
+      },
+      {
+        "japanese": "時間がないときは、朝ごはんを⾷べません。",
+        "indonesian": "Saat tidak ada waktu, saya tidak makan sarapan."
+      },
+      {
+        "japanese": "体の調⼦が悪いとき、温かいお茶を飲みます。",
+        "indonesian": "Saat kondisi badan sedang tidak enak, saya minum teh hangat."
+      },
+      {
+        "japanese": "眠いとき、いつもチョコレートを⾷べます。",
+        "indonesian": "Saat mengantuk, aku selalu makan cokelat."
+      },
+      {
+        "japanese": "図書館で本を借りる時、カードがいります。",
+        "indonesian": "Saat meminjam buku di perpustakaan, butuh kartu."
+      },
+      {
+        "japanese": "妻が病気のとき、会社を休みました。",
+        "indonesian": "Saat istriku sakit, aku libur bekerja."
+      },
+      {
+        "japanese": "暇なとき、ユーチューブを⾒ます。",
+        "indonesian": "Saat waktu luang, saya menonton YouTube."
+      },
+      {
+        "japanese": "中学⽣のとき、初めて⽇本に来ました。",
+        "indonesian": "Saat SMP, pertama kali datang ke Jepang."
+      },
+      {
+        "japanese": "晩ごはんを⾷べるとき、いつも⽜乳を飲みます。",
+        "indonesian": "Saat makan malam, saya selalu minum susu."
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "title": "とても",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "今⽇はとても暑いですね。",
+        "indonesian": "Hari ini sangat panas ya."
+      },
+      {
+        "japanese": "1⽉と２⽉はとても寒いです。",
+        "indonesian": "Bulan Januari dan Februari sangat dingin."
+      },
+      {
+        "japanese": "このカレーはとても⾟いですね。",
+        "indonesian": "Kari ini sangat pedas ya."
+      },
+      {
+        "japanese": "彼らはとても似ている。",
+        "indonesian": "Mereka sangat mirip."
+      },
+      {
+        "japanese": "両親のことをとても愛している。",
+        "indonesian": "Sangat mencintai kedua orang tua."
+      },
+      {
+        "japanese": "昨⽇⾒た映画はとても⾯⽩かった。",
+        "indonesian": "Film yang kutonton kemarin sangat menarik."
+      },
+      {
+        "japanese": "この本、とても⾯⽩いですよ。読んだ⽅がいい。",
+        "indonesian": "Buku ini sangat menarik lho. Sebaiknya dibaca."
+      },
+      {
+        "japanese": "彼はとても疲れているように⾒える",
+        "indonesian": "Dia (laki-laki) terlihat sangat kelelahan."
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "title": "つもり",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "今⽇はラーメンを⾷べるつもりだ。",
+        "indonesian": "Hari ini berniat makan ramen."
+      },
+      {
+        "japanese": "あなたたちも⾏くつもりですか︖",
+        "indonesian": "Apakah kalian juga berniat pergi?"
+      },
+      {
+        "japanese": "⼤学に⼊って⽇本語を勉強するつもりです。",
+        "indonesian": "Berniat belajar bahasa Jepang setelah masuk universitas."
+      },
+      {
+        "japanese": "何度聞かれても、あなたに教えるつもりはありません。",
+        "indonesian": "Berapa kali pun ditanya, aku tidak berniat memberitahumu."
+      },
+      {
+        "japanese": "いつ⽇本に留学するつもりなの︖",
+        "indonesian": "Kapan berniat belajar ke Jepang?"
+      },
+      {
+        "japanese": "ばれたら、どうするつもり︖",
+        "indonesian": "Kalau ketahuan, berniat melakukan apa?"
+      },
+      {
+        "japanese": "ごめんなさい︕あなたを傷つけるつもりはなかったんです。",
+        "indonesian": "Maaf! Aku tidak berniat melukaimu."
+      },
+      {
+        "japanese": "もしJLPTに受かったら⽇本の会社で働くつもりだ。",
+        "indonesian": "Kalau lulus JLPT, berniat bekerja di perusahaan Jepang."
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "title": "は",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "私はジョンです。",
+        "indonesian": "Saya adalah John."
+      },
+      {
+        "japanese": "それは⾯⽩い。",
+        "indonesian": "Itu menarik."
+      },
+      {
+        "japanese": "今⽇は電⾞で来ました。",
+        "indonesian": "Hari ini datang naik kereta."
+      },
+      {
+        "japanese": "⾦曜⽇は空いていますか︖",
+        "indonesian": "Hari Jumat apakah kamu luang?"
+      },
+      {
+        "japanese": "運動をするのは嫌です。",
+        "indonesian": "Aku benci berolahraga."
+      },
+      {
+        "japanese": "好きな⾷べ物は何ですか︖",
+        "indonesian": "Makanan kesukaanmu apa?"
+      },
+      {
+        "japanese": "私の⼤学はその駅の近くにある。",
+        "indonesian": "Universitasku ada di dekat stasiun itu."
+      },
+      {
+        "japanese": "彼を説得するのは不可能だった。",
+        "indonesian": "Membujuknya (laki-laki) adalah hal yang mustahil."
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "title": "は〜より・・・です",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "本は映画より⾯⽩いです。",
+        "indonesian": "Buku lebih menarik daripada film."
+      },
+      {
+        "japanese": "今⽇は昨⽇より忙しいです。",
+        "indonesian": "Hari ini lebih sibuk daripada kemarin."
+      },
+      {
+        "japanese": "電⾞はバスより速いです。",
+        "indonesian": "Kereta lebih cepat daripada bus."
+      },
+      {
+        "japanese": "アメリカ⼈は⽇本⼈より背が⾼いです。",
+        "indonesian": "Orang Amerika lebih tinggi daripada orang Jepang."
+      },
+      {
+        "japanese": "北海道は台湾より⼤きいです。",
+        "indonesian": "Hokkaido lebih besar daripada Taiwan."
+      },
+      {
+        "japanese": "エベレスト⼭は富⼠⼭より⾼いです。",
+        "indonesian": "Gunung Everest lebih tinggi daripada Gunung Fuji."
+      },
+      {
+        "japanese": "漢字はカタカナより難しいです。",
+        "indonesian": "Kanji lebih sulit daripada katakana."
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "title": "はどうですか",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "明⽇はどうですか。",
+        "indonesian": "Besok bagaimana?"
+      },
+      {
+        "japanese": "⽇本はどうですか︖",
+        "indonesian": "Jepang bagaimana?"
+      },
+      {
+        "japanese": "天気はどうですか。",
+        "indonesian": "Cuacanya bagaimana?"
+      },
+      {
+        "japanese": "買い物に⾏くのはどうですか。",
+        "indonesian": "Bagaimana kalau pergi berbelanja?"
+      },
+      {
+        "japanese": "⽇本語の勉強はどうですか。",
+        "indonesian": "Belajar bahasa Jepangnya bagaimana?"
+      },
+      {
+        "japanese": "私の⽇本語の発⾳はどうですか︖",
+        "indonesian": "Pelafalan bahasa Jepangku bagaimana?"
+      },
+      {
+        "japanese": "新しい学校はどうですか。友だちができましたか︖",
+        "indonesian": "Sekolah barunya bagaimana? Apakah sudah mendapat teman?"
+      },
+      {
+        "japanese": "最近仕事のほうはどうですか︖",
+        "indonesian": "Akhir-akhir ini pekerjaannya bagaimana?"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "title": "や",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "毎朝、パンやベーコンなどを⾷べています。",
+        "indonesian": "Setiap pagi, saya makan roti, bacon, dan lain-lain."
+      },
+      {
+        "japanese": "スーパーで⾁や野菜を買いました。",
+        "indonesian": "Membeli daging, sayur, dan lain-lain di supermarket."
+      },
+      {
+        "japanese": "あなたのおすすめの⾳楽や本を私に教えてください。",
+        "indonesian": "Tolong beri tahu aku musik atau buku rekomendasi darimu."
+      },
+      {
+        "japanese": "電⾞やバスでの旅は好きです。",
+        "indonesian": "Saya suka bepergian dengan kereta, bus, dan lain-lain."
+      },
+      {
+        "japanese": "私はアメリカやイギリスのテレビドラマを⾒るのが好きです。",
+        "indonesian": "Saya suka menonton drama televisi Amerika, Inggris, dan lain-lain."
+      },
+      {
+        "japanese": "冬休みは家族で⻑野や北海道へ⾏きます。",
+        "indonesian": "Liburan musim dingin pergi ke Nagano, Hokkaido, dan lain-lain bersama keluarga."
+      },
+      {
+        "japanese": "私は数学や化学などが好きです。",
+        "indonesian": "Saya suka matematika, kimia, dan sebagainya."
+      },
+      {
+        "japanese": "秋には葉が⾚や⻩⾊に変わる",
+        "indonesian": "Pada musim gugur, daun berubah menjadi merah, kuning, dan lain-lain."
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "title": "よ",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "⾏くよ。",
+        "indonesian": "Aku pergi ya."
+      },
+      {
+        "japanese": "ちょっと、待ってよ︕",
+        "indonesian": "Tunggu sebentar dong!"
+      },
+      {
+        "japanese": "元気を出せよ。",
+        "indonesian": "Semangatlah!"
+      },
+      {
+        "japanese": "愛してるよ。",
+        "indonesian": "Aku mencintaimu lho."
+      },
+      {
+        "japanese": "頑張るよ。",
+        "indonesian": "Aku akan berjuang lho."
+      },
+      {
+        "japanese": "寝る時間ですよ。",
+        "indonesian": "Sudah waktunya tidur lho."
+      },
+      {
+        "japanese": "君にいい知らせがあるよ︕",
+        "indonesian": "Ada kabar baik untukmu lho!"
+      },
+      {
+        "japanese": "⾞で来る予定ですよね︖",
+        "indonesian": "Rencananya datang pakai mobil kan?"
+      },
+      {
+        "japanese": "家まで⾞で送るよ。",
+        "indonesian": "Aku antar sampai rumah pakai mobil lho."
+      },
+      {
+        "japanese": "燃えるゴミと燃えないゴミの区別もよく分からないよね。",
+        "indonesian": "Perbedaan sampah yang bisa dibakar dan tidak bisa dibakar juga tidak begitu tahu kan."
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "title": "より〜ほうが",
+    "explanation_file": "",
+    "quiz_sentences": [
+      {
+        "japanese": "私は猫より、⽝のほうが好きです。",
+        "indonesian": "Saya lebih suka anjing daripada kucing."
+      },
+      {
+        "japanese": "昨⽇より今⽇の⽅が暑いです。",
+        "indonesian": "Hari ini lebih panas daripada kemarin."
+      },
+      {
+        "japanese": "彼⼥より、君の⽅がきれいだよ。",
+        "indonesian": "Kamu lebih cantik daripada dia (perempuan)."
+      },
+      {
+        "japanese": "⽇本語を読むより、話す⽅が上⼿だ。",
+        "indonesian": "Lebih pintar berbicara bahasa Jepang daripada membacanya."
+      },
+      {
+        "japanese": "遅く寝るより、早く寝た⽅がいいですよ。",
+        "indonesian": "Lebih baik tidur cepat daripada tidur lambat lho."
+      },
+      {
+        "japanese": "台湾より、北海道の⽅が⼤きいです。",
+        "indonesian": "Hokkaido lebih besar daripada Taiwan."
+      },
+      {
+        "japanese": "⽇本語より英語の⽅が難しいと思う。",
+        "indonesian": "Menurutku bahasa Inggris lebih sulit daripada bahasa Jepang."
+      },
+      {
+        "japanese": "⾃転⾞の⽅が⾞より便利だと思います。",
+        "indonesian": "Menurutku sepeda lebih praktis daripada mobil."
+      },
+      {
+        "japanese": "家族より仕事の⽅が⼤切だと思う⼈と結婚したくない。",
+        "indonesian": "Tidak ingin menikah dengan orang yang berpikir pekerjaan lebih penting daripada keluarga."
+      }
+    ]
   }
 ]

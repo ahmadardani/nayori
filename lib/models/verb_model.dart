@@ -9,6 +9,11 @@ class VerbData {
   final String taForm;
   final String nakattaForm;
   final String teForm;
+  final String masuForm;
+  final String potential;
+  final String volitional;
+  final String teKudasai;
+  final String teIru;
   final String meaning;
 
   VerbData({
@@ -20,20 +25,30 @@ class VerbData {
     required this.taForm,
     required this.nakattaForm,
     required this.teForm,
+    required this.masuForm,
+    required this.potential,
+    required this.volitional,
+    required this.teKudasai,
+    required this.teIru,
     required this.meaning,
   });
 
   factory VerbData.fromJson(Map<String, dynamic> json) {
     return VerbData(
-      group: json['Group'] ?? '',
-      subGroup: json['Sub_Group'] ?? '',
-      kanji: json['Kanji'] ?? '',
-      dictionary: json['Dictionary'] ?? '',
-      naiForm: json['Nai_form'] ?? '',
-      taForm: json['Ta_form'] ?? '',
-      nakattaForm: json['Nakatta_form'] ?? '',
-      teForm: json['Te_form'] ?? '',
-      meaning: json['Meaning'] ?? '',
+      group: json['Group']?.toString() ?? '',
+      subGroup: json['Sub_Group']?.toString() ?? '',
+      kanji: json['Kanji']?.toString() ?? '',
+      dictionary: json['Dictionary']?.toString() ?? '',
+      naiForm: json['Nai_form']?.toString() ?? '',
+      taForm: json['Ta_form']?.toString() ?? '',
+      nakattaForm: json['Nakatta_form']?.toString() ?? '',
+      teForm: json['Te_form']?.toString() ?? '',
+      masuForm: json['Masu_form']?.toString() ?? '',
+      potential: json['Potential']?.toString() ?? '',
+      volitional: json['Volitional']?.toString() ?? '',
+      teKudasai: json['Te_kudasai']?.toString() ?? '',
+      teIru: json['Te_iru']?.toString() ?? '',
+      meaning: json['Meaning']?.toString() ?? '',
     );
   }
 }

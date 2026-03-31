@@ -23,7 +23,7 @@ class _GrammarN5MenuScreenState extends State<GrammarN5MenuScreen> {
 
   Future<void> _loadData() async {
     try {
-      final String jsonString = await rootBundle.loadString('assets/grammars/n5/grammars.json');
+      final String jsonString = await rootBundle.loadString('assets/grammar-points/n5/grammar-points.json');
       
       final result = await compute(parseGrammarN5DataInBackground, jsonString);
       setState(() {

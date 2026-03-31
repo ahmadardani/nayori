@@ -10,11 +10,10 @@ class VerbQuestion {
 }
 
 class VerbQuizScreen extends StatefulWidget {
-  final String groupName;
-  final String subGroupName;
+  final String title;
   final List<VerbData> verbList;
 
-  const VerbQuizScreen({super.key, required this.groupName, required this.subGroupName, required this.verbList});
+  const VerbQuizScreen({super.key, required this.title, required this.verbList});
 
   @override
   State<VerbQuizScreen> createState() => _VerbQuizScreenState();
@@ -28,7 +27,6 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   List<VerbQuestion> _activeQueue = [];
   List<VerbQuestion> _incorrectQueue = [];
   
-  bool _isStudying = true; 
   bool _autoPlayAudio = true; 
   
   int _currentIndex = 0;
@@ -50,12 +48,17 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   void _generateQuestions() {
     List<VerbQuestion> questions = [];
     for (var verb in widget.verbList) {
-      questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
-      questions.add(VerbQuestion(verb, 'Ta Form', verb.taForm));
-      questions.add(VerbQuestion(verb, 'Nakatta Form', verb.nakattaForm));
-      questions.add(VerbQuestion(verb, 'Te Form', verb.teForm));
+      if (verb.masuForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Masu Form', verb.masuForm));
+      if (verb.naiForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
+      if (verb.taForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Ta Form', verb.taForm));
+      if (verb.nakattaForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nakatta Form', verb.nakattaForm));
+      if (verb.teForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Form', verb.teForm));
+      if (verb.potential.isNotEmpty) questions.add(VerbQuestion(verb, 'Potential Form', verb.potential));
+      if (verb.volitional.isNotEmpty) questions.add(VerbQuestion(verb, 'Volitional Form', verb.volitional));
+      if (verb.teKudasai.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Kudasai', verb.teKudasai));
+      if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
     }
-    _activeQueue = List.from(questions);
+    _activeQueue = List.from(questions)..shuffle(); 
   }
 
   Future<void> _initTts() async {
@@ -75,15 +78,6 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     super.dispose();
   }
 
-  void _startQuiz() {
-    setState(() {
-      _isStudying = false;
-    });
-    Future.delayed(const Duration(milliseconds: 100), () {
-      if (mounted) _focusNode.requestFocus();
-    });
-  }
-
   void _handleSubmitted(String text) {
     if (!_isAnswered) {
       _checkAnswer();
@@ -98,7 +92,6 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     if (_answerController.text.trim().isEmpty) return;
 
     FocusScope.of(context).unfocus(); 
-
     final currentQ = _activeQueue[_currentIndex];
     
     String normalizeText(String text) {
@@ -171,7 +164,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   void _retryIncorrect() {
     setState(() {
-      _activeQueue = List.from(_incorrectQueue);
+      _activeQueue = List.from(_incorrectQueue)..shuffle();
       _incorrectQueue.clear();
       _currentIndex = 0;
       _totalCorrect = 0;
@@ -182,17 +175,12 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
-    if (_isStudying) return true; 
-    final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
-    final String content = _isQuizFinished 
-        ? 'Are you sure you want to return to the menu?' 
-        : 'You have not finished this challenge. Are you sure you want to leave?';
-
+    if (_isQuizFinished) return true;
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(content),
+        title: const Text('Exit Challenge?'),
+        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -214,126 +202,34 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            _isStudying ? 'Study: ${widget.subGroupName}' : 'Dojo: ${widget.subGroupName}', 
+            'Dojo: ${widget.title}', 
             style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
           ),
           centerTitle: true,
-          bottom: _isStudying 
-            ? null 
-            : PreferredSize(
-                preferredSize: const Size.fromHeight(4.0),
-                child: LinearProgressIndicator(
-                  value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
-                  backgroundColor: Colors.grey.withOpacity(0.2),
-                ),
-              ),
-        ),
-        body: _isStudying 
-            ? _buildStudyScreen()
-            : (_isQuizFinished 
-                ? _buildResultScreen() 
-                : Column(
-                    children: [
-                      Expanded(child: _buildQuizContent()),
-                      _buildBottomActionPanel(),
-                    ],
-                  )),
-      ),
-    );
-  }
-
-  Widget _buildStudyScreen() {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-          child: const Text(
-            'Memorize these conjugations!',
-            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500),
-            textAlign: TextAlign.center,
-          ),
-        ),
-        Card(
-          elevation: 0.0,
-          color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
-          margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-          child: SwitchListTile(
-            title: const Text('Auto-play Audio in Quiz', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14.0)),
-            value: _autoPlayAudio,
-            onChanged: (val) => setState(() => _autoPlayAudio = val),
-          ),
-        ),
-        const SizedBox(height: 8.0),
-        Expanded(
-          child: ListView.builder(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            itemCount: widget.verbList.length,
-            itemBuilder: (context, index) {
-              final verb = widget.verbList[index];
-              return Card(
-                margin: const EdgeInsets.only(bottom: 12.0),
-                child: ExpansionTile(
-                  title: Text(verb.kanji, style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
-                  subtitle: Text(verb.meaning),
-                  childrenPadding: const EdgeInsets.all(16.0),
-                  children: [
-                    _buildStudyFormRow('Dictionary', verb.dictionary),
-                    const Divider(),
-                    _buildStudyFormRow('Nai Form', verb.naiForm),
-                    const Divider(),
-                    _buildStudyFormRow('Ta Form', verb.taForm),
-                    const Divider(),
-                    _buildStudyFormRow('Nakatta Form', verb.nakattaForm),
-                    const Divider(),
-                    _buildStudyFormRow('Te Form', verb.teForm),
-                  ],
-                ),
-              );
-            },
-          ),
-        ),
-        SafeArea(
-          child: Padding(
-            padding: EdgeInsets.only(
-              left: 24.0, right: 24.0, top: 16.0, 
-              bottom: MediaQuery.of(context).padding.bottom > 0 ? 8.0 : 24.0
-            ),
-            child: SizedBox(
-              width: double.infinity,
-              height: 56.0,
-              child: ElevatedButton(
-                onPressed: _startQuiz,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.primary,
-                  foregroundColor: Theme.of(context).colorScheme.onPrimary,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-                  elevation: 0.0,
-                ),
-                child: const Text('Start Dojo', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
-              ),
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(4.0),
+            child: LinearProgressIndicator(
+              value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
+              backgroundColor: Colors.grey.withOpacity(0.2),
             ),
           ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildStudyFormRow(String label, String formText) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(label, style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w600)),
-        Row(
-          children: [
-            Text(formText, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
-            const SizedBox(width: 8.0),
-            GestureDetector(
-              onTap: () => _speak(formText),
-              child: Icon(Icons.volume_up_rounded, color: Theme.of(context).colorScheme.primary, size: 20.0),
-            )
+          actions: [
+            IconButton(
+              icon: Icon(_autoPlayAudio ? Icons.volume_up_rounded : Icons.volume_off_rounded),
+              tooltip: 'Toggle Auto-play Audio',
+              onPressed: () => setState(() => _autoPlayAudio = !_autoPlayAudio),
+            ),
           ],
-        )
-      ],
+        ),
+        body: _isQuizFinished 
+            ? _buildResultScreen() 
+            : Column(
+                children: [
+                  Expanded(child: _buildQuizContent()),
+                  _buildBottomActionPanel(),
+                ],
+              ),
+      ),
     );
   }
 

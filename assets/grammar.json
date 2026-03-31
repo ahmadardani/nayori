@@ -1064,13 +1064,13 @@
   {
     "chapter": "Chapter 8",
     "number": "4",
-    "sentence": "奈良は有名なまちです",
+    "sentence": "奈良は有名な町です",
     "translation": "Nara adalah kota yang terkenal."
   },
   {
     "chapter": "Chapter 8",
     "number": "4",
-    "sentence": "奈良は静かなまちです",
+    "sentence": "奈良は静かな町です",
     "translation": "Nara adalah kota yang tenang."
   },
   {
@@ -1090,5 +1090,2993 @@
     "number": "4",
     "sentence": "奈良はどんな町ですか？",
     "translation": "Nara adalah kota yang seperti apa?"
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "1",
+    "sentence": "私は映画が好きです",
+    "translation": "Saya suka film."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "1",
+    "sentence": "私はスポーツが好きです",
+    "translation": "Saya suka olahraga."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "1",
+    "sentence": "私は韓国料理が好きです",
+    "translation": "Saya suka masakan Korea."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "2",
+    "sentence": "サントスさんはサッカーが上手です",
+    "translation": "Santos pintar (bermain) sepak bola."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "2",
+    "sentence": "サントスさんは料理が上手です",
+    "translation": "Santos pintar memasak."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "2",
+    "sentence": "サントスさんは日本語が上手です",
+    "translation": "Santos pintar bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "3",
+    "sentence": "私はひらがなが分かります",
+    "translation": "Saya mengerti hiragana."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "3",
+    "sentence": "私は漢字が分かります",
+    "translation": "Saya mengerti kanji."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "3",
+    "sentence": "私は日本語が分かります",
+    "translation": "Saya mengerti bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "4",
+    "sentence": "私はお金があります",
+    "translation": "Saya punya uang."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "4",
+    "sentence": "私は車があります",
+    "translation": "Saya punya mobil."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "4",
+    "sentence": "私は約束があります",
+    "translation": "Saya punya janji."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "4",
+    "sentence": "私は用事があります",
+    "translation": "Saya punya urusan."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "5",
+    "sentence": "忙しいですから、テレビを見ません",
+    "translation": "Karena sibuk, (saya) tidak menonton televisi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "5",
+    "sentence": "日本語が分かりませんから、テレビを見ません",
+    "translation": "Karena tidak mengerti bahasa Jepang, (saya) tidak menonton televisi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "5",
+    "sentence": "時間がありませんから、テレビを見ません",
+    "translation": "Karena tidak ada waktu, (saya) tidak menonton televisi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": "5",
+    "sentence": "どうしてテレビを見ませんか？",
+    "translation": "Kenapa (Anda) tidak menonton televisi?"
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "1",
+    "sentence": "あそこに電話があります",
+    "translation": "Di sana ada telepon."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "1",
+    "sentence": "あそこにビルがあります",
+    "translation": "Di sana ada gedung."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "1",
+    "sentence": "あそこに公園があります",
+    "translation": "Di sana ada taman."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "1",
+    "sentence": "あそこに何がありますか？",
+    "translation": "Di sana ada apa?"
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "2",
+    "sentence": "あそこに山田さんがいます",
+    "translation": "Di sana ada Yamada."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "2",
+    "sentence": "あそこに女の人がいます",
+    "translation": "Di sana ada perempuan."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "2",
+    "sentence": "あそこに子供がいます",
+    "translation": "Di sana ada anak-anak."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "2",
+    "sentence": "あそこに誰がいますか？",
+    "translation": "Di sana ada siapa?"
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "3",
+    "sentence": "スーパーの隣に喫茶店があります",
+    "translation": "Di sebelah supermarket ada kedai kopi."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "3",
+    "sentence": "スーパーの中に喫茶店があります",
+    "translation": "Di dalam supermarket ada kedai kopi."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "3",
+    "sentence": "佐藤さんの前にカリナさんがいます",
+    "translation": "Di depan Sato ada Karina."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "3",
+    "sentence": "佐藤さんの右にカリナさんがいます",
+    "translation": "Di sebelah kanan Sato ada Karina."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "4",
+    "sentence": "ミラーさんの家は大阪にあります",
+    "translation": "Rumah Miller ada di Osaka."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "4",
+    "sentence": "ミラーさんの家は公園の前にあります",
+    "translation": "Rumah Miller ada di depan taman."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "4",
+    "sentence": "ミラーさんの家は学校の近くにあります",
+    "translation": "Rumah Miller ada di dekat sekolah."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "4",
+    "sentence": "ミラーさんの家はどこにありますか？",
+    "translation": "Rumah Miller ada di mana?"
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "5",
+    "sentence": "ミラーさんはあそこにいます",
+    "translation": "Miller ada di sana."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "5",
+    "sentence": "ミラーさんは会議室にいます",
+    "translation": "Miller ada di ruang rapat."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "5",
+    "sentence": "ミラーさんはエレベーターの前にいます",
+    "translation": "Miller ada di depan lift."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": "5",
+    "sentence": "ミラーさんはどこにいます",
+    "translation": "Miller ada di mana?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "1",
+    "sentence": "みかんが５つあります",
+    "translation": "Ada lima buah jeruk."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "1",
+    "sentence": "みかんが８つあります",
+    "translation": "Ada delapan buah jeruk."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "1",
+    "sentence": "みかんが１０あります",
+    "translation": "Ada sepuluh buah jeruk."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "1",
+    "sentence": "みかんがいくつありますか？",
+    "translation": "Ada berapa buah jeruk?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "2",
+    "sentence": "８０円の切手を１枚買いました",
+    "translation": "(Saya) telah membeli satu lembar prangko 80 yen."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "2",
+    "sentence": "８０円の切手を４枚買いました",
+    "translation": "(Saya) telah membeli empat lembar prangko 80 yen."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "2",
+    "sentence": "８０円の切手を９枚買いました",
+    "translation": "(Saya) telah membeli sembilan lembar prangko 80 yen."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "2",
+    "sentence": "８０円の切手を何枚買いましたか？",
+    "translation": "(Anda) telah membeli berapa lembar prangko 80 yen?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "3",
+    "sentence": "このクラスに留学生が一人います",
+    "translation": "Di kelas ini ada satu orang siswa asing (pelajar internasional)."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "3",
+    "sentence": "このクラスに留学生が二人います",
+    "translation": "Di kelas ini ada dua orang siswa asing."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "3",
+    "sentence": "このクラスに留学生が４人います",
+    "translation": "Di kelas ini ada empat orang siswa asing."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "3",
+    "sentence": "このクラスに留学生が何人いますか？",
+    "translation": "Di kelas ini ada berapa orang siswa asing?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "4",
+    "sentence": "１週間に１回映画を見ます",
+    "translation": "Satu minggu menonton film satu kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "4",
+    "sentence": "１ヶ月に２回映画を見ます",
+    "translation": "Satu bulan menonton film dua kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "4",
+    "sentence": "１年に５回ぐらい映画を見ます",
+    "translation": "Satu tahun menonton film sekitar lima kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "4",
+    "sentence": "１年に何回映画を見ますか？",
+    "translation": "Satu tahun menonton film berapa kali?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "5",
+    "sentence": "国で５週間日本語を勉強しました",
+    "translation": "(Saya) telah belajar bahasa Jepang di negara (asal) selama 5 minggu."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "5",
+    "sentence": "国で６ヶ月日本語を勉強しました",
+    "translation": "(Saya) telah belajar bahasa Jepang di negara (asal) selama 6 bulan."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "5",
+    "sentence": "国で１年ぐらい日本語を勉強しました",
+    "translation": "(Saya) telah belajar bahasa Jepang di negara (asal) selama sekitar 1 tahun."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "5",
+    "sentence": "国でどのぐらい日本語を勉強しましたか？",
+    "translation": "(Anda) telah belajar bahasa Jepang di negara (asal) selama berapa lama?"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "6",
+    "sentence": "私の国から日本まで飛行機で４時間掛かります",
+    "translation": "Dari negara saya sampai Jepang memakan waktu 4 jam dengan pesawat."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "6",
+    "sentence": "私の国から日本まで飛行機で５時間半掛かります",
+    "translation": "Dari negara saya sampai Jepang memakan waktu 5,5 jam dengan pesawat."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "6",
+    "sentence": "私の国から日本まで飛行機で１２時間掛かります",
+    "translation": "Dari negara saya sampai Jepang memakan waktu 12 jam dengan pesawat."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": "6",
+    "sentence": "あなたの日本まで飛行機で何時間掛かりますか？",
+    "translation": "Sampai Jepang dari negara Anda memakan waktu berapa jam dengan pesawat?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "1",
+    "sentence": "京都は雪でした",
+    "translation": "Kyoto (waktu itu) bersalju."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "1",
+    "sentence": "京都はきれいでした",
+    "translation": "Kyoto (waktu itu) indah."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "1",
+    "sentence": "京都は寒かったです",
+    "translation": "Kyoto (waktu itu) dingin."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "1",
+    "sentence": "京都はどうでしたか？",
+    "translation": "Kyoto (waktu itu) bagaimana?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "休みでした",
+    "translation": "Libur (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "休みではありませんでした",
+    "translation": "Tidak libur (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "きれいでした",
+    "translation": "Indah / bersih (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "きれいではありませんでした",
+    "translation": "Tidak indah / tidak bersih (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "静かでした",
+    "translation": "Sepi / tenang (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "静かではありませんでした",
+    "translation": "Tidak sepi / tidak tenang (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "暑かったです",
+    "translation": "Panas (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "暑くなかったです",
+    "translation": "Tidak panas (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "美味しかったです",
+    "translation": "Enak (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "美味しくなかったです",
+    "translation": "Tidak enak (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "良かったです",
+    "translation": "Bagus / baik (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "2",
+    "sentence": "良くなかったです",
+    "translation": "Tidak bagus / tidak baik (bentuk lampau)."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "3",
+    "sentence": "東京は大阪より大きいです",
+    "translation": "Tokyo lebih besar daripada Osaka."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "3",
+    "sentence": "このシャツはそのシャツより大きいです",
+    "translation": "Kemeja ini lebih besar daripada kemeja itu."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "3",
+    "sentence": "私の車はミラーさんの車より大きいです",
+    "translation": "Mobil saya lebih besar daripada mobil Miller."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "サッカーと野球とどちらが面白いですか？",
+    "translation": "Sepak bola dan bisbol, mana yang lebih menarik?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "サッカーの方が面白いです",
+    "translation": "Sepak bola lebih menarik."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "本と映画とどちらが面白いですか？",
+    "translation": "Buku dan film, mana yang lebih menarik?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "本の方が面白いです",
+    "translation": "Buku lebih menarik."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "仕事と勉強とどちらが面白いですか？",
+    "translation": "Pekerjaan dan belajar, mana yang lebih menarik?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "4",
+    "sentence": "仕事の方が面白いです",
+    "translation": "Pekerjaan lebih menarik."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "5",
+    "sentence": "スポーツで何が一番面白いですか？",
+    "translation": "Dalam olahraga, apa yang paling menarik?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "5",
+    "sentence": "日本人で誰が一番有名ですか？",
+    "translation": "Di antara orang Jepang, siapa yang paling terkenal?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "5",
+    "sentence": "世界でどこが一番きれいですか？",
+    "translation": "Di dunia, di mana yang paling indah?"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": "5",
+    "sentence": "１年でいつが一番寒いですか？",
+    "translation": "Dalam satu tahun, kapan yang paling dingin?"
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "1",
+    "sentence": "私は車が欲しいです",
+    "translation": "Saya ingin mobil."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "1",
+    "sentence": "私は家が欲しいです",
+    "translation": "Saya ingin rumah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "1",
+    "sentence": "私は友達が欲しいです",
+    "translation": "Saya ingin teman."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "2",
+    "sentence": "私はカメラを買いたいです",
+    "translation": "Saya ingin membeli kamera."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "2",
+    "sentence": "私は家族に会いたいです",
+    "translation": "Saya ingin bertemu keluarga."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "2",
+    "sentence": "私は外国で働きたいです",
+    "translation": "Saya ingin bekerja di luar negeri."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "2",
+    "sentence": "あなたは何をしたいですか？",
+    "translation": "Anda ingin melakukan apa?"
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "行きたいです",
+    "translation": "Ingin pergi."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "行きたくないです",
+    "translation": "Tidak ingin pergi."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "食べたいです",
+    "translation": "Ingin makan."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "食べたくないです",
+    "translation": "Tidak ingin makan."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "結婚したいです",
+    "translation": "Ingin menikah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "3",
+    "sentence": "結婚したくないです",
+    "translation": "Tidak ingin menikah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "4",
+    "sentence": "私は京都へ遊びに行きます",
+    "translation": "Saya pergi ke Kyoto untuk bermain."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "4",
+    "sentence": "私は京都へ日本料理を食べに行きます",
+    "translation": "Saya pergi ke Kyoto untuk makan masakan Jepang."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "4",
+    "sentence": "私は京都へ買い物に行きます",
+    "translation": "Saya pergi ke Kyoto untuk berbelanja."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "4",
+    "sentence": "私は京都へ美術の勉強に行きます",
+    "translation": "Saya pergi ke Kyoto untuk belajar seni."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": "4",
+    "sentence": "あなたは京都へ何をしにいきますか？",
+    "translation": "Anda pergi ke Kyoto untuk melakukan apa?"
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "書きます",
+    "translation": "Menulis (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "書いて",
+    "translation": "Menulis (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "行きます",
+    "translation": "Pergi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "行って",
+    "translation": "Pergi (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "急ぎます",
+    "translation": "Buru-buru / bergegas (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "急いで",
+    "translation": "Buru-buru / bergegas (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "飲みます",
+    "translation": "Minum (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "飲んで",
+    "translation": "Minum (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "呼びます",
+    "translation": "Memanggil (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "呼んで",
+    "translation": "Memanggil (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "帰ります",
+    "translation": "Pulang / kembali (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "帰って",
+    "translation": "Pulang / kembali (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "買います",
+    "translation": "Membeli (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "買って",
+    "translation": "Membeli (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "待ちます",
+    "translation": "Menunggu (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "待って",
+    "translation": "Menunggu (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "貸します",
+    "translation": "Meminjamkan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1",
+    "sentence": "貸して",
+    "translation": "Meminjamkan (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "食べます",
+    "translation": "Makan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "食べて",
+    "translation": "Makan (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "寝ます",
+    "translation": "Tidur (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "寝て",
+    "translation": "Tidur (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "起きます",
+    "translation": "Bangun (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "起きて",
+    "translation": "Bangun (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "借ります",
+    "translation": "Meminjam (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "借りて",
+    "translation": "Meminjam (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "見ます",
+    "translation": "Melihat / menonton (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "見て",
+    "translation": "Melihat / menonton (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "います",
+    "translation": "Ada [benda hidup] (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_2",
+    "sentence": "いて",
+    "translation": "Ada [benda hidup] (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "来ます",
+    "translation": "Datang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "来て",
+    "translation": "Datang (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "します",
+    "translation": "Melakukan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "して",
+    "translation": "Melakukan (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "散歩します",
+    "translation": "Jalan-jalan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "1_3",
+    "sentence": "散歩して",
+    "translation": "Jalan-jalan (bentuk te)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "問題を読んでください",
+    "translation": "Tolong baca soalnya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "答えを書いてください",
+    "translation": "Tolong tulis jawabannya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "答えをを急いでください",
+    "translation": "Tolong (tulis/jawab) jawabannya dengan cepat. (Catatan: ada sedikit keanehan tata bahasa pada sumber asli \"答えをを急いでください\", diterjemahkan sesuai konteks kemungkinannya)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "すみませんが、塩を取ってください",
+    "translation": "Maaf, tolong ambilkan garam."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "すみませんが、電話番号を教えてください",
+    "translation": "Maaf, tolong beritahu nomor teleponnya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "どうぞたくさん食べてください",
+    "translation": "Silakan makan yang banyak."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "2",
+    "sentence": "どうぞゆっくり休んでください",
+    "translation": "Silakan istirahat dengan santai."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "3",
+    "sentence": "手伝いましょうか？",
+    "translation": "Bisa saya bantu?"
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "3",
+    "sentence": "迎えに行きましょうか？",
+    "translation": "Bagaimana kalau saya jemput?"
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "3",
+    "sentence": "窓を閉めましょうか？",
+    "translation": "Bagaimana kalau saya tutup jendelanya?"
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "4",
+    "sentence": "ミラーさんは今レポートを読んでいます",
+    "translation": "Miller sekarang sedang membaca laporan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "4",
+    "sentence": "ミラーさんは今テレビを見ています",
+    "translation": "Miller sekarang sedang menonton televisi."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "4",
+    "sentence": "ミラーさんは今日本語を勉強しています",
+    "translation": "Miller sekarang sedang belajar bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": "4",
+    "sentence": "ミラーさんは何をしていますか？",
+    "translation": "Miller sedang melakukan apa?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "1",
+    "sentence": "鉛筆で書いてもいいですか？",
+    "translation": "Bolehkah menulis dengan pensil?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "1",
+    "sentence": "このホッチキスを使ってもいいですか？",
+    "translation": "Bolehkah menggunakan stapler ini?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "1",
+    "sentence": "ここに座ってもいいですか？",
+    "translation": "Bolehkah duduk di sini?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "2",
+    "sentence": "お酒を飲んではいけません",
+    "translation": "Tidak boleh minum alkohol."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "2",
+    "sentence": "ここで写真取ってはいけません",
+    "translation": "Tidak boleh memotret di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "2",
+    "sentence": "ここに車を止めてはいけません",
+    "translation": "Tidak boleh memarkirkan mobil di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "3",
+    "sentence": "私は京都に住んでいます",
+    "translation": "Saya tinggal di Kyoto."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "3",
+    "sentence": "私はマリアさんを知っています",
+    "translation": "Saya kenal (dengan) Maria."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "3",
+    "sentence": "私は結婚しています",
+    "translation": "Saya sudah menikah."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "4",
+    "sentence": "私はIMCで働いています",
+    "translation": "Saya bekerja di IMC."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "4",
+    "sentence": "私は会社で英語を教えています",
+    "translation": "Saya mengajar bahasa Inggris di perusahaan."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": "4",
+    "sentence": "私は日本語学校で日本語を勉強しています",
+    "translation": "Saya sedang belajar bahasa Jepang di sekolah bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "1",
+    "sentence": "明日神戸へ行って、映画を見て、買い物します",
+    "translation": "Besok saya akan pergi ke Kobe, menonton film, dan berbelanja."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "1",
+    "sentence": "昨日の晩本を読んで、CDを聞いて、寝ました",
+    "translation": "Kemarin malam saya membaca buku, mendengarkan CD, dan tidur."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "1",
+    "sentence": "日曜日１０時ごろ起きて、散歩して食事します",
+    "translation": "Hari Minggu saya bangun sekitar jam 10, jalan-jalan, dan makan."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "2",
+    "sentence": "家へ帰ってから、晩ご飯を食べます",
+    "translation": "Setelah pulang ke rumah, saya makan malam."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "2",
+    "sentence": "電話をかけてから、友達の家へ行きます",
+    "translation": "Setelah menelepon, saya akan pergi ke rumah teman."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "2",
+    "sentence": "仕事が終わってから、泳ぎに行きました",
+    "translation": "Setelah pekerjaan selesai, saya pergi berenang."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "3",
+    "sentence": "カリナさんは背が高いです",
+    "translation": "Karina tinggi badannya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "3",
+    "sentence": "カリナさんは目が大きいです",
+    "translation": "Karina besar matanya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "3",
+    "sentence": "カリナさんは髪が短いです",
+    "translation": "Karina pendek rambutnya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "4",
+    "sentence": "ミラーさんは若くて、元気です",
+    "translation": "Miller muda dan bersemangat/sehat."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "4",
+    "sentence": "ミラーさんは頭が良くて、面白いです",
+    "translation": "Miller pintar dan menarik/lucu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "4",
+    "sentence": "ミラーさんはハンサムで、親切です",
+    "translation": "Miller tampan dan baik hati."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": "4",
+    "sentence": "ミラーさんは２８歳で、独身です",
+    "translation": "Miller berumur 28 tahun dan masih lajang."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "吸います",
+    "translation": "Menghisap (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "吸わない",
+    "translation": "Tidak menghisap (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "行きます",
+    "translation": "Pergi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "行かない",
+    "translation": "Tidak pergi (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "急ぎます",
+    "translation": "Buru-buru (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "急がない",
+    "translation": "Tidak buru-buru (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "話します",
+    "translation": "Berbicara (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "話さない",
+    "translation": "Tidak berbicara (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "待ちます",
+    "translation": "Menunggu (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "待たない",
+    "translation": "Tidak menunggu (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "呼びます",
+    "translation": "Memanggil (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "呼ばない",
+    "translation": "Tidak memanggil (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "飲みます",
+    "translation": "Minum (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "飲まない",
+    "translation": "Tidak minum (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "帰ります",
+    "translation": "Pulang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1",
+    "sentence": "帰らない",
+    "translation": "Tidak pulang (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "食べます",
+    "translation": "Makan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "食べない",
+    "translation": "Tidak makan (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "入れます",
+    "translation": "Memasukkan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "入れない",
+    "translation": "Tidak memasukkan (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "います",
+    "translation": "Ada [benda hidup] (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "いない",
+    "translation": "Tidak ada [benda hidup] (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "起きます",
+    "translation": "Bangun (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "起きない",
+    "translation": "Tidak bangun (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "浴びます",
+    "translation": "Mandi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "浴びない",
+    "translation": "Tidak mandi (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "見ます",
+    "translation": "Melihat (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "見ない",
+    "translation": "Tidak melihat (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "借ります",
+    "translation": "Meminjam (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "借りない",
+    "translation": "Tidak meminjam (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "降ります",
+    "translation": "Turun (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_2",
+    "sentence": "降りない",
+    "translation": "Tidak turun (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "来ます",
+    "translation": "Datang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "来ない",
+    "translation": "Tidak datang (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "します",
+    "translation": "Melakukan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "しない",
+    "translation": "Tidak melakukan (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "心配します",
+    "translation": "Khawatir (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "1_3",
+    "sentence": "心配しない",
+    "translation": "Tidak khawatir (bentuk nai)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "2",
+    "sentence": "たばこを吸わないでください",
+    "translation": "Tolong jangan merokok."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "2",
+    "sentence": "ここに入らないでください",
+    "translation": "Tolong jangan masuk ke sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "2",
+    "sentence": "傘を忘れないでください",
+    "translation": "Tolong jangan lupakan payungnya."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "2",
+    "sentence": "心配しないでください",
+    "translation": "Tolong jangan khawatir."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "3",
+    "sentence": "本を返さなければなりません",
+    "translation": "Harus mengembalikan buku."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "3",
+    "sentence": "薬をのまなければなりません",
+    "translation": "Harus minum obat."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "3",
+    "sentence": "残業しなければなりません",
+    "translation": "Harus lembur."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "4",
+    "sentence": "名前を書かなくてもいいです",
+    "translation": "Tidak perlu menulis nama."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "4",
+    "sentence": "靴を脱がなくてもいいです",
+    "translation": "Tidak perlu melepas sepatu."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "4",
+    "sentence": "明日来なくてもいいです",
+    "translation": "Besok tidak perlu datang."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "5",
+    "sentence": "レポートは明日書きます",
+    "translation": "Laporan akan (saya) tulis besok."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "5",
+    "sentence": "資料はメールで送ってください",
+    "translation": "Tolong kirimkan dokumen melalui email."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": "5",
+    "sentence": "ロビーは松本さんに見せなければなりません",
+    "translation": "Lobi harus diperlihatkan kepada Matsumoto. (Catatan: \"ロビーは松本さんに見せなければなりません\" agak tidak natural, biasanya dokumen/barang)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "買います",
+    "translation": "Membeli (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "かう",
+    "translation": "Membeli (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "書きます",
+    "translation": "Menulis (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "書く",
+    "translation": "Menulis (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "泳ぎます",
+    "translation": "Berenang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "泳ぐ",
+    "translation": "Berenang (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "話します",
+    "translation": "Berbicara (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "話す",
+    "translation": "Berbicara (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "立ちます",
+    "translation": "Berdiri (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "立つ",
+    "translation": "Berdiri (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "呼びます",
+    "translation": "Memanggil (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "呼ぶ",
+    "translation": "Memanggil (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "読みます",
+    "translation": "Membaca (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "読む",
+    "translation": "Membaca (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "入ります",
+    "translation": "Masuk (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1",
+    "sentence": "入る",
+    "translation": "Masuk (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "寝ます",
+    "translation": "Tidur (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "寝る",
+    "translation": "Tidur (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "食べます",
+    "translation": "Makan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "食べる",
+    "translation": "Makan (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "起きます",
+    "translation": "Bangun (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "起きる",
+    "translation": "Bangun (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "見ます",
+    "translation": "Melihat (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "見る",
+    "translation": "Melihat (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "借ります",
+    "translation": "Meminjam (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_2",
+    "sentence": "借りる",
+    "translation": "Meminjam (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "来ます",
+    "translation": "Datang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "来る",
+    "translation": "Datang (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "します",
+    "translation": "Melakukan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "する",
+    "translation": "Melakukan (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "運転します",
+    "translation": "Menyetir (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "1_3",
+    "sentence": "運転する",
+    "translation": "Menyetir (bentuk kamus)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "2",
+    "sentence": "ミラーさんは日本語ができます",
+    "translation": "Miller bisa bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "2",
+    "sentence": "ミラーさんは車のが運転ができます",
+    "translation": "Miller bisa menyetir mobil."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "2",
+    "sentence": "ミラーさんは漢字が読むことができます",
+    "translation": "Miller bisa membaca kanji."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "2",
+    "sentence": "ミラーさんはピアノを引くことができます",
+    "translation": "Miller bisa bermain piano."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "3",
+    "sentence": "ここでロビーができます",
+    "translation": "Di sini bisa mengakses lobi. (Atau: Di sini ada lobi)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "3",
+    "sentence": "ここでホテルの予約ができます",
+    "translation": "Di sini bisa reservasi hotel."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "3",
+    "sentence": "ここで切符を買うことができます",
+    "translation": "Di sini bisa membeli tiket."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "3",
+    "sentence": "ここでお金を帰ることができます",
+    "translation": "Di sini bisa menukar uang. (Catatan: \"お金を帰る\" salah ketik, seharusnya \"お金を換える/替える\", diartikan sebagai menukar uang)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "4",
+    "sentence": "私の趣味はスポーツです",
+    "translation": "Hobi saya adalah olahraga."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "4",
+    "sentence": "私の趣味は旅行です",
+    "translation": "Hobi saya adalah bepergian/jalan-jalan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "4",
+    "sentence": "私の趣味は動物の写真取ることです",
+    "translation": "Hobi saya adalah memotret binatang."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "4",
+    "sentence": "私の趣味は馬に写真乗ることです",
+    "translation": "Hobi saya adalah menunggang kuda dan difoto. (Catatan: \"馬に写真乗ることです\" tata bahasanya campur aduk, kemungkinan maksudnya \"kuda\" dan \"foto\")."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "5",
+    "sentence": "寝る前に、本を読みます",
+    "translation": "Sebelum tidur, saya membaca buku."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "5",
+    "sentence": "日本へ来る前に、日本語を勉強しました",
+    "translation": "Sebelum datang ke Jepang, saya belajar bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "5",
+    "sentence": "食事の前に、手を洗います",
+    "translation": "Sebelum makan, mencuci tangan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "5",
+    "sentence": "クリスマスの前に、プレゼントを買います",
+    "translation": "Sebelum Natal, saya membeli hadiah."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": "5",
+    "sentence": "５年前に、日本へ来ました",
+    "translation": "Lima tahun yang lalu, saya datang ke Jepang."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "書きます",
+    "translation": "Menulis (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "書いた",
+    "translation": "Menulis (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "行きます",
+    "translation": "Pergi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "行った",
+    "translation": "Pergi (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "急ぎます",
+    "translation": "Buru-buru (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "急いだ",
+    "translation": "Buru-buru (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "飲みます",
+    "translation": "Minum (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "飲んだ",
+    "translation": "Minum (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "呼びます",
+    "translation": "Memanggil (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "呼んだ",
+    "translation": "Memanggil (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "止まります",
+    "translation": "Berhenti (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "止まった",
+    "translation": "Berhenti (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "買います",
+    "translation": "Membeli (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "買った",
+    "translation": "Membeli (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "待ちます",
+    "translation": "Menunggu (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "待った",
+    "translation": "Menunggu (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "話します",
+    "translation": "Berbicara (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1",
+    "sentence": "話した",
+    "translation": "Berbicara (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "食べます",
+    "translation": "Makan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "食べた",
+    "translation": "Makan (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "出かけます",
+    "translation": "Keluar / pergi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "出かけた",
+    "translation": "Keluar / pergi (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "起きます",
+    "translation": "Bangun (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "起きた",
+    "translation": "Bangun (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "浴びます",
+    "translation": "Mandi (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "浴びた",
+    "translation": "Mandi (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "出来ます",
+    "translation": "Bisa (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "出来た",
+    "translation": "Bisa (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "見ます",
+    "translation": "Melihat (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_2",
+    "sentence": "見た",
+    "translation": "Melihat (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "来ます",
+    "translation": "Datang (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "来た",
+    "translation": "Datang (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "します",
+    "translation": "Melakukan (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "した",
+    "translation": "Melakukan (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "洗濯します",
+    "translation": "Mencuci (bentuk mas)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "1_3",
+    "sentence": "洗濯した",
+    "translation": "Mencuci (bentuk ta/lampau)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "2",
+    "sentence": "私は沖縄へ行ったどこがあります",
+    "translation": "Saya pernah pergi ke Okinawa. (Catatan: kalimat asli agak keliru strukturnya)."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "2",
+    "sentence": "私は富士山に登ったことがあります",
+    "translation": "Saya pernah mendaki Gunung Fuji."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "2",
+    "sentence": "私は寿司を食べたことがあります",
+    "translation": "Saya pernah makan sushi."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "3",
+    "sentence": "毎晩テレビを見たり、本を読んだりします",
+    "translation": "Setiap malam, saya menonton televisi, membaca buku, dan lain-lain."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "3",
+    "sentence": "毎晩手紙を書いたり、音楽を聞いたりします",
+    "translation": "Setiap malam, saya menulis surat, mendengarkan musik, dan lain-lain."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "3",
+    "sentence": "毎晩日本語を勉強したり、パソコンで遊んだりします",
+    "translation": "Setiap malam, saya belajar bahasa Jepang, bermain komputer, dan lain-lain."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "4",
+    "sentence": "テレーザちゃんは背が高くなりました",
+    "translation": "Teresa-chan menjadi (semakin) tinggi."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "4",
+    "sentence": "テレーザちゃんは背が元気になりました",
+    "translation": "Teresa-chan menjadi sehat/bersemangat."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": "4",
+    "sentence": "テレーザちゃん背が１０歳になりました",
+    "translation": "Teresa-chan genap berusia 10 tahun. (Catatan: kata \"se ga/tinggi\" di kalimat asli sepertinya salah ketik)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書きます",
+    "translation": "Menulis (formal positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書く",
+    "translation": "Menulis (kasual positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書きません",
+    "translation": "Tidak menulis (formal negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書かない",
+    "translation": "Tidak menulis (kasual negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書きました",
+    "translation": "Telah menulis (formal lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書いた",
+    "translation": "Telah menulis (kasual lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書きませんでした",
+    "translation": "Tidak telah menulis (formal negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1",
+    "sentence": "書かなかった",
+    "translation": "Tidak telah menulis (kasual negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "あります",
+    "translation": "Ada (formal positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "ある",
+    "translation": "Ada (kasual positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "ありません",
+    "translation": "Tidak ada (formal negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "ない",
+    "translation": "Tidak ada (kasual negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "ありました",
+    "translation": "Dulu ada (formal lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "あった",
+    "translation": "Dulu ada (kasual lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "ありませんでした",
+    "translation": "Dulu tidak ada (formal negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_2",
+    "sentence": "なかった",
+    "translation": "Dulu tidak ada (kasual negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きいです",
+    "translation": "Besar (formal positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きい",
+    "translation": "Besar (kasual positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きくないです",
+    "translation": "Tidak besar (formal negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きくない",
+    "translation": "Tidak besar (kasual negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きかったです",
+    "translation": "Dulu besar (formal lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きかった",
+    "translation": "Dulu besar (kasual lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きくなかったです",
+    "translation": "Dulu tidak besar (formal negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_3",
+    "sentence": "大きくなかった",
+    "translation": "Dulu tidak besar (kasual negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいです",
+    "translation": "Indah/bersih (formal positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいだ",
+    "translation": "Indah/bersih (kasual positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいではありません",
+    "translation": "Tidak indah/bersih (formal negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいではない",
+    "translation": "Tidak indah/bersih (kasual negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいでした",
+    "translation": "Dulu indah/bersih (formal lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいだった",
+    "translation": "Dulu indah/bersih (kasual lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいではありませんでした",
+    "translation": "Dulu tidak indah/bersih (formal negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_4",
+    "sentence": "きれいではなかった",
+    "translation": "Dulu tidak indah/bersih (kasual negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨です",
+    "translation": "Hujan (formal positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨だ",
+    "translation": "Hujan (kasual positif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨ではありません",
+    "translation": "Tidak hujan (formal negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨ではない",
+    "translation": "Tidak hujan (kasual negatif)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨でした",
+    "translation": "Dulu hujan (formal lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨だった",
+    "translation": "Dulu hujan (kasual lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨ではありませんでした",
+    "translation": "Dulu tidak hujan (formal negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "1_5",
+    "sentence": "雨ではなかった",
+    "translation": "Dulu tidak hujan (kasual negatif lampau)."
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は来週東京へ行く",
+    "translation": "Saya minggu depan akan pergi ke Tokyo. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は毎日忙しい",
+    "translation": "Saya setiap hari sibuk. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は明日暇だ",
+    "translation": "Saya besok luang. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私はIMCの社員だ",
+    "translation": "Saya pegawai IMC. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は富士山に登りたい",
+    "translation": "Saya ingin mendaki Gunung Fuji. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は大阪に住んでいる",
+    "translation": "Saya tinggal di Osaka. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は市役所へ行かなければならない",
+    "translation": "Saya harus pergi ke balai kota. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私は今日残業しなくてもいい",
+    "translation": "Saya hari ini tidak perlu lembur. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "私はドイツ語を話すことが出来る",
+    "translation": "Saya bisa berbicara bahasa Jerman. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": "2",
+    "sentence": "ドイツへ行ったことがある",
+    "translation": "Pernah pergi ke Jerman. (Bentuk biasa/kasual)"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "1",
+    "sentence": "私は明日雨が降ると思います",
+    "translation": "Menurutku besok akan turun hujan."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "1",
+    "sentence": "私は佐藤さんはゴルフをしないと思います",
+    "translation": "Menurutku Sato tidak bermain golf."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "1",
+    "sentence": "私は山田さんはもう帰ったと思います",
+    "translation": "Menurutku Yamada sudah pulang."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "1",
+    "sentence": "私は明日寒いと思います",
+    "translation": "Menurutku besok akan dingin."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "1",
+    "sentence": "私は明日もいい天気だと思います",
+    "translation": "Menurutku besok juga cuacanya akan bagus."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "2",
+    "sentence": "私は馬は役に立つと思います",
+    "translation": "Menurutku kuda itu bermanfaat."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "2",
+    "sentence": "私は子供は外で遊ばなければならないと思います",
+    "translation": "Menurutku anak-anak harus bermain di luar."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "2",
+    "sentence": "私は漫画は面白いと思います",
+    "translation": "Menurutku manga itu menarik."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "2",
+    "sentence": "私はケータイは便利だと思います",
+    "translation": "Menurutku ponsel itu praktis."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "2",
+    "sentence": "私は彼の話は本当だと思います",
+    "translation": "Menurutku ceritanya (laki-laki) itu benar."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "3",
+    "sentence": "私は課長に会社を辞めると言いました",
+    "translation": "Saya berkata kepada kepala bagian bahwa saya akan berhenti dari perusahaan."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "3",
+    "sentence": "私は課長に車を持っていないと言いました",
+    "translation": "Saya berkata kepada kepala bagian bahwa saya tidak punya mobil."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "3",
+    "sentence": "私は課長にもう資料を作ったと言いました",
+    "translation": "Saya berkata kepada kepala bagian bahwa saya sudah membuat dokumen."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "3",
+    "sentence": "私は課長に休みが欲しいと言いました",
+    "translation": "Saya berkata kepada kepala bagian bahwa saya ingin libur."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "3",
+    "sentence": "私は課長に釣りが過ぎだと言いました",
+    "translation": "Saya berkata kepada kepala bagian bahwa saya suka memancing."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "4",
+    "sentence": "明日パーティーに来るでしょう？",
+    "translation": "Besok akan datang ke pesta kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "4",
+    "sentence": "お寺でコンサートがあったでしょう？",
+    "translation": "Di kuil ada konser kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "4",
+    "sentence": "大阪は食べ物が美味しいでしょう？",
+    "translation": "Osaka makanannya enak kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": "4",
+    "sentence": "明日は休みでしょう？",
+    "translation": "Besok libur kan?"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1",
+    "sentence": "子供が読む本",
+    "translation": "Buku yang dibaca (oleh) anak-anak."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1",
+    "sentence": "子供が読まない本",
+    "translation": "Buku yang tidak dibaca (oleh) anak-anak."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1",
+    "sentence": "昨日読んだ本",
+    "translation": "Buku yang dibaca kemarin."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1",
+    "sentence": "昨日読まなかった本",
+    "translation": "Buku yang tidak dibaca kemarin."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_2",
+    "sentence": "朝ご飯を食べる人",
+    "translation": "Orang yang makan sarapan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_2",
+    "sentence": "朝ご飯を食べない人",
+    "translation": "Orang yang tidak makan sarapan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_2",
+    "sentence": "朝ご飯を食べた人",
+    "translation": "Orang yang sudah makan sarapan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_2",
+    "sentence": "朝ご飯を食べなかった人",
+    "translation": "Orang yang tidak makan sarapan (tadi)."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_3",
+    "sentence": "今住んでいる所",
+    "translation": "Tempat tinggal saat ini."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_3",
+    "sentence": "誰も住んでいない所",
+    "translation": "Tempat yang tidak ditinggali siapa pun."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_3",
+    "sentence": "父が住んでいた所",
+    "translation": "Tempat ayah pernah tinggal."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "1_3",
+    "sentence": "誰も住んでいなかった所",
+    "translation": "Tempat yang (dulu) tidak ditinggali siapa pun."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "2",
+    "sentence": "これは女の人が読む雑誌です",
+    "translation": "Ini adalah majalah yang dibaca oleh perempuan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "2",
+    "sentence": "ミラーさんは傘を持っている人です",
+    "translation": "Miller adalah orang yang membawa payung."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "2",
+    "sentence": "ここは自転車を置く所",
+    "translation": "Ini adalah tempat menaruh sepeda."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "3",
+    "sentence": "母がよく作る料理はカレーです",
+    "translation": "Masakan yang sering dibuat ibu adalah kari."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "3",
+    "sentence": "彼が持っているパソコンは新しいです",
+    "translation": "Komputer (laptop) yang dia (laki-laki) miliki baru."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "3",
+    "sentence": "来週泊まるホテルは海の近くにあります",
+    "translation": "Hotel tempat menginap minggu depan ada di dekat laut."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "4",
+    "sentence": "私はパソコンを入れるカバンを買いました",
+    "translation": "Saya membeli tas untuk memasukkan komputer."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "4",
+    "sentence": "私はあの眼鏡をかけている人知っています",
+    "translation": "Saya kenal orang yang memakai kacamata itu."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "5",
+    "sentence": "私は本を読む人が好きです",
+    "translation": "Saya suka orang yang membaca buku."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "5",
+    "sentence": "私はプールがある家が欲しいです",
+    "translation": "Saya ingin rumah yang ada kolam renangnya."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "6",
+    "sentence": "私はテレビを見る時間がありません",
+    "translation": "Saya tidak punya waktu untuk menonton televisi."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": "6",
+    "sentence": "私は買い物に行く約束があります",
+    "translation": "Saya punya janji untuk pergi berbelanja."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "1",
+    "sentence": "道を渡る時、車に気を付けます",
+    "translation": "Saat menyeberang jalan, berhati-hati terhadap mobil."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "1",
+    "sentence": "新聞を読む時、眼鏡をかけます",
+    "translation": "Saat membaca koran, (saya) memakai kacamata."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "1",
+    "sentence": "使い方がわからない時、私に聞いてください",
+    "translation": "Saat tidak tahu cara menggunakannya, tolong tanyakan pada saya."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "2",
+    "sentence": "家へ帰る時、ケーキを買います",
+    "translation": "Saat (perjalanan) pulang ke rumah, (saya) membeli kue."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "2",
+    "sentence": "家へ帰った時、「ただいま」と言います",
+    "translation": "Saat (sudah) pulang ke rumah, mengucapkan \"Tadaima\" (Aku pulang)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "2",
+    "sentence": "会社へ来る時、駅で部長に会いました",
+    "translation": "Saat (perjalanan) datang ke kantor, (saya) bertemu manajer di stasiun."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "2",
+    "sentence": "会社へ来た時、受付で社長に会いました",
+    "translation": "Saat (sudah) datang ke kantor, (saya) bertemu direktur di resepsionis."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "3",
+    "sentence": "眠い時、コーヒーを飲みます",
+    "translation": "Saat mengantuk, (saya) minum kopi."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "3",
+    "sentence": "暇な時、本を読みます",
+    "translation": "Saat luang, (saya) membaca buku."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "3",
+    "sentence": "２６歳の時、結婚しました",
+    "translation": "Saat berumur 26 tahun, (saya) menikah."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "4",
+    "sentence": "これを回すと、音が大きくなります",
+    "translation": "Kalau ini diputar, suaranya akan menjadi besar."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "4",
+    "sentence": "ここを押すと、お湯が出ます",
+    "translation": "Kalau ini ditekan, air panas akan keluar."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": "4",
+    "sentence": "右へ曲ると、郵便局があります",
+    "translation": "Kalau belok ke kanan, ada kantor pos."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "1",
+    "sentence": "ミラーさんは私にワインをくれました",
+    "translation": "Miller memberikan anggur (wine) kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "1",
+    "sentence": "ミラーさんは私に花をくれました",
+    "translation": "Miller memberikan bunga kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "1",
+    "sentence": "ミラーさんは私にカードをくれました",
+    "translation": "Miller memberikan kartu kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "2",
+    "sentence": "これはブラジルのコーヒーです。サントスさんがくれました",
+    "translation": "Ini adalah kopi Brasil. Santos memberikannya kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "2",
+    "sentence": "これはインドネシアのぽうしです。カリナさんがくれました",
+    "translation": "Ini adalah topi Indonesia. Karina memberikannya kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "2",
+    "sentence": "これは中国のお茶です。ワンさんがくれました",
+    "translation": "Ini adalah teh Cina. Wang memberikannya kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "3",
+    "sentence": "私は山田さんに旅行の写真を見せてもらいました",
+    "translation": "Saya diperlihatkan foto liburan oleh Yamada."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "3",
+    "sentence": "私は山田さんに大阪城へ連れて行ってもらいました",
+    "translation": "Saya diajak (dibawa) ke Kastil Osaka oleh Yamada."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "3",
+    "sentence": "私は山田さんに引っ越しを手伝ってもらいました",
+    "translation": "Saya dibantu pindahan oleh Yamada."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "4",
+    "sentence": "山田さんは旅行の写真を見せてくれました",
+    "translation": "Yamada memperlihatkan foto liburan kepada saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "4",
+    "sentence": "山田さんは大阪城へ連れて行ってくれました",
+    "translation": "Yamada mengajak (membawa) saya ke Kastil Osaka."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "4",
+    "sentence": "山田さんは引っ越しを手伝ってくれました",
+    "translation": "Yamada membantu kepindahan saya."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "5",
+    "sentence": "私はカリナさんにCDを貸してあげました",
+    "translation": "Saya meminjamkan CD kepada Karina."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "5",
+    "sentence": "私はカリナさんを駅まで送ってあげました",
+    "translation": "Saya mengantar Karina sampai stasiun."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": "5",
+    "sentence": "私はカリナさんの自転車を修理してあげました",
+    "translation": "Saya memperbaiki sepeda Karina."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "飲みます",
+    "translation": "Minum (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "飲んだら",
+    "translation": "Kalau minum."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "飲んでも",
+    "translation": "Walaupun minum."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "待ちます",
+    "translation": "Menunggu (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "待ったら",
+    "translation": "Kalau menunggu."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "待っても",
+    "translation": "Walaupun menunggu."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "食べます",
+    "translation": "Makan (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "食べたら",
+    "translation": "Kalau makan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1",
+    "sentence": "食べても",
+    "translation": "Walaupun makan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "見ます",
+    "translation": "Melihat (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "見たら",
+    "translation": "Kalau melihat."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "見ても",
+    "translation": "Walaupun melihat."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "来ます",
+    "translation": "Datang (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "来たら",
+    "translation": "Kalau datang."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "来ても",
+    "translation": "Walaupun datang."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "します",
+    "translation": "Melakukan (bentuk formal)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "したら",
+    "translation": "Kalau melakukan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_2",
+    "sentence": "しても",
+    "translation": "Walaupun melakukan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "暑いです",
+    "translation": "Panas."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "暑かったら",
+    "translation": "Kalau panas."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "暑くても",
+    "translation": "Walaupun panas."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "いいです",
+    "translation": "Bagus / Baik."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "よかったら",
+    "translation": "Kalau bagus / Kalau berkenan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_3",
+    "sentence": "よくても",
+    "translation": "Walaupun bagus / baik."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "好きです",
+    "translation": "Suka."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "好きだったら",
+    "translation": "Kalau suka."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "好きでも",
+    "translation": "Walaupun suka."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "簡単です",
+    "translation": "Mudah."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "簡単だったら",
+    "translation": "Kalau mudah."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_4",
+    "sentence": "簡単でも",
+    "translation": "Walaupun mudah."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "病気です",
+    "translation": "Sakit."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "病だったら",
+    "translation": "Kalau sakit."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "病気でも",
+    "translation": "Walaupun sakit."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "雨です",
+    "translation": "Hujan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "雨だったら",
+    "translation": "Kalau hujan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "1_5",
+    "sentence": "雨でも",
+    "translation": "Walaupun hujan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "2",
+    "sentence": "雨が降ったら、行きません",
+    "translation": "Kalau turun hujan, (saya) tidak pergi."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "2",
+    "sentence": "時間がなかったら、映画を見ません",
+    "translation": "Kalau tidak ada waktu, (saya) tidak menonton film."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "2",
+    "sentence": "安かったら、あの店で買います",
+    "translation": "Kalau murah, (saya) akan membeli di toko itu."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "2",
+    "sentence": "暇だったら、遊びに行きます",
+    "translation": "Kalau luang, (saya) akan pergi bermain."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "2",
+    "sentence": "いい天気だったら、散歩します",
+    "translation": "Kalau cuacanya bagus, (saya) akan jalan-jalan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "3",
+    "sentence": "ミラーさんが来たら、出かけましょう",
+    "translation": "Kalau Miller datang, ayo kita berangkat/keluar."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "3",
+    "sentence": "家へ帰ったら、すぐシャワーを浴びます",
+    "translation": "Kalau pulang ke rumah, (saya) akan segera mandi."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "3",
+    "sentence": "夏休みになったら、田舎へ帰りたい",
+    "translation": "Kalau sudah libur musim panas, (saya) ingin pulang kampung."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "4",
+    "sentence": "考えても、分かりません",
+    "translation": "Walaupun dipikirkan, (saya) tidak mengerti."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "4",
+    "sentence": "お金がなくても、毎日楽しいです",
+    "translation": "Walaupun tidak punya uang, setiap hari menyenangkan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "4",
+    "sentence": "高くても、この家を買いたいです",
+    "translation": "Walaupun mahal, (saya) ingin membeli rumah ini."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "4",
+    "sentence": "便利でも、車は使いません",
+    "translation": "Walaupun praktis, (saya) tidak menggunakan mobil."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": "4",
+    "sentence": "休みの日でも、早く起きます",
+    "translation": "Walaupun hari libur, (saya) bangun pagi."
   }
 ]

@@ -9,6 +9,7 @@ import 'grammar_menu_screen.dart';
 import 'grammar_n5_menu_screen.dart';
 import 'all_verbs_screen.dart'; 
 import 'verb_menu_screen.dart';
+import 'adjective_list_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

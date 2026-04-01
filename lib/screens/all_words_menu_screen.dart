@@ -22,6 +22,8 @@ class AllWordsMenuScreen extends StatelessWidget {
           bottom: MediaQuery.of(context).padding.bottom + 16.0
         ),
         children: [
+          _buildDayCard(context, 0, 'Semua Hari (Campuran)', isDojoMode ? 'Test all knowledge' : 'All vocabulary combined'),
+          const SizedBox(height: 12),
           _buildDayCard(context, 1, 'Day 1', isDojoMode ? 'Test Day 1 knowledge' : 'Beginner vocabulary part 1'),
           const SizedBox(height: 12),
           _buildDayCard(context, 2, 'Day 2', isDojoMode ? 'Test Day 2 knowledge' : 'Beginner vocabulary part 2'),
@@ -62,13 +64,19 @@ class AllWordsMenuScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
+                  color: dayNumber == 0 
+                      ? Theme.of(context).colorScheme.primaryContainer 
+                      : Theme.of(context).colorScheme.secondaryContainer,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Icon(
-                  isDojoMode ? Icons.fitness_center_rounded : Icons.today_rounded, 
+                  dayNumber == 0 
+                      ? Icons.all_inclusive_rounded 
+                      : (isDojoMode ? Icons.fitness_center_rounded : Icons.today_rounded), 
                   size: 26, 
-                  color: Theme.of(context).colorScheme.onSecondaryContainer
+                  color: dayNumber == 0 
+                      ? Theme.of(context).colorScheme.onPrimaryContainer 
+                      : Theme.of(context).colorScheme.onSecondaryContainer
                 ),
               ),
               const SizedBox(width: 16),

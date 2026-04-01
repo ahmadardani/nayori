@@ -35,11 +35,22 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
 
   Future<void> _loadDayData() async {
     try {
-      final String jsonString = await rootBundle.loadString('assets/day${widget.dayNumber}.json');
-      final WordParsedResult result = await compute(parseWordDataInBackground, jsonString);
+      List<WordData> combinedWords = [];
       
-      _allWords = result.allWords;
-      _uniqueKanjis = result.uniqueKanjis;
+      if (widget.dayNumber == 0) {
+        for (int i = 1; i <= 5; i++) {
+          final String jsonString = await rootBundle.loadString('assets/kanji/day$i.json');
+          final WordParsedResult result = await compute(parseWordDataInBackground, jsonString);
+          combinedWords.addAll(result.allWords);
+        }
+      } else {
+        final String jsonString = await rootBundle.loadString('assets/kanji/day${widget.dayNumber}.json');
+        final WordParsedResult result = await compute(parseWordDataInBackground, jsonString);
+        combinedWords.addAll(result.allWords);
+      }
+      
+      _allWords = combinedWords;
+      _uniqueKanjis = combinedWords.map((e) => e.kanji).toSet().toList();
       _filteredKanjis = _uniqueKanjis;
       
       await _checkMasteryStatus();
@@ -48,7 +59,6 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
         _isLoading = false;
       });
     } catch (e) {
-      debugPrint("Error loading day${widget.dayNumber}.json: $e");
       setState(() => _isLoading = false);
     }
   }
@@ -95,8 +105,12 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    String appBarTitle = widget.dayNumber == 0 
+        ? (widget.isDojoMode ? 'All Days Dojo' : 'All Days Words') 
+        : (widget.isDojoMode ? 'Day ${widget.dayNumber} Dojo' : 'Day ${widget.dayNumber} Words');
+
     return Scaffold(
-      appBar: AppBar(title: Text(widget.isDojoMode ? 'Day ${widget.dayNumber} Dojo' : 'Day ${widget.dayNumber} Words')),
+      appBar: AppBar(title: Text(appBarTitle)),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : _uniqueKanjis.isEmpty

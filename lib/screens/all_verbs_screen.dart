@@ -72,7 +72,7 @@ class _AllVerbsScreenState extends State<AllVerbsScreen> {
               ),
               itemCount: _groupedVerbs.keys.length + 1,
               itemBuilder: (context, index) {
-
+                
                 if (index == 0) {
                   return Card(
                     clipBehavior: Clip.antiAlias,

@@ -7,7 +7,7 @@ import 'all_kanji_screen.dart';
 import 'all_words_menu_screen.dart'; 
 import 'renshuu_menu_screen.dart';
 import 'grammar_n5_menu_screen.dart';
-import 'adjective_list_screen.dart';
+import 'adjective_menu_screen.dart';      
 import 'verb_menu_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -95,24 +95,35 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () => _navigateTo(context, const GrammarN5MenuScreen()),
                 ),
                 const SizedBox(height: 32),
-
                 _buildSectionTitle('Adjectives', Icons.style_rounded),
-                _buildExpandableAdjectiveCard(context, 'N5 Adjectives', 'I Adjective', 'Na Adjective'),
-                _buildExpandableAdjectiveCard(context, 'N4 Adjectives', 'I Adjective', 'Na Adjective'),
+                _buildMenuCard(
+                  context: context,
+                  title: 'N5 Adjectives',
+                  subtitle: 'Pelajari kata sifat level N5',
+                  icon: Icons.category_rounded,
+                  onTap: () => _navigateTo(context, const AdjectiveMenuScreen(level: 'N5')),
+                ),
+                _buildMenuCard(
+                  context: context,
+                  title: 'N4 Adjectives',
+                  subtitle: 'Pelajari kata sifat level N4',
+                  icon: Icons.category_rounded,
+                  onTap: () => _navigateTo(context, const AdjectiveMenuScreen(level: 'N4')),
+                ),
                 const SizedBox(height: 32),
 
                 _buildSectionTitle('Verbs', Icons.transform_rounded),
                 _buildMenuCard(
                   context: context,
                   title: 'N5 Verbs',
-                  subtitle: 'Pelajari kata kerja N5 (Part 1 & 2)',
+                  subtitle: 'Pelajari kata kerja N5',
                   icon: Icons.sync_alt_rounded,
                   onTap: () => _navigateTo(context, const VerbMenuScreen(level: 'N5')),
                 ),
                 _buildMenuCard(
                   context: context,
                   title: 'N4 Verbs',
-                  subtitle: 'Pelajari kata kerja N4 (Part 1 & 2)',
+                  subtitle: 'Pelajari kata kerja N4',
                   icon: Icons.sync_alt_rounded,
                   onTap: () => _navigateTo(context, const VerbMenuScreen(level: 'N4')),
                 ),
@@ -222,48 +233,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildExpandableAdjectiveCard(BuildContext context, String title, String iAdjLabel, String naAdjLabel) {
-    final String levelPrefix = title.contains('N5') ? 'N5' : 'N4';
-
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12.0),
-      clipBehavior: Clip.antiAlias,
-      child: ExpansionTile(
-        shape: const Border(),
-        tilePadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
-        leading: Container(
-          padding: const EdgeInsets.all(10.0),
-          decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.tertiaryContainer,
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          child: Icon(Icons.category_rounded, size: 24.0, color: Theme.of(context).colorScheme.onTertiaryContainer),
-        ),
-        title: Text(title, style: const TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
-        children: [
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 32.0),
-            title: Text(iAdjLabel, style: const TextStyle(fontWeight: FontWeight.w500)),
-            trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-            onTap: () => _navigateTo(context, AdjectiveListScreen(
-              category: 'い Adjective $levelPrefix', 
-              title: '$levelPrefix - I Adjective',
-            )),
-          ),
-          ListTile(
-            contentPadding: const EdgeInsets.symmetric(horizontal: 32.0),
-            title: Text(naAdjLabel, style: const TextStyle(fontWeight: FontWeight.w500)),
-            trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-            onTap: () => _navigateTo(context, AdjectiveListScreen(
-              category: 'な Adjective $levelPrefix', 
-              title: '$levelPrefix - Na Adjective',
-            )),
-          ),
-        ],
       ),
     );
   }

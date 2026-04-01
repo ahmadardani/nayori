@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../models/grammar_n5_model.dart';
+import 'dart:math';
 
 class GrammarN5QuizScreen extends StatefulWidget {
   final GrammarN5Data data;
+  final bool isDrillMode; 
 
-  const GrammarN5QuizScreen({super.key, required this.data});
+  const GrammarN5QuizScreen({super.key, required this.data, required this.isDrillMode});
 
   @override
   State<GrammarN5QuizScreen> createState() => _GrammarN5QuizScreenState();
@@ -53,6 +55,29 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
     _focusNode.dispose();
     flutterTts.stop(); 
     super.dispose();
+  }
+
+  String _generateClozeHint(String fullJapanese) {
+    if (fullJapanese.length <= 3) return "＿＿＿";
+    
+    int hideLength = (fullJapanese.length * 0.4).ceil(); 
+    
+    String targetGrammar = widget.data.title.replaceAll('・', '').replaceAll('〜', '');
+    int targetIndex = fullJapanese.indexOf(targetGrammar);
+    
+    int startIndex;
+    if (targetIndex > 0) {
+
+      startIndex = max(0, targetIndex - hideLength);
+    } else {
+
+      startIndex = fullJapanese.length ~/ 3;
+    }
+
+    String clozeText = fullJapanese.substring(0, startIndex) + 
+                       List.filled(hideLength, '＿').join('') + 
+                       fullJapanese.substring(startIndex + hideLength);
+    return clozeText;
   }
 
   void _handleSubmitted(String text) {
@@ -179,8 +204,16 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text(widget.data.title, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+          title: Text(widget.isDrillMode ? 'Drill: ${widget.data.title}' : 'Quiz: ${widget.data.title}', style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
+          actions: [
+            if (!_isStarting && !_isQuizFinished && widget.isDrillMode)
+              IconButton(
+                icon: const Icon(Icons.volume_up_rounded),
+                onPressed: () => _speak(_activeQueue[_currentIndex].japanese),
+                tooltip: 'Listen to Sentence',
+              )
+          ],
           bottom: _isStarting 
             ? null 
             : PreferredSize(
@@ -219,18 +252,22 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Icon(Icons.translate_rounded, size: 80.0, color: Theme.of(context).colorScheme.primary),
+                Icon(
+                  widget.isDrillMode ? Icons.psychology_alt_rounded : Icons.workspace_premium_rounded, 
+                  size: 80.0, 
+                  color: Theme.of(context).colorScheme.primary
+                ),
                 const SizedBox(height: 24.0),
                 Text(
-                  widget.data.title, 
+                  widget.isDrillMode ? 'Drill Mode' : 'Quiz Mode', 
                   textAlign: TextAlign.center, 
                   style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)
                 ),
                 const SizedBox(height: 8.0),
-                const Text(
-                  'Ready to test your grammar?', 
+                Text(
+                  widget.isDrillMode ? 'Pemanasan menggunakan kerangka kalimat.' : 'Uji ingatan tanpa bantuan (hardcore).', 
                   textAlign: TextAlign.center, 
-                  style: TextStyle(fontSize: 16.0, color: Colors.grey)
+                  style: const TextStyle(fontSize: 16.0, color: Colors.grey)
                 ),
                 const SizedBox(height: 48.0),
                 Card(
@@ -279,6 +316,8 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
 
   Widget _buildQuizContent() {
     final currentData = _activeQueue[_currentIndex];
+    final String clozeHint = _generateClozeHint(currentData.japanese);
+
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
       child: Column(
@@ -313,8 +352,8 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             textInputAction: TextInputAction.done,
             onSubmitted: (_) => _handleSubmitted(''),
             decoration: InputDecoration(
-              hintText: 'Type the Japanese sentence...',
-              hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
+              hintText: widget.isDrillMode ? clozeHint : 'Type the Japanese sentence...',
+              hintStyle: TextStyle(fontSize: widget.isDrillMode ? 18.0 : 15.0, color: Colors.grey.shade400, fontWeight: widget.isDrillMode ? FontWeight.bold : FontWeight.normal),
               filled: true,
               fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
               contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
@@ -329,22 +368,23 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             ),
           ),
           const SizedBox(height: 16.0),
-          if (_showHint)
-            Center(
-              child: Text(
-                'Hint: ${currentData.japanese.substring(0, currentData.japanese.length > 2 ? 2 : 1)}...',
-                style: const TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic, color: Colors.grey),
-              ),
-            )
-          else if (!_isAnswered)
-            Center(
-              child: TextButton.icon(
-                onPressed: () => setState(() => _showHint = true),
-                icon: const Icon(Icons.lightbulb_outline, size: 18.0),
-                label: const Text('Show Hint', style: TextStyle(fontSize: 14.0)),
-                style: TextButton.styleFrom(foregroundColor: Colors.grey.shade600),
-              ),
-            ),
+          
+          if (!widget.isDrillMode && _showHint)
+             Center(
+               child: Text(
+                 'Hint: ${currentData.japanese.substring(0, currentData.japanese.length > 2 ? 2 : 1)}...',
+                 style: const TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic, color: Colors.grey),
+               ),
+             )
+          else if (!widget.isDrillMode && !_isAnswered)
+             Center(
+               child: TextButton.icon(
+                 onPressed: () => setState(() => _showHint = true),
+                 icon: const Icon(Icons.lightbulb_outline, size: 18.0),
+                 label: const Text('Show Hint', style: TextStyle(fontSize: 14.0)),
+                 style: TextButton.styleFrom(foregroundColor: Colors.grey.shade600),
+               ),
+             ),
         ],
       ),
     );

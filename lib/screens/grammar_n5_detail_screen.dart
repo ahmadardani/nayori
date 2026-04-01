@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart'; 
+import 'package:flutter_tts/flutter_tts.dart';
 import '../models/grammar_n5_model.dart';
 import 'grammar_n5_quiz_screen.dart';
 
@@ -16,11 +17,28 @@ class GrammarN5DetailScreen extends StatefulWidget {
 class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
   String _markdownContent = '';
   bool _isLoading = true;
+  final FlutterTts flutterTts = FlutterTts();
 
   @override
   void initState() {
     super.initState();
+    _initTts();
     _loadMarkdown();
+  }
+
+  Future<void> _initTts() async {
+    await flutterTts.setLanguage("ja-JP");
+    await flutterTts.setSpeechRate(0.45);
+  }
+
+  Future<void> _speak(String text) async {
+    await flutterTts.speak(text);
+  }
+
+  @override
+  void dispose() {
+    flutterTts.stop();
+    super.dispose();
   }
 
   Future<void> _loadMarkdown() async {
@@ -44,6 +62,70 @@ class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
         _isLoading = false;
       });
     }
+  }
+
+  void _showPracticeOptions() {
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 16.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text('Select Practice Mode', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary)),
+                const SizedBox(height: 8.0),
+                Text('Choose how you want to test your knowledge.', style: TextStyle(color: Colors.grey.shade600)),
+                const SizedBox(height: 24.0),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
+                    child: Icon(Icons.psychology_alt_rounded, color: Theme.of(context).colorScheme.onSecondaryContainer),
+                  ),
+                  title: const Text('Drill Mode', style: TextStyle(fontWeight: FontWeight.bold)),
+                  subtitle: const Text('Pemanasan dengan bantuan kerangka kalimat dan audio.'),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) => GrammarN5QuizScreen(data: widget.data, isDrillMode: true),
+                        transitionDuration: Duration.zero,
+                        reverseTransitionDuration: Duration.zero,
+                      ),
+                    );
+                  },
+                ),
+                const Divider(),
+                ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Theme.of(context).colorScheme.errorContainer,
+                    child: Icon(Icons.workspace_premium_rounded, color: Theme.of(context).colorScheme.onErrorContainer),
+                  ),
+                  title: const Text('Quiz Mode', style: TextStyle(fontWeight: FontWeight.bold)),
+                  subtitle: const Text('Uji ingatan murni tanpa bantuan (Hardcore).'),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) => GrammarN5QuizScreen(data: widget.data, isDrillMode: false),
+                        transitionDuration: Duration.zero,
+                        reverseTransitionDuration: Duration.zero,
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
   }
 
   @override
@@ -93,15 +175,27 @@ class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  sentence.japanese, 
-                                  style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Text(
+                                        sentence.japanese, 
+                                        style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                      ),
+                                      const SizedBox(height: 8.0),
+                                      Text(sentence.indonesian, style: const TextStyle(fontSize: 15.0)),
+                                    ],
+                                  ),
                                 ),
-                                const SizedBox(height: 8.0),
-                                Text(sentence.indonesian, style: const TextStyle(fontSize: 15.0)),
+                                IconButton(
+                                  icon: Icon(Icons.volume_up_rounded, color: Theme.of(context).colorScheme.primary),
+                                  onPressed: () => _speak(sentence.japanese),
+                                  tooltip: 'Listen',
+                                ),
                               ],
                             ),
                           ),
@@ -113,18 +207,9 @@ class _GrammarN5DetailScreenState extends State<GrammarN5DetailScreen> {
               ),
             ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          Navigator.push(
-            context,
-            PageRouteBuilder(
-              pageBuilder: (context, animation, secondaryAnimation) => GrammarN5QuizScreen(data: widget.data),
-              transitionDuration: Duration.zero,
-              reverseTransitionDuration: Duration.zero,
-            ),
-          );
-        },
+        onPressed: _showPracticeOptions,
         icon: const Icon(Icons.edit_note_rounded),
-        label: const Text('Start Quiz', style: TextStyle(fontWeight: FontWeight.bold)),
+        label: const Text('Practice', style: TextStyle(fontWeight: FontWeight.bold)),
       ),
     );
   }

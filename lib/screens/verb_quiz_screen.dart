@@ -58,7 +58,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
       if (verb.teKudasai.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Kudasai', verb.teKudasai));
       if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
     }
-    _activeQueue = List.from(questions)..shuffle(); 
+    _activeQueue = List.from(questions); 
   }
 
   Future<void> _initTts() async {
@@ -164,7 +164,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   void _retryIncorrect() {
     setState(() {
-      _activeQueue = List.from(_incorrectQueue)..shuffle();
+      _activeQueue = List.from(_incorrectQueue);
       _incorrectQueue.clear();
       _currentIndex = 0;
       _totalCorrect = 0;
@@ -176,11 +176,16 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   Future<bool> _onWillPop() async {
     if (_isQuizFinished) return true;
+    final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
+    final String content = _isQuizFinished 
+        ? 'Are you sure you want to return to the menu?' 
+        : 'You have not finished this challenge. Are you sure you want to leave?';
+
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        title: Text(title),
+        content: Text(content),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -259,6 +264,26 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 16.0, color: Colors.grey),
           ),
+          const SizedBox(height: 12.0),
+          if (currentQ.verb.subGroup.isNotEmpty)
+            Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(8.0),
+                  border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3)),
+                ),
+                child: Text(
+                  'Sub-group: ${currentQ.verb.subGroup}',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onTertiaryContainer,
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           const SizedBox(height: 24.0),
           Center(
             child: Container(

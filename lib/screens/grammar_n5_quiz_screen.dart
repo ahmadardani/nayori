@@ -67,10 +67,8 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
     
     int startIndex;
     if (targetIndex > 0) {
-
       startIndex = max(0, targetIndex - hideLength);
     } else {
-
       startIndex = fullJapanese.length ~/ 3;
     }
 
@@ -84,64 +82,58 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
     if (!_isAnswered) {
       _checkAnswer();
     } else {
-      _nextQuestion();
+      if (widget.isDrillMode && !_isCorrect) {
+        _checkAnswer(); 
+      } else {
+        _nextQuestion();
+      }
     }
   }
 
   void _checkAnswer() {
     if (_answerController.text.trim().isEmpty) return;
 
-    FocusScope.of(context).unfocus(); 
-
     final currentData = _activeQueue[_currentIndex];
     
-    String normalizeText(String text) {
-      String normalized = text
-          .replaceAll(' ', '')
-          .replaceAll('　', '')  
-          .replaceAll('。', '')  
-          .replaceAll('、', '')  
-          .replaceAll(',', '')   
-          .replaceAll('？', '')  
-          .replaceAll('?', '')   
-          .replaceAll('！', '')  
-          .replaceAll('!', '')   
-          .toLowerCase();
-      
-      normalized = normalized.replaceAll('才', '歳');
-      
-      const fullWidth = 'ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０';
-      const halfWidth = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
-      
-      for (int i = 0; i < fullWidth.length; i++) {
-        normalized = normalized.replaceAll(fullWidth[i], halfWidth[i].toLowerCase());
-      }
-      
-      return normalized;
+    String normalize(String text) {
+      String n = text.replaceAll(RegExp(r'[ 　。、,.？?！!]'), '').toLowerCase();
+      n = n.replaceAll('才', '歳');
+      const full = 'ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ１２３４５６７８９０';
+      const half = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+      for (int i = 0; i < full.length; i++) n = n.replaceAll(full[i], half[i].toLowerCase());
+      return n;
     }
 
-    final userAnswer = normalizeText(_answerController.text);
-    final correctAnswer = normalizeText(currentData.japanese);
-
-    bool isTextMatch = (userAnswer == correctAnswer);
+    final userAnswer = normalize(_answerController.text);
+    final correctAnswer = normalize(currentData.japanese);
+    bool isMatch = (userAnswer == correctAnswer);
 
     setState(() {
       _isAnswered = true;
-      if (isTextMatch) {
+      if (isMatch) {
+        if (!_isCorrect && !_incorrectQueue.contains(currentData)) {
+           _totalCorrect++; 
+        }
         _isCorrect = true;
-        _totalCorrect++;
+        if (_autoPlayAudio) _speak(currentData.japanese);
+        FocusScope.of(context).unfocus(); 
       } else {
         _isCorrect = false;
-        _totalWrong++;
-        if (!_incorrectQueue.contains(currentData)) {
-          _incorrectQueue.add(currentData);
+        if (!widget.isDrillMode) {
+          _totalWrong++;
+          if (!_incorrectQueue.contains(currentData)) _incorrectQueue.add(currentData);
+          if (_autoPlayAudio) _speak(currentData.japanese);
+          FocusScope.of(context).unfocus(); 
+        } else {
+          if (!_incorrectQueue.contains(currentData)) {
+            _totalWrong++;
+            _incorrectQueue.add(currentData); 
+          }
+          _answerController.clear();
+          _focusNode.requestFocus();
         }
       }
     });
-
-    if (_autoPlayAudio) {
-      _speak(currentData.japanese);
-    }
   }
 
   void _nextQuestion() {
@@ -153,9 +145,7 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
 
       if (_currentIndex < _activeQueue.length - 1) {
         _currentIndex++;
-        Future.delayed(const Duration(milliseconds: 100), () {
-          if (mounted) _focusNode.requestFocus();
-        });
+        Future.delayed(const Duration(milliseconds: 100), () => _focusNode.requestFocus());
       } else {
         _isQuizFinished = true;
         FocusScope.of(context).unfocus();
@@ -177,17 +167,19 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
 
   Future<bool> _onWillPop() async {
     if (_isStarting || _isQuizFinished) return true;
+    
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        content: const Text('Proses latihan akan hilang. Keluar?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
         ],
       ),
     );
+    
     return shouldPop ?? false;
   }
 
@@ -265,7 +257,9 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
                 ),
                 const SizedBox(height: 8.0),
                 Text(
-                  widget.isDrillMode ? 'Pemanasan menggunakan kerangka kalimat.' : 'Uji ingatan tanpa bantuan (hardcore).', 
+                  widget.isDrillMode 
+                    ? "Pemanasan mengetik.\nKamu wajib mengetik ulang kalimat jika salah." 
+                    : "Uji ingatan murni (Hardcore).\nKalimat yang salah akan diulang di akhir.", 
                   textAlign: TextAlign.center, 
                   style: const TextStyle(fontSize: 16.0, color: Colors.grey)
                 ),
@@ -340,13 +334,13 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             controller: _answerController,
             focusNode: _focusNode,
             autofocus: true,
-            readOnly: _isAnswered,
+            readOnly: _isAnswered && _isCorrect, 
             minLines: 1, 
             maxLines: 3, 
             style: TextStyle(
               fontSize: 18.0, 
               color: _isAnswered 
-                  ? (_isCorrect ? Colors.green : Colors.red) 
+                  ? (_isCorrect ? Colors.green : Theme.of(context).colorScheme.onSurface) 
                   : Theme.of(context).colorScheme.onSurface,
             ),
             textInputAction: TextInputAction.done,
@@ -369,7 +363,14 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
           ),
           const SizedBox(height: 16.0),
           
-          if (!widget.isDrillMode && _showHint)
+          if (widget.isDrillMode && _isAnswered && !_isCorrect)
+             Center(
+               child: Text(
+                 'Incorrect! Type it again correctly to proceed.',
+                 style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold, color: Colors.red.shade600),
+               ),
+             )
+          else if (!widget.isDrillMode && _showHint)
              Center(
                child: Text(
                  'Hint: ${currentData.japanese.substring(0, currentData.japanese.length > 2 ? 2 : 1)}...',
@@ -393,7 +394,7 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
   Widget _buildBottomActionPanel() {
     final colorScheme = Theme.of(context).colorScheme;
 
-    if (!_isAnswered) {
+    if (!_isAnswered || (widget.isDrillMode && !_isCorrect)) {
       return SafeArea(
         child: Container(
           padding: const EdgeInsets.all(16.0),
@@ -401,19 +402,33 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             color: Theme.of(context).scaffoldBackgroundColor,
             border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
           ),
-          child: SizedBox(
-            width: double.infinity,
-            height: 56.0,
-            child: ElevatedButton(
-              onPressed: _checkAnswer,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: colorScheme.primary,
-                foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-                elevation: 0.0,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (widget.isDrillMode && _isAnswered && !_isCorrect) ...[
+                Text('Correct Answer:', style: TextStyle(color: Colors.red.shade800.withOpacity(0.8), fontSize: 14.0)),
+                const SizedBox(height: 4.0),
+                Text(
+                  _activeQueue[_currentIndex].japanese,
+                  style: TextStyle(color: Colors.red.shade800, fontSize: 18.0, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16.0),
+              ],
+              SizedBox(
+                width: double.infinity,
+                height: 56.0,
+                child: ElevatedButton(
+                  onPressed: _checkAnswer,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: colorScheme.primary,
+                    foregroundColor: colorScheme.onPrimary,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    elevation: 0.0,
+                  ),
+                  child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                ),
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
-            ),
+            ],
           ),
         ),
       );
@@ -492,7 +507,7 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
   }
 
   Widget _buildResultScreen() {
-    bool isPerfect = _incorrectQueue.isEmpty;
+    bool isPerfect = _totalWrong == 0;
     return Padding(
       padding: EdgeInsets.only(
         left: 24.0,
@@ -524,7 +539,7 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
             ],
           ),
           const Spacer(),
-          if (!isPerfect)
+          if (!widget.isDrillMode && !isPerfect)
             ElevatedButton(
               onPressed: _retryIncorrect,
               style: ElevatedButton.styleFrom(
@@ -539,10 +554,7 @@ class _GrammarN5QuizScreenState extends State<GrammarN5QuizScreen> {
           const SizedBox(height: 12.0),
           OutlinedButton(
             onPressed: () async {
-              final shouldPop = await _onWillPop();
-              if (shouldPop && context.mounted) {
-                Navigator.pop(context, true);
-              }
+              Navigator.pop(context, true);
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),

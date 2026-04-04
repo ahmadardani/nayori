@@ -28,6 +28,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   List<VerbQuestion> _incorrectQueue = [];
   
   bool _autoPlayAudio = true; 
+  bool? _isGuessFromMeaning; // null = belum memilih mode
   
   int _currentIndex = 0;
   bool _showHint = false;
@@ -42,11 +43,11 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   void initState() {
     super.initState();
     _initTts(); 
-    _generateQuestions();
   }
 
   void _generateQuestions() {
     List<VerbQuestion> questions = [];
+    // Pembuatan soal tetap sama untuk kedua mode (menanyakan semua form)
     for (var verb in widget.verbList) {
       if (verb.masuForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Masu Form', verb.masuForm));
       if (verb.naiForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
@@ -59,6 +60,16 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
       if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
     }
     _activeQueue = List.from(questions); 
+  }
+
+  void _startQuiz(bool guessFromMeaning) {
+    setState(() {
+      _isGuessFromMeaning = guessFromMeaning;
+      _generateQuestions();
+    });
+    Future.delayed(const Duration(milliseconds: 100), () {
+      if (mounted) _focusNode.requestFocus();
+    });
   }
 
   Future<void> _initTts() async {
@@ -175,11 +186,11 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
+    if (_isGuessFromMeaning == null) return true; // Langsung pop jika masih di menu awal
     if (_isQuizFinished) return true;
-    final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
-    final String content = _isQuizFinished 
-        ? 'Are you sure you want to return to the menu?' 
-        : 'You have not finished this challenge. Are you sure you want to leave?';
+    
+    final String title = 'Exit Challenge?';
+    final String content = 'You have not finished this challenge. Are you sure you want to leave?';
 
     final shouldPop = await showDialog<bool>(
       context: context,
@@ -197,6 +208,53 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Tampilkan menu awal jika mode belum dipilih
+    if (_isGuessFromMeaning == null) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Dojo: ${widget.title}', 
+            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+          ),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Text(
+                  'Pilih Mode Kuis',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 32.0),
+                ElevatedButton(
+                  onPressed: () => _startQuiz(false),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                  ),
+                  child: const Text('Tebak dari Kanji/Hiragana', style: TextStyle(fontSize: 16.0)),
+                ),
+                const SizedBox(height: 16.0),
+                ElevatedButton(
+                  onPressed: () => _startQuiz(true),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                  ),
+                  child: const Text('Tebak dari Arti (Indonesia)', style: TextStyle(fontSize: 16.0)),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
@@ -214,7 +272,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(4.0),
             child: LinearProgressIndicator(
-              value: _isQuizFinished ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
+              value: _isQuizFinished || _activeQueue.isEmpty ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
               backgroundColor: Colors.grey.withOpacity(0.2),
             ),
           ),
@@ -228,12 +286,14 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         ),
         body: _isQuizFinished 
             ? _buildResultScreen() 
-            : Column(
-                children: [
-                  Expanded(child: _buildQuizContent()),
-                  _buildBottomActionPanel(),
-                ],
-              ),
+            : _activeQueue.isEmpty 
+                ? const Center(child: Text("Tidak ada soal tersedia."))
+                : Column(
+                    children: [
+                      Expanded(child: _buildQuizContent()),
+                      _buildBottomActionPanel(),
+                    ],
+                  ),
       ),
     );
   }
@@ -254,13 +314,15 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           ),
           const SizedBox(height: 32.0),
           Text(
-            currentQ.verb.kanji,
+            // Balik tampilan berdasarkan mode
+            _isGuessFromMeaning! ? currentQ.verb.meaning : currentQ.verb.kanji,
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8.0),
           Text(
-            currentQ.verb.meaning,
+            // Balik tampilan subtitle
+            _isGuessFromMeaning! ? 'Ketik bahasa Jepangnya' : currentQ.verb.meaning,
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 16.0, color: Colors.grey),
           ),
@@ -320,7 +382,9 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             textInputAction: TextInputAction.done, 
             onSubmitted: (_) => _handleSubmitted(''), 
             decoration: InputDecoration(
-              hintText: (_isAnswered && !_isCorrect) ? 'Type the correct answer...' : 'Type answer in Japanese...',
+              hintText: (_isAnswered && !_isCorrect) 
+                  ? 'Type the correct answer...' 
+                  : 'Type answer in Japanese...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
               fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
@@ -435,6 +499,15 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                   currentQ.correctAnswer,
                   style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
+                // Opsional: Tampilkan kanjinya jika menjawab salah di mode arti
+                if (_isGuessFromMeaning!)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4.0),
+                    child: Text(
+                      '(${currentQ.verb.kanji})',
+                      style: TextStyle(color: finalTextColor.withOpacity(0.7), fontSize: 16.0),
+                    ),
+                  ),
               ],
               const SizedBox(height: 24.0),
               SizedBox(

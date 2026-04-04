@@ -44,7 +44,7 @@
   {
     "category": "い Adjective N5",
     "level": "Level 1",
-    "vocabulary": "良い / いい",
+    "vocabulary": "良い",
     "translation": "Bagus, baik"
   },
   {
@@ -116,8 +116,14 @@
   {
     "category": "い Adjective N5",
     "level": "Level 2",
-    "vocabulary": "温かい / 暖かい",
-    "translation": "Hangat"
+    "vocabulary": "温かい",
+    "translation": "Hangat (benda/sentuhan)"
+  },
+  {
+    "category": "い Adjective N5",
+    "level": "Level 2",
+    "vocabulary": "暖かい",
+    "translation": "Hangat (cuaca, ruangan, musim)"
   },
   {
     "category": "い Adjective N5",
@@ -237,7 +243,7 @@
     "category": "い Adjective N5",
     "level": "Level 4",
     "vocabulary": "薄い",
-    "translation": "Pudar (warna) / Hambar (rasa)"
+    "translation": "Pudar (warna) / Hambar (rasa) / Hubungan longgar"
   },
   {
     "category": "い Adjective N5",
@@ -345,7 +351,7 @@
     "category": "い Adjective N5",
     "level": "Level 6",
     "vocabulary": "温い",
-    "translation": "Suam-suam kuku"
+    "translation": "Suam-suam kuku, tidak panas tidak dingin"
   },
   {
     "category": "い Adjective N5",
@@ -356,19 +362,19 @@
   {
     "category": "い Adjective N5",
     "level": "Level 6",
-    "vocabulary": "大きな + Noun",
-    "translation": "... yang besar"
+    "vocabulary": "大きな",
+    "translation": "... yang besar + Noun"
   },
   {
     "category": "い Adjective N5",
     "level": "Level 6",
-    "vocabulary": "小さな + Noun",
-    "translation": "... yang kecil"
+    "vocabulary": "小さな",
+    "translation": "... yang kecil + Noun"
   },
   {
     "category": "な adjective N5",
     "level": "Level 1",
-    "vocabulary": "綺麗 / きれい",
+    "vocabulary": "きれい",
     "translation": "Cantik, bersih, rapi"
   },
   {
@@ -380,7 +386,7 @@
   {
     "category": "な adjective N5",
     "level": "Level 1",
-    "vocabulary": "丁寧 / ていねい",
+    "vocabulary": "丁寧",
     "translation": "Sopan, ramah"
   },
   {
@@ -441,7 +447,7 @@
     "category": "な adjective N5",
     "level": "Level 2",
     "vocabulary": "丈夫",
-    "translation": "Kuat, kokoh, awet"
+    "translation": "Kuat, kokoh, awet (じょうぶ)"
   },
   {
     "category": "な adjective N5",
@@ -578,8 +584,14 @@
   {
     "category": "い Adjective N4",
     "level": "Level 2",
-    "vocabulary": "固い / 硬い",
-    "translation": "Keras (benda)"
+    "vocabulary": "固い",
+    "translation": "Keras (kukuh, stabil, kaku secara konsep, aturan, sikap, hubungan, gaya bahasa)"
+  },
+  {
+    "category": "い Adjective N4",
+    "level": "Level 2",
+    "vocabulary": "硬い",
+    "translation": "keras secara fisik, benda nyata, tekstur keras, bahan"
   },
   {
     "category": "い Adjective N4",
@@ -603,7 +615,7 @@
     "category": "い Adjective N4",
     "level": "Level 3",
     "vocabulary": "短い",
-    "translation": "Pendek"
+    "translation": "Pendek (Panjang waktu, jarak, rambut, dll)"
   },
   {
     "category": "い Adjective N4",
@@ -632,8 +644,14 @@
   {
     "category": "い Adjective N4",
     "level": "Level 4",
-    "vocabulary": "旨い / 上手い",
-    "translation": "Enak, lezat (bisa juga: jago/mahir)"
+    "vocabulary": "旨い",
+    "translation": "Enak, lezat (Dipakai untuk rasa makanan atau sesuatu yang terasa enak.)"
+  },
+  {
+    "category": "い Adjective N4",
+    "level": "Level 4",
+    "vocabulary": "上手い",
+    "translation": "pandai, mahir"
   },
   {
     "category": "い Adjective N4",

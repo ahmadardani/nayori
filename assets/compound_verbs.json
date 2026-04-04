@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "pattern": "～忘れます",
+    "meaning": "Lupa untuk... / Forget to...",
+    "examples": [
+      { "japanese": "大切なことを言い忘れました。", "indonesian": "Saya lupa mengatakan hal yang penting." },
+      { "japanese": "昨日、書類を出し忘れました。", "indonesian": "Kemarin, saya lupa mengumpulkan dokumen." },
+      { "japanese": "テストに名前を書き忘れました。", "indonesian": "Saya lupa menulis nama di lembar ujian." },
+      { "japanese": "夕食の予約をし忘れました。", "indonesian": "Saya lupa membuat reservasi makan malam." }
+    ]
+  },
+  {
+    "id": 2,
+    "pattern": "～過ぎます",
+    "meaning": "Terlalu banyak... / Exceed, ...too much",
+    "examples": [
+      { "japanese": "食べ過ぎるのは胃に良くないんですよ。", "indonesian": "Terlalu banyak makan itu tidak baik untuk lambung." },
+      { "japanese": "テレビを見すぎて、目が疲れました。", "indonesian": "Terlalu banyak menonton TV, mata saya lelah." },
+      { "japanese": "週末にゴルフの練習をしすぎて、腰が痛いです。", "indonesian": "Terlalu banyak latihan golf di akhir pekan, pinggang saya sakit." },
+      { "japanese": "笑いすぎて、あごが痛いです。", "indonesian": "Terlalu banyak tertawa, rahang saya sakit." },
+      { "japanese": "飲みすぎて、気持ちが悪いです。", "indonesian": "Terlalu banyak minum, saya merasa mual/sakit." },
+      { "japanese": "彼は働きすぎて、体を壊してしまいました。", "indonesian": "Dia bekerja terlalu keras (banyak), sehingga merusak kesehatannya." }
+    ]
+  },
+  {
+    "id": 3,
+    "pattern": "～始めます",
+    "meaning": "Mulai... / Begin/start ...ing",
+    "examples": [
+      { "japanese": "「今日は寒いな」と思ったら、雪が降り始めました。", "indonesian": "Baru saja berpikir \"Hari ini dingin ya\", salju mulai turun." },
+      { "japanese": "友達の子どもは、1才になる前に歩き始めました。", "indonesian": "Anak teman saya mulai berjalan sebelum berumur 1 tahun." },
+      { "japanese": "まだ書き始めないでください。", "indonesian": "Tolong jangan mulai menulis dulu." },
+      { "japanese": "彼、遅いですね。食べ始めましょうか。", "indonesian": "Dia terlambat ya. Bagaimana kalau kita mulai makan?" },
+      { "japanese": "最近、Macを使い始めました。", "indonesian": "Akhir-akhir ini, saya mulai menggunakan Mac." },
+      { "japanese": "日本語を習い始めた時はひらがなが読めませんでした。", "indonesian": "Saat mulai belajar bahasa Jepang, saya tidak bisa membaca hiragana." }
+    ]
+  },
+  {
+    "id": 4,
+    "pattern": "～出します",
+    "meaning": "Tiba-tiba mulai... / Begin/start ...ing, suddenly",
+    "examples": [
+      { "japanese": "みんな我慢していましたが、笑い出しました。", "indonesian": "Semuanya sudah menahan diri, tapi tiba-tiba mulai tertawa." },
+      { "japanese": "急に空が暗くなって、降り出しました。", "indonesian": "Tiba-tiba langit menjadi gelap, dan hujan (tiba-tiba) mulai turun." },
+      { "japanese": "寝ていた赤ちゃんが急に泣き出しました。", "indonesian": "Bayi yang sedang tidur tiba-tiba mulai menangis." },
+      { "japanese": "彼は急に怒り出して部屋を出て行ってしまいました。", "indonesian": "Dia tiba-tiba mulai marah dan pergi keluar ruangan." }
+    ]
+  },
+  {
+    "id": 5,
+    "pattern": "～続けます",
+    "meaning": "Terus... / Go on ...ing, continue to...",
+    "examples": [
+      { "japanese": "もう３０分も待ち続けています。", "indonesian": "Saya sudah terus menunggu selama 30 menit." },
+      { "japanese": "もう時間ですが、みんなまだ書き続けています。", "indonesian": "Sudah waktunya, tapi semuanya masih terus menulis." },
+      { "japanese": "先週のパーティーはみんな朝まで飲み続けました。", "indonesian": "Pesta minggu lalu, semuanya terus minum sampai pagi." },
+      { "japanese": "土曜日は一晩中踊り続けたので疲れました。", "indonesian": "Karena hari Sabtu saya terus menari semalaman, saya lelah." },
+      { "japanese": "同じ仕事をし続けると飽きてしまいます。", "indonesian": "Jika terus melakukan pekerjaan yang sama, akan menjadi bosan." }
+    ]
+  },
+  {
+    "id": 6,
+    "pattern": "～終わります",
+    "meaning": "Selesai... / Finish ...ing",
+    "examples": [
+      { "japanese": "もうすぐ食べ終わりますから、ちょっと待っていてください。", "indonesian": "Karena sebentar lagi selesai makan, tolong tunggu sebentar." },
+      { "japanese": "きのう佐々木さんに借りた本はもう読み終わりました。", "indonesian": "Buku yang saya pinjam dari Pak Sasaki kemarin sudah selesai saya baca." },
+      { "japanese": "借金は１０年でやっと払い終わりました。", "indonesian": "Hutangnya akhirnya selesai dibayar dalam 10 tahun." },
+      { "japanese": "その原稿、書き終わったら、私に見せてください。", "indonesian": "Naskah itu, kalau sudah selesai ditulis, tolong perlihatkan kepada saya." }
+    ]
+  },
+  {
+    "id": 7,
+    "pattern": "～直します",
+    "meaning": "Mengulang kembali... / Re..., do over",
+    "examples": [
+      { "japanese": "もう一度考え直してください。", "indonesian": "Tolong pikirkan kembali sekali lagi." },
+      { "japanese": "お茶が冷めましたから入れ直しましょう。", "indonesian": "Karena tehnya sudah dingin, mari kita seduh ulang." },
+      { "japanese": "また１０分後にかけ直します。", "indonesian": "Saya akan menelepon kembali 10 menit lagi." },
+      { "japanese": "動詞の活用をもう一度勉強し直したほうがいいです。", "indonesian": "Sebaiknya belajar ulang konjugasi kata kerja sekali lagi." },
+      { "japanese": "間違いが多いので、もう一度書き直してください。", "indonesian": "Karena banyak kesalahan, tolong tulis ulang sekali lagi." },
+      { "japanese": "人生はやり直すことができません。", "indonesian": "Hidup ini tidak bisa diulang kembali." }
+    ]
+  },
+  {
+    "id": 8,
+    "pattern": "～かえます",
+    "meaning": "Mengganti/Menukar... / Exchange, change",
+    "examples": [
+      { "japanese": "私は家に帰るとすぐ、楽な服に着がえます。", "indonesian": "Begitu pulang ke rumah, saya langsung mengganti dengan baju yang nyaman." },
+      { "japanese": "目黒でＪＲに乗りかえます。", "indonesian": "Pindah (Ganti kereta naik) ke JR di Meguro." },
+      { "japanese": "窓を開けて、空気を入れかえましょう。", "indonesian": "Buka jendela, dan ganti udaranya (sirkulasi)." },
+      { "japanese": "ここで靴を履きかえてください。", "indonesian": "Tolong ganti sepatu (Anda) di sini." },
+      { "japanese": "携帯の電池が弱くなったので、新しい電池に取りかえました。", "indonesian": "Karena baterai HP melemah, saya menukar/ menggantinya dengan baterai yang baru." }
+    ]
+  }
+]

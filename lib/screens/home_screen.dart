@@ -7,8 +7,9 @@ import 'all_kanji_screen.dart';
 import 'all_words_menu_screen.dart'; 
 import 'renshuu_menu_screen.dart';
 import 'grammar_n5_menu_screen.dart';
-import 'adjective_menu_screen.dart';      
+import 'adjective_menu_screen.dart';       
 import 'verb_menu_screen.dart';
+import 'compound_verb_menu_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -95,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () => _navigateTo(context, const GrammarN5MenuScreen()),
                 ),
                 const SizedBox(height: 32),
+
                 _buildSectionTitle('Adjectives', Icons.style_rounded),
                 _buildMenuCard(
                   context: context,
@@ -126,6 +128,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   subtitle: 'Pelajari kata kerja N4',
                   icon: Icons.sync_alt_rounded,
                   onTap: () => _navigateTo(context, const VerbMenuScreen(level: 'N4')),
+                ),
+                _buildMenuCard(
+                  context: context,
+                  title: 'Compound Verbs',
+                  subtitle: 'Kata Kerja Majemuk (～忘れます, dll)',
+                  icon: Icons.extension_rounded,
+                  onTap: () => _navigateTo(context, const CompoundVerbMenuScreen()),
                 ),
                 const SizedBox(height: 32),
 

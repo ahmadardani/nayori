@@ -782,7 +782,7 @@
   {
     "chapter": "Chapter 6",
     "number": "4",
-    "sentence": "一緒にお茶をのみませんか？",
+    "sentence": "一緒にお茶を飲みませんか？",
     "translation": "Maukah minum teh bersama-sama?"
   },
   {
@@ -794,7 +794,7 @@
   {
     "chapter": "Chapter 6",
     "number": "5",
-    "sentence": "食堂へいきましょう",
+    "sentence": "食堂へ行きましょう",
     "translation": "Mari kita pergi ke kantin."
   },
   {
@@ -806,7 +806,7 @@
   {
     "chapter": "Chapter 7",
     "number": "1",
-    "sentence": "私は箸でご飯をたべます",
+    "sentence": "私は箸でご飯を食べます",
     "translation": "Saya makan nasi dengan sumpit."
   },
   {
@@ -848,19 +848,19 @@
   {
     "chapter": "Chapter 7",
     "number": "3",
-    "sentence": "「ありがとう」は英語で\"Thank you\"です",
+    "sentence": "「ありがとう」は英語で「Thank you」です",
     "translation": "\"Arigatou\" dalam bahasa Inggris adalah \"Thank you\"."
   },
   {
     "chapter": "Chapter 7",
     "number": "3",
-    "sentence": "「ありがとう」はスペイン語で\"Gracias\"です",
+    "sentence": "「ありがとう」はスペイン語で「Gracias」です",
     "translation": "\"Arigatou\" dalam bahasa Spanyol adalah \"Gracias\"."
   },
   {
     "chapter": "Chapter 7",
     "number": "3",
-    "sentence": "「ありがとう」は中国語で\"Xie Xie\"です",
+    "sentence": "「ありがとう」は中国語で「Xie Xie」です",
     "translation": "\"Arigatou\" dalam bahasa Mandarin adalah \"Xie Xie\"."
   },
   {
@@ -938,7 +938,7 @@
   {
     "chapter": "Chapter 7",
     "number": "6",
-    "sentence": "はい、もういきました",
+    "sentence": "はい、もう行きました",
     "translation": "Ya, sudah pergi."
   },
   {
@@ -1130,7 +1130,7 @@
   {
     "chapter": "Chapter 9",
     "number": "3",
-    "sentence": "私はひらがなが分かります",
+    "sentence": "私は平仮名が分かります",
     "translation": "Saya mengerti hiragana."
   },
   {
@@ -1736,7 +1736,7 @@
   {
     "chapter": "Chapter 13",
     "number": "4",
-    "sentence": "あなたは京都へ何をしにいきますか？",
+    "sentence": "あなたは京都へ何をしに行きますか？",
     "translation": "Anda pergi ke Kyoto untuk melakukan apa?"
   },
   {

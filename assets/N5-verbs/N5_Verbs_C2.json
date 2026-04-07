@@ -8,7 +8,9 @@
     "Volitional": "書こう",
     "Te_kudasai": "書いてください",
     "Te_iru": "書いている",
-    "Meaning": "menulis"
+    "Meaning": "menulis",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -19,7 +21,9 @@
     "Volitional": "聞こう",
     "Te_kudasai": "聞いてください",
     "Te_iru": "聞いている",
-    "Meaning": "mendengar / bertanya"
+    "Meaning": "mendengar / bertanya",
+    "Verb_Type": "Transitive",
+    "Pair": "聞こえる"
   },
   {
     "Group": "Godan (1)",
@@ -30,7 +34,9 @@
     "Volitional": "着こう",
     "Te_kudasai": "着いてください",
     "Te_iru": "着いている",
-    "Meaning": "tiba / sampai"
+    "Meaning": "tiba / sampai",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -41,7 +47,9 @@
     "Volitional": "履こう",
     "Te_kudasai": "履いてください",
     "Te_iru": "履いている",
-    "Meaning": "memakai (sepatu/celana)"
+    "Meaning": "memakai (sepatu/celana)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -52,7 +60,9 @@
     "Volitional": "置こう",
     "Te_kudasai": "置いてください",
     "Te_iru": "置いている",
-    "Meaning": "meletakkan / menaruh"
+    "Meaning": "meletakkan / menaruh",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -63,7 +73,9 @@
     "Volitional": "歩こう",
     "Te_kudasai": "歩いてください",
     "Te_iru": "歩いている",
-    "Meaning": "berjalan"
+    "Meaning": "berjalan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -74,7 +86,9 @@
     "Volitional": "磨こう",
     "Te_kudasai": "磨いてください",
     "Te_iru": "磨いている",
-    "Meaning": "menyikat / menggosok"
+    "Meaning": "menyikat / menggosok",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -85,7 +99,9 @@
     "Volitional": "働こう",
     "Te_kudasai": "働いてください",
     "Te_iru": "働いている",
-    "Meaning": "bekerja"
+    "Meaning": "bekerja",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -96,7 +112,9 @@
     "Volitional": "行こう",
     "Te_kudasai": "行ってください",
     "Te_iru": "行っている",
-    "Meaning": "pergi"
+    "Meaning": "pergi",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -107,7 +125,9 @@
     "Volitional": "空こう",
     "Te_kudasai": "空いてください",
     "Te_iru": "空いている",
-    "Meaning": "kosong / sepi"
+    "Meaning": "kosong / sepi",
+    "Verb_Type": "Intransitive",
+    "Pair": "空ける"
   },
   {
     "Group": "Godan (1)",
@@ -118,7 +138,9 @@
     "Volitional": "脱ごう",
     "Te_kudasai": "脱いでください",
     "Te_iru": "脱いでいる",
-    "Meaning": "melepas (pakaian)"
+    "Meaning": "melepas (pakaian)",
+    "Verb_Type": "Transitive",
+    "Pair": "脱げる"
   },
   {
     "Group": "Godan (1)",
@@ -129,7 +151,9 @@
     "Volitional": "泳ごう",
     "Te_kudasai": "泳いでください",
     "Te_iru": "泳いでいる",
-    "Meaning": "berenang"
+    "Meaning": "berenang",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -140,7 +164,9 @@
     "Volitional": "急ごう",
     "Te_kudasai": "急いでください",
     "Te_iru": "急いでいる",
-    "Meaning": "bergegas / buru-buru"
+    "Meaning": "bergegas / buru-buru",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -151,7 +177,9 @@
     "Volitional": "貸そう",
     "Te_kudasai": "貸してください",
     "Te_iru": "貸している",
-    "Meaning": "meminjamkan"
+    "Meaning": "meminjamkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -162,7 +190,9 @@
     "Volitional": "消そう",
     "Te_kudasai": "消してください",
     "Te_iru": "消している",
-    "Meaning": "mematikan (listrik/api)"
+    "Meaning": "mematikan (listrik/api)",
+    "Verb_Type": "Transitive",
+    "Pair": "消える"
   },
   {
     "Group": "Godan (1)",
@@ -173,7 +203,9 @@
     "Volitional": "話そう",
     "Te_kudasai": "話してください",
     "Te_iru": "話している",
-    "Meaning": "berbicara"
+    "Meaning": "berbicara",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -184,7 +216,9 @@
     "Volitional": "返そう",
     "Te_kudasai": "返してください",
     "Te_iru": "返している",
-    "Meaning": "mengembalikan"
+    "Meaning": "mengembalikan",
+    "Verb_Type": "Transitive",
+    "Pair": "返る"
   },
   {
     "Group": "Godan (1)",
@@ -195,7 +229,9 @@
     "Volitional": "探そう",
     "Te_kudasai": "探してください",
     "Te_iru": "探している",
-    "Meaning": "mencari"
+    "Meaning": "mencari",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -206,7 +242,8 @@
     "Volitional": "無くそう",
     "Te_kudasai": "無くしてください",
     "Te_iru": "無くしている",
-    "Meaning": "menghilangkan / kehilangan"
+    "Meaning": "menghilangkan / kehilangan",
+    "Verb_Type": "Transitive", "Pair": "無くなる"
   },
   {
     "Group": "Godan (1)",
@@ -217,7 +254,8 @@
     "Volitional": "思い出そう",
     "Te_kudasai": "思い出してください",
     "Te_iru": "思い出している",
-    "Meaning": "teringat / mengingat kembali"
+    "Meaning": "teringat / mengingat kembali",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -228,7 +266,8 @@
     "Volitional": "落とそう",
     "Te_kudasai": "落としてください",
     "Te_iru": "落としている",
-    "Meaning": "menjatuhkan"
+    "Meaning": "menjatuhkan",
+    "Verb_Type": "Transitive", "Pair": "落ちる"
   },
   {
     "Group": "Godan (1)",
@@ -239,7 +278,8 @@
     "Volitional": "直そう",
     "Te_kudasai": "直してください",
     "Te_iru": "直している",
-    "Meaning": "memperbaiki"
+    "Meaning": "memperbaiki",
+    "Verb_Type": "Transitive", "Pair": "直る"
   },
   {
     "Group": "Godan (1)",
@@ -250,7 +290,9 @@
     "Volitional": "死のう",
     "Te_kudasai": "死んでください",
     "Te_iru": "死んでいる",
-    "Meaning": "mati / meninggal"
+    "Meaning": "mati / meninggal",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -261,7 +303,9 @@
     "Volitional": "飲もう",
     "Te_kudasai": "飲んでください",
     "Te_iru": "飲んでいる",
-    "Meaning": "minum"
+    "Meaning": "minum",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -272,7 +316,9 @@
     "Volitional": "読もう",
     "Te_kudasai": "読んでください",
     "Te_iru": "読んでいる",
-    "Meaning": "membaca"
+    "Meaning": "membaca",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -283,7 +329,9 @@
     "Volitional": "住もう",
     "Te_kudasai": "住んでください",
     "Te_iru": "住んでいる",
-    "Meaning": "tinggal / menetap"
+    "Meaning": "tinggal / menetap",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -294,7 +342,9 @@
     "Volitional": "込もう",
     "Te_kudasai": "込んでください",
     "Te_iru": "込んでいる",
-    "Meaning": "penuh sesak / ramai"
+    "Meaning": "penuh sesak / ramai",
+    "Verb_Type": "Intransitive",
+    "Pair": "込める"
   },
   {
     "Group": "Godan (1)",
@@ -305,7 +355,9 @@
     "Volitional": "休もう",
     "Te_kudasai": "休んでください",
     "Te_iru": "休んでいる",
-    "Meaning": "beristirahat / libur"
+    "Meaning": "beristirahat / libur",
+    "Verb_Type": "Intransitive",
+    "Pair": "休める"
   },
   {
     "Group": "Godan (1)",
@@ -316,7 +368,8 @@
     "Volitional": "頼もう",
     "Te_kudasai": "頼んでください",
     "Te_iru": "頼んでいる",
-    "Meaning": "meminta / memohon"
+    "Meaning": "meminta / memohon",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -327,7 +380,9 @@
     "Volitional": "呼ぼう",
     "Te_kudasai": "呼んでください",
     "Te_iru": "呼んでいる",
-    "Meaning": "memanggil"
+    "Meaning": "memanggil",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -338,7 +393,9 @@
     "Volitional": "遊ぼう",
     "Te_kudasai": "遊んでください",
     "Te_iru": "遊んでいる",
-    "Meaning": "bermain"
+    "Meaning": "bermain",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -349,7 +406,9 @@
     "Volitional": "選ぼう",
     "Te_kudasai": "選んでください",
     "Te_iru": "選んでいる",
-    "Meaning": "memilih"
+    "Meaning": "memilih",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -360,7 +419,8 @@
     "Volitional": "運ぼう",
     "Te_kudasai": "運んでください",
     "Te_iru": "運んでいる",
-    "Meaning": "membawa / mengangkut"
+    "Meaning": "membawa / mengangkut",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -371,7 +431,9 @@
     "Volitional": "転ぼう",
     "Te_kudasai": "転んでください",
     "Te_iru": "転んでいる",
-    "Meaning": "terjatuh"
+    "Meaning": "terjatuh",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -382,7 +444,9 @@
     "Volitional": "喜ぼう",
     "Te_kudasai": "喜んでください",
     "Te_iru": "喜んでいる",
-    "Meaning": "gembira / senang"
+    "Meaning": "gembira / senang",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -393,7 +457,9 @@
     "Volitional": "立とう",
     "Te_kudasai": "立ってください",
     "Te_iru": "立っている",
-    "Meaning": "berdiri"
+    "Meaning": "berdiri",
+    "Verb_Type": "Intransitive",
+    "Pair": "立てる"
   },
   {
     "Group": "Godan (1)",
@@ -404,7 +470,8 @@
     "Volitional": "待とう",
     "Te_kudasai": "待ってください",
     "Te_iru": "待っている",
-    "Meaning": "menunggu"
+    "Meaning": "menunggu",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -415,7 +482,9 @@
     "Volitional": "持とう",
     "Te_kudasai": "持ってください",
     "Te_iru": "持っている",
-    "Meaning": "membawa / memegang"
+    "Meaning": "membawa / memegang",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -426,7 +495,9 @@
     "Volitional": "買おう",
     "Te_kudasai": "買ってください",
     "Te_iru": "買っている",
-    "Meaning": "membeli"
+    "Meaning": "membeli",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -437,7 +508,9 @@
     "Volitional": "会おう",
     "Te_kudasai": "会ってください",
     "Te_iru": "会っている",
-    "Meaning": "bertemu"
+    "Meaning": "bertemu",
+    "Verb_Type": "Intransitive",
+    "Pair": "合わせる"
   },
   {
     "Group": "Godan (1)",
@@ -448,7 +521,8 @@
     "Volitional": "言おう",
     "Te_kudasai": "言ってください",
     "Te_iru": "言っている",
-    "Meaning": "berkata / mengatakan"
+    "Meaning": "berkata / mengatakan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -459,7 +533,8 @@
     "Volitional": "吸おう",
     "Te_kudasai": "吸ってください",
     "Te_iru": "吸っている",
-    "Meaning": "mengisap / merokok"
+    "Meaning": "mengisap / merokok",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -470,7 +545,8 @@
     "Volitional": "歌おう",
     "Te_kudasai": "歌ってください",
     "Te_iru": "歌っている",
-    "Meaning": "bernyanyi"
+    "Meaning": "bernyanyi",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -481,7 +557,8 @@
     "Volitional": "使おう",
     "Te_kudasai": "使ってください",
     "Te_iru": "使っている",
-    "Meaning": "menggunakan / memakai"
+    "Meaning": "menggunakan / memakai",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -492,7 +569,8 @@
     "Volitional": "習おう",
     "Te_kudasai": "習ってください",
     "Te_iru": "習っている",
-    "Meaning": "belajar"
+    "Meaning": "belajar",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -503,7 +581,8 @@
     "Volitional": "払おう",
     "Te_kudasai": "払ってください",
     "Te_iru": "払っている",
-    "Meaning": "membayar"
+    "Meaning": "membayar",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -514,7 +593,8 @@
     "Volitional": "笑おう",
     "Te_kudasai": "笑ってください",
     "Te_iru": "笑っている",
-    "Meaning": "tertawa"
+    "Meaning": "tertawa",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -525,7 +605,8 @@
     "Volitional": "洗おう",
     "Te_kudasai": "洗ってください",
     "Te_iru": "洗っている",
-    "Meaning": "mencuci"
+    "Meaning": "mencuci",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -536,7 +617,8 @@
     "Volitional": "拾おう",
     "Te_kudasai": "拾ってください",
     "Te_iru": "拾っている",
-    "Meaning": "memungut / mengambil"
+    "Meaning": "memungut / mengambil",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -547,7 +629,8 @@
     "Volitional": "貰おう",
     "Te_kudasai": "貰ってください",
     "Te_iru": "貰っている",
-    "Meaning": "menerima"
+    "Meaning": "menerima",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -558,7 +641,8 @@
     "Volitional": "誘おう",
     "Te_kudasai": "誘ってください",
     "Te_iru": "誘っている",
-    "Meaning": "mengajak / mengundang"
+    "Meaning": "mengajak / mengundang",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -569,7 +653,8 @@
     "Volitional": "手伝おう",
     "Te_kudasai": "手伝ってください",
     "Te_iru": "手伝っている",
-    "Meaning": "membantu / menolong"
+    "Meaning": "membantu / menolong",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -580,7 +665,9 @@
     "Volitional": "売ろう",
     "Te_kudasai": "売ってください",
     "Te_iru": "売っている",
-    "Meaning": "menjual"
+    "Meaning": "menjual",
+    "Verb_Type": "Transitive",
+    "Pair": "売れる"
   },
   {
     "Group": "Godan (1)",
@@ -591,7 +678,8 @@
     "Volitional": "取ろう",
     "Te_kudasai": "取ってください",
     "Te_iru": "取っている",
-    "Meaning": "mengambil"
+    "Meaning": "mengambil",
+    "Verb_Type": "Transitive", "Pair": "取れる"
   },
   {
     "Group": "Godan (1)",
@@ -602,7 +690,8 @@
     "Volitional": "乗ろう",
     "Te_kudasai": "乗ってください",
     "Te_iru": "乗っている",
-    "Meaning": "naik (kendaraan)"
+    "Meaning": "naik (kendaraan)",
+    "Verb_Type": "Intransitive", "Pair": "乗せる"
   },
   {
     "Group": "Godan (1)",
@@ -613,7 +702,8 @@
     "Volitional": "降ろう",
     "Te_kudasai": "降ってください",
     "Te_iru": "降っている",
-    "Meaning": "turun (hujan/salju)"
+    "Meaning": "turun (hujan/salju)",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -624,7 +714,9 @@
     "Volitional": "あろう",
     "Te_kudasai": "-",
     "Te_iru": "有っている",
-    "Meaning": "ada (benda mati)"
+    "Meaning": "ada (benda mati)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -635,7 +727,8 @@
     "Volitional": "帰ろう",
     "Te_kudasai": "帰ってください",
     "Te_iru": "帰っている",
-    "Meaning": "pulang / kembali"
+    "Meaning": "pulang / kembali",
+    "Verb_Type": "Intransitive", "Pair": "帰す"
   },
   {
     "Group": "Godan (1)",
@@ -646,7 +739,9 @@
     "Volitional": "走ろう",
     "Te_kudasai": "走ってください",
     "Te_iru": "走っている",
-    "Meaning": "berlari"
+    "Meaning": "berlari",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -657,7 +752,8 @@
     "Volitional": "座ろう",
     "Te_kudasai": "座ってください",
     "Te_iru": "座っている",
-    "Meaning": "duduk"
+    "Meaning": "duduk",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -668,7 +764,8 @@
     "Volitional": "作ろう",
     "Te_kudasai": "作ってください",
     "Te_iru": "作っている",
-    "Meaning": "membuat"
+    "Meaning": "membuat",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -679,7 +776,8 @@
     "Volitional": "曲がろう",
     "Te_kudasai": "曲がってください",
     "Te_iru": "曲がっている",
-    "Meaning": "berbelok"
+    "Meaning": "berbelok",
+    "Verb_Type": "Intransitive", "Pair": "曲げる"
   },
   {
     "Group": "Godan (1)",
@@ -690,7 +788,8 @@
     "Volitional": "送ろう",
     "Te_kudasai": "送ってください",
     "Te_iru": "送っている",
-    "Meaning": "mengirim"
+    "Meaning": "mengirim",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -701,7 +800,9 @@
     "Volitional": "要ろう",
     "Te_kudasai": "-",
     "Te_iru": "要っている",
-    "Meaning": "membutuhkan / perlu"
+    "Meaning": "membutuhkan / perlu",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -712,7 +813,8 @@
     "Volitional": "怒ろう",
     "Te_kudasai": "怒ってください",
     "Te_iru": "怒っている",
-    "Meaning": "marah"
+    "Meaning": "marah",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -723,7 +825,8 @@
     "Volitional": "止まろう",
     "Te_kudasai": "止まってください",
     "Te_iru": "止まっている",
-    "Meaning": "berhenti / menginap"
+    "Meaning": "berhenti / menginap",
+    "Verb_Type": "Intransitive", "Pair": "止める"
   },
   {
     "Group": "Godan (1)",
@@ -734,7 +837,8 @@
     "Volitional": "分かろう",
     "Te_kudasai": "分かってください",
     "Te_iru": "分かっている",
-    "Meaning": "mengerti / paham"
+    "Meaning": "mengerti / paham",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -745,7 +849,8 @@
     "Volitional": "太ろう",
     "Te_kudasai": "太ってください",
     "Te_iru": "太っている",
-    "Meaning": "bertambah berat badan / gemuk"
+    "Meaning": "bertambah berat badan / gemuk",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -756,7 +861,8 @@
     "Volitional": "喋ろう",
     "Te_kudasai": "喋ってください",
     "Te_iru": "喋っている",
-    "Meaning": "mengobrol"
+    "Meaning": "mengobrol",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -767,7 +873,8 @@
     "Volitional": "断ろう",
     "Te_kudasai": "断ってください",
     "Te_iru": "断っている",
-    "Meaning": "menolak"
+    "Meaning": "menolak",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -778,7 +885,8 @@
     "Volitional": "入ろう",
     "Te_kudasai": "入ってください",
     "Te_iru": "入っている",
-    "Meaning": "masuk / bergabung"
+    "Meaning": "masuk / bergabung",
+    "Verb_Type": "Intransitive", "Pair": "入れる"
   },
   {
     "Group": "Godan (1)",
@@ -789,7 +897,8 @@
     "Volitional": "終わろう",
     "Te_kudasai": "終わってください",
     "Te_iru": "終わっている",
-    "Meaning": "selesai / berakhir"
+    "Meaning": "selesai / berakhir",
+    "Verb_Type": "Intransitive", "Pair": "終える"
   },
   {
     "Group": "Ichidan (2)",
@@ -800,7 +909,9 @@
     "Volitional": "寝よう",
     "Te_kudasai": "寝てください",
     "Te_iru": "寝ている",
-    "Meaning": "tidur"
+    "Meaning": "tidur",
+    "Verb_Type": "Intransitive",
+    "Pair": "寝かせる"
   },
   {
     "Group": "Ichidan (2)",
@@ -811,7 +922,8 @@
     "Volitional": "食べよう",
     "Te_kudasai": "食べてください",
     "Te_iru": "食べている",
-    "Meaning": "makan"
+    "Meaning": "makan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -822,7 +934,8 @@
     "Volitional": "見せよう",
     "Te_kudasai": "見せてください",
     "Te_iru": "見せている",
-    "Meaning": "memperlihatkan / menunjukkan"
+    "Meaning": "memperlihatkan / menunjukkan",
+    "Verb_Type": "Transitive", "Pair": "見える"
   },
   {
     "Group": "Ichidan (2)",
@@ -833,7 +946,8 @@
     "Volitional": "点けよう",
     "Te_kudasai": "点けてください",
     "Te_iru": "点けている",
-    "Meaning": "menyalakan (listrik/api)"
+    "Meaning": "menyalakan (listrik/api)",
+    "Verb_Type": "Transitive", "Pair": "点く"
   },
   {
     "Group": "Ichidan (2)",
@@ -844,7 +958,8 @@
     "Volitional": "上げよう",
     "Te_kudasai": "上げてください",
     "Te_iru": "上げている",
-    "Meaning": "memberi"
+    "Meaning": "memberi",
+    "Verb_Type": "Transitive", "Pair": "上がる"
   },
   {
     "Group": "Ichidan (2)",
@@ -855,7 +970,8 @@
     "Volitional": "くれよう",
     "Te_kudasai": "くれてください",
     "Te_iru": "くれている",
-    "Meaning": "memberi (kepada saya)"
+    "Meaning": "memberi (kepada saya)",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -866,7 +982,8 @@
     "Volitional": "開けよう",
     "Te_kudasai": "開けてください",
     "Te_iru": "開けている",
-    "Meaning": "membuka"
+    "Meaning": "membuka",
+    "Verb_Type": "Transitive", "Pair": "開く"
   },
   {
     "Group": "Ichidan (2)",
@@ -877,7 +994,8 @@
     "Volitional": "閉めよう",
     "Te_kudasai": "閉めてください",
     "Te_iru": "閉めている",
-    "Meaning": "menutup"
+    "Meaning": "menutup",
+    "Verb_Type": "Transitive", "Pair": "閉まる"
   },
   {
     "Group": "Ichidan (2)",
@@ -888,7 +1006,8 @@
     "Volitional": "入れよう",
     "Te_kudasai": "入れてください",
     "Te_iru": "入れている",
-    "Meaning": "memasukkan"
+    "Meaning": "memasukkan",
+    "Verb_Type": "Transitive", "Pair": "入る"
   },
   {
     "Group": "Ichidan (2)",
@@ -899,7 +1018,8 @@
     "Volitional": "出よう",
     "Te_kudasai": "出てください",
     "Te_iru": "出ている",
-    "Meaning": "keluar / berangkat"
+    "Meaning": "keluar / berangkat",
+    "Verb_Type": "Intransitive", "Pair": "出す"
   },
   {
     "Group": "Ichidan (2)",
@@ -910,7 +1030,8 @@
     "Volitional": "教えよう",
     "Te_kudasai": "教えてください",
     "Te_iru": "教えている",
-    "Meaning": "mengajar / memberitahu"
+    "Meaning": "mengajar / memberitahu",
+    "Verb_Type": "Transitive", "Pair": "教わる"
   },
   {
     "Group": "Ichidan (2)",
@@ -921,7 +1042,8 @@
     "Volitional": "止めよう",
     "Te_kudasai": "止めてください",
     "Te_iru": "止めている",
-    "Meaning": "menghentikan"
+    "Meaning": "menghentikan",
+    "Verb_Type": "Transitive", "Pair": "止まる"
   },
   {
     "Group": "Ichidan (2)",
@@ -932,7 +1054,8 @@
     "Volitional": "捨てよう",
     "Te_kudasai": "捨ててください",
     "Te_iru": "捨てている",
-    "Meaning": "membuang"
+    "Meaning": "membuang",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -943,7 +1066,8 @@
     "Volitional": "調べよう",
     "Te_kudasai": "調べてください",
     "Te_iru": "調べている",
-    "Meaning": "memeriksa / mencari tahu"
+    "Meaning": "memeriksa / mencari tahu",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -954,7 +1078,8 @@
     "Volitional": "覚えよう",
     "Te_kudasai": "覚えてください",
     "Te_iru": "覚えている",
-    "Meaning": "mengingat / menghafal"
+    "Meaning": "mengingat / menghafal",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -965,7 +1090,8 @@
     "Volitional": "忘れよう",
     "Te_kudasai": "忘れてください",
     "Te_iru": "忘れている",
-    "Meaning": "lupa / melupakan"
+    "Meaning": "lupa / melupakan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -976,7 +1102,8 @@
     "Volitional": "疲れよう",
     "Te_kudasai": "疲れてください",
     "Te_iru": "疲れている",
-    "Meaning": "lelah / menjadi lelah"
+    "Meaning": "lelah / menjadi lelah",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -987,7 +1114,8 @@
     "Volitional": "考えよう",
     "Te_kudasai": "考えてください",
     "Te_iru": "考えている",
-    "Meaning": "berpikir / memikirkan"
+    "Meaning": "berpikir / memikirkan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -998,7 +1126,8 @@
     "Volitional": "間違えよう",
     "Te_kudasai": "間違えてください",
     "Te_iru": "間違えている",
-    "Meaning": "berbuat salah / keliru"
+    "Meaning": "berbuat salah / keliru",
+    "Verb_Type": "Transitive", "Pair": "間違う"
   },
   {
     "Group": "Ichidan (2)",
@@ -1009,7 +1138,8 @@
     "Volitional": "勤めよう",
     "Te_kudasai": "勤めてください",
     "Te_iru": "勤めている",
-    "Meaning": "bekerja (di suatu tempat)"
+    "Meaning": "bekerja (di suatu tempat)",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1020,7 +1150,8 @@
     "Volitional": "見よう",
     "Te_kudasai": "見てください",
     "Te_iru": "見ている",
-    "Meaning": "melihat / menonton"
+    "Meaning": "melihat / menonton",
+    "Verb_Type": "Transitive", "Pair": "見える"
   },
   {
     "Group": "Ichidan (2)",
@@ -1031,7 +1162,8 @@
     "Volitional": "居よう",
     "Te_kudasai": "居てください",
     "Te_iru": "居ている",
-    "Meaning": "ada (makhluk hidup)"
+    "Meaning": "ada (makhluk hidup)",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1042,7 +1174,8 @@
     "Volitional": "出来よう",
     "Te_kudasai": "出来てください",
     "Te_iru": "出来ている",
-    "Meaning": "bisa / mampu"
+    "Meaning": "bisa / mampu",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1053,7 +1186,8 @@
     "Volitional": "起きよう",
     "Te_kudasai": "起きてください",
     "Te_iru": "起きている",
-    "Meaning": "bangun"
+    "Meaning": "bangun",
+    "Verb_Type": "Intransitive", "Pair": "起こす"
   },
   {
     "Group": "Ichidan (2)",
@@ -1064,7 +1198,8 @@
     "Volitional": "着よう",
     "Te_kudasai": "着てください",
     "Te_iru": "着ている",
-    "Meaning": "memakai (pakaian atas)"
+    "Meaning": "memakai (pakaian atas)",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1075,7 +1210,8 @@
     "Volitional": "浴びよう",
     "Te_kudasai": "浴びてください",
     "Te_iru": "浴びている",
-    "Meaning": "mandi"
+    "Meaning": "mandi",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1086,7 +1222,8 @@
     "Volitional": "借りよう",
     "Te_kudasai": "借りてください",
     "Te_iru": "借りている",
-    "Meaning": "meminjam"
+    "Meaning": "meminjam",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1097,7 +1234,8 @@
     "Volitional": "降りよう",
     "Te_kudasai": "降りてください",
     "Te_iru": "降りている",
-    "Meaning": "turun (dari kendaraan)"
+    "Meaning": "turun (dari kendaraan)",
+    "Verb_Type": "Intransitive", "Pair": "降ろす"
   },
   {
     "Group": "Ichidan (2)",
@@ -1108,7 +1246,8 @@
     "Volitional": "落ちよう",
     "Te_kudasai": "落ちてください",
     "Te_iru": "落ちている",
-    "Meaning": "jatuh"
+    "Meaning": "jatuh",
+    "Verb_Type": "Intransitive", "Pair": "落とす"
   },
   {
     "Group": "Irregular (3)",
@@ -1119,7 +1258,9 @@
     "Volitional": "しよう",
     "Te_kudasai": "してください",
     "Te_iru": "している",
-    "Meaning": "melakukan"
+    "Meaning": "melakukan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1130,7 +1271,9 @@
     "Volitional": "電話しよう",
     "Te_kudasai": "電話してください",
     "Te_iru": "電話している",
-    "Meaning": "menelepon"
+    "Meaning": "menelepon",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1141,7 +1284,8 @@
     "Volitional": "会議しよう",
     "Te_kudasai": "会議してください",
     "Te_iru": "会議している",
-    "Meaning": "rapat / mengadakan rapat"
+    "Meaning": "rapat / mengadakan rapat",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1152,7 +1296,8 @@
     "Volitional": "買い物しよう",
     "Te_kudasai": "買い物してください",
     "Te_iru": "買い物している",
-    "Meaning": "berbelanja"
+    "Meaning": "berbelanja",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1163,7 +1308,8 @@
     "Volitional": "旅行しよう",
     "Te_kudasai": "旅行してください",
     "Te_iru": "旅行している",
-    "Meaning": "berwisata / bepergian"
+    "Meaning": "berwisata / bepergian",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1174,7 +1320,8 @@
     "Volitional": "説明しよう",
     "Te_kudasai": "説明してください",
     "Te_iru": "説明している",
-    "Meaning": "menjelaskan"
+    "Meaning": "menjelaskan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1185,7 +1332,8 @@
     "Volitional": "仕事しよう",
     "Te_kudasai": "仕事してください",
     "Te_iru": "仕事している",
-    "Meaning": "bekerja (melakukan pekerjaan)"
+    "Meaning": "bekerja (melakukan pekerjaan)",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1196,7 +1344,8 @@
     "Volitional": "紹介しよう",
     "Te_kudasai": "紹介してください",
     "Te_iru": "紹介している",
-    "Meaning": "memperkenalkan"
+    "Meaning": "memperkenalkan",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1207,7 +1356,8 @@
     "Volitional": "出張しよう",
     "Te_kudasai": "出張してください",
     "Te_iru": "出張している",
-    "Meaning": "dinas / perjalanan bisnis"
+    "Meaning": "dinas / perjalanan bisnis",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1218,7 +1368,8 @@
     "Volitional": "運転しよう",
     "Te_kudasai": "運転してください",
     "Te_iru": "運転している",
-    "Meaning": "mengemudi / menyetir"
+    "Meaning": "mengemudi / menyetir",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1229,7 +1380,8 @@
     "Volitional": "予約しよう",
     "Te_kudasai": "予約してください",
     "Te_iru": "予約している",
-    "Meaning": "memesan / reservasi"
+    "Meaning": "memesan / reservasi",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1240,7 +1392,8 @@
     "Volitional": "来よう",
     "Te_kudasai": "来てください",
     "Te_iru": "来ている",
-    "Meaning": "datang"
+    "Meaning": "datang",
+    "Verb_Type": "Intransitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1251,7 +1404,8 @@
     "Volitional": "持ってこよう",
     "Te_kudasai": "持ってきてください",
     "Te_iru": "持ってきている",
-    "Meaning": "membawa datang (benda mati)"
+    "Meaning": "membawa datang (benda mati)",
+    "Verb_Type": "Transitive", "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1262,6 +1416,7 @@
     "Volitional": "連れてこよう",
     "Te_kudasai": "連れてきてください",
     "Te_iru": "連れてきている",
-    "Meaning": "membawa datang (makhluk hidup)"
+    "Meaning": "membawa datang (makhluk hidup)",
+    "Verb_Type": "Transitive", "Pair": "-"
   }
 ]

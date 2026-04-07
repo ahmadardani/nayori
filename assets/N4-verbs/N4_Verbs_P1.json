@@ -8,7 +8,9 @@
     "Nai_form": "開きません",
     "Ta_form": "開きました",
     "Nakatta_form": "開きませんでした",
-    "Meaning": "terbuka (benda terbuka dengan sendirinya)"
+    "Meaning": "terbuka (benda terbuka dengan sendirinya)",
+    "Verb_Type": "Intransitive",
+    "Pair": "開けます"
   },
   {
     "Group": "Godan (1)",
@@ -19,7 +21,9 @@
     "Nai_form": "頂きません",
     "Ta_form": "頂きました",
     "Nakatta_form": "頂きませんでした",
-    "Meaning": "makan / menerima (bentuk merendah)"
+    "Meaning": "makan / menerima (bentuk merendah)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -30,7 +34,9 @@
     "Nai_form": "動きません",
     "Ta_form": "動きました",
     "Nakatta_form": "動きませんでした",
-    "Meaning": "bergerak / beroperasi"
+    "Meaning": "bergerak / beroperasi",
+    "Verb_Type": "Intransitive",
+    "Pair": "動かします"
   },
   {
     "Group": "Godan (1)",
@@ -41,7 +47,9 @@
     "Nai_form": "驚きません",
     "Ta_form": "驚きました",
     "Nakatta_form": "驚きませんでした",
-    "Meaning": "terkejut"
+    "Meaning": "terkejut",
+    "Verb_Type": "Intransitive",
+    "Pair": "驚かします"
   },
   {
     "Group": "Godan (1)",
@@ -52,7 +60,9 @@
     "Nai_form": "乾きません",
     "Ta_form": "乾きました",
     "Nakatta_form": "乾きませんでした",
-    "Meaning": "menjadi kering"
+    "Meaning": "menjadi kering",
+    "Verb_Type": "Intransitive",
+    "Pair": "乾かします"
   },
   {
     "Group": "Godan (1)",
@@ -63,7 +73,9 @@
     "Nai_form": "咲きません",
     "Ta_form": "咲きました",
     "Nakatta_form": "咲きませんでした",
-    "Meaning": "mekar"
+    "Meaning": "mekar",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -74,7 +86,9 @@
     "Nai_form": "点きません",
     "Ta_form": "点きました",
     "Nakatta_form": "点きませんでした",
-    "Meaning": "menyala / terbakar"
+    "Meaning": "menyala / terbakar",
+    "Verb_Type": "Intransitive",
+    "Pair": "点けます"
   },
   {
     "Group": "Godan (1)",
@@ -85,7 +99,9 @@
     "Nai_form": "続きません",
     "Ta_form": "続きました",
     "Nakatta_form": "続きませんでした",
-    "Meaning": "berlanjut"
+    "Meaning": "berlanjut",
+    "Verb_Type": "Intransitive",
+    "Pair": "続けます"
   },
   {
     "Group": "Godan (1)",
@@ -96,7 +112,9 @@
     "Nai_form": "泣きません",
     "Ta_form": "泣きました",
     "Nakatta_form": "泣きませんでした",
-    "Meaning": "menangis"
+    "Meaning": "menangis",
+    "Verb_Type": "Intransitive",
+    "Pair": "泣かします"
   },
   {
     "Group": "Godan (1)",
@@ -107,7 +125,9 @@
     "Nai_form": "鳴きません",
     "Ta_form": "鳴きました",
     "Nakatta_form": "鳴きませんでした",
-    "Meaning": "berkicau / menggonggong"
+    "Meaning": "berkicau / menggonggong",
+    "Verb_Type": "Intransitive",
+    "Pair": "鳴らします"
   },
   {
     "Group": "Godan (1)",
@@ -118,7 +138,9 @@
     "Nai_form": "引きません",
     "Ta_form": "引きました",
     "Nakatta_form": "引きませんでした",
-    "Meaning": "menarik / mengurangi"
+    "Meaning": "menarik / mengurangi",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -129,7 +151,9 @@
     "Nai_form": "弾きません",
     "Ta_form": "弾きました",
     "Nakatta_form": "弾きませんでした",
-    "Meaning": "memainkan (alat musik)"
+    "Meaning": "memainkan (alat musik)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -140,7 +164,9 @@
     "Nai_form": "吹きません",
     "Ta_form": "吹きました",
     "Nakatta_form": "吹きませんでした",
-    "Meaning": "meniup / memainkan suling"
+    "Meaning": "meniup / memainkan suling",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -151,7 +177,9 @@
     "Nai_form": "焼きません",
     "Ta_form": "焼きました",
     "Nakatta_form": "焼きませんでした",
-    "Meaning": "memanggang / membakar"
+    "Meaning": "memanggang / membakar",
+    "Verb_Type": "Transitive",
+    "Pair": "焼けます"
   },
   {
     "Group": "Godan (1)",
@@ -162,7 +190,9 @@
     "Nai_form": "沸きません",
     "Ta_form": "沸きました",
     "Nakatta_form": "沸きませんでした",
-    "Meaning": "mendidih"
+    "Meaning": "mendidih",
+    "Verb_Type": "Intransitive",
+    "Pair": "沸かします"
   },
   {
     "Group": "Godan (1)",
@@ -173,7 +203,9 @@
     "Nai_form": "騒ぎません",
     "Ta_form": "騒ぎました",
     "Nakatta_form": "騒ぎませんでした",
-    "Meaning": "membuat keributan / gaduh"
+    "Meaning": "membuat keributan / gaduh",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -184,7 +216,9 @@
     "Nai_form": "致しません",
     "Ta_form": "致しました",
     "Nakatta_form": "致しませんでした",
-    "Meaning": "melakukan (bentuk merendah)"
+    "Meaning": "melakukan (bentuk merendah)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -195,7 +229,9 @@
     "Nai_form": "写しません",
     "Ta_form": "写しました",
     "Nakatta_form": "写しませんでした",
-    "Meaning": "menyalin / memotret"
+    "Meaning": "menyalin / memotret",
+    "Verb_Type": "Transitive",
+    "Pair": "写ります"
   },
   {
     "Group": "Godan (1)",
@@ -206,7 +242,9 @@
     "Nai_form": "起こしません",
     "Ta_form": "起こしました",
     "Nakatta_form": "起こしませんでした",
-    "Meaning": "membangunkan"
+    "Meaning": "membangunkan",
+    "Verb_Type": "Transitive",
+    "Pair": "起きます"
   },
   {
     "Group": "Godan (1)",
@@ -217,7 +255,9 @@
     "Nai_form": "押しません",
     "Ta_form": "押しました",
     "Nakatta_form": "押しませんでした",
-    "Meaning": "mendorong / menekan"
+    "Meaning": "mendorong / menekan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -228,7 +268,9 @@
     "Nai_form": "壊しません",
     "Ta_form": "壊しました",
     "Nakatta_form": "壊しませんでした",
-    "Meaning": "merusak"
+    "Meaning": "merusak",
+    "Verb_Type": "Transitive",
+    "Pair": "壊れます"
   },
   {
     "Group": "Godan (1)",
@@ -239,7 +281,9 @@
     "Nai_form": "差しません",
     "Ta_form": "差しました",
     "Nakatta_form": "差しませんでした",
-    "Meaning": "memakai (payung)"
+    "Meaning": "memakai (payung)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -250,7 +294,9 @@
     "Nai_form": "足しません",
     "Ta_form": "足しました",
     "Nakatta_form": "足しませんでした",
-    "Meaning": "menambahkan"
+    "Meaning": "menambahkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -261,7 +307,9 @@
     "Nai_form": "～出しません",
     "Ta_form": "～出しました",
     "Nakatta_form": "～出しませんでした",
-    "Meaning": "mulai melakukan..."
+    "Meaning": "mulai melakukan...",
+    "Verb_Type": "Transitive",
+    "Pair": "～出ます"
   },
   {
     "Group": "Godan (1)",
@@ -272,7 +320,9 @@
     "Nai_form": "取り消しません",
     "Ta_form": "取り消しました",
     "Nakatta_form": "取り消しませんでした",
-    "Meaning": "membatalkan (pesanan/reservasi)"
+    "Meaning": "membatalkan (pesanan/reservasi)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -283,7 +333,9 @@
     "Nai_form": "引っ越しません",
     "Ta_form": "引っ越しました",
     "Nakatta_form": "引っ越しませんでした",
-    "Meaning": "pindah (rumah)"
+    "Meaning": "pindah (rumah)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -294,7 +346,9 @@
     "Nai_form": "申しません",
     "Ta_form": "申しました",
     "Nakatta_form": "申しませんでした",
-    "Meaning": "berkata (bentuk merendah)"
+    "Meaning": "berkata (bentuk merendah)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -305,7 +359,9 @@
     "Nai_form": "渡しません",
     "Ta_form": "渡しました",
     "Nakatta_form": "渡しませんでした",
-    "Meaning": "menyerahkan"
+    "Meaning": "menyerahkan",
+    "Verb_Type": "Transitive",
+    "Pair": "渡ります"
   },
   {
     "Group": "Godan (1)",
@@ -316,7 +372,9 @@
     "Nai_form": "噛みません",
     "Ta_form": "噛みました",
     "Nakatta_form": "噛みませんでした",
-    "Meaning": "menggigit"
+    "Meaning": "menggigit",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -327,7 +385,9 @@
     "Nai_form": "進みません",
     "Ta_form": "進みました",
     "Nakatta_form": "進みませんでした",
-    "Meaning": "maju"
+    "Meaning": "maju",
+    "Verb_Type": "Intransitive",
+    "Pair": "進めます"
   },
   {
     "Group": "Godan (1)",
@@ -338,7 +398,9 @@
     "Nai_form": "済みません",
     "Ta_form": "済みました",
     "Nakatta_form": "済みませんでした",
-    "Meaning": "selesai / berakhir"
+    "Meaning": "selesai / berakhir",
+    "Verb_Type": "Intransitive",
+    "Pair": "済ませます"
   },
   {
     "Group": "Godan (1)",
@@ -349,7 +411,9 @@
     "Nai_form": "楽しみません",
     "Ta_form": "楽しみました",
     "Nakatta_form": "楽しみませんでした",
-    "Meaning": "menikmati"
+    "Meaning": "menikmati",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -360,7 +424,9 @@
     "Nai_form": "包みません",
     "Ta_form": "包みました",
     "Nakatta_form": "包みませんでした",
-    "Meaning": "membungkus"
+    "Meaning": "membungkus",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -371,7 +437,9 @@
     "Nai_form": "盗みません",
     "Ta_form": "盗みました",
     "Nakatta_form": "盗みませんでした",
-    "Meaning": "mencuri"
+    "Meaning": "mencuri",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -382,7 +450,9 @@
     "Nai_form": "踏みません",
     "Ta_form": "踏みました",
     "Nakatta_form": "踏みませんでした",
-    "Meaning": "menginjak"
+    "Meaning": "menginjak",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -393,7 +463,9 @@
     "Nai_form": "申し込みません",
     "Ta_form": "申し込みました",
     "Nakatta_form": "申し込みませんでした",
-    "Meaning": "mendaftar / melamar"
+    "Meaning": "mendaftar / melamar",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -404,7 +476,9 @@
     "Nai_form": "止みません",
     "Ta_form": "止みました",
     "Nakatta_form": "止みませんでした",
-    "Meaning": "berhenti (hujan atau salju)"
+    "Meaning": "berhenti (hujan atau salju)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -415,7 +489,9 @@
     "Nai_form": "飛びません",
     "Ta_form": "飛びました",
     "Nakatta_form": "飛びませんでした",
-    "Meaning": "terbang"
+    "Meaning": "terbang",
+    "Verb_Type": "Intransitive",
+    "Pair": "飛ばします"
   },
   {
     "Group": "Godan (1)",
@@ -426,7 +502,9 @@
     "Nai_form": "並びません",
     "Ta_form": "並びました",
     "Nakatta_form": "並びませんでした",
-    "Meaning": "berbaris / antre"
+    "Meaning": "berbaris / antre",
+    "Verb_Type": "Intransitive",
+    "Pair": "並べます"
   },
   {
     "Group": "Godan (1)",
@@ -437,7 +515,9 @@
     "Nai_form": "合いません",
     "Ta_form": "合いました",
     "Nakatta_form": "合いませんでした",
-    "Meaning": "cocok / sesuai (benda)"
+    "Meaning": "cocok / sesuai (benda)",
+    "Verb_Type": "Intransitive",
+    "Pair": "合わせます"
   },
   {
     "Group": "Godan (1)",
@@ -448,7 +528,9 @@
     "Nai_form": "行いません",
     "Ta_form": "行いました",
     "Nakatta_form": "行いませんでした",
-    "Meaning": "mengadakan / melakukan"
+    "Meaning": "mengadakan / melakukan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -459,7 +541,9 @@
     "Nai_form": "思いません",
     "Ta_form": "思いました",
     "Nakatta_form": "思いませんでした",
-    "Meaning": "berpikir / mengira"
+    "Meaning": "berpikir / mengira",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -470,7 +554,9 @@
     "Nai_form": "構いません",
     "Ta_form": "構いました",
     "Nakatta_form": "構いませんでした",
-    "Meaning": "peduli / memedulikan"
+    "Meaning": "peduli / memedulikan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -481,7 +567,9 @@
     "Nai_form": "通いません",
     "Ta_form": "通いました",
     "Nakatta_form": "通いませんでした",
-    "Meaning": "pulang-pergi (bekerja/sekolah, sesuatu yang rutin/berulang)"
+    "Meaning": "pulang-pergi (bekerja/sekolah, sesuatu yang rutin/berulang)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -492,7 +580,9 @@
     "Nai_form": "仕舞いません",
     "Ta_form": "仕舞いました",
     "Nakatta_form": "仕舞いませんでした",
-    "Meaning": "menyimpan / membereskan"
+    "Meaning": "menyimpan / membereskan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -503,7 +593,9 @@
     "Nai_form": "違いません",
     "Ta_form": "違いました",
     "Nakatta_form": "違いませんでした",
-    "Meaning": "berbeda / salah"
+    "Meaning": "berbeda / salah",
+    "Verb_Type": "Intransitive",
+    "Pair": "違えます"
   },
   {
     "Group": "Godan (1)",
@@ -514,7 +606,9 @@
     "Nai_form": "間に合いません",
     "Ta_form": "間に合いました",
     "Nakatta_form": "間に合いませんでした",
-    "Meaning": "tepat waktu / keburu"
+    "Meaning": "tepat waktu / keburu",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -525,7 +619,9 @@
     "Nai_form": "向かいません",
     "Ta_form": "向かいました",
     "Nakatta_form": "向かいませんでした",
-    "Meaning": "menuju / menghadap"
+    "Meaning": "menuju / menghadap",
+    "Verb_Type": "Intransitive",
+    "Pair": "向けます"
   },
   {
     "Group": "Godan (1)",
@@ -536,7 +632,9 @@
     "Nai_form": "打ちません",
     "Ta_form": "打ちました",
     "Nakatta_form": "打ちませんでした",
-    "Meaning": "memukul / mengetik"
+    "Meaning": "memukul / mengetik",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -547,7 +645,9 @@
     "Nai_form": "勝ちません",
     "Ta_form": "勝ちました",
     "Nakatta_form": "勝ちませんでした",
-    "Meaning": "menang"
+    "Meaning": "menang",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -558,7 +658,9 @@
     "Nai_form": "集まりません",
     "Ta_form": "集まりました",
     "Nakatta_form": "集まりませんでした",
-    "Meaning": "berkumpul"
+    "Meaning": "berkumpul",
+    "Verb_Type": "Intransitive",
+    "Pair": "集めます"
   },
   {
     "Group": "Godan (1)",
@@ -569,7 +671,9 @@
     "Nai_form": "上がりません",
     "Ta_form": "上がりました",
     "Nakatta_form": "上がりませんでした",
-    "Meaning": "naik"
+    "Meaning": "naik",
+    "Verb_Type": "Intransitive",
+    "Pair": "上げます"
   },
   {
     "Group": "Godan (1)",
@@ -580,7 +684,9 @@
     "Nai_form": "謝りません",
     "Ta_form": "謝りました",
     "Nakatta_form": "謝りませんでした",
-    "Meaning": "meminta maaf"
+    "Meaning": "meminta maaf",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -591,7 +697,9 @@
     "Nai_form": "祈りません",
     "Ta_form": "祈りました",
     "Nakatta_form": "祈りませんでした",
-    "Meaning": "berdoa"
+    "Meaning": "berdoa",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -602,7 +710,9 @@
     "Nai_form": "移りません",
     "Ta_form": "移りました",
     "Nakatta_form": "移りませんでした",
-    "Meaning": "berpindah"
+    "Meaning": "berpindah",
+    "Verb_Type": "Intransitive",
+    "Pair": "移します"
   },
   {
     "Group": "Godan (1)",
@@ -613,7 +723,9 @@
     "Nai_form": "おいでになりません",
     "Ta_form": "おいでになりました",
     "Nakatta_form": "おいでになりませんでした",
-    "Meaning": "datang / pergi (bentuk hormat)"
+    "Meaning": "datang / pergi (bentuk hormat)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -624,7 +736,9 @@
     "Nai_form": "踊りません",
     "Ta_form": "踊りました",
     "Nakatta_form": "踊りませんでした",
-    "Meaning": "menari"
+    "Meaning": "menari",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -635,7 +749,9 @@
     "Nai_form": "おりません",
     "Ta_form": "おりました",
     "Nakatta_form": "おりませんでした",
-    "Meaning": "ada (bentuk merendah)"
+    "Meaning": "ada (bentuk merendah)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -646,7 +762,9 @@
     "Nai_form": "折りません",
     "Ta_form": "折りました",
     "Nakatta_form": "折りませんでした",
-    "Meaning": "melipat / mematahkan"
+    "Meaning": "melipat / mematahkan",
+    "Verb_Type": "Transitive",
+    "Pair": "折れます"
   },
   {
     "Group": "Godan (1)",
@@ -657,7 +775,9 @@
     "Nai_form": "掛かりません",
     "Ta_form": "掛かりました",
     "Nakatta_form": "掛かりませんでした",
-    "Meaning": "memakan (waktu/biaya)"
+    "Meaning": "memakan (waktu/biaya)",
+    "Verb_Type": "Intransitive",
+    "Pair": "掛けます"
   },
   {
     "Group": "Godan (1)",
@@ -668,7 +788,9 @@
     "Nai_form": "被りません",
     "Ta_form": "被りました",
     "Nakatta_form": "被りませんでした",
-    "Meaning": "memakai (di kepala)"
+    "Meaning": "memakai (di kepala)",
+    "Verb_Type": "Transitive",
+    "Pair": "被せます"
   },
   {
     "Group": "Godan (1)",
@@ -679,7 +801,9 @@
     "Nai_form": "～がりません",
     "Ta_form": "～がりました",
     "Nakatta_form": "～がりませんでした",
-    "Meaning": "(orang ketiga) ingin..."
+    "Meaning": "(orang ketiga) ingin...",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -690,7 +814,9 @@
     "Nai_form": "変わりません",
     "Ta_form": "変わりました",
     "Nakatta_form": "変わりませんでした",
-    "Meaning": "berubah"
+    "Meaning": "berubah",
+    "Verb_Type": "Intransitive",
+    "Pair": "変えます"
   },
   {
     "Group": "Godan (1)",
@@ -701,7 +827,9 @@
     "Nai_form": "飾りません",
     "Ta_form": "飾りました",
     "Nakatta_form": "飾りませんでした",
-    "Meaning": "menghias / memajang"
+    "Meaning": "menghias / memajang",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -712,7 +840,9 @@
     "Nai_form": "頑張りません",
     "Ta_form": "頑張りました",
     "Nakatta_form": "頑張りませんでした",
-    "Meaning": "berusaha keras"
+    "Meaning": "berusaha keras",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -723,7 +853,9 @@
     "Nai_form": "決まりません",
     "Ta_form": "決まりました",
     "Nakatta_form": "決まりませんでした",
-    "Meaning": "diputuskan"
+    "Meaning": "diputuskan",
+    "Verb_Type": "Intransitive",
+    "Pair": "決めます"
   },
   {
     "Group": "Godan (1)",
@@ -734,7 +866,9 @@
     "Nai_form": "切りません",
     "Ta_form": "切りました",
     "Nakatta_form": "切りませんでした",
-    "Meaning": "memotong"
+    "Meaning": "memotong",
+    "Verb_Type": "Transitive",
+    "Pair": "切れます"
   },
   {
     "Group": "Godan (1)",
@@ -745,7 +879,9 @@
     "Nai_form": "曇りません",
     "Ta_form": "曇りました",
     "Nakatta_form": "曇りませんでした",
-    "Meaning": "mendung"
+    "Meaning": "mendung",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -756,7 +892,9 @@
     "Nai_form": "困りません",
     "Ta_form": "困りました",
     "Nakatta_form": "困りませんでした",
-    "Meaning": "kesulitan / bermasalah"
+    "Meaning": "kesulitan / bermasalah",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -767,7 +905,9 @@
     "Nai_form": "ご覧になりません",
     "Ta_form": "ご覧になりました",
     "Nakatta_form": "ご覧になりませんでした",
-    "Meaning": "melihat (bentuk hormat)"
+    "Meaning": "melihat (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -778,7 +918,9 @@
     "Nai_form": "下がりません",
     "Ta_form": "下がりました",
     "Nakatta_form": "下がりませんでした",
-    "Meaning": "turun"
+    "Meaning": "turun",
+    "Verb_Type": "Intransitive",
+    "Pair": "下げます"
   },
   {
     "Group": "Godan (1)",
@@ -789,7 +931,9 @@
     "Nai_form": "触りません",
     "Ta_form": "触りました",
     "Nakatta_form": "触りませんでした",
-    "Meaning": "menyentuh"
+    "Meaning": "menyentuh",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -800,7 +944,9 @@
     "Nai_form": "叱りません",
     "Ta_form": "叱りました",
     "Nakatta_form": "叱りませんでした",
-    "Meaning": "memarahi"
+    "Meaning": "memarahi",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -811,7 +957,9 @@
     "Nai_form": "閉まりません",
     "Ta_form": "閉まりました",
     "Nakatta_form": "閉まりませんでした",
-    "Meaning": "tertutup"
+    "Meaning": "tertutup",
+    "Verb_Type": "Intransitive",
+    "Pair": "閉めます"
   },
   {
     "Group": "Godan (1)",
@@ -822,7 +970,9 @@
     "Nai_form": "知りません",
     "Ta_form": "知りました",
     "Nakatta_form": "知りませんでした",
-    "Meaning": "tahu / mengenal"
+    "Meaning": "tahu / mengenal",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -833,7 +983,9 @@
     "Nai_form": "滑りません",
     "Ta_form": "滑りました",
     "Nakatta_form": "滑りませんでした",
-    "Meaning": "meluncur / tergelincir"
+    "Meaning": "meluncur / tergelincir",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -844,7 +996,9 @@
     "Nai_form": "助かりません",
     "Ta_form": "助かりました",
     "Nakatta_form": "助かりませんでした",
-    "Meaning": "terselamatkan / tertolong"
+    "Meaning": "terselamatkan / tertolong",
+    "Verb_Type": "Intransitive",
+    "Pair": "助けます"
   },
   {
     "Group": "Godan (1)",
@@ -855,7 +1009,9 @@
     "Nai_form": "釣りません",
     "Ta_form": "釣りました",
     "Nakatta_form": "釣りませんでした",
-    "Meaning": "memancing"
+    "Meaning": "memancing",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -866,7 +1022,9 @@
     "Nai_form": "通りません",
     "Ta_form": "通りました",
     "Nakatta_form": "通りませんでした",
-    "Meaning": "melewati"
+    "Meaning": "melewati",
+    "Verb_Type": "Intransitive",
+    "Pair": "通します"
   },
   {
     "Group": "Godan (1)",
@@ -877,7 +1035,9 @@
     "Nai_form": "撮りません",
     "Ta_form": "撮りました",
     "Nakatta_form": "撮りませんでした",
-    "Meaning": "mengambil (foto/video)"
+    "Meaning": "mengambil (foto/video)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -888,7 +1048,9 @@
     "Nai_form": "直りません",
     "Ta_form": "直りました",
     "Nakatta_form": "直りませんでした",
-    "Meaning": "sembuh / membaik"
+    "Meaning": "sembuh / membaik",
+    "Verb_Type": "Intransitive",
+    "Pair": "直します"
   },
   {
     "Group": "Godan (1)",
@@ -899,7 +1061,9 @@
     "Nai_form": "亡くなりません",
     "Ta_form": "亡くなりました",
     "Nakatta_form": "亡くなりませんでした",
-    "Meaning": "meninggal dunia / hilang"
+    "Meaning": "meninggal dunia / hilang",
+    "Verb_Type": "Intransitive",
+    "Pair": "亡くします"
   },
   {
     "Group": "Godan (1)",
@@ -910,7 +1074,9 @@
     "Nai_form": "なりません",
     "Ta_form": "なりました",
     "Nakatta_form": "なりませんでした",
-    "Meaning": "menjadi"
+    "Meaning": "menjadi",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -921,7 +1087,9 @@
     "Nai_form": "鳴りません",
     "Ta_form": "鳴りました",
     "Nakatta_form": "鳴りませんでした",
-    "Meaning": "berbunyi / berdering"
+    "Meaning": "berbunyi / berdering",
+    "Verb_Type": "Intransitive",
+    "Pair": "鳴らします"
   },
   {
     "Group": "Godan (1)",
@@ -932,7 +1100,9 @@
     "Nai_form": "塗りません",
     "Ta_form": "塗りました",
     "Nakatta_form": "塗りませんでした",
-    "Meaning": "mengecat / mengoles"
+    "Meaning": "mengecat / mengoles",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -943,7 +1113,9 @@
     "Nai_form": "眠りません",
     "Ta_form": "眠りました",
     "Nakatta_form": "眠りませんでした",
-    "Meaning": "tertidur"
+    "Meaning": "tertidur",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -954,7 +1126,9 @@
     "Nai_form": "残りません",
     "Ta_form": "残りました",
     "Nakatta_form": "残りませんでした",
-    "Meaning": "tersisa / tertinggal"
+    "Meaning": "tersisa / tertinggal",
+    "Verb_Type": "Intransitive",
+    "Pair": "残します"
   },
   {
     "Group": "Godan (1)",
@@ -965,7 +1139,9 @@
     "Nai_form": "登りません",
     "Ta_form": "登りました",
     "Nakatta_form": "登りませんでした",
-    "Meaning": "mendaki / memanjat"
+    "Meaning": "mendaki / memanjat",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -976,7 +1152,9 @@
     "Nai_form": "始まりません",
     "Ta_form": "始まりました",
     "Nakatta_form": "始まりませんでした",
-    "Meaning": "dimulai"
+    "Meaning": "dimulai",
+    "Verb_Type": "Intransitive",
+    "Pair": "始めます"
   },
   {
     "Group": "Godan (1)",
@@ -987,7 +1165,9 @@
     "Nai_form": "貼りません",
     "Ta_form": "貼りました",
     "Nakatta_form": "貼りませんでした",
-    "Meaning": "menempelkan (prangko)"
+    "Meaning": "menempelkan (prangko)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -998,7 +1178,9 @@
     "Nai_form": "光りません",
     "Ta_form": "光りました",
     "Nakatta_form": "光りませんでした",
-    "Meaning": "bersinar"
+    "Meaning": "bersinar",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1009,7 +1191,9 @@
     "Nai_form": "参りません",
     "Ta_form": "参りました",
     "Nakatta_form": "参りませんでした",
-    "Meaning": "pergi / datang (bentuk merendah)"
+    "Meaning": "pergi / datang (bentuk merendah)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1020,7 +1204,9 @@
     "Nai_form": "回りません",
     "Ta_form": "回りました",
     "Nakatta_form": "回りませんでした",
-    "Meaning": "berputar / berkeliling"
+    "Meaning": "berputar / berkeliling",
+    "Verb_Type": "Intransitive",
+    "Pair": "回します"
   },
   {
     "Group": "Godan (1)",
@@ -1031,7 +1217,9 @@
     "Nai_form": "見つかりません",
     "Ta_form": "見つかりました",
     "Nakatta_form": "見つかりませんでした",
-    "Meaning": "ditemukan"
+    "Meaning": "ditemukan",
+    "Verb_Type": "Intransitive",
+    "Pair": "見つけます"
   },
   {
     "Group": "Godan (1)",
@@ -1042,7 +1230,9 @@
     "Nai_form": "召し上がりません",
     "Ta_form": "召し上がりました",
     "Nakatta_form": "召し上がりませんでした",
-    "Meaning": "makan / minum (bentuk hormat)"
+    "Meaning": "makan / minum (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1053,7 +1243,9 @@
     "Nai_form": "やりません",
     "Ta_form": "やりました",
     "Nakatta_form": "やりませんでした",
-    "Meaning": "melakukan / memberi (ke bawahan)"
+    "Meaning": "melakukan / memberi (ke bawahan)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1064,7 +1256,9 @@
     "Nai_form": "寄りません",
     "Ta_form": "寄りました",
     "Nakatta_form": "寄りませんでした",
-    "Meaning": "mampir"
+    "Meaning": "mampir",
+    "Verb_Type": "Intransitive",
+    "Pair": "寄せます"
   },
   {
     "Group": "Godan (1)",
@@ -1075,7 +1269,9 @@
     "Nai_form": "渡りません",
     "Ta_form": "渡りました",
     "Nakatta_form": "渡りませんでした",
-    "Meaning": "menyeberang"
+    "Meaning": "menyeberang",
+    "Verb_Type": "Intransitive",
+    "Pair": "渡します"
   },
   {
     "Group": "Godan (1)",
@@ -1086,7 +1282,9 @@
     "Nai_form": "いらっしゃいません",
     "Ta_form": "いらっしゃいました",
     "Nakatta_form": "いらっしゃいませんでした",
-    "Meaning": "pergi/datang/ada (bentuk hormat)"
+    "Meaning": "pergi/datang/ada (bentuk hormat)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1097,7 +1295,9 @@
     "Nai_form": "おっしゃいません",
     "Ta_form": "おっしゃいました",
     "Nakatta_form": "おっしゃいませんでした",
-    "Meaning": "berkata (bentuk hormat)"
+    "Meaning": "berkata (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1108,7 +1308,9 @@
     "Nai_form": "くださいません",
     "Ta_form": "くださいました",
     "Nakatta_form": "くださいませんでした",
-    "Meaning": "memberi (bentuk hormat)"
+    "Meaning": "memberi (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1119,7 +1321,9 @@
     "Nai_form": "ございません",
     "Ta_form": "ございました",
     "Nakatta_form": "ございませんでした",
-    "Meaning": "ada (bentuk sopan)"
+    "Meaning": "ada (bentuk sopan)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Godan (1)",
@@ -1130,7 +1334,9 @@
     "Nai_form": "なさいません",
     "Ta_form": "なさいました",
     "Nakatta_form": "なさいませんでした",
-    "Meaning": "melakukan (bentuk hormat)"
+    "Meaning": "melakukan (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1141,7 +1347,9 @@
     "Nai_form": "集めません",
     "Ta_form": "集めました",
     "Nakatta_form": "集めませんでした",
-    "Meaning": "mengumpulkan"
+    "Meaning": "mengumpulkan",
+    "Verb_Type": "Transitive",
+    "Pair": "集まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1152,7 +1360,9 @@
     "Nai_form": "いじめません",
     "Ta_form": "いじめました",
     "Nakatta_form": "いじめませんでした",
-    "Meaning": "menindas / mengganggu"
+    "Meaning": "menindas / mengganggu",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1163,7 +1373,9 @@
     "Nai_form": "植えません",
     "Ta_form": "植えました",
     "Nakatta_form": "植えませんでした",
-    "Meaning": "menanam"
+    "Meaning": "menanam",
+    "Verb_Type": "Transitive",
+    "Pair": "植わります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1174,7 +1386,9 @@
     "Nai_form": "受けません",
     "Ta_form": "受けました",
     "Nakatta_form": "受けませんでした",
-    "Meaning": "mengikuti (ujian) / menerima"
+    "Meaning": "mengikuti (ujian) / menerima",
+    "Verb_Type": "Transitive",
+    "Pair": "受かります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1185,7 +1399,9 @@
     "Nai_form": "生まれません",
     "Ta_form": "生まれました",
     "Nakatta_form": "生まれませんでした",
-    "Meaning": "lahir"
+    "Meaning": "lahir",
+    "Verb_Type": "Intransitive",
+    "Pair": "生みます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1196,7 +1412,9 @@
     "Nai_form": "遅れません",
     "Ta_form": "遅れました",
     "Nakatta_form": "遅れませんでした",
-    "Meaning": "terlambat"
+    "Meaning": "terlambat",
+    "Verb_Type": "Intransitive",
+    "Pair": "遅らします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1207,7 +1425,9 @@
     "Nai_form": "折れません",
     "Ta_form": "折れました",
     "Nakatta_form": "折れませんでした",
-    "Meaning": "terlipat / patah"
+    "Meaning": "terlipat / patah",
+    "Verb_Type": "Intransitive",
+    "Pair": "折ります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1218,7 +1438,9 @@
     "Nai_form": "変えません",
     "Ta_form": "変えました",
     "Nakatta_form": "変えませんでした",
-    "Meaning": "mengubah (sesuatu)"
+    "Meaning": "mengubah (sesuatu)",
+    "Verb_Type": "Transitive",
+    "Pair": "変わります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1229,7 +1451,9 @@
     "Nai_form": "掛けません",
     "Ta_form": "掛けました",
     "Nakatta_form": "掛けませんでした",
-    "Meaning": "menggantung / mengunci / duduk"
+    "Meaning": "menggantung / mengunci / duduk",
+    "Verb_Type": "Transitive",
+    "Pair": "掛かります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1240,7 +1464,9 @@
     "Nai_form": "片付けません",
     "Ta_form": "片付けました",
     "Nakatta_form": "片付けませんでした",
-    "Meaning": "membereskan / merapikan"
+    "Meaning": "membereskan / merapikan",
+    "Verb_Type": "Transitive",
+    "Pair": "片付きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1251,7 +1477,9 @@
     "Nai_form": "枯れません",
     "Ta_form": "枯れました",
     "Nakatta_form": "枯れませんでした",
-    "Meaning": "layu / mati (tanaman)"
+    "Meaning": "layu / mati (tanaman)",
+    "Verb_Type": "Intransitive",
+    "Pair": "枯らします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1262,7 +1490,9 @@
     "Nai_form": "消えません",
     "Ta_form": "消えました",
     "Nakatta_form": "消えませんでした",
-    "Meaning": "padam / menghilang"
+    "Meaning": "padam / menghilang",
+    "Verb_Type": "Intransitive",
+    "Pair": "消します"
   },
   {
     "Group": "Ichidan (2)",
@@ -1273,7 +1503,9 @@
     "Nai_form": "聞こえません",
     "Ta_form": "聞こえました",
     "Nakatta_form": "聞こえませんでした",
-    "Meaning": "terdengar"
+    "Meaning": "terdengar",
+    "Verb_Type": "Intransitive",
+    "Pair": "聞きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1284,7 +1516,9 @@
     "Nai_form": "決めません",
     "Ta_form": "決めました",
     "Nakatta_form": "決めませんでした",
-    "Meaning": "memutuskan"
+    "Meaning": "memutuskan",
+    "Verb_Type": "Transitive",
+    "Pair": "決まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1295,7 +1529,9 @@
     "Nai_form": "比べません",
     "Ta_form": "比べました",
     "Nakatta_form": "比べませんでした",
-    "Meaning": "membandingkan"
+    "Meaning": "membandingkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1306,7 +1542,9 @@
     "Nai_form": "暮れません",
     "Ta_form": "暮れました",
     "Nakatta_form": "暮れませんでした",
-    "Meaning": "(hari) menjadi gelap"
+    "Meaning": "(hari) menjadi gelap",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1317,7 +1555,9 @@
     "Nai_form": "答えません",
     "Ta_form": "答えました",
     "Nakatta_form": "答えませんでした",
-    "Meaning": "menjawab"
+    "Meaning": "menjawab",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1328,7 +1568,9 @@
     "Nai_form": "壊れません",
     "Ta_form": "壊れました",
     "Nakatta_form": "壊れませんでした",
-    "Meaning": "rusak (dengan sendirinya)"
+    "Meaning": "rusak (dengan sendirinya)",
+    "Verb_Type": "Intransitive",
+    "Pair": "壊します"
   },
   {
     "Group": "Ichidan (2)",
@@ -1339,7 +1581,9 @@
     "Nai_form": "差し上げません",
     "Ta_form": "差し上げました",
     "Nakatta_form": "差し上げませんでした",
-    "Meaning": "memberi (bentuk hormat)"
+    "Meaning": "memberi (bentuk hormat)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1350,7 +1594,9 @@
     "Nai_form": "締めません",
     "Ta_form": "締めました",
     "Nakatta_form": "締めませんでした",
-    "Meaning": "mengencangkan / mengikat"
+    "Meaning": "mengencangkan / mengikat",
+    "Verb_Type": "Transitive",
+    "Pair": "締まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1361,7 +1607,9 @@
     "Nai_form": "知らせません",
     "Ta_form": "知らせました",
     "Nakatta_form": "知らせませんでした",
-    "Meaning": "memberitahukan"
+    "Meaning": "memberitahukan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1372,7 +1620,9 @@
     "Nai_form": "育てません",
     "Ta_form": "育てました",
     "Nakatta_form": "育てませんでした",
-    "Meaning": "membesarkan / merawat"
+    "Meaning": "membesarkan / merawat",
+    "Verb_Type": "Transitive",
+    "Pair": "育ちます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1383,7 +1633,9 @@
     "Nai_form": "倒れません",
     "Ta_form": "倒れました",
     "Nakatta_form": "倒れませんでした",
-    "Meaning": "tumbang / jatuh"
+    "Meaning": "tumbang / jatuh",
+    "Verb_Type": "Intransitive",
+    "Pair": "倒します"
   },
   {
     "Group": "Ichidan (2)",
@@ -1394,7 +1646,9 @@
     "Nai_form": "尋ねません",
     "Ta_form": "尋ねました",
     "Nakatta_form": "尋ねませんでした",
-    "Meaning": "mengunjungi / bertanya"
+    "Meaning": "mengunjungi / bertanya",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1405,7 +1659,9 @@
     "Nai_form": "建てません",
     "Ta_form": "建てました",
     "Nakatta_form": "建てませんでした",
-    "Meaning": "membangun"
+    "Meaning": "membangun",
+    "Verb_Type": "Transitive",
+    "Pair": "建ちます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1416,7 +1672,9 @@
     "Nai_form": "立てません",
     "Ta_form": "立てました",
     "Nakatta_form": "立てませんでした",
-    "Meaning": "mendirikan / menegakkan"
+    "Meaning": "mendirikan / menegakkan",
+    "Verb_Type": "Transitive",
+    "Pair": "立ちます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1427,7 +1685,9 @@
     "Nai_form": "捕まえません",
     "Ta_form": "捕まえました",
     "Nakatta_form": "捕まえませんでした",
-    "Meaning": "menangkap"
+    "Meaning": "menangkap",
+    "Verb_Type": "Transitive",
+    "Pair": "捕まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1438,7 +1698,9 @@
     "Nai_form": "付けません",
     "Ta_form": "付けました",
     "Nakatta_form": "付けませんでした",
-    "Meaning": "memasang / menempelkan"
+    "Meaning": "memasang / menempelkan",
+    "Verb_Type": "Transitive",
+    "Pair": "付きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1449,7 +1711,9 @@
     "Nai_form": "気を付けません",
     "Ta_form": "気を付けました",
     "Nakatta_form": "気を付けませんでした",
-    "Meaning": "berhati-hati"
+    "Meaning": "berhati-hati",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1460,7 +1724,9 @@
     "Nai_form": "伝えません",
     "Ta_form": "伝えました",
     "Nakatta_form": "伝えませんでした",
-    "Meaning": "menyampaikan / melaporkan"
+    "Meaning": "menyampaikan / melaporkan",
+    "Verb_Type": "Transitive",
+    "Pair": "伝わります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1471,7 +1737,9 @@
     "Nai_form": "続けません",
     "Ta_form": "続けました",
     "Nakatta_form": "続けませんでした",
-    "Meaning": "melanjutkan"
+    "Meaning": "melanjutkan",
+    "Verb_Type": "Transitive",
+    "Pair": "続きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1482,7 +1750,9 @@
     "Nai_form": "～続けません",
     "Ta_form": "～続けました",
     "Nakatta_form": "～続けませんでした",
-    "Meaning": "terus melakukan..."
+    "Meaning": "terus melakukan...",
+    "Verb_Type": "Transitive",
+    "Pair": "～続きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1493,7 +1763,9 @@
     "Nai_form": "連れません",
     "Ta_form": "連れました",
     "Nakatta_form": "連れませんでした",
-    "Meaning": "membawa serta (orang/hewan)"
+    "Meaning": "membawa serta (orang/hewan)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1504,7 +1776,9 @@
     "Nai_form": "出かけません",
     "Ta_form": "出かけました",
     "Nakatta_form": "出かけませんでした",
-    "Meaning": "pergi keluar"
+    "Meaning": "pergi keluar",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1515,7 +1789,9 @@
     "Nai_form": "届けません",
     "Ta_form": "届けました",
     "Nakatta_form": "届けませんでした",
-    "Meaning": "mengantarkan"
+    "Meaning": "mengantarkan",
+    "Verb_Type": "Transitive",
+    "Pair": "届きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1526,7 +1802,9 @@
     "Nai_form": "取り替えません",
     "Ta_form": "取り替えました",
     "Nakatta_form": "取り替えませんでした",
-    "Meaning": "menukar"
+    "Meaning": "menukar",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1537,7 +1815,9 @@
     "Nai_form": "投げません",
     "Ta_form": "投げました",
     "Nakatta_form": "投げませんでした",
-    "Meaning": "melempar"
+    "Meaning": "melempar",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1548,7 +1828,9 @@
     "Nai_form": "並べません",
     "Ta_form": "並べました",
     "Nakatta_form": "並べませんでした",
-    "Meaning": "menyejajarkan / menyusun"
+    "Meaning": "menyejajarkan / menyusun",
+    "Verb_Type": "Transitive",
+    "Pair": "並びます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1559,7 +1841,9 @@
     "Nai_form": "慣れません",
     "Ta_form": "慣れました",
     "Nakatta_form": "慣れませんでした",
-    "Meaning": "terbiasa"
+    "Meaning": "terbiasa",
+    "Verb_Type": "Intransitive",
+    "Pair": "慣らします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1570,7 +1854,9 @@
     "Nai_form": "逃げません",
     "Ta_form": "逃げました",
     "Nakatta_form": "逃げませんでした",
-    "Meaning": "melarikan diri"
+    "Meaning": "melarikan diri",
+    "Verb_Type": "Intransitive",
+    "Pair": "逃がします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1581,7 +1867,9 @@
     "Nai_form": "濡れません",
     "Ta_form": "濡れました",
     "Nakatta_form": "濡れませんでした",
-    "Meaning": "menjadi basah"
+    "Meaning": "menjadi basah",
+    "Verb_Type": "Intransitive",
+    "Pair": "濡らします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1592,7 +1880,9 @@
     "Nai_form": "乗り換えません",
     "Ta_form": "乗り換えました",
     "Nakatta_form": "乗り換えませんでした",
-    "Meaning": "pindah (kendaraan/kereta)"
+    "Meaning": "pindah (kendaraan/kereta)",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1603,7 +1893,9 @@
     "Nai_form": "始めません",
     "Ta_form": "始めました",
     "Nakatta_form": "始めませんでした",
-    "Meaning": "memulai"
+    "Meaning": "memulai",
+    "Verb_Type": "Transitive",
+    "Pair": "始まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1614,7 +1906,9 @@
     "Nai_form": "～始めません",
     "Ta_form": "～始めました",
     "Nakatta_form": "～始めませんでした",
-    "Meaning": "mulai melakukan..."
+    "Meaning": "mulai melakukan...",
+    "Verb_Type": "Transitive",
+    "Pair": "～始まります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1625,7 +1919,9 @@
     "Nai_form": "晴れません",
     "Ta_form": "晴れました",
     "Nakatta_form": "晴れませんでした",
-    "Meaning": "cerah"
+    "Meaning": "cerah",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1636,7 +1932,9 @@
     "Nai_form": "冷えません",
     "Ta_form": "冷えました",
     "Nakatta_form": "冷えませんでした",
-    "Meaning": "menjadi dingin"
+    "Meaning": "menjadi dingin",
+    "Verb_Type": "Intransitive",
+    "Pair": "冷やします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1647,7 +1945,9 @@
     "Nai_form": "増えません",
     "Ta_form": "増えました",
     "Nakatta_form": "増えませんでした",
-    "Meaning": "bertambah"
+    "Meaning": "bertambah",
+    "Verb_Type": "Intransitive",
+    "Pair": "増やします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1658,7 +1958,9 @@
     "Nai_form": "褒めません",
     "Ta_form": "褒めました",
     "Nakatta_form": "褒めませんでした",
-    "Meaning": "memuji"
+    "Meaning": "memuji",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1669,7 +1971,9 @@
     "Nai_form": "負けません",
     "Ta_form": "負けました",
     "Nakatta_form": "負けませんでした",
-    "Meaning": "kalah"
+    "Meaning": "kalah",
+    "Verb_Type": "Intransitive",
+    "Pair": "負かします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1680,7 +1984,9 @@
     "Nai_form": "見えません",
     "Ta_form": "見えました",
     "Nakatta_form": "見えませんでした",
-    "Meaning": "terlihat"
+    "Meaning": "terlihat",
+    "Verb_Type": "Intransitive",
+    "Pair": "見せます / 見ます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1691,7 +1997,9 @@
     "Nai_form": "見つけません",
     "Ta_form": "見つけました",
     "Nakatta_form": "見つけませんでした",
-    "Meaning": "menemukan"
+    "Meaning": "menemukan",
+    "Verb_Type": "Transitive",
+    "Pair": "見つかります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1702,7 +2010,9 @@
     "Nai_form": "迎えません",
     "Ta_form": "迎えました",
     "Nakatta_form": "迎えませんでした",
-    "Meaning": "menyambut / menjemput"
+    "Meaning": "menyambut / menjemput",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1713,7 +2023,9 @@
     "Nai_form": "焼けません",
     "Ta_form": "焼けました",
     "Nakatta_form": "焼けませんでした",
-    "Meaning": "terpanggang / terbakar"
+    "Meaning": "terpanggang / terbakar",
+    "Verb_Type": "Intransitive",
+    "Pair": "焼きます"
   },
   {
     "Group": "Ichidan (2)",
@@ -1724,7 +2036,9 @@
     "Nai_form": "痩せません",
     "Ta_form": "痩せました",
     "Nakatta_form": "痩せませんでした",
-    "Meaning": "menjadi kurus"
+    "Meaning": "menjadi kurus",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1735,7 +2049,9 @@
     "Nai_form": "辞めません",
     "Ta_form": "辞めました",
     "Nakatta_form": "辞めませんでした",
-    "Meaning": "berhenti / menyerah"
+    "Meaning": "berhenti / menyerah",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1746,7 +2062,9 @@
     "Nai_form": "揺れません",
     "Ta_form": "揺れました",
     "Nakatta_form": "揺れませんでした",
-    "Meaning": "berguncang / berayun"
+    "Meaning": "berguncang / berayun",
+    "Verb_Type": "Intransitive",
+    "Pair": "揺らします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1757,7 +2075,9 @@
     "Nai_form": "汚れません",
     "Ta_form": "汚れました",
     "Nakatta_form": "汚れませんでした",
-    "Meaning": "menjadi kotor"
+    "Meaning": "menjadi kotor",
+    "Verb_Type": "Intransitive",
+    "Pair": "汚します"
   },
   {
     "Group": "Ichidan (2)",
@@ -1768,7 +2088,9 @@
     "Nai_form": "別れません",
     "Ta_form": "別れました",
     "Nakatta_form": "別れませんでした",
-    "Meaning": "berpisah"
+    "Meaning": "berpisah",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1779,7 +2101,9 @@
     "Nai_form": "割れません",
     "Ta_form": "割れました",
     "Nakatta_form": "割れませんでした",
-    "Meaning": "pecah / retak"
+    "Meaning": "pecah / retak",
+    "Verb_Type": "Intransitive",
+    "Pair": "割ります"
   },
   {
     "Group": "Ichidan (2)",
@@ -1790,7 +2114,9 @@
     "Nai_form": "生きません",
     "Ta_form": "生きました",
     "Nakatta_form": "生きませんでした",
-    "Meaning": "hidup"
+    "Meaning": "hidup",
+    "Verb_Type": "Intransitive",
+    "Pair": "生かします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1801,7 +2127,9 @@
     "Nai_form": "過ぎません",
     "Ta_form": "過ぎました",
     "Nakatta_form": "過ぎませんでした",
-    "Meaning": "lewat / berlalu"
+    "Meaning": "lewat / berlalu",
+    "Verb_Type": "Intransitive",
+    "Pair": "過ごします"
   },
   {
     "Group": "Ichidan (2)",
@@ -1812,7 +2140,9 @@
     "Nai_form": "～過ぎません",
     "Ta_form": "～過ぎました",
     "Nakatta_form": "～過ぎませんでした",
-    "Meaning": "terlalu..."
+    "Meaning": "terlalu...",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1823,7 +2153,9 @@
     "Nai_form": "足りません",
     "Ta_form": "足りました",
     "Nakatta_form": "足りませんでした",
-    "Meaning": "cukup"
+    "Meaning": "cukup",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Ichidan (2)",
@@ -1834,7 +2166,9 @@
     "Nai_form": "似ません",
     "Ta_form": "似ました",
     "Nakatta_form": "似ませんでした",
-    "Meaning": "mirip"
+    "Meaning": "mirip",
+    "Verb_Type": "Intransitive",
+    "Pair": "似せます"
   },
   {
     "Group": "Irregular (3)",
@@ -1845,7 +2179,9 @@
     "Nai_form": "安心しません",
     "Ta_form": "安心しました",
     "Nakatta_form": "安心しませんでした",
-    "Meaning": "lega"
+    "Meaning": "lega",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1856,7 +2192,9 @@
     "Nai_form": "案内しません",
     "Ta_form": "案内しました",
     "Nakatta_form": "案内しませんでした",
-    "Meaning": "memandu / mengantar keliling"
+    "Meaning": "memandu / mengantar keliling",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1867,7 +2205,9 @@
     "Nai_form": "運動しません",
     "Ta_form": "運動しました",
     "Nakatta_form": "運動しませんでした",
-    "Meaning": "berolahraga"
+    "Meaning": "berolahraga",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1878,7 +2218,9 @@
     "Nai_form": "遠慮しません",
     "Ta_form": "遠慮しました",
     "Nakatta_form": "遠慮しませんでした",
-    "Meaning": "sungkan / menahan diri"
+    "Meaning": "sungkan / menahan diri",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1889,7 +2231,9 @@
     "Nai_form": "会話しません",
     "Ta_form": "会話しました",
     "Nakatta_form": "会話しませんでした",
-    "Meaning": "bercakap-cakap"
+    "Meaning": "bercakap-cakap",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1900,7 +2244,9 @@
     "Nai_form": "競争しません",
     "Ta_form": "競争しました",
     "Nakatta_form": "競争しませんでした",
-    "Meaning": "berlomba / bersaing"
+    "Meaning": "berlomba / bersaing",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1911,7 +2257,9 @@
     "Nai_form": "計画しません",
     "Ta_form": "計画しました",
     "Nakatta_form": "計画しませんでした",
-    "Meaning": "merencanakan"
+    "Meaning": "merencanakan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1922,7 +2270,9 @@
     "Nai_form": "経験しません",
     "Ta_form": "経験しました",
     "Nakatta_form": "経験しませんでした",
-    "Meaning": "mengalami"
+    "Meaning": "mengalami",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1933,7 +2283,9 @@
     "Nai_form": "けがしません",
     "Ta_form": "けがしました",
     "Nakatta_form": "けがしませんでした",
-    "Meaning": "terluka"
+    "Meaning": "terluka",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1944,7 +2296,9 @@
     "Nai_form": "結婚しません",
     "Ta_form": "結婚しました",
     "Nakatta_form": "結婚しませんでした",
-    "Meaning": "menikah"
+    "Meaning": "menikah",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1955,7 +2309,9 @@
     "Nai_form": "けんかしません",
     "Ta_form": "けんかしました",
     "Nakatta_form": "けんかしませんでした",
-    "Meaning": "bertengkar"
+    "Meaning": "bertengkar",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1966,7 +2322,9 @@
     "Nai_form": "研究しません",
     "Ta_form": "研究しました",
     "Nakatta_form": "研究しませんでした",
-    "Meaning": "meneliti"
+    "Meaning": "meneliti",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1977,7 +2335,9 @@
     "Nai_form": "見物しません",
     "Ta_form": "見物しました",
     "Nakatta_form": "見物しませんでした",
-    "Meaning": "melihat-lihat / bertamasya"
+    "Meaning": "melihat-lihat / bertamasya",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1988,7 +2348,9 @@
     "Nai_form": "故障しません",
     "Ta_form": "故障しました",
     "Nakatta_form": "故障しませんでした",
-    "Meaning": "rusak / mengalami gangguan"
+    "Meaning": "rusak / mengalami gangguan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -1999,7 +2361,9 @@
     "Nai_form": "コピーしません",
     "Ta_form": "コピーしました",
     "Nakatta_form": "コピーしませんでした",
-    "Meaning": "menyalin / memfotokopi"
+    "Meaning": "menyalin / memfotokopi",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2010,7 +2374,9 @@
     "Nai_form": "散歩しません",
     "Ta_form": "散歩しました",
     "Nakatta_form": "散歩しませんでした",
-    "Meaning": "jalan-jalan"
+    "Meaning": "jalan-jalan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2021,7 +2387,9 @@
     "Nai_form": "試験しません",
     "Ta_form": "試験しました",
     "Nakatta_form": "試験しませんでした",
-    "Meaning": "menguji / mengikuti ujian"
+    "Meaning": "menguji / mengikuti ujian",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2032,7 +2400,9 @@
     "Nai_form": "支度しません",
     "Ta_form": "支度しました",
     "Nakatta_form": "支度しませんでした",
-    "Meaning": "bersiap-siap"
+    "Meaning": "bersiap-siap",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2043,7 +2413,9 @@
     "Nai_form": "質問しません",
     "Ta_form": "質問しました",
     "Nakatta_form": "質問しませんでした",
-    "Meaning": "bertanya"
+    "Meaning": "bertanya",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2054,7 +2426,9 @@
     "Nai_form": "失敗しません",
     "Ta_form": "失敗しました",
     "Nakatta_form": "失敗しませんでした",
-    "Meaning": "gagal"
+    "Meaning": "gagal",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2065,7 +2439,9 @@
     "Nai_form": "失礼しません",
     "Ta_form": "失礼しました",
     "Nakatta_form": "失礼しませんでした",
-    "Meaning": "permisi / bersikap tidak sopan"
+    "Meaning": "permisi / bersikap tidak sopan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2076,7 +2452,9 @@
     "Nai_form": "宿題しません",
     "Ta_form": "宿題しました",
     "Nakatta_form": "宿題しませんでした",
-    "Meaning": "mengerjakan PR"
+    "Meaning": "mengerjakan PR",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2087,7 +2465,9 @@
     "Nai_form": "出席しません",
     "Ta_form": "出席しました",
     "Nakatta_form": "出席しませんでした",
-    "Meaning": "hadir"
+    "Meaning": "hadir",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2098,7 +2478,9 @@
     "Nai_form": "出発しません",
     "Ta_form": "出発しました",
     "Nakatta_form": "出発しませんでした",
-    "Meaning": "berangkat"
+    "Meaning": "berangkat",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2109,7 +2491,9 @@
     "Nai_form": "準備しません",
     "Ta_form": "準備しました",
     "Nakatta_form": "準備しませんでした",
-    "Meaning": "mempersiapkan"
+    "Meaning": "mempersiapkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2120,7 +2504,9 @@
     "Nai_form": "招待しません",
     "Ta_form": "招待しました",
     "Nakatta_form": "招待しませんでした",
-    "Meaning": "mengundang"
+    "Meaning": "mengundang",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2131,7 +2517,9 @@
     "Nai_form": "承知しません",
     "Ta_form": "承知しました",
     "Nakatta_form": "承知しませんでした",
-    "Meaning": "mengerti / menyetujui"
+    "Meaning": "mengerti / menyetujui",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2142,7 +2530,9 @@
     "Nai_form": "食事しません",
     "Ta_form": "食事しました",
     "Nakatta_form": "食事しませんでした",
-    "Meaning": "makan"
+    "Meaning": "makan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2153,7 +2543,9 @@
     "Nai_form": "心配しません",
     "Ta_form": "心配しました",
     "Nakatta_form": "心配しませんでした",
-    "Meaning": "khawatir"
+    "Meaning": "khawatir",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2164,7 +2556,9 @@
     "Nai_form": "生活しません",
     "Ta_form": "生活しました",
     "Nakatta_form": "生活しませんでした",
-    "Meaning": "menjalani hidup"
+    "Meaning": "menjalani hidup",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2175,7 +2569,9 @@
     "Nai_form": "成功しません",
     "Ta_form": "成功しました",
     "Nakatta_form": "成功しませんでした",
-    "Meaning": "sukses / berhasil"
+    "Meaning": "sukses / berhasil",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2186,7 +2582,9 @@
     "Nai_form": "生産しません",
     "Ta_form": "生産しました",
     "Nakatta_form": "生産しませんでした",
-    "Meaning": "memproduksi"
+    "Meaning": "memproduksi",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2197,7 +2595,9 @@
     "Nai_form": "戦争しません",
     "Ta_form": "戦争しました",
     "Nakatta_form": "戦争しませんでした",
-    "Meaning": "berperang"
+    "Meaning": "berperang",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2208,7 +2608,9 @@
     "Nai_form": "お世話しません",
     "Ta_form": "お世話しました",
     "Nakatta_form": "お世話しませんでした",
-    "Meaning": "merawat / mengurus"
+    "Meaning": "merawat / mengurus",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2219,7 +2621,9 @@
     "Nai_form": "洗濯しません",
     "Ta_form": "洗濯しました",
     "Nakatta_form": "洗濯しませんでした",
-    "Meaning": "mencuci (pakaian)"
+    "Meaning": "mencuci (pakaian)",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2230,7 +2634,9 @@
     "Nai_form": "掃除しません",
     "Ta_form": "掃除しました",
     "Nakatta_form": "掃除しませんでした",
-    "Meaning": "membersihkan"
+    "Meaning": "membersihkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2241,7 +2647,9 @@
     "Nai_form": "相談しません",
     "Ta_form": "相談しました",
     "Nakatta_form": "相談しませんでした",
-    "Meaning": "berdiskusi / berkonsultasi"
+    "Meaning": "berdiskusi / berkonsultasi",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2252,7 +2660,9 @@
     "Nai_form": "卒業しません",
     "Ta_form": "卒業しました",
     "Nakatta_form": "卒業しませんでした",
-    "Meaning": "lulus"
+    "Meaning": "lulus",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2263,7 +2673,9 @@
     "Nai_form": "退院しません",
     "Ta_form": "退院しました",
     "Nakatta_form": "退院しませんでした",
-    "Meaning": "keluar dari rumah sakit"
+    "Meaning": "keluar dari rumah sakit",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2274,7 +2686,9 @@
     "Nai_form": "チェックしません",
     "Ta_form": "チェックしました",
     "Nakatta_form": "チェックしませんでした",
-    "Meaning": "memeriksa / mengecek"
+    "Meaning": "memeriksa / mengecek",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2285,7 +2699,9 @@
     "Nai_form": "注意しません",
     "Ta_form": "注意しました",
     "Nakatta_form": "注意しませんでした",
-    "Meaning": "berhati-hati / memperingatkan"
+    "Meaning": "berhati-hati / memperingatkan",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2296,7 +2712,9 @@
     "Nai_form": "中止しません",
     "Ta_form": "中止しました",
     "Nakatta_form": "中止しませんでした",
-    "Meaning": "membatalkan / menghentikan"
+    "Meaning": "membatalkan / menghentikan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2307,7 +2725,9 @@
     "Nai_form": "注射しません",
     "Ta_form": "注射しました",
     "Nakatta_form": "注射しませんでした",
-    "Meaning": "menyuntik"
+    "Meaning": "menyuntik",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2318,7 +2738,9 @@
     "Nai_form": "返事しません",
     "Ta_form": "返事しました",
     "Nakatta_form": "返事しませんでした",
-    "Meaning": "membalas / menjawab"
+    "Meaning": "membalas / menjawab",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2329,7 +2751,9 @@
     "Nai_form": "放送しません",
     "Ta_form": "放送しました",
     "Nakatta_form": "放送しませんでした",
-    "Meaning": "menyiarkan"
+    "Meaning": "menyiarkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2340,7 +2764,9 @@
     "Nai_form": "翻訳しません",
     "Ta_form": "翻訳しました",
     "Nakatta_form": "翻訳しませんでした",
-    "Meaning": "menerjemahkan"
+    "Meaning": "menerjemahkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2351,7 +2777,9 @@
     "Nai_form": "無理しません",
     "Ta_form": "無理しました",
     "Nakatta_form": "無理しませんでした",
-    "Meaning": "memaksakan diri"
+    "Meaning": "memaksakan diri",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2362,7 +2790,9 @@
     "Nai_form": "約束しません",
     "Ta_form": "約束しました",
     "Nakatta_form": "約束しませんでした",
-    "Meaning": "berjanji"
+    "Meaning": "berjanji",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2373,7 +2803,9 @@
     "Nai_form": "輸出しません",
     "Ta_form": "輸出しました",
     "Nakatta_form": "輸出しませんでした",
-    "Meaning": "mengekspor"
+    "Meaning": "mengekspor",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2384,7 +2816,9 @@
     "Nai_form": "輸入しません",
     "Ta_form": "輸入しました",
     "Nakatta_form": "輸入しませんでした",
-    "Meaning": "mengimpor"
+    "Meaning": "mengimpor",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2395,7 +2829,9 @@
     "Nai_form": "用意しません",
     "Ta_form": "用意しました",
     "Nakatta_form": "用意しませんでした",
-    "Meaning": "menyediakan / menyiapkan"
+    "Meaning": "menyediakan / menyiapkan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2406,7 +2842,9 @@
     "Nai_form": "予習しません",
     "Ta_form": "予習しました",
     "Nakatta_form": "予習しませんでした",
-    "Meaning": "mempelajari sebelumnya"
+    "Meaning": "mempelajari sebelumnya",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2417,7 +2855,9 @@
     "Nai_form": "利用しません",
     "Ta_form": "利用しました",
     "Nakatta_form": "利用しませんでした",
-    "Meaning": "memanfaatkan / menggunakan"
+    "Meaning": "memanfaatkan / menggunakan",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2428,7 +2868,9 @@
     "Nai_form": "料理しません",
     "Ta_form": "料理しました",
     "Nakatta_form": "料理しませんでした",
-    "Meaning": "memasak"
+    "Meaning": "memasak",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2439,7 +2881,9 @@
     "Nai_form": "練習しません",
     "Ta_form": "練習しました",
     "Nakatta_form": "練習しませんでした",
-    "Meaning": "berlatih"
+    "Meaning": "berlatih",
+    "Verb_Type": "Transitive",
+    "Pair": "-"
   },
   {
     "Group": "Irregular (3)",
@@ -2450,6 +2894,8 @@
     "Nai_form": "連絡しません",
     "Ta_form": "連絡しました",
     "Nakatta_form": "連絡しませんでした",
-    "Meaning": "menghubungi"
+    "Meaning": "menghubungi",
+    "Verb_Type": "Intransitive",
+    "Pair": "-"
   }
 ]

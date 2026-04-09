@@ -15,6 +15,8 @@ class VerbData {
   final String teKudasai;
   final String teIru;
   final String meaning;
+  final String verbType;
+  final String pair;
 
   VerbData({
     required this.group,
@@ -31,6 +33,8 @@ class VerbData {
     required this.teKudasai,
     required this.teIru,
     required this.meaning,
+    required this.verbType,
+    required this.pair,
   });
 
   factory VerbData.fromJson(Map<String, dynamic> json) {
@@ -49,6 +53,8 @@ class VerbData {
       teKudasai: json['Te_kudasai']?.toString() ?? '',
       teIru: json['Te_iru']?.toString() ?? '',
       meaning: json['Meaning']?.toString() ?? '',
+      verbType: json['Verb_Type']?.toString() ?? '',
+      pair: json['Pair']?.toString() ?? '',
     );
   }
 }

@@ -28,7 +28,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   List<VerbQuestion> _incorrectQueue = [];
   
   bool _autoPlayAudio = true; 
-  bool? _isGuessFromMeaning; // null = belum memilih mode
+  int? _quizMode; 
   
   int _currentIndex = 0;
   bool _showHint = false;
@@ -47,24 +47,36 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   void _generateQuestions() {
     List<VerbQuestion> questions = [];
-    // Pembuatan soal tetap sama untuk kedua mode (menanyakan semua form)
-    for (var verb in widget.verbList) {
-      if (verb.masuForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Masu Form', verb.masuForm));
-      if (verb.naiForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
-      if (verb.taForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Ta Form', verb.taForm));
-      if (verb.nakattaForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nakatta Form', verb.nakattaForm));
-      if (verb.teForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Form', verb.teForm));
-      if (verb.potential.isNotEmpty) questions.add(VerbQuestion(verb, 'Potential Form', verb.potential));
-      if (verb.volitional.isNotEmpty) questions.add(VerbQuestion(verb, 'Volitional Form', verb.volitional));
-      if (verb.teKudasai.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Kudasai', verb.teKudasai));
-      if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
+    
+    if (_quizMode == 2) {
+      for (var verb in widget.verbList) {
+        if (verb.pair.isNotEmpty && verb.pair != '-') {
+          String targetForm = verb.verbType == 'Transitive' ? 'Intransitive Pair (Jidoushi)' : 'Transitive Pair (Tadoushi)';
+          questions.add(VerbQuestion(verb, targetForm, verb.pair));
+        }
+      }
+    } 
+    else {
+      for (var verb in widget.verbList) {
+        if (verb.masuForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Masu Form', verb.masuForm));
+        if (verb.naiForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
+        if (verb.taForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Ta Form', verb.taForm));
+        if (verb.nakattaForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nakatta Form', verb.nakattaForm));
+        if (verb.teForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Form', verb.teForm));
+        if (verb.potential.isNotEmpty) questions.add(VerbQuestion(verb, 'Potential Form', verb.potential));
+        if (verb.volitional.isNotEmpty) questions.add(VerbQuestion(verb, 'Volitional Form', verb.volitional));
+        if (verb.teKudasai.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Kudasai', verb.teKudasai));
+        if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
+      }
     }
+
+    questions.shuffle(); 
     _activeQueue = List.from(questions); 
   }
 
-  void _startQuiz(bool guessFromMeaning) {
+  void _startQuiz(int mode) {
     setState(() {
-      _isGuessFromMeaning = guessFromMeaning;
+      _quizMode = mode;
       _generateQuestions();
     });
     Future.delayed(const Duration(milliseconds: 100), () {
@@ -186,17 +198,14 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
-    if (_isGuessFromMeaning == null) return true; // Langsung pop jika masih di menu awal
+    if (_quizMode == null) return true;
     if (_isQuizFinished) return true;
     
-    final String title = 'Exit Challenge?';
-    final String content = 'You have not finished this challenge. Are you sure you want to leave?';
-
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(content),
+        title: const Text('Exit Challenge?'),
+        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -208,8 +217,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Tampilkan menu awal jika mode belum dipilih
-    if (_isGuessFromMeaning == null) {
+    if (_quizMode == null) {
       return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -219,7 +227,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           centerTitle: true,
         ),
         body: Center(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(24.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -232,21 +240,35 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                 ),
                 const SizedBox(height: 32.0),
                 ElevatedButton(
-                  onPressed: () => _startQuiz(false),
+                  onPressed: () => _startQuiz(0),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                   ),
-                  child: const Text('Tebak dari Kanji/Hiragana', style: TextStyle(fontSize: 16.0)),
+                  child: const Text('Tebak Konjugasi dari Kanji', style: TextStyle(fontSize: 16.0)),
                 ),
                 const SizedBox(height: 16.0),
                 ElevatedButton(
-                  onPressed: () => _startQuiz(true),
+                  onPressed: () => _startQuiz(1),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                   ),
-                  child: const Text('Tebak dari Arti (Indonesia)', style: TextStyle(fontSize: 16.0)),
+                  child: const Text('Tebak Konjugasi dari Arti (Indo)', style: TextStyle(fontSize: 16.0)),
+                ),
+                const SizedBox(height: 32.0),
+                const Divider(),
+                const SizedBox(height: 16.0),
+                ElevatedButton.icon(
+                  onPressed: () => _startQuiz(2),
+                  icon: const Icon(Icons.compare_arrows_rounded),
+                  label: const Text('Ujian Tadoushi / Jidoushi\n(Tebak Pasangan)', textAlign: TextAlign.center, style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold)),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
+                    foregroundColor: Theme.of(context).colorScheme.onTertiaryContainer,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                  ),
                 ),
               ],
             ),
@@ -287,7 +309,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         body: _isQuizFinished 
             ? _buildResultScreen() 
             : _activeQueue.isEmpty 
-                ? const Center(child: Text("Tidak ada soal tersedia."))
+                ? const Center(child: Text("Tidak ada soal tersedia untuk mode ini."))
                 : Column(
                     children: [
                       Expanded(child: _buildQuizContent()),
@@ -300,6 +322,21 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   Widget _buildQuizContent() {
     final currentQ = _activeQueue[_currentIndex];
+    
+    String mainText = '';
+    String subText = '';
+    
+    if (_quizMode == 1) { 
+      mainText = currentQ.verb.meaning;
+      subText = 'Ketik konjugasinya dalam Jepang';
+    } else { 
+      mainText = currentQ.verb.kanji;
+      subText = currentQ.verb.meaning;
+      
+      if (_quizMode == 2 && currentQ.verb.verbType.isNotEmpty) {
+        subText += '\n[Asal: ${currentQ.verb.verbType == 'Transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)'}]';
+      }
+    }
     
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
@@ -314,20 +351,18 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           ),
           const SizedBox(height: 32.0),
           Text(
-            // Balik tampilan berdasarkan mode
-            _isGuessFromMeaning! ? currentQ.verb.meaning : currentQ.verb.kanji,
+            mainText,
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8.0),
           Text(
-            // Balik tampilan subtitle
-            _isGuessFromMeaning! ? 'Ketik bahasa Jepangnya' : currentQ.verb.meaning,
+            subText,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16.0, color: Colors.grey),
+            style: const TextStyle(fontSize: 16.0, color: Colors.grey, height: 1.5),
           ),
           const SizedBox(height: 12.0),
-          if (currentQ.verb.subGroup.isNotEmpty)
+          if (currentQ.verb.subGroup.isNotEmpty && _quizMode != 2)
             Center(
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
@@ -499,8 +534,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                   currentQ.correctAnswer,
                   style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
-                // Opsional: Tampilkan kanjinya jika menjawab salah di mode arti
-                if (_isGuessFromMeaning!)
+                if (_quizMode == 1) 
                   Padding(
                     padding: const EdgeInsets.only(top: 4.0),
                     child: Text(

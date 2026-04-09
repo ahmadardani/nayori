@@ -10,6 +10,7 @@ import 'grammar_n5_menu_screen.dart';
 import 'adjective_menu_screen.dart';       
 import 'verb_menu_screen.dart';
 import 'compound_verb_menu_screen.dart';
+import 'sentence_quiz_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -135,6 +136,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   subtitle: 'Kata Kerja Majemuk (～忘れます, dll)',
                   icon: Icons.extension_rounded,
                   onTap: () => _navigateTo(context, const CompoundVerbMenuScreen()),
+                ),
+                const SizedBox(height: 32),
+
+                _buildSectionTitle('Sentence Practice', Icons.chat_bubble_outline_rounded),
+                _buildMenuCard(
+                  context: context,
+                  title: 'Jidoushi & Tadoushi',
+                  subtitle: 'Uji partikel が/を dan penerjemahan kalimat',
+                  icon: Icons.translate_rounded,
+                  onTap: () => _navigateTo(context, const SentenceQuizScreen()),
                 ),
                 const SizedBox(height: 32),
 

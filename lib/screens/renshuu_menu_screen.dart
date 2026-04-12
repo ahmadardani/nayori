@@ -39,14 +39,23 @@ class _RenshuuMenuScreenState extends State<RenshuuMenuScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Renshuu A')),
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: bgColor,
+        title: const Text('Renshuu A', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
+      ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
               padding: EdgeInsets.only(
-                left: 16.0, 
-                right: 16.0, 
+                left: 20.0, 
+                right: 20.0, 
                 top: 16.0, 
                 bottom: MediaQuery.of(context).padding.bottom + 80.0, 
               ),
@@ -55,23 +64,9 @@ class _RenshuuMenuScreenState extends State<RenshuuMenuScreen> {
                 final chapter = _chapters[index];
                 final chapterData = _allData.where((g) => g.chapter == chapter).toList();
 
-                return Card(
-                  clipBehavior: Clip.antiAlias,
-                  elevation: 1.0,
-                  margin: const EdgeInsets.only(bottom: 12.0),
-                  child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-                    leading: Container(
-                      padding: const EdgeInsets.all(10.0),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.secondaryContainer,
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: Icon(Icons.history_edu_rounded, color: Theme.of(context).colorScheme.onSecondaryContainer),
-                    ),
-                    title: Text(chapter, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
-                    subtitle: Text('${chapterData.length} pola kalimat'),
-                    trailing: const Icon(Icons.chevron_right_rounded, color: Colors.grey),
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 12.0),
+                  child: InkWell(
                     onTap: () {
                       Navigator.push(
                         context,
@@ -85,6 +80,32 @@ class _RenshuuMenuScreenState extends State<RenshuuMenuScreen> {
                         ),
                       );
                     },
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16.0),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.surface,
+                        borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(color: borderColor, width: 1.0),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.history_edu_rounded, size: 28.0, color: Theme.of(context).colorScheme.primary),
+                          const SizedBox(width: 16.0),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(chapter, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, letterSpacing: -0.3)),
+                                const SizedBox(height: 4.0),
+                                Text('${chapterData.length} pola kalimat', style: TextStyle(fontSize: 14.0, color: isDark ? Colors.grey.shade400 : Colors.grey.shade600)),
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.arrow_forward_rounded, color: Colors.grey.shade400, size: 20.0),
+                        ],
+                      ),
+                    ),
                   ),
                 );
               },

@@ -53,7 +53,7 @@ class NayoriApp extends StatelessWidget {
             cardTheme: CardThemeData(
               elevation: 0,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(8), 
                 side: BorderSide(color: Colors.grey.withOpacity(0.2)),
               ),
             ),
@@ -68,7 +68,7 @@ class NayoriApp extends StatelessWidget {
             cardTheme: CardThemeData(
               elevation: 0,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(8), 
                 side: BorderSide(color: Colors.grey.withOpacity(0.2)),
               ),
             ),

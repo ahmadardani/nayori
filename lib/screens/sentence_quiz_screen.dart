@@ -58,17 +58,14 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
 
   void _startQuiz(String levelStr) {
     setState(() {
-
       var filtered = _allSentences.where((s) {
         bool matchLevel = levelStr == 'Semua Level' || 'Level ${s.level}' == levelStr;
-        
         bool matchType = true;
         if (_selectedType == 'intransitive') {
           matchType = s.type == 'intransitive';
         } else if (_selectedType == 'transitive') {
           matchType = s.type == 'transitive';
         }
-        
         return matchLevel && matchType;
       }).toList();
 
@@ -204,7 +201,6 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
   Future<bool> _onWillPop() async {
     if (!_isQuizStarted) {
       if (_selectedType != null) {
-
         setState(() => _selectedType = null);
         return false;
       }
@@ -215,8 +211,9 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+        title: const Text('Exit Practice?'),
+        content: const Text('You have not finished this practice. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -232,6 +229,10 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     if (!_isQuizStarted) {
       return PopScope(
         canPop: false,
@@ -244,15 +245,18 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
           }
         },
         child: Scaffold(
+          backgroundColor: bgColor,
           appBar: AppBar(
-            title: const Text('Sentence Dojo', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+            elevation: 0,
+            backgroundColor: bgColor,
+            title: const Text('Sentence Practice', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
             centerTitle: true,
           ),
           body: AnimatedSwitcher(
             duration: const Duration(milliseconds: 300),
             child: _selectedType == null 
-                ? _buildTypeSelectionMenu() 
-                : _buildLevelSelectionMenu(),
+                ? _buildTypeSelectionMenu(borderColor) 
+                : _buildLevelSelectionMenu(borderColor),
           ),
         ),
       );
@@ -266,10 +270,13 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
         if (shouldPop && context.mounted) Navigator.pop(context, true);
       },
       child: Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
-          title: Text(
-            'Latihan Terjemahan', 
-            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+          elevation: 0,
+          backgroundColor: bgColor,
+          title: const Text(
+            'Translation Practice', 
+            style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
           ),
           centerTitle: true,
           bottom: PreferredSize(
@@ -294,29 +301,30 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text("Tidak ada soal untuk kombinasi ini."),
+                        const Text("No questions available for this combination."),
                         const SizedBox(height: 16.0),
                         ElevatedButton(
                           onPressed: () => setState(() {
                             _isQuizStarted = false;
                             _selectedType = null;
                           }),
-                          child: const Text('Kembali ke Menu'),
+                          style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0))),
+                          child: const Text('Back to Menu'),
                         )
                       ],
                     ),
                   )
                 : Column(
                     children: [
-                      Expanded(child: _buildQuizContent()),
-                      _buildBottomActionPanel(),
+                      Expanded(child: _buildQuizContent(borderColor)),
+                      _buildBottomActionPanel(borderColor),
                     ],
                   ),
       ),
     );
   }
 
-  Widget _buildTypeSelectionMenu() {
+  Widget _buildTypeSelectionMenu(Color borderColor) {
     return Center(
       key: const ValueKey('TypeMenu'),
       child: SingleChildScrollView(
@@ -328,41 +336,44 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
             const Icon(Icons.compare_arrows_rounded, size: 64.0, color: Colors.grey),
             const SizedBox(height: 16.0),
             const Text(
-              'Langkah 1: Pilih Tipe Kata Kerja',
+              'Step 1: Select Verb Type',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Tentukan fokus materi yang ingin kamu latih hari ini.',
+              'Choose the focus of your practice session today.',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14.0, color: Colors.grey),
+              style: TextStyle(fontSize: 15.0, color: Colors.grey),
             ),
             const SizedBox(height: 48.0),
             
             _buildBigMenuButton(
               title: 'Intransitive (Jidoushi)',
-              subtitle: 'Fokus penggunaan partikel が',
+              subtitle: 'Focus on particle が',
               icon: Icons.person_rounded,
               color: Colors.green.shade700,
+              borderColor: borderColor,
               onTap: () => setState(() => _selectedType = 'intransitive'),
             ),
             const SizedBox(height: 16.0),
             
             _buildBigMenuButton(
               title: 'Transitive (Tadoushi)',
-              subtitle: 'Fokus penggunaan partikel を',
+              subtitle: 'Focus on particle を',
               icon: Icons.front_hand_rounded,
               color: Colors.blue.shade700,
+              borderColor: borderColor,
               onTap: () => setState(() => _selectedType = 'transitive'),
             ),
             const SizedBox(height: 16.0),
             
             _buildBigMenuButton(
-              title: 'Campuran (Acak)',
-              subtitle: 'Uji insting membedakan Jidoushi & Tadoushi',
+              title: 'Mixed (Random)',
+              subtitle: 'Test instincts on both types',
               icon: Icons.shuffle_rounded,
               color: Theme.of(context).colorScheme.primary,
+              borderColor: borderColor,
               onTap: () => setState(() => _selectedType = 'mixed'),
             ),
           ],
@@ -371,8 +382,7 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
     );
   }
 
-
-  Widget _buildLevelSelectionMenu() {
+  Widget _buildLevelSelectionMenu(Color borderColor) {
     final levelsSet = _allSentences.map((s) => s.level).toSet().toList();
     levelsSet.sort();
 
@@ -389,33 +399,32 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
               child: IconButton(
                 icon: const Icon(Icons.arrow_back_rounded),
                 onPressed: () => setState(() => _selectedType = null),
-                tooltip: 'Kembali pilih tipe',
+                tooltip: 'Back to type selection',
               ),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Langkah 2: Pilih Level',
+              'Step 2: Select Level',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
             ),
             const SizedBox(height: 8.0),
             Text(
-              'Mode terpilih: ${_selectedType == 'mixed' ? 'Campuran' : _selectedType == 'intransitive' ? 'Jidoushi' : 'Tadoushi'}',
+              'Selected: ${_selectedType == 'mixed' ? 'Mixed' : _selectedType == 'intransitive' ? 'Jidoushi' : 'Tadoushi'}',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14.0, color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 15.0, color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 32.0),
             
-
             ElevatedButton(
               onPressed: () => _startQuiz('Semua Level'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
                 foregroundColor: Theme.of(context).colorScheme.onTertiaryContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
               ),
-              child: const Text('Mulai Semua Level (Acak)', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+              child: const Text('Start All Levels (Random)', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
             
             const Padding(
@@ -425,7 +434,7 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
                   Expanded(child: Divider()),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Text('Atau pilih per level', style: TextStyle(color: Colors.grey)),
+                    child: Text('Or select by level', style: TextStyle(color: Colors.grey)),
                   ),
                   Expanded(child: Divider()),
                 ],
@@ -438,10 +447,10 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
                 onPressed: () => _startQuiz('Level $levelNum'),
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                  side: BorderSide(color: Colors.grey.shade300),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                  side: BorderSide(color: borderColor, width: 1.0),
                 ),
-                child: Text('Level $levelNum (Berurutan)', style: TextStyle(fontSize: 16.0, color: Theme.of(context).colorScheme.onSurface)),
+                child: Text('Level $levelNum (Sequential)', style: TextStyle(fontSize: 16.0, color: Theme.of(context).colorScheme.onSurface)),
               ),
             )).toList(),
           ],
@@ -450,24 +459,24 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
     );
   }
 
-  Widget _buildBigMenuButton({required String title, required String subtitle, required IconData icon, required Color color, required VoidCallback onTap}) {
+  Widget _buildBigMenuButton({required String title, required String subtitle, required IconData icon, required Color color, required Color borderColor, required VoidCallback onTap}) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(16.0),
+      borderRadius: BorderRadius.circular(8.0),
       child: Container(
         padding: const EdgeInsets.all(20.0),
         decoration: BoxDecoration(
-          border: Border.all(color: color.withOpacity(0.3), width: 2),
-          borderRadius: BorderRadius.circular(16.0),
-          color: color.withOpacity(0.05),
+          border: Border.all(color: borderColor, width: 1.0),
+          borderRadius: BorderRadius.circular(8.0),
+          color: Theme.of(context).colorScheme.surface,
         ),
         child: Row(
           children: [
             Container(
               padding: const EdgeInsets.all(12.0),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.2),
-                shape: BoxShape.circle,
+                color: color.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8.0),
               ),
               child: Icon(icon, color: color, size: 28.0),
             ),
@@ -476,20 +485,20 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, letterSpacing: -0.3)),
                   const SizedBox(height: 4.0),
-                  Text(subtitle, style: TextStyle(fontSize: 13.0, color: Colors.grey.shade600)),
+                  Text(subtitle, style: TextStyle(fontSize: 14.0, color: Colors.grey.shade600)),
                 ],
               ),
             ),
-            Icon(Icons.chevron_right_rounded, color: color.withOpacity(0.5)),
+            Icon(Icons.arrow_forward_rounded, color: Colors.grey.shade400),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildQuizContent() {
+  Widget _buildQuizContent(Color borderColor) {
     final currentQ = _activeQueue[_currentIndex];
     
     return SingleChildScrollView(
@@ -507,22 +516,22 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
           Text(
             currentQ.indonesian,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
           ),
           const SizedBox(height: 12.0),
           Center(
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3)),
+                color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.3),
+                borderRadius: BorderRadius.circular(4.0),
+                border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.5), width: 1.0),
               ),
               child: Text(
-                'Tipe: ${currentQ.type == 'transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)'}',
+                'Type: ${currentQ.type == 'transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)'}',
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onTertiaryContainer,
-                  fontSize: 12.0,
+                  fontSize: 13.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -548,20 +557,20 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
             decoration: InputDecoration(
               hintText: (_isAnswered && !_isCorrect) 
                   ? 'Type the correct sentence...' 
-                  : 'Ketik dalam bahasa Jepang...',
+                  : 'Type in Japanese...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+              fillColor: Theme.of(context).colorScheme.surface,
               contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
-                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : Colors.grey.withOpacity(0.3), 
-                  width: 1.5
+                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : borderColor, 
+                  width: 1.0
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
                   color: (_isAnswered && !_isCorrect) ? Colors.red : Theme.of(context).colorScheme.primary, 
                   width: 2.0
@@ -591,9 +600,8 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
     );
   }
 
-  Widget _buildBottomActionPanel() {
+  Widget _buildBottomActionPanel(Color borderTopColor) {
     final colorScheme = Theme.of(context).colorScheme;
-    final currentQ = _activeQueue[_currentIndex];
 
     if (!_isAnswered) {
       return SafeArea(
@@ -601,34 +609,36 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+            border: Border(top: BorderSide(color: borderTopColor, width: 1.0)),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56.0,
+            height: 50.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
       );
     }
 
+    final currentQ = _activeQueue[_currentIndex];
     final isLast = _currentIndex >= _activeQueue.length - 1;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    
     final panelColor = _isCorrect ? Colors.green.shade100 : Colors.red.shade100;
     final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
     final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) : panelColor;
-    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) : textColor;
+    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
+    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade400 : Colors.red.shade400) : textColor;
 
     return Container(
       color: finalPanelColor,
@@ -641,12 +651,12 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  Icon(iconData, color: finalTextColor, size: 28.0),
                   const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                   IconButton(
@@ -661,23 +671,23 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
                 const SizedBox(height: 4.0),
                 Text(
                   currentQ.japanese,
-                  style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: finalTextColor, fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
               ],
               const SizedBox(height: 24.0),
               SizedBox(
-                height: 56.0,
+                height: 50.0,
                 child: ElevatedButton(
                   onPressed: _isCorrect ? _nextQuestion : _checkAnswer,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0.0,
                   ),
                   child: Text(
-                    _isCorrect ? (isLast ? 'Finish Challenge' : 'Continue') : 'Check Correction', 
-                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                    _isCorrect ? (isLast ? 'Finish Practice' : 'Continue') : 'Check Correction', 
+                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -701,15 +711,15 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Icon(
-            isPerfect ? Icons.workspace_premium_rounded : Icons.fitness_center_rounded,
+            isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
             size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
           const SizedBox(height: 16.0),
           Text(
-            isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
+            isPerfect ? 'Practice Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
           ),
           const SizedBox(height: 32.0),
           Row(
@@ -727,27 +737,20 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
               child: const Text('Retry Incorrect Sentences', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           const SizedBox(height: 12.0),
           OutlinedButton(
-            onPressed: () {
-              setState(() {
-                _isQuizStarted = false;
-                _selectedType = null; 
-                _isQuizFinished = false;
-                _totalCorrect = 0;
-                _totalWrong = 0;
-                _currentIndex = 0;
-                _incorrectQueue.clear();
-              });
+            onPressed: () async {
+              final shouldPop = await _onWillPop();
+              if (shouldPop && context.mounted) Navigator.pop(context, true); 
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
             ),
             child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
@@ -760,7 +763,7 @@ class _SentenceQuizScreenState extends State<SentenceQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900, color: color)),
         Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );

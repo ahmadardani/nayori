@@ -39,11 +39,18 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return Scaffold(
+      backgroundColor: bgColor,
       resizeToAvoidBottomInset: false,
-      
       appBar: AppBar(
-        title: const Text('Search', style: TextStyle(fontWeight: FontWeight.w600)),
+        elevation: 0,
+        backgroundColor: bgColor,
+        foregroundColor: Theme.of(context).colorScheme.onSurface,
+        title: const Text('Search', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -66,25 +73,30 @@ class _SearchScreenState extends State<SearchScreen> {
                   hintText: 'Enter a word or kanji...',
                   prefixIcon: const Icon(Icons.search),
                   filled: true,
+                  fillColor: Theme.of(context).colorScheme.surface,
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(16),
-                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(8.0),
+                    borderSide: BorderSide(color: borderColor, width: 1.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                    borderSide: BorderSide(color: borderColor, width: 1.0),
                   ),
                 ),
               ),
               const SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
-                height: 56,
+                height: 50,
                 child: ElevatedButton(
                   onPressed: _performSearch,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).colorScheme.primary,
                     foregroundColor: Theme.of(context).colorScheme.onPrimary,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0,
                   ),
-                  child: const Text('Search', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1)),
+                  child: const Text('Search', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, letterSpacing: 1)),
                 ),
               )
             ],

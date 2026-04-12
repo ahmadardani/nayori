@@ -5,14 +5,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/word_model.dart';
 import '../models/kanji_model.dart';
 import 'word_detail_screen.dart';
-import 'dojo_quiz_screen.dart';
+import 'practice_quiz_screen.dart'; 
 
 class DayWordsScreen extends StatefulWidget {
   final int dayNumber;
   final List<KanjiData> allData;
-  final bool isDojoMode; 
+  final bool isPracticeMode; 
 
-  const DayWordsScreen({super.key, required this.dayNumber, required this.allData, required this.isDojoMode});
+  const DayWordsScreen({super.key, required this.dayNumber, required this.allData, required this.isPracticeMode});
 
   @override
   State<DayWordsScreen> createState() => _DayWordsScreenState();
@@ -70,12 +70,12 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
 
     Map<String, bool> tempStatus = {};
     for (String kanji in _uniqueKanjis) {
-      int? clearedTime = prefs.getInt('dojo_$kanji');
+      int? clearedTime = prefs.getInt('practice_$kanji');
       if (clearedTime != null) {
         if (currentTime - clearedTime < sevenDaysInSeconds) {
           tempStatus[kanji] = true;
         } else {
-          prefs.remove('dojo_$kanji');
+          prefs.remove('practice_$kanji');
           tempStatus[kanji] = false;
         }
       } else {
@@ -105,12 +105,21 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     String appBarTitle = widget.dayNumber == 0 
-        ? (widget.isDojoMode ? 'All Days Dojo' : 'All Days Words') 
-        : (widget.isDojoMode ? 'Day ${widget.dayNumber} Dojo' : 'Day ${widget.dayNumber} Words');
+        ? (widget.isPracticeMode ? 'All Days Quiz' : 'All Days Words') 
+        : (widget.isPracticeMode ? 'Day ${widget.dayNumber} Quiz' : 'Day ${widget.dayNumber} Words');
 
     return Scaffold(
-      appBar: AppBar(title: Text(appBarTitle)),
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: bgColor,
+        title: Text(appBarTitle, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
+      ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : _uniqueKanjis.isEmpty
@@ -118,17 +127,17 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
               : Column(
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
                       child: Text(
-                        widget.isDojoMode 
-                            ? "Tap a kanji to start the DOJO Quiz." 
-                            : "Tap a kanji to view vocabulary list.",
-                        style: TextStyle(color: Colors.grey.shade600, fontSize: 13.0),
+                        widget.isPracticeMode 
+                            ? "Select a Kanji to start the vocabulary quiz." 
+                            : "Select a Kanji to view the vocabulary list.",
+                        style: TextStyle(color: isDark ? Colors.grey.shade400 : Colors.grey.shade600, fontSize: 14.0),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
                       child: TextField(
                         controller: _searchController,
                         onChanged: _filterKanji,
@@ -145,9 +154,14 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                                 )
                               : null,
                           filled: true,
+                          fillColor: Theme.of(context).colorScheme.surface,
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12.0),
-                            borderSide: BorderSide.none,
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: BorderSide(color: borderColor, width: 1.0),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: BorderSide(color: borderColor, width: 1.0),
                           ),
                           contentPadding: const EdgeInsets.symmetric(vertical: 0.0),
                         ),
@@ -156,9 +170,9 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                     Expanded(
                       child: GridView.builder(
                         padding: EdgeInsets.only(
-                          left: 12.0,
-                          right: 12.0,
-                          top: 8.0,
+                          left: 20.0,
+                          right: 20.0,
+                          top: 16.0,
                           bottom: MediaQuery.of(context).padding.bottom + 80.0,
                         ),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -171,43 +185,46 @@ class _DayWordsScreenState extends State<DayWordsScreen> {
                           final kanjiStr = _filteredKanjis[index];
                           final isMastered = _masteredStatus[kanjiStr] ?? false;
 
-                          return Card(
-                            elevation: isMastered ? 0.0 : 1.0,
-                            color: isMastered ? Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3) : null,
-                            clipBehavior: Clip.antiAlias,
-                            child: InkWell(
-                              onTap: () async {
-                                FocusScope.of(context).unfocus();
-                                final wordsForKanji = _allWords.where((w) => w.kanji == kanjiStr).toList();
+                          return InkWell(
+                            onTap: () async {
+                              FocusScope.of(context).unfocus();
+                              final wordsForKanji = _allWords.where((w) => w.kanji == kanjiStr).toList();
+                              
+                              if (widget.isPracticeMode) {
+                                final result = await Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder: (context, animation, secondaryAnimation) => PracticeQuizScreen(kanji: kanjiStr, wordList: wordsForKanji),
+                                    transitionDuration: Duration.zero,
+                                    reverseTransitionDuration: Duration.zero,
+                                  ),
+                                );
                                 
-                                if (widget.isDojoMode) {
-                                  final result = await Navigator.push(
-                                    context,
-                                    PageRouteBuilder(
-                                      pageBuilder: (context, animation, secondaryAnimation) => DojoQuizScreen(kanji: kanjiStr, wordList: wordsForKanji),
-                                      transitionDuration: Duration.zero,
-                                      reverseTransitionDuration: Duration.zero,
-                                    ),
-                                  );
-                                  
-                                  if (result == true) {
-                                    _checkMasteryStatus();
-                                  }
-                                } else {
-                                  Navigator.push(
-                                    context,
-                                    PageRouteBuilder(
-                                      pageBuilder: (context, animation, secondaryAnimation) => WordDetailScreen(
-                                        kanji: kanjiStr, 
-                                        wordList: wordsForKanji, 
-                                        allData: widget.allData
-                                      ),
-                                      transitionDuration: Duration.zero,
-                                      reverseTransitionDuration: Duration.zero,
-                                    ),
-                                  );
+                                if (result == true) {
+                                  _checkMasteryStatus();
                                 }
-                              },
+                              } else {
+                                Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder: (context, animation, secondaryAnimation) => WordDetailScreen(
+                                      kanji: kanjiStr, 
+                                      wordList: wordsForKanji, 
+                                      allData: widget.allData
+                                    ),
+                                    transitionDuration: Duration.zero,
+                                    reverseTransitionDuration: Duration.zero,
+                                  ),
+                                );
+                              }
+                            },
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: isMastered ? Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3) : Theme.of(context).colorScheme.surface,
+                                borderRadius: BorderRadius.circular(8.0),
+                                border: Border.all(color: isMastered ? Theme.of(context).colorScheme.primary.withOpacity(0.5) : borderColor, width: 1.0),
+                              ),
                               child: Stack(
                                 children: [
                                   Center(

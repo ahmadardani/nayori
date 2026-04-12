@@ -44,12 +44,21 @@ class _AllKanjiScreenState extends State<AllKanjiScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('All Kanji')),
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: bgColor,
+        title: const Text('All Kanji', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
+      ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
             child: TextField(
               controller: _searchController,
               onChanged: _filterKanji,
@@ -66,50 +75,59 @@ class _AllKanjiScreenState extends State<AllKanjiScreen> {
                       )
                     : null,
                 filled: true,
+                fillColor: Theme.of(context).colorScheme.surface,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.circular(8.0),
+                  borderSide: BorderSide(color: borderColor, width: 1.0),
                 ),
-                contentPadding: const EdgeInsets.symmetric(vertical: 0),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                  borderSide: BorderSide(color: borderColor, width: 1.0),
+                ),
+                contentPadding: const EdgeInsets.symmetric(vertical: 0.0),
               ),
             ),
           ),
           Expanded(
             child: GridView.builder(
               padding: EdgeInsets.only(
-                left: 12,
-                right: 12,
-                top: 0,
+                left: 20.0,
+                right: 20.0,
+                top: 8.0,
                 bottom: MediaQuery.of(context).padding.bottom + 80.0,
               ),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 12,
+                crossAxisSpacing: 12.0,
+                mainAxisSpacing: 12.0,
               ),
               itemCount: _filteredKanjis.length,
               itemBuilder: (context, index) {
                 final kanjiStr = _filteredKanjis[index];
-                return Card(
-                  elevation: 1,
-                  clipBehavior: Clip.antiAlias,
-                  child: InkWell(
-                    onTap: () {
-                      FocusScope.of(context).unfocus();
-                      final kanjiSentences = widget.allData.where((k) => k.kanji == kanjiStr).toList();
-                      Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                          pageBuilder: (context, animation, secondaryAnimation) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences),
-                          transitionDuration: Duration.zero,
-                          reverseTransitionDuration: Duration.zero,
-                        ),
-                      );
-                    },
+                return InkWell(
+                  onTap: () {
+                    FocusScope.of(context).unfocus();
+                    final kanjiSentences = widget.allData.where((k) => k.kanji == kanjiStr).toList();
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) => KanjiDetailScreen(kanji: kanjiStr, dataList: kanjiSentences),
+                        transitionDuration: Duration.zero,
+                        reverseTransitionDuration: Duration.zero,
+                      ),
+                    );
+                  },
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.surface,
+                      borderRadius: BorderRadius.circular(8.0),
+                      border: Border.all(color: borderColor, width: 1.0),
+                    ),
                     child: Center(
                       child: Text(
                         kanjiStr,
-                        style: TextStyle(fontSize: 32, color: Theme.of(context).colorScheme.primary),
+                        style: TextStyle(fontSize: 32.0, color: Theme.of(context).colorScheme.primary),
                       ),
                     ),
                   ),

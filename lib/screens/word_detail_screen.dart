@@ -59,7 +59,7 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
-                      child: Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+                      child: Text(data.foundInCharacters, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
@@ -137,18 +137,28 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return Scaffold(
-      appBar: AppBar(title: Text('Words with ${widget.kanji}')),
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: bgColor,
+        title: Text('Words with ${widget.kanji}', style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
+      ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(20.0),
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 40),
+              padding: const EdgeInsets.symmetric(vertical: 40.0),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primaryContainer,
-                borderRadius: BorderRadius.circular(24),
+                color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.3),
+                borderRadius: BorderRadius.circular(8.0),
+                border: Border.all(color: Theme.of(context).colorScheme.primary.withOpacity(0.5), width: 1.0)
               ),
               child: Center(
                 child: Text(
@@ -156,7 +166,7 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
                   style: TextStyle(
                     fontSize: 80, 
                     fontWeight: FontWeight.w300,
-                    color: Theme.of(context).colorScheme.onPrimaryContainer
+                    color: Theme.of(context).colorScheme.primary
                   )
                 ),
               ),
@@ -164,14 +174,23 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
           ),
           Expanded(
             child: ListView.builder(
-              padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom + 16.0),
+              padding: EdgeInsets.only(
+                left: 20.0, right: 20.0, top: 8.0,
+                bottom: MediaQuery.of(context).padding.bottom + 24.0
+              ),
               itemCount: widget.wordList.length,
               itemBuilder: (context, index) {
                 final item = widget.wordList[index];
-                return Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 12.0),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(8.0),
+                    border: Border.all(color: borderColor, width: 1.0),
+                  ),
                   child: ListTile(
-                    title: Text(item.foundInCharacters, style: const TextStyle(fontSize: 18)),
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    title: Text(item.foundInCharacters, style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, letterSpacing: -0.5)),
                     trailing: const Icon(Icons.info_outline_rounded, color: Colors.grey),
                     onTap: () => _showWordMeaning(context, item),
                   ),

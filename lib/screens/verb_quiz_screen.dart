@@ -204,8 +204,9 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+        title: const Text('Exit Practice?'),
+        content: const Text('You have not finished this practice. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -217,12 +218,19 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     if (_quizMode == null) {
       return Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: bgColor,
           title: Text(
-            'Dojo: ${widget.title}', 
-            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+            'Practice: ${widget.title}', 
+            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
           ),
           centerTitle: true,
         ),
@@ -234,27 +242,27 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const Text(
-                  'Pilih Mode Kuis',
+                  'Select Quiz Mode',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
                 ),
                 const SizedBox(height: 32.0),
                 ElevatedButton(
                   onPressed: () => _startQuiz(0),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                   ),
-                  child: const Text('Tebak Konjugasi dari Kanji', style: TextStyle(fontSize: 16.0)),
+                  child: const Text('Guess Conjugation from Kanji', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
                 ),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 12.0),
                 ElevatedButton(
                   onPressed: () => _startQuiz(1),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                   ),
-                  child: const Text('Tebak Konjugasi dari Arti (Indo)', style: TextStyle(fontSize: 16.0)),
+                  child: const Text('Guess Conjugation from Meaning', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
                 ),
                 const SizedBox(height: 32.0),
                 const Divider(),
@@ -262,12 +270,12 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                 ElevatedButton.icon(
                   onPressed: () => _startQuiz(2),
                   icon: const Icon(Icons.compare_arrows_rounded),
-                  label: const Text('Ujian Tadoushi / Jidoushi\n(Tebak Pasangan)', textAlign: TextAlign.center, style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold)),
+                  label: const Text('Tadoushi / Jidoushi Test\n(Guess the Pair)', textAlign: TextAlign.center, style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold)),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
                     foregroundColor: Theme.of(context).colorScheme.onTertiaryContainer,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                   ),
                 ),
               ],
@@ -285,10 +293,13 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         if (shouldPop && context.mounted) Navigator.pop(context, true);
       },
       child: Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: bgColor,
           title: Text(
-            'Dojo: ${widget.title}', 
-            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+            'Practice: ${widget.title}', 
+            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
           ),
           centerTitle: true,
           bottom: PreferredSize(
@@ -309,18 +320,18 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         body: _isQuizFinished 
             ? _buildResultScreen() 
             : _activeQueue.isEmpty 
-                ? const Center(child: Text("Tidak ada soal tersedia untuk mode ini."))
+                ? const Center(child: Text("No questions available for this mode."))
                 : Column(
                     children: [
-                      Expanded(child: _buildQuizContent()),
-                      _buildBottomActionPanel(),
+                      Expanded(child: _buildQuizContent(borderColor)),
+                      _buildBottomActionPanel(borderColor),
                     ],
                   ),
       ),
     );
   }
 
-  Widget _buildQuizContent() {
+  Widget _buildQuizContent(Color borderColor) {
     final currentQ = _activeQueue[_currentIndex];
     
     String mainText = '';
@@ -328,13 +339,13 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     
     if (_quizMode == 1) { 
       mainText = currentQ.verb.meaning;
-      subText = 'Ketik konjugasinya dalam Jepang';
+      subText = 'Type the conjugation in Japanese';
     } else { 
       mainText = currentQ.verb.kanji;
       subText = currentQ.verb.meaning;
       
       if (_quizMode == 2 && currentQ.verb.verbType.isNotEmpty) {
-        subText += '\n[Asal: ${currentQ.verb.verbType == 'Transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)'}]';
+        subText += '\n[Origin: ${currentQ.verb.verbType == 'Transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)'}]';
       }
     }
     
@@ -353,7 +364,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           Text(
             mainText,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
           ),
           const SizedBox(height: 8.0),
           Text(
@@ -367,9 +378,9 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(8.0),
-                  border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3)),
+                  color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(4.0),
+                  border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.5), width: 1.0),
                 ),
                 child: Text(
                   'Sub-group: ${currentQ.verb.subGroup}',
@@ -386,8 +397,9 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.secondaryContainer,
-                borderRadius: BorderRadius.circular(12.0),
+                color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.5),
+                borderRadius: BorderRadius.circular(8.0),
+                border: Border.all(color: Theme.of(context).colorScheme.secondary.withOpacity(0.5), width: 1.0),
               ),
               child: Text(
                 'Change to: ${currentQ.formName}',
@@ -422,17 +434,17 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                   : 'Type answer in Japanese...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+              fillColor: Theme.of(context).colorScheme.surface,
               contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
-                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : Colors.grey.withOpacity(0.3), 
-                  width: 1.5
+                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : borderColor, 
+                  width: 1.0
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
                   color: (_isAnswered && !_isCorrect) ? Colors.red : Theme.of(context).colorScheme.primary, 
                   width: 2.0
@@ -462,9 +474,8 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     );
   }
 
-  Widget _buildBottomActionPanel() {
+  Widget _buildBottomActionPanel(Color borderTopColor) {
     final colorScheme = Theme.of(context).colorScheme;
-    final currentQ = _activeQueue[_currentIndex];
 
     if (!_isAnswered) {
       return SafeArea(
@@ -472,34 +483,36 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+            border: Border(top: BorderSide(color: borderTopColor, width: 1.0)),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56.0,
+            height: 50.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
       );
     }
 
+    final currentQ = _activeQueue[_currentIndex];
     final isLast = _currentIndex >= _activeQueue.length - 1;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    
     final panelColor = _isCorrect ? Colors.green.shade100 : Colors.red.shade100;
     final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
     final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) : panelColor;
-    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) : textColor;
+    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
+    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade400 : Colors.red.shade400) : textColor;
 
     return Container(
       color: finalPanelColor,
@@ -512,12 +525,12 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  Icon(iconData, color: finalTextColor, size: 28.0),
                   const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                   IconButton(
@@ -532,31 +545,23 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                 const SizedBox(height: 4.0),
                 Text(
                   currentQ.correctAnswer,
-                  style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: finalTextColor, fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
-                if (_quizMode == 1) 
-                  Padding(
-                    padding: const EdgeInsets.only(top: 4.0),
-                    child: Text(
-                      '(${currentQ.verb.kanji})',
-                      style: TextStyle(color: finalTextColor.withOpacity(0.7), fontSize: 16.0),
-                    ),
-                  ),
               ],
               const SizedBox(height: 24.0),
               SizedBox(
-                height: 56.0,
+                height: 50.0,
                 child: ElevatedButton(
                   onPressed: _isCorrect ? _nextQuestion : _checkAnswer,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0.0,
                   ),
                   child: Text(
-                    _isCorrect ? (isLast ? 'Finish Challenge' : 'Continue') : 'Check Correction', 
-                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                    _isCorrect ? (isLast ? 'Finish Practice' : 'Continue') : 'Check Correction', 
+                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -580,15 +585,15 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Icon(
-            isPerfect ? Icons.workspace_premium_rounded : Icons.fitness_center_rounded,
+            isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
             size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
           const SizedBox(height: 16.0),
           Text(
-            isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
+            isPerfect ? 'Practice Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
           ),
           const SizedBox(height: 32.0),
           Row(
@@ -606,22 +611,21 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
               child: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           const SizedBox(height: 12.0),
           OutlinedButton(
-            onPressed: () async {
-              final shouldPop = await _onWillPop();
-              if (shouldPop && context.mounted) Navigator.pop(context, true); 
+            onPressed: () {
+              Navigator.pop(context, true); 
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
             ),
-            child: const Text('Back to List', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+            child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
           const SizedBox(height: 16.0),
         ],
@@ -632,7 +636,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900, color: color)),
         Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );

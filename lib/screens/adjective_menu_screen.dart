@@ -22,16 +22,37 @@ class AdjectiveMenuScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+
     return Scaffold(
+      backgroundColor: bgColor,
       appBar: AppBar(
-        title: Text('$level Adjectives', style: const TextStyle(fontWeight: FontWeight.w600)),
+        elevation: 0,
+        backgroundColor: bgColor,
+        foregroundColor: Theme.of(context).colorScheme.onSurface,
+        title: Text(
+          '$level Adjectives', 
+          style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5)
+        ),
       ),
       body: ListView(
         padding: EdgeInsets.only(
-          left: 16.0, right: 16.0, top: 16.0, 
+          left: 20.0, right: 20.0, top: 16.0, 
           bottom: MediaQuery.of(context).padding.bottom + 16.0,
         ),
         children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16.0),
+            child: Text(
+              'Pilih Kategori',
+              style: TextStyle(
+                fontSize: 16.0, 
+                fontWeight: FontWeight.w700, 
+                color: isDark ? Colors.grey.shade400 : Colors.grey.shade600
+              ),
+            ),
+          ),
           _buildChoiceCard(
             context: context,
             title: 'い (i) Adjective',
@@ -58,38 +79,39 @@ class AdjectiveMenuScreen extends StatelessWidget {
     required IconData icon, 
     required VoidCallback onTap
   }) {
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      margin: const EdgeInsets.only(bottom: 12.0),
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12.0),
       child: InkWell(
         onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+        borderRadius: BorderRadius.circular(8.0),
+        child: Container(
+          padding: const EdgeInsets.all(16.0),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.surface,
+            borderRadius: BorderRadius.circular(8.0),
+            border: Border.all(color: borderColor, width: 1.0),
+          ),
           child: Row(
             children: [
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
-                  borderRadius: BorderRadius.circular(12.0),
-                ),
-                child: Icon(icon, size: 24.0, color: Theme.of(context).colorScheme.onSecondaryContainer),
-              ),
+              Icon(icon, size: 28.0, color: Theme.of(context).colorScheme.primary),
               const SizedBox(width: 16.0),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(title, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 2.0),
+                    Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, letterSpacing: -0.3)),
+                    const SizedBox(height: 4.0),
                     Text(
                       subtitle, 
-                      style: TextStyle(fontSize: 13.0, color: Theme.of(context).colorScheme.onSurfaceVariant)
+                      style: TextStyle(fontSize: 14.0, color: isDark ? Colors.grey.shade400 : Colors.grey.shade600)
                     ),
                   ],
                 ),
               ),
-              const Icon(Icons.arrow_forward_ios_rounded, size: 16.0, color: Colors.grey),
+              Icon(Icons.arrow_forward_rounded, color: Colors.grey.shade400, size: 20.0),
             ],
           ),
         ),

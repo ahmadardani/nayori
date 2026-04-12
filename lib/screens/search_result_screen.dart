@@ -64,8 +64,8 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.secondaryContainer,
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Theme.of(context).colorScheme.outlineVariant, width: 1),
+                          borderRadius: BorderRadius.circular(8.0),
+                          border: Border.all(color: Theme.of(context).colorScheme.outlineVariant, width: 1.0),
                         ),
                         child: Text(
                           data.kanji, 
@@ -78,11 +78,11 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                       ),
                     ),
                     const SizedBox(width: 16),
-                    const Expanded(child: Text('Kanji Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600))),
+                    const Expanded(child: Text('Kanji Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, letterSpacing: -0.3))),
                   ],
                 ),
                 const SizedBox(height: 20),
-                Text(data.example, style: const TextStyle(fontSize: 20)),
+                Text(data.example, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 const Divider(height: 32),
                 Text('Reading & Meaning', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
@@ -97,11 +97,18 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return Scaffold(
+      backgroundColor: bgColor,
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: bgColor,
         title: Text(
           'Search Result for "${widget.query}"', 
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)
+          style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 18.0, letterSpacing: -0.5)
         ),
       ),
       body: _filteredData.isEmpty
@@ -117,18 +124,27 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
             )
           : ListView.builder(
               padding: EdgeInsets.only(
-                top: 8, 
+                top: 16.0, left: 20.0, right: 20.0,
                 bottom: MediaQuery.of(context).padding.bottom + 80.0, 
               ),
               itemCount: _filteredData.length,
               itemBuilder: (context, index) {
                 final item = _filteredData[index];
-                return Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 12.0),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(8.0),
+                    border: Border.all(color: borderColor, width: 1.0),
+                  ),
                   child: ListTile(
-                    title: Text(item.example, style: const TextStyle(fontSize: 16)),
-                    subtitle: Text('Kanji: ${item.kanji}', style: TextStyle(color: Theme.of(context).colorScheme.primary)),
-                    trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 16, color: Colors.grey),
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    title: Text(item.example, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 4.0),
+                      child: Text('Kanji: ${item.kanji}', style: TextStyle(color: Theme.of(context).colorScheme.primary)),
+                    ),
+                    trailing: const Icon(Icons.arrow_forward_rounded, size: 20, color: Colors.grey),
                     onTap: () {
                       FocusScope.of(context).unfocus(); 
                       _showReadMeaning(context, item);

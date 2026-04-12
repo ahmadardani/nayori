@@ -169,8 +169,9 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+        title: const Text('Exit Practice?'),
+        content: const Text('You have not finished this practice. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
@@ -182,6 +183,10 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
@@ -190,10 +195,14 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
         if (shouldPop && context.mounted) Navigator.pop(context, true);
       },
       child: Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: bgColor,
+          foregroundColor: Theme.of(context).colorScheme.onSurface,
           title: Text(
-            'Dojo: ${widget.title}', 
-            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+            'Practice: ${widget.title}', 
+            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
           ),
           centerTitle: true,
           bottom: PreferredSize(
@@ -215,17 +224,16 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
             ? _buildResultScreen() 
             : Column(
                 children: [
-                  Expanded(child: _buildQuizContent()),
-                  _buildBottomActionPanel(),
+                  Expanded(child: _buildQuizContent(borderColor)),
+                  _buildBottomActionPanel(borderColor),
                 ],
               ),
       ),
     );
   }
 
-  Widget _buildQuizContent() {
+  Widget _buildQuizContent(Color borderColor) {
     final currentAdj = _activeQueue[_currentIndex];
-
     String firstCharHint = currentAdj.vocabulary.trim()[0];
     
     return SingleChildScrollView(
@@ -243,7 +251,7 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
           Text(
             currentAdj.translation,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, height: 1.3),
+            style: const TextStyle(fontSize: 32.0, fontWeight: FontWeight.w800, letterSpacing: -0.5, height: 1.3),
           ),
           const SizedBox(height: 32.0),
           TextField(
@@ -266,17 +274,17 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
               hintText: (_isAnswered && !_isCorrect) ? 'Type the correct answer...' : 'Type Japanese meaning...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+              fillColor: Theme.of(context).colorScheme.surface,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
-                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : Colors.grey.withOpacity(0.3), 
-                  width: 1.5
+                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : borderColor, 
+                  width: 1.0
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
                   color: (_isAnswered && !_isCorrect) ? Colors.red : Theme.of(context).colorScheme.primary, 
                   width: 2.0
@@ -306,9 +314,10 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
     );
   }
 
-  Widget _buildBottomActionPanel() {
+  Widget _buildBottomActionPanel(Color borderTopColor) {
     final colorScheme = Theme.of(context).colorScheme;
     final currentAdj = _activeQueue[_currentIndex];
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     if (!_isAnswered) {
       return SafeArea(
@@ -316,20 +325,20 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+            border: Border(top: BorderSide(color: borderTopColor, width: 1.0)),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56.0,
+            height: 50.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
@@ -341,8 +350,7 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
     final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
     final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) : panelColor;
+    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
     final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) : textColor;
 
     return Container(
@@ -356,12 +364,12 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  Icon(iconData, color: finalTextColor, size: 28.0),
                   const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                   IconButton(
@@ -376,23 +384,23 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
                 const SizedBox(height: 4.0),
                 Text(
                   currentAdj.vocabulary,
-                  style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
               ],
               const SizedBox(height: 24.0),
               SizedBox(
-                height: 56.0,
+                height: 50.0,
                 child: ElevatedButton(
                   onPressed: _isCorrect ? _nextQuestion : _checkAnswer,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0.0,
                   ),
                   child: Text(
-                    _isCorrect ? (isLast ? 'Finish Challenge' : 'Continue') : 'Check Correction', 
-                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                    _isCorrect ? (isLast ? 'Finish Practice' : 'Continue') : 'Check Correction', 
+                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -416,15 +424,15 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Icon(
-            isPerfect ? Icons.workspace_premium_rounded : Icons.fitness_center_rounded,
+            isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
             size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
           const SizedBox(height: 16.0),
           Text(
-            isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
+            isPerfect ? 'Practice Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
           ),
           const SizedBox(height: 32.0),
           Row(
@@ -442,7 +450,7 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
               child: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
@@ -455,9 +463,9 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
             ),
-            child: const Text('Back to List', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+            child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
           const SizedBox(height: 16.0),
         ],
@@ -468,7 +476,7 @@ class _AdjectiveQuizScreenState extends State<AdjectiveQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900, color: color)),
         Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );

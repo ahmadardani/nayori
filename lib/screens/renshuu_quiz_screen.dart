@@ -153,22 +153,29 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
 
   Future<bool> _onWillPop() async {
     if (_isStarting || _isQuizFinished) return true;
+    
     final shouldPop = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Exit Challenge?'),
-        content: const Text('You have not finished this challenge. Are you sure you want to leave?'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+        title: const Text('Exit Practice?'),
+        content: const Text('You have not finished this practice. Are you sure you want to leave?'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancel')),
           TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Leave')),
         ],
       ),
     );
+    
     return shouldPop ?? false;
   }
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
+
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
@@ -179,8 +186,12 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
         }
       },
       child: Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
-          title: Text(widget.chapter, style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+          elevation: 0,
+          backgroundColor: bgColor,
+          foregroundColor: Theme.of(context).colorScheme.onSurface,
+          title: Text(widget.chapter, style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
           centerTitle: true,
           bottom: _isStarting 
             ? null 
@@ -193,22 +204,22 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
               ),
         ),
         body: _isStarting 
-            ? _buildStartScreen()
+            ? _buildStartScreen(borderColor)
             : (_isQuizFinished 
                 ? _buildResultScreen() 
                 : Column(
                     children: [
                       Expanded(
-                        child: _buildQuizContent(),
+                        child: _buildQuizContent(borderColor),
                       ),
-                      _buildBottomActionPanel(),
+                      _buildBottomActionPanel(borderColor),
                     ],
                   )),
       ),
     );
   }
 
-  Widget _buildStartScreen() {
+  Widget _buildStartScreen(Color borderColor) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -225,7 +236,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
                 Text(
                   widget.chapter, 
                   textAlign: TextAlign.center, 
-                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)
+                  style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w900, letterSpacing: -0.5)
                 ),
                 const SizedBox(height: 8.0),
                 const Text(
@@ -234,9 +245,12 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
                   style: TextStyle(fontSize: 16.0, color: Colors.grey)
                 ),
                 const SizedBox(height: 48.0),
-                Card(
-                  elevation: 0.0,
-                  color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.surface,
+                    borderRadius: BorderRadius.circular(8.0),
+                    border: Border.all(color: borderColor, width: 1.0),
+                  ),
                   child: SwitchListTile(
                     title: const Text('Auto-play Audio', style: TextStyle(fontWeight: FontWeight.w600)),
                     subtitle: const Text('Play pronunciation when checking answer'),
@@ -255,7 +269,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
               bottom: MediaQuery.of(context).padding.bottom > 0 ? 8.0 : 24.0
             ),
             child: SizedBox(
-              height: 56.0,
+              height: 50.0,
               child: ElevatedButton(
                 onPressed: () {
                   setState(() => _isStarting = false);
@@ -266,10 +280,10 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Theme.of(context).colorScheme.primary,
                   foregroundColor: Theme.of(context).colorScheme.onPrimary,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                   elevation: 0.0,
                 ),
-                child: const Text('Start Challenge', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+                child: const Text('Start Practice', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
               ),
             ),
           ),
@@ -278,7 +292,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
     );
   }
 
-  Widget _buildQuizContent() {
+  Widget _buildQuizContent(Color borderColor) {
     final currentData = _activeQueue[_currentIndex];
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
@@ -297,8 +311,9 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
-                  borderRadius: BorderRadius.circular(8.0),
+                  color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(4.0),
+                  border: Border.all(color: Theme.of(context).colorScheme.secondary.withOpacity(0.3), width: 1.0)
                 ),
                 child: Text(
                   'Pattern / Part ${currentData.number}',
@@ -314,7 +329,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
           Text(
             currentData.translation,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, height: 1.4),
+            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w800, letterSpacing: -0.5, height: 1.4),
           ),
           const SizedBox(height: 32.0),
           TextField(
@@ -324,6 +339,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
             readOnly: _isAnswered,
             minLines: 1, 
             maxLines: 3, 
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18.0, 
               color: _isAnswered 
@@ -336,14 +352,14 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
               hintText: 'Type the Japanese sentence...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+              fillColor: Theme.of(context).colorScheme.surface,
               contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
-                borderSide: BorderSide(color: Colors.grey.withOpacity(0.3), width: 1.5),
+                borderRadius: BorderRadius.circular(8.0),
+                borderSide: BorderSide(color: borderColor, width: 1.0),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(color: Theme.of(context).colorScheme.primary, width: 2.0),
               ),
             ),
@@ -370,7 +386,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
     );
   }
 
-  Widget _buildBottomActionPanel() {
+  Widget _buildBottomActionPanel(Color borderTopColor) {
     final colorScheme = Theme.of(context).colorScheme;
 
     if (!_isAnswered) {
@@ -379,20 +395,20 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+            border: Border(top: BorderSide(color: borderTopColor, width: 1.0)),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56.0,
+            height: 50.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
@@ -401,17 +417,14 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
 
     final currentData = _activeQueue[_currentIndex];
     final isLast = _currentIndex >= _activeQueue.length - 1;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    
     final panelColor = _isCorrect ? Colors.green.shade100 : Colors.red.shade100;
     final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
     final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark 
-        ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) 
-        : panelColor;
-    final finalTextColor = isDark 
-        ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) 
-        : textColor;
+    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
+    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade400 : Colors.red.shade400) : textColor;
 
     return Container(
       color: finalPanelColor,
@@ -424,12 +437,12 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  Icon(iconData, color: finalTextColor, size: 28.0),
                   const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                   IconButton(
@@ -444,23 +457,23 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
                 const SizedBox(height: 4.0),
                 Text(
                   currentData.sentence,
-                  style: TextStyle(color: finalTextColor, fontSize: 18.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: finalTextColor, fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
               ],
               const SizedBox(height: 24.0),
               SizedBox(
-                height: 56.0,
+                height: 50.0,
                 child: ElevatedButton(
                   onPressed: _nextQuestion,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0.0,
                   ),
                   child: Text(
-                    isLast ? 'Finish Challenge' : 'Continue', 
-                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                    isLast ? 'Finish Practice' : 'Continue', 
+                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -473,12 +486,11 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
 
   Widget _buildResultScreen() {
     bool isPerfect = _incorrectQueue.isEmpty;
+
     return Padding(
       padding: EdgeInsets.only(
-        left: 24.0,
-        right: 24.0,
-        top: 24.0,
-        bottom: MediaQuery.of(context).padding.bottom + 48.0, 
+        left: 24.0, right: 24.0, top: 24.0, 
+        bottom: MediaQuery.of(context).padding.bottom + 48.0
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -491,9 +503,9 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
           ),
           const SizedBox(height: 16.0),
           Text(
-            isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
+            isPerfect ? 'Practice Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
           ),
           const SizedBox(height: 32.0),
           Row(
@@ -511,7 +523,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
               child: const Text('Retry Incorrect Sentences', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
@@ -519,14 +531,11 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
           const SizedBox(height: 12.0),
           OutlinedButton(
             onPressed: () async {
-              final shouldPop = await _onWillPop();
-              if (shouldPop && context.mounted) {
-                Navigator.pop(context, true);
-              }
+              Navigator.pop(context, true); 
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
             ),
             child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
@@ -539,7 +548,7 @@ class _RenshuuQuizScreenState extends State<RenshuuQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900, color: color)),
         Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );

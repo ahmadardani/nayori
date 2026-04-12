@@ -172,7 +172,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
     final String title = _isQuizFinished ? 'Leave Results?' : 'Exit Challenge?';
     final String content = _isQuizFinished 
         ? 'Are you sure you want to return to the menu?' 
-        : 'You have not finished this challenge. Are you sure you want to leave?';
+        : 'You have not finished this practice. Are you sure you want to leave?';
 
     final shouldPop = await showDialog<bool>(
       context: context,
@@ -190,6 +190,9 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
+
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
@@ -198,10 +201,13 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
         if (shouldPop && context.mounted) Navigator.pop(context, true);
       },
       child: Scaffold(
+        backgroundColor: bgColor,
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: bgColor,
           title: const Text(
-            'Dojo: Compound Verbs', 
-            style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)
+            'Practice: Compound Verbs', 
+            style: TextStyle(fontWeight: FontWeight.w800, fontSize: 18.0, letterSpacing: -0.5)
           ),
           centerTitle: true,
           bottom: PreferredSize(
@@ -235,6 +241,8 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
 
   Widget _buildQuizContent() {
     final currentQ = _activeQueue[_currentIndex];
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
     
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
@@ -251,16 +259,16 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
           Text(
             currentQ.example.indonesian,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, height: 1.4),
+            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w800, letterSpacing: -0.5, height: 1.4),
           ),
           const SizedBox(height: 24.0),
           Center(
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.3)),
+                border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.5), width: 1.0),
               ),
               child: Text(
                 'Pattern: ${currentQ.patternData.pattern}',
@@ -272,7 +280,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
               ),
             ),
           ),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: 48.0),
           TextField(
             controller: _answerController,
             focusNode: _focusNode,
@@ -295,17 +303,17 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
                   : 'Ketik kalimat dalam bahasa Jepang...',
               hintStyle: TextStyle(fontSize: 15.0, color: Colors.grey.shade400),
               filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.3),
+              fillColor: Theme.of(context).colorScheme.surface,
               contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
-                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : Colors.grey.withOpacity(0.3), 
-                  width: 1.5
+                  color: (_isAnswered && !_isCorrect) ? Colors.red.withOpacity(0.5) : borderColor, 
+                  width: 1.0
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(8.0),
                 borderSide: BorderSide(
                   color: (_isAnswered && !_isCorrect) ? Colors.red : Theme.of(context).colorScheme.primary, 
                   width: 2.0
@@ -338,6 +346,8 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
   Widget _buildBottomActionPanel() {
     final colorScheme = Theme.of(context).colorScheme;
     final currentQ = _activeQueue[_currentIndex];
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final borderTopColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
 
     if (!_isAnswered) {
       return SafeArea(
@@ -345,20 +355,20 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             color: Theme.of(context).scaffoldBackgroundColor,
-            border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+            border: Border(top: BorderSide(color: borderTopColor, width: 1.0)),
           ),
           child: SizedBox(
             width: double.infinity,
-            height: 56.0,
+            height: 50.0,
             child: ElevatedButton(
               onPressed: _checkAnswer,
               style: ElevatedButton.styleFrom(
                 backgroundColor: colorScheme.primary,
                 foregroundColor: colorScheme.onPrimary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
-              child: const Text('Check Answer', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
+              child: const Text('Check Answer', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
           ),
         ),
@@ -370,9 +380,8 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
     final textColor = _isCorrect ? Colors.green.shade800 : Colors.red.shade800;
     final iconData = _isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.2) : Colors.red.withOpacity(0.2)) : panelColor;
-    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade300 : Colors.red.shade300) : textColor;
+    final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
+    final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade400 : Colors.red.shade400) : textColor;
 
     return Container(
       color: finalPanelColor,
@@ -385,12 +394,12 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
             children: [
               Row(
                 children: [
-                  Icon(iconData, color: finalTextColor, size: 32.0),
+                  Icon(iconData, color: finalTextColor, size: 28.0),
                   const SizedBox(width: 12.0),
                   Expanded(
                     child: Text(
                       _isCorrect ? 'Excellent!' : 'Incorrect',
-                      style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold, color: finalTextColor),
+                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: finalTextColor),
                     ),
                   ),
                   IconButton(
@@ -410,18 +419,18 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
               ],
               const SizedBox(height: 24.0),
               SizedBox(
-                height: 56.0,
+                height: 50.0,
                 child: ElevatedButton(
                   onPressed: _isCorrect ? _nextQuestion : _checkAnswer,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isCorrect ? Colors.green : Colors.red,
                     foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                     elevation: 0.0,
                   ),
                   child: Text(
-                    _isCorrect ? (isLast ? 'Finish Challenge' : 'Continue') : 'Check Correction', 
-                    style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                    _isCorrect ? (isLast ? 'Finish Practice' : 'Continue') : 'Check Correction', 
+                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
                   ),
                 ),
               ),
@@ -453,7 +462,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
           Text(
             isPerfect ? 'Stage Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
           ),
           const SizedBox(height: 32.0),
           Row(
@@ -471,7 +480,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 14.0),
                 backgroundColor: Theme.of(context).colorScheme.errorContainer,
                 foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
                 elevation: 0.0,
               ),
               child: const Text('Retry Incorrect Sentences', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
@@ -484,7 +493,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
             },
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
             ),
             child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
@@ -497,7 +506,7 @@ class _CompoundVerbQuizScreenState extends State<CompoundVerbQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, color: color)),
+        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w800, color: color)),
         Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
       ],
     );

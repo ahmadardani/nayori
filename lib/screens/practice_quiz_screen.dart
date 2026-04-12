@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/word_model.dart';
 
-class DojoQuizScreen extends StatefulWidget {
+class PracticeQuizScreen extends StatefulWidget {
   final String kanji;
   final List<WordData> wordList;
 
-  const DojoQuizScreen({super.key, required this.kanji, required this.wordList});
+  const PracticeQuizScreen({super.key, required this.kanji, required this.wordList});
 
   @override
-  State<DojoQuizScreen> createState() => _DojoQuizScreenState();
+  State<PracticeQuizScreen> createState() => _PracticeQuizScreenState();
 }
 
-class _DojoQuizScreenState extends State<DojoQuizScreen> {
+class _PracticeQuizScreenState extends State<PracticeQuizScreen> {
   final TextEditingController _answerController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   
@@ -100,7 +100,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
   Future<void> _saveClearStatus() async {
     final prefs = await SharedPreferences.getInstance();
     final int currentTime = DateTime.now().millisecondsSinceEpoch ~/ 1000;
-    await prefs.setInt('dojo_${widget.kanji}', currentTime);
+    await prefs.setInt('practice_${widget.kanji}', currentTime); // KUNCI DIUBAH KE PRACTICE
   }
 
   void _retryIncorrect() {
@@ -141,7 +141,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
     if (_isQuizFinished) {
       return Scaffold(
         appBar: AppBar(
-          title: const Text('Dojo Results', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+          title: const Text('Practice Results', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
         ),
         body: _buildResultScreen(),
@@ -161,7 +161,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Dojo: ${widget.kanji}', style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
+          title: Text('Practice: ${widget.kanji}', style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
           centerTitle: true,
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(4.0),
@@ -322,20 +322,19 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
 
   Widget _buildResultScreen() {
     bool isPerfect = _incorrectQueue.isEmpty;
-
     return Padding(
       padding: EdgeInsets.only(
         left: 24.0, 
         right: 24.0, 
         top: 24.0, 
-        bottom: MediaQuery.of(context).padding.bottom + 48.0
+        bottom: MediaQuery.of(context).padding.bottom + 48.0, 
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Icon(
-            isPerfect ? Icons.workspace_premium_rounded : Icons.fitness_center_rounded,
+            isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
             size: 80.0,
             color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
           ),
@@ -375,7 +374,7 @@ class _DojoQuizScreenState extends State<DojoQuizScreen> {
               padding: const EdgeInsets.symmetric(vertical: 14.0),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
             ),
-            child: const Text('Back to List', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+            child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
           const SizedBox(height: 16.0),
         ],

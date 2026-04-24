@@ -1,34 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'dart:convert';
 import '../models/verb_model.dart';
 
-class VerbQuestion {
-  final VerbData verb;
-  final String formName;
-  final String correctAnswer;
-  VerbQuestion(this.verb, this.formName, this.correctAnswer);
-}
+class VerbPairQuizScreen extends StatefulWidget {
+  final String level;
 
-class VerbQuizScreen extends StatefulWidget {
-  final String title;
-  final List<VerbData> verbList;
-
-  const VerbQuizScreen({super.key, required this.title, required this.verbList});
+  const VerbPairQuizScreen({super.key, required this.level});
 
   @override
-  State<VerbQuizScreen> createState() => _VerbQuizScreenState();
+  State<VerbPairQuizScreen> createState() => _VerbPairQuizScreenState();
 }
 
-class _VerbQuizScreenState extends State<VerbQuizScreen> {
+class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
   final TextEditingController _answerController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   final FlutterTts flutterTts = FlutterTts(); 
   
-  List<VerbQuestion> _activeQueue = [];
-  List<VerbQuestion> _incorrectQueue = [];
+  List<VerbData> _activeQueue = [];
+  List<VerbData> _incorrectQueue = [];
   
+  bool _isLoading = true;
+  bool _isStarting = true; 
   bool _autoPlayAudio = true; 
-  int? _quizMode; 
   
   int _currentIndex = 0;
   bool _showHint = false;
@@ -42,36 +37,8 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   @override
   void initState() {
     super.initState();
-    _initTts(); 
-  }
-
-  void _generateQuestions() {
-    List<VerbQuestion> questions = [];
-    
-    for (var verb in widget.verbList) {
-      if (verb.masuForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Masu Form', verb.masuForm));
-      if (verb.naiForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nai Form', verb.naiForm));
-      if (verb.taForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Ta Form', verb.taForm));
-      if (verb.nakattaForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Nakatta Form', verb.nakattaForm));
-      if (verb.teForm.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Form', verb.teForm));
-      if (verb.potential.isNotEmpty) questions.add(VerbQuestion(verb, 'Potential Form', verb.potential));
-      if (verb.volitional.isNotEmpty) questions.add(VerbQuestion(verb, 'Volitional Form', verb.volitional));
-      if (verb.teKudasai.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Kudasai', verb.teKudasai));
-      if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
-    }
-
-    questions.shuffle(); 
-    _activeQueue = List.from(questions); 
-  }
-
-  void _startQuiz(int mode) {
-    setState(() {
-      _quizMode = mode;
-      _generateQuestions();
-    });
-    Future.delayed(const Duration(milliseconds: 100), () {
-      if (mounted) _focusNode.requestFocus();
-    });
+    _initTts();
+    _loadAndPrepareData();
   }
 
   Future<void> _initTts() async {
@@ -81,6 +48,39 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
 
   Future<void> _speak(String text) async {
     await flutterTts.speak(text);
+  }
+
+  Future<void> _loadAndPrepareData() async {
+    final String jsonString = await rootBundle.loadString('assets/${widget.level}-verbs/${widget.level}_Verbs_C1.json');
+    final List<dynamic> parsedJson = json.decode(jsonString);
+    final List<VerbData> allVerbs = parsedJson.map((json) => VerbData.fromJson(json)).toList();
+
+    List<VerbData> pairsOnly = allVerbs.where((v) => v.pair.isNotEmpty && v.pair != '-').toList();
+    
+    List<VerbData> orderedPairs = [];
+    Set<String> processedKanji = {};
+
+    for (var v in pairsOnly) {
+      if (processedKanji.contains(v.kanji)) continue;
+      
+      orderedPairs.add(v);
+      processedKanji.add(v.kanji);
+
+      var partner = allVerbs.firstWhere(
+        (p) => p.kanji == v.pair || p.dictionary == v.pair,
+        orElse: () => v, 
+      );
+
+      if (partner != v && !processedKanji.contains(partner.kanji)) {
+        orderedPairs.add(partner);
+        processedKanji.add(partner.kanji);
+      }
+    }
+
+    setState(() {
+      _activeQueue = orderedPairs;
+      _isLoading = false;
+    });
   }
 
   @override
@@ -118,8 +118,8 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     }
 
     final userAnswer = normalizeText(_answerController.text);
-    final correctAnswer = normalizeText(currentQ.correctAnswer);
-    bool isTextMatch = (userAnswer == correctAnswer);
+    final correctAnswer = normalizeText(currentQ.kanji); 
+    bool isTextMatch = (userAnswer == correctAnswer || userAnswer == normalizeText(currentQ.dictionary));
 
     if (!_isAnswered) {
       setState(() {
@@ -144,7 +144,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
       }
       
       if (_autoPlayAudio) {
-        _speak(currentQ.correctAnswer); 
+        _speak(currentQ.kanji); 
       }
       
     } else {
@@ -188,8 +188,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
   }
 
   Future<bool> _onWillPop() async {
-    if (_quizMode == null) return true;
-    if (_isQuizFinished) return true;
+    if (_isStarting || _isQuizFinished) return true;
     
     final shouldPop = await showDialog<bool>(
       context: context,
@@ -212,52 +211,10 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
     final bgColor = isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFA);
     final borderColor = isDark ? Colors.grey.shade800 : Colors.grey.shade300;
 
-    if (_quizMode == null) {
+    if (_isLoading) {
       return Scaffold(
         backgroundColor: bgColor,
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: bgColor,
-          title: Text(
-            'Practice: ${widget.title}', 
-            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
-          ),
-          centerTitle: true,
-        ),
-        body: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const Text(
-                  'Select Quiz Mode',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
-                ),
-                const SizedBox(height: 32.0),
-                ElevatedButton(
-                  onPressed: () => _startQuiz(0),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-                  ),
-                  child: const Text('Guess Conjugation from Kanji', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
-                ),
-                const SizedBox(height: 12.0),
-                ElevatedButton(
-                  onPressed: () => _startQuiz(1),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-                  ),
-                  child: const Text('Guess Conjugation from Meaning', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
-                ),
-              ],
-            ),
-          ),
-        ),
+        body: const Center(child: CircularProgressIndicator()),
       );
     }
 
@@ -274,18 +231,20 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           elevation: 0,
           backgroundColor: bgColor,
           title: Text(
-            'Practice: ${widget.title}', 
+            '${widget.level} Pairs Practice', 
             style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)
           ),
           centerTitle: true,
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(4.0),
-            child: LinearProgressIndicator(
-              value: _isQuizFinished || _activeQueue.isEmpty ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
-              backgroundColor: Colors.grey.withOpacity(0.2),
-            ),
-          ),
-          actions: [
+          bottom: _isStarting 
+            ? null 
+            : PreferredSize(
+                preferredSize: const Size.fromHeight(4.0),
+                child: LinearProgressIndicator(
+                  value: _isQuizFinished || _activeQueue.isEmpty ? 1.0 : (_currentIndex + 1) / _activeQueue.length,
+                  backgroundColor: Colors.grey.withOpacity(0.2),
+                ),
+              ),
+          actions: _isStarting ? null : [
             IconButton(
               icon: Icon(_autoPlayAudio ? Icons.volume_up_rounded : Icons.volume_off_rounded),
               tooltip: 'Toggle Auto-play Audio',
@@ -293,33 +252,85 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             ),
           ],
         ),
-        body: _isQuizFinished 
-            ? _buildResultScreen() 
-            : _activeQueue.isEmpty 
-                ? const Center(child: Text("No questions available for this mode."))
-                : Column(
-                    children: [
-                      Expanded(child: _buildQuizContent(borderColor)),
-                      _buildBottomActionPanel(borderColor),
-                    ],
-                  ),
+        body: _isStarting
+            ? _buildStartScreen(borderColor)
+            : (_isQuizFinished 
+                ? _buildResultScreen() 
+                : _activeQueue.isEmpty 
+                    ? const Center(child: Text("No pairs available."))
+                    : Column(
+                        children: [
+                          Expanded(child: _buildQuizContent(borderColor)),
+                          _buildBottomActionPanel(borderColor),
+                        ],
+                      )),
+      ),
+    );
+  }
+
+  Widget _buildStartScreen(Color borderColor) {
+    return Center(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Icon(Icons.compare_arrows_rounded, size: 80.0, color: Theme.of(context).colorScheme.primary),
+            const SizedBox(height: 24.0),
+            const Text(
+              'Jidoushi & Tadoushi',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
+            ),
+            const SizedBox(height: 8.0),
+            const Text(
+              'Guess the verbs based on their meaning. Pairs will appear sequentially!',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16.0, color: Colors.grey, height: 1.4),
+            ),
+            const SizedBox(height: 48.0),
+            Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.surface,
+                borderRadius: BorderRadius.circular(8.0),
+                border: Border.all(color: borderColor, width: 1.0),
+              ),
+              child: SwitchListTile(
+                title: const Text('Auto-play Audio', style: TextStyle(fontWeight: FontWeight.w600)),
+                subtitle: const Text('Play pronunciation when checking answer'),
+                value: _autoPlayAudio,
+                onChanged: (val) => setState(() => _autoPlayAudio = val),
+              ),
+            ),
+            const SizedBox(height: 24.0),
+            SizedBox(
+              height: 50.0,
+              child: ElevatedButton(
+                onPressed: () {
+                  setState(() => _isStarting = false);
+                  Future.delayed(const Duration(milliseconds: 100), () {
+                    if (mounted) _focusNode.requestFocus();
+                  });
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.primary,
+                  foregroundColor: Theme.of(context).colorScheme.onPrimary,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                  elevation: 0.0,
+                ),
+                child: const Text('Start Practice', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
   Widget _buildQuizContent(Color borderColor) {
     final currentQ = _activeQueue[_currentIndex];
-    
-    String mainText = '';
-    String subText = '';
-    
-    if (_quizMode == 1) { 
-      mainText = currentQ.verb.meaning;
-      subText = 'Type the conjugation in Japanese';
-    } else { 
-      mainText = currentQ.verb.kanji;
-      subText = currentQ.verb.meaning;
-    }
+    final isTransitive = currentQ.verbType == 'Transitive';
     
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
@@ -328,57 +339,36 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
         children: [
           Center(
             child: Text(
-              'Question ${_currentIndex + 1} of ${_activeQueue.length}',
+              'Pair ${_currentIndex ~/ 2 + 1}  •  Question ${_currentIndex + 1} of ${_activeQueue.length}',
               style: TextStyle(color: Colors.grey.shade500, fontSize: 14.0, fontWeight: FontWeight.w600),
             ),
           ),
           const SizedBox(height: 32.0),
           Text(
-            mainText,
+            currentQ.meaning,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 48.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
-          ),
-          const SizedBox(height: 8.0),
-          Text(
-            subText,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16.0, color: Colors.grey, height: 1.5),
+            style: const TextStyle(fontSize: 32.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
           ),
           const SizedBox(height: 12.0),
-          if (currentQ.verb.subGroup.isNotEmpty)
-            Center(
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.tertiaryContainer.withOpacity(0.3),
-                  borderRadius: BorderRadius.circular(4.0),
-                  border: Border.all(color: Theme.of(context).colorScheme.tertiary.withOpacity(0.5), width: 1.0),
-                ),
-                child: Text(
-                  'Sub-group: ${currentQ.verb.subGroup}',
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.onTertiaryContainer,
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          const SizedBox(height: 24.0),
           Center(
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(color: Theme.of(context).colorScheme.secondary.withOpacity(0.5), width: 1.0),
+                color: isTransitive 
+                  ? Colors.blue.withOpacity(0.1) 
+                  : Colors.orange.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(4.0),
+                border: Border.all(
+                  color: isTransitive ? Colors.blue.withOpacity(0.5) : Colors.orange.withOpacity(0.5), 
+                  width: 1.0
+                ),
               ),
               child: Text(
-                'Change to: ${currentQ.formName}',
+                isTransitive ? '他 (Tadoushi / Transitive)' : '自 (Jidoushi / Intransitive)',
                 style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer,
+                  color: isTransitive ? Colors.blue.shade700 : Colors.orange.shade700,
+                  fontSize: 14.0,
                   fontWeight: FontWeight.bold,
-                  fontSize: 16.0,
                 ),
               ),
             ),
@@ -392,7 +382,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
             minLines: 1, maxLines: 2, 
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 20.0, 
+              fontSize: 24.0, 
               color: (_isAnswered && _isCorrect) 
                   ? Colors.green 
                   : Theme.of(context).colorScheme.onSurface
@@ -427,7 +417,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
           if (_showHint)
             Center(
               child: Text(
-                'Hint: starts with ${currentQ.correctAnswer.substring(0, 1)}...',
+                'Hint: starts with ${currentQ.kanji.isNotEmpty ? currentQ.kanji[0] : currentQ.dictionary[0]}...',
                 style: const TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic, color: Colors.grey),
               ),
             )
@@ -506,7 +496,7 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                   ),
                   IconButton(
                     icon: Icon(Icons.volume_up_rounded, color: finalTextColor),
-                    onPressed: () => _speak(currentQ.correctAnswer),
+                    onPressed: () => _speak(currentQ.kanji),
                   ),
                 ],
               ),
@@ -515,8 +505,8 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
                 Text('Correct Answer:', style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14.0)),
                 const SizedBox(height: 4.0),
                 Text(
-                  currentQ.correctAnswer,
-                  style: TextStyle(color: finalTextColor, fontSize: 22.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
+                  currentQ.kanji,
+                  style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
               ],
               const SizedBox(height: 24.0),

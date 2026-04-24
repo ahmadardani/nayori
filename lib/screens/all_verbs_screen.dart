@@ -277,8 +277,6 @@ class _VerbListDetailScreenState extends State<VerbListDetailScreen> {
   final TextEditingController _searchController = TextEditingController();
   final FlutterTts flutterTts = FlutterTts();
   
-  String _selectedTypeFilter = 'Semua'; 
-
   @override
   void initState() {
     super.initState();
@@ -299,20 +297,9 @@ class _VerbListDetailScreenState extends State<VerbListDetailScreen> {
     final query = _searchController.text.toLowerCase();
     setState(() {
       _filteredVerbs = widget.verbs.where((v) {
-        final matchesText = query.isEmpty || 
+        return query.isEmpty || 
             v.kanji.contains(query) || 
             v.meaning.toLowerCase().contains(query);
-            
-        bool matchesType = true;
-        if (_selectedTypeFilter == 'Jidoushi') {
-          matchesType = v.verbType == 'Intransitive';
-        } else if (_selectedTypeFilter == 'Tadoushi') {
-          matchesType = v.verbType == 'Transitive';
-        } else if (_selectedTypeFilter == 'Ada Pasangan') {
-          matchesType = v.pair.isNotEmpty && v.pair != '-';
-        }
-
-        return matchesText && matchesType;
       }).toList();
     });
   }
@@ -358,31 +345,6 @@ class _VerbListDetailScreenState extends State<VerbListDetailScreen> {
             ),
           ),
           
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Row(
-              children: ['Semua', 'Jidoushi', 'Tadoushi', 'Ada Pasangan'].map((filterName) {
-                return Padding(
-                  padding: const EdgeInsets.only(right: 8.0),
-                  child: ChoiceChip(
-                    label: Text(filterName),
-                    selected: _selectedTypeFilter == filterName,
-                    onSelected: (selected) {
-                      if (selected) {
-                        setState(() {
-                          _selectedTypeFilter = filterName;
-                          _filterVerbs();
-                        });
-                      }
-                    },
-                  ),
-                );
-              }).toList(),
-            ),
-          ),
-          const SizedBox(height: 8.0),
-
           Expanded(child: _buildVerbList(_filteredVerbs)),
         ],
       ),
@@ -431,32 +393,11 @@ class _VerbListDetailScreenState extends State<VerbListDetailScreen> {
                 Expanded(
                   child: Text(verb.kanji, style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
                 ),
-                if (verb.verbType.isNotEmpty)
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
-                    decoration: BoxDecoration(
-                      color: verb.verbType == 'Transitive' 
-                          ? Colors.blue.withOpacity(0.15) 
-                          : Colors.green.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    child: Text(
-                      verb.verbType == 'Transitive' ? '他 (Tadoushi)' : '自 (Jidoushi)',
-                      style: TextStyle(
-                        fontSize: 12.0, 
-                        fontWeight: FontWeight.bold,
-                        color: verb.verbType == 'Transitive' ? Colors.blue.shade700 : Colors.green.shade700
-                      ),
-                    ),
-                  ),
               ],
             ),
             subtitle: Text(verb.meaning),
             childrenPadding: const EdgeInsets.all(16.0),
             children: [
-              if (verb.pair.isNotEmpty && verb.pair != '-') 
-                _buildFormRow('Pasangan (${verb.verbType == 'Transitive' ? 'Intransitive' : 'Transitive'})', verb.pair),
-              
               if (verb.dictionary.isNotEmpty) _buildFormRow('Dictionary', verb.dictionary),
               if (verb.masuForm.isNotEmpty) _buildFormRow('Masu Form', verb.masuForm),
               if (verb.naiForm.isNotEmpty) _buildFormRow('Nai Form', verb.naiForm),

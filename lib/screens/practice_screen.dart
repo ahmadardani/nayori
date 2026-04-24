@@ -105,7 +105,27 @@ class PracticeScreen extends StatelessWidget {
               subtitle: 'Sentence pattern practice per chapter',
               icon: Icons.history_edu_rounded,
               cardColor: cardColor, borderColor: borderColor,
-              onTap: () => _navigateTo(context, const RenshuuMenuScreen()),
+              onTap: () => _navigateTo(
+                context, 
+                const RenshuuMenuScreen(
+                  title: 'Renshuu A', 
+                  jsonAssetPath: 'assets/renshuu/n5_renshuu_a.json'
+                )
+              ),
+            ),
+            _buildFSOListCard(
+              context: context,
+              title: 'Renshuu B',
+              subtitle: 'Sentence practice per chapter',
+              icon: Icons.edit_note_rounded,
+              cardColor: cardColor, borderColor: borderColor,
+              onTap: () => _navigateTo(
+                context, 
+                const RenshuuMenuScreen(
+                  title: 'Renshuu B', 
+                  jsonAssetPath: 'assets/renshuu/n5_renshuu_b.json'
+                )
+              ),
             ),
           ],
         ),

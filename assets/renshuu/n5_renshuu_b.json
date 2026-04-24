@@ -1,0 +1,5792 @@
+[
+  {
+    "chapter": "Chapter 1",
+    "number": 1,
+    "sentence": "ミラーさんはアメリカ人です。",
+    "translation": "Miller adalah orang Amerika."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 1,
+    "sentence": "山田さんは日本人です。",
+    "translation": "Yamada adalah orang Jepang."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 1,
+    "sentence": "ワットさんはイギリス人です。",
+    "translation": "Watt adalah orang Inggris."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 1,
+    "sentence": "タワポンさんはタイ人です。",
+    "translation": "Thawaphon adalah orang Thailand."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 1,
+    "sentence": "シュミットさんはドイツ人です。",
+    "translation": "Schmidt adalah orang Jerman."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 2,
+    "sentence": "ミラーさんは会社員です。",
+    "translation": "Miller adalah pegawai perusahaan."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 2,
+    "sentence": "山田さんは銀行員です。",
+    "translation": "Yamada adalah pegawai bank."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 2,
+    "sentence": "ワットさんは先生です。",
+    "translation": "Watt adalah guru."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 2,
+    "sentence": "タワポンさんは学生です。",
+    "translation": "Thawaphon adalah siswa/mahasiswa."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 2,
+    "sentence": "シュミットさんは会社員です。",
+    "translation": "Schmidt adalah pegawai perusahaan."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 3,
+    "sentence": "ミラーさんは銀行員じゃありません。",
+    "translation": "Miller bukan pegawai bank."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 3,
+    "sentence": "山田さんは学生じゃありません。",
+    "translation": "Yamada bukan siswa/mahasiswa."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 3,
+    "sentence": "ワットさんはドイツ人じゃありません。",
+    "translation": "Watt bukan orang Jerman."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 3,
+    "sentence": "タワポンさんは先生じゃありません。",
+    "translation": "Thawaphon bukan guru."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 3,
+    "sentence": "シュミットさんはアメリカ人じゃありません。",
+    "translation": "Schmidt bukan orang Amerika."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "ミラーさんはアメリカ人ですか？はい、アメリカ人です。",
+    "translation": "Apakah Miller orang Amerika? Ya, dia orang Amerika."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "ミラーさんは医者ですか？いいえ、医者じゃありません。",
+    "translation": "Apakah Miller seorang dokter? Bukan, dia bukan seorang dokter."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "山田さんは銀行員ですか？はい、銀行員です。",
+    "translation": "Apakah Yamada seorang pegawai bank? Ya, dia pegawai bank."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "ワットさんは会社員ですか？いいえ、会社員じゃありません。",
+    "translation": "Apakah Watt seorang pegawai perusahaan? Bukan, dia bukan pegawai perusahaan."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "タワポンさんは先生ですか？いいえ、先生じゃありません。",
+    "translation": "Apakah Thawaphon seorang guru? Bukan, dia bukan seorang guru."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 4,
+    "sentence": "シュミットさんはドイツ人ですか？はい、ドイツ人です。",
+    "translation": "Apakah Schmidt orang Jerman? Ya, dia orang Jerman."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 5,
+    "sentence": "あの方はどなたですか？グプタさんです。IMCの社員です。",
+    "translation": "Siapa orang itu? Itu Gupta. Dia pegawai IMC."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 5,
+    "sentence": "あの方はどなたですか？イーさんです。AKCの研究者です。",
+    "translation": "Siapa orang itu? Itu Lee. Dia peneliti di AKC."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 5,
+    "sentence": "あの方はどなたですか？ワンさんです。神戸病院の医者です。",
+    "translation": "Siapa orang itu? Itu Wang. Dia dokter di Rumah Sakit Kobe."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 5,
+    "sentence": "あの方はどなたですか？カリナさんです。富士大学の先生です。",
+    "translation": "Siapa orang itu? Itu Karina. Dia dosen/guru di Universitas Fuji."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 5,
+    "sentence": "あの方はどなたですか？サントスさんです。ブラジルエアーの社員です。",
+    "translation": "Siapa orang itu? Itu Santos. Dia pegawai Brazil Air."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "ミラーさんは会社員です。グプタさんも会社員ですか？はい、グプタさんも会社員です。",
+    "translation": "Miller adalah pegawai perusahaan. Apakah Gupta juga pegawai perusahaan? Ya, Gupta juga pegawai perusahaan."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "ミラーさんはアメリカ人です。グプタさんもアメリカ人ですか？いいえ、グプタさんはアメリカ人じゃありません。",
+    "translation": "Miller adalah orang Amerika. Apakah Gupta juga orang Amerika? Bukan, Gupta bukan orang Amerika."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "山田さんは銀行員です。イーさんも銀行員ですか？いいえ、イーさんは銀行員じゃありません。",
+    "translation": "Yamada adalah pegawai bank. Apakah Lee juga pegawai bank? Bukan, Lee bukan pegawai bank."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "ワットさんは先生です。ワンさんも先生ですか？いいえ、ワンさんは先生じゃありません。",
+    "translation": "Watt adalah guru. Apakah Wang juga guru? Bukan, Wang bukan guru."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "タワポンさんは学生です。カリナさんも学生ですか？いいえ、カリナさんは学生じゃありません。",
+    "translation": "Thawaphon adalah mahasiswa. Apakah Karina juga mahasiswa? Bukan, Karina bukan mahasiswa."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 6,
+    "sentence": "シュミットさんはドイツ人です。サントスさんもドイツ人ですか？いいえ、サントスさんはドイツ人じゃありません。",
+    "translation": "Schmidt adalah orang Jerman. Apakah Santos juga orang Jerman? Bukan, Santos bukan orang Jerman."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 7,
+    "sentence": "ミラーさんは何歳ですか？28歳です。",
+    "translation": "Miller umur berapa? Umur 28 tahun."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 7,
+    "sentence": "山田さんは何歳ですか？38歳です。",
+    "translation": "Yamada umur berapa? Umur 38 tahun."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 7,
+    "sentence": "ワットさんは何歳ですか？45歳です。",
+    "translation": "Watt umur berapa? Umur 45 tahun."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 7,
+    "sentence": "タワポンさんは何歳ですか？19歳です。",
+    "translation": "Thawaphon umur berapa? Umur 19 tahun."
+  },
+  {
+    "chapter": "Chapter 1",
+    "number": 7,
+    "sentence": "シュミットさんは何歳ですか？52歳です。",
+    "translation": "Schmidt umur berapa? Umur 52 tahun."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "これは雑誌です。",
+    "translation": "Ini adalah majalah."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "それはノートです。",
+    "translation": "Itu (dekat lawan bicara) adalah buku catatan."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "あれは辞書です。",
+    "translation": "Itu (jauh) adalah kamus."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "それはカバンです。",
+    "translation": "Itu (dekat lawan bicara) adalah tas."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "これはかぎです。",
+    "translation": "Ini adalah kunci."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 1,
+    "sentence": "あれはテレビです。",
+    "translation": "Itu (jauh) adalah televisi."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これは本ですか？はい、本です。",
+    "translation": "Apakah ini buku? Ya, ini buku."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これは手帳ですか？いいえ、本です。",
+    "translation": "Apakah ini buku agenda? Bukan, ini buku."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これは時計ですか？はい、時計です。",
+    "translation": "Apakah ini jam? Ya, ini jam."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これはラジオですか？いいえ、カメラです。",
+    "translation": "Apakah ini radio? Bukan, ini kamera."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これは鉛筆ですか？いいえ、シャープペンシルです。",
+    "translation": "Apakah ini pensil? Bukan, ini pensil mekanik."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 2,
+    "sentence": "これはいすですか？はい、いすです。",
+    "translation": "Apakah ini kursi? Ya, ini kursi."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 3,
+    "sentence": "これは何ですか？本です。",
+    "translation": "Ini apa? Ini buku."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 3,
+    "sentence": "これは何ですか？時計です。",
+    "translation": "Ini apa? Ini jam."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 3,
+    "sentence": "これは何ですか？カメラです。",
+    "translation": "Ini apa? Ini kamera."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 3,
+    "sentence": "これは何ですか？シャープペンシルです。",
+    "translation": "Ini apa? Ini pensil mekanik."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 3,
+    "sentence": "これは何ですか？いすです。",
+    "translation": "Ini apa? Ini kursi."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 4,
+    "sentence": "これはシャープペンシルですか、ボールペンですか？ボールペンです。",
+    "translation": "Ini pensil mekanik atau bolpoin? Bolpoin."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 4,
+    "sentence": "これは本ですか、雑誌ですか？本です。",
+    "translation": "Ini buku atau majalah? Buku."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 4,
+    "sentence": "これは「い」ですか、「り」ですか？「り」です。",
+    "translation": "Ini huruf \"i\" atau \"ri\"? Huruf \"ri\"."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 4,
+    "sentence": "これは「1」ですか、「7」ですか？「7」です。",
+    "translation": "Ini angka \"1\" atau \"7\"? Angka \"7\"."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 4,
+    "sentence": "これは「シ」ですか、「ツ」ですか？「シ」です。",
+    "translation": "Ini huruf \"shi\" atau \"tsu\"? Huruf \"shi\"."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 5,
+    "sentence": "それは何のかぎですか？車のかぎです。",
+    "translation": "Itu (dekat lawan bicara) kunci apa? Kunci mobil."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 5,
+    "sentence": "それは何の雑誌ですか？車の雑誌です。",
+    "translation": "Itu (dekat lawan bicara) majalah tentang apa? Majalah tentang mobil."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 5,
+    "sentence": "それは何のCDですか？日本語のCDです。",
+    "translation": "Itu (dekat lawan bicara) CD apa? CD bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 5,
+    "sentence": "それは何の雑誌ですか？カメラの雑誌です。",
+    "translation": "Itu (dekat lawan bicara) majalah tentang apa? Majalah tentang kamera."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 5,
+    "sentence": "それは何の本ですか？日本語の本です。",
+    "translation": "Itu (dekat lawan bicara) buku tentang apa? Buku bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 6,
+    "sentence": "これは誰のノートですか？カリナさんのノートです。",
+    "translation": "Ini buku catatan milik siapa? Buku catatan milik Karina."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 6,
+    "sentence": "これは誰のカバンですか？山田さんのカバンです。",
+    "translation": "Ini tas milik siapa? Tas milik Yamada."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 6,
+    "sentence": "これは誰のカメラですか？サントスさんのカメラです。",
+    "translation": "Ini kamera milik siapa? Kamera milik Santos."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 6,
+    "sentence": "これは誰の傘ですか？佐藤さんの傘です。",
+    "translation": "Ini payung milik siapa? Payung milik Sato."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 6,
+    "sentence": "これは誰の手帳ですか？ミラーさんの手帳です。",
+    "translation": "Ini buku agenda milik siapa? Buku agenda milik Miller."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これはカリナさんのですか？はい、カリナさんのです。",
+    "translation": "Apakah ini milik Karina? Ya, milik Karina."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これはミラーさんのですか？いいえ、ミラーさんのじゃありません。",
+    "translation": "Apakah ini milik Miller? Bukan, bukan milik Miller."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これはワンさんのですか？いいえ、ワンさんのじゃありません。",
+    "translation": "Apakah ini milik Wang? Bukan, bukan milik Wang."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これはサントスさんのですか？はい、サントスさんのです。",
+    "translation": "Apakah ini milik Santos? Ya, milik Santos."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これは佐藤さんのですか？はい、佐藤さんのです。",
+    "translation": "Apakah ini milik Sato? Ya, milik Sato."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 7,
+    "sentence": "これはワットさんのですか？いいえ、ワットさんのじゃありません。",
+    "translation": "Apakah ini milik Watt? Bukan, bukan milik Watt."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 8,
+    "sentence": "このノートは誰のですか？カリナさんのです。",
+    "translation": "Buku catatan ini milik siapa? Milik Karina."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 8,
+    "sentence": "このカバンは誰のですか？山田さんのです。",
+    "translation": "Tas ini milik siapa? Milik Yamada."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 8,
+    "sentence": "このカメラは誰のですか？サントスさんのです。",
+    "translation": "Kamera ini milik siapa? Milik Santos."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 8,
+    "sentence": "この傘は誰のですか？佐藤さんのです。",
+    "translation": "Payung ini milik siapa? Milik Sato."
+  },
+  {
+    "chapter": "Chapter 2",
+    "number": 8,
+    "sentence": "この手帳は誰のですか？ミラーさんのです。",
+    "translation": "Buku agenda ini milik siapa? Milik Miller."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 1,
+    "sentence": "ここは食堂です。",
+    "translation": "Di sini adalah ruang makan/kantin."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 1,
+    "sentence": "ここは受付です。",
+    "translation": "Di sini adalah resepsionis."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 1,
+    "sentence": "ここは事務所です。",
+    "translation": "Di sini adalah kantor."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 1,
+    "sentence": "ここは会議室です。",
+    "translation": "Di sini adalah ruang rapat."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 1,
+    "sentence": "ここはトイレです。",
+    "translation": "Di sini adalah toilet."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 2,
+    "sentence": "トイレはどこですか？あそこです。",
+    "translation": "Toilet ada di mana? Di sana."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 2,
+    "sentence": "会議室はどこですか？ここです。",
+    "translation": "Ruang rapat ada di mana? Di sini."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 2,
+    "sentence": "自動販売機はどこですか？そこです。",
+    "translation": "Mesin penjual otomatis ada di mana? Di situ."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 2,
+    "sentence": "山田さんはどこですか？あそこです。",
+    "translation": "Yamada ada di mana? Di sana."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 3,
+    "sentence": "自動販売機はどこですか？2階です。",
+    "translation": "Mesin penjual otomatis ada di mana? Di lantai 2."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 3,
+    "sentence": "トイレはどこですか？1階です。",
+    "translation": "Toilet ada di mana? Di lantai 1."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 3,
+    "sentence": "テレーザちゃんはどこですか？教室です。",
+    "translation": "Teresa ada di mana? Di ruang kelas."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 3,
+    "sentence": "食堂はどこですか？地下です。",
+    "translation": "Kantin ada di mana? Di ruang bawah tanah (basement)."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 3,
+    "sentence": "会議室のかぎはどこですか？事務所です。",
+    "translation": "Kunci ruang rapat ada di mana? Di kantor."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 4,
+    "sentence": "部屋はどちらですか？あちらです。",
+    "translation": "Ruangannya di sebelah mana? Di sebelah sana."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 4,
+    "sentence": "エスカレーターはどちらですか？そちらです。",
+    "translation": "Eskalator di sebelah mana? Di sebelah situ."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 4,
+    "sentence": "電話はどちらですか？こちらです。",
+    "translation": "Telepon di sebelah mana? Di sebelah sini."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 4,
+    "sentence": "カリナさんの部屋はどちらですか？3階です。",
+    "translation": "Kamar Karina di sebelah mana? Di lantai 3."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 4,
+    "sentence": "家はどちらですか？大阪です。",
+    "translation": "Rumahnya di mana? Di Osaka."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 5,
+    "sentence": "ミラーさんのお国はどちらですか？アメリカです。",
+    "translation": "Negara Miller dari mana? Dari Amerika."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 5,
+    "sentence": "サントスさんのお国はどちらですか？ブラジルです。",
+    "translation": "Negara Santos dari mana? Dari Brasil."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 5,
+    "sentence": "ワットさんのお国はどちらですか？イギリスです。",
+    "translation": "Negara Watt dari mana? Dari Inggris."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 5,
+    "sentence": "シュミットさんのお国はどちらですか？ドイツです。",
+    "translation": "Negara Schmidt dari mana? Dari Jerman."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 5,
+    "sentence": "カリナさんのお国はどちらですか？インドネシアです。",
+    "translation": "Negara Karina dari mana? Dari Indonesia."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 6,
+    "sentence": "ミラーさんの会社はどちらですか？IMCです。",
+    "translation": "Perusahaan Miller apa? IMC."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 6,
+    "sentence": "サントスさんの会社はどちらですか？ブラジルエアーです。",
+    "translation": "Perusahaan Santos apa? Brazil Air."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 6,
+    "sentence": "ワットさんの大学はどちらですか？桜大学です。",
+    "translation": "Universitas Watt apa? Universitas Sakura."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 6,
+    "sentence": "シュミットさんの会社はどちらですか？パワー電気です。",
+    "translation": "Perusahaan Schmidt apa? Power Denki."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 6,
+    "sentence": "カリナさんの大学はどちらですか？富士大学です。",
+    "translation": "Universitas Karina apa? Universitas Fuji."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 7,
+    "sentence": "これはどこのカバンですか？韓国のカバンです。",
+    "translation": "Ini tas buatan mana? Tas buatan Korea."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 7,
+    "sentence": "これはどこのワインですか？フランスのワインです。",
+    "translation": "Ini anggur (wine) buatan mana? Anggur buatan Prancis."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 7,
+    "sentence": "これはどこのカメラですか？日本のカメラです。",
+    "translation": "Ini kamera buatan mana? Kamera buatan Jepang."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 7,
+    "sentence": "これはどこのコンピューターですか？アメリカのコンピューターです。",
+    "translation": "Ini komputer buatan mana? Komputer buatan Amerika."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 7,
+    "sentence": "これはどこの車ですか？ドイツの車です。",
+    "translation": "Ini mobil buatan mana? Mobil buatan Jerman."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 8,
+    "sentence": "このカバンはいくらですか？7300円です。",
+    "translation": "Tas ini harganya berapa? 7.300 yen."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 8,
+    "sentence": "このワインはいくらですか？3200円です。",
+    "translation": "Anggur (wine) ini harganya berapa? 3.200 yen."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 8,
+    "sentence": "このカメラはいくらですか？25800円です。",
+    "translation": "Kamera ini harganya berapa? 25.800 yen."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 8,
+    "sentence": "このコンピューターはいくらですか？143000円です。",
+    "translation": "Komputer ini harganya berapa? 143.000 yen."
+  },
+  {
+    "chapter": "Chapter 3",
+    "number": 8,
+    "sentence": "この車はいくらですか？4500000円です。",
+    "translation": "Mobil ini harganya berapa? 4.500.000 yen."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 1,
+    "sentence": "3時です。",
+    "translation": "Jam 3."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 1,
+    "sentence": "7時半です。",
+    "translation": "Jam setengah 8 (7:30)."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 1,
+    "sentence": "12時15分です。",
+    "translation": "Jam 12 lewat 15 menit."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 1,
+    "sentence": "2時45分です。",
+    "translation": "Jam 2 lewat 45 menit."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 1,
+    "sentence": "10時20分です。",
+    "translation": "Jam 10 lewat 20 menit."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 2,
+    "sentence": "東京は今何時ですか？午後6時です。",
+    "translation": "Tokyo sekarang jam berapa? Jam 6 sore."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 2,
+    "sentence": "ペキンは今何時ですか？午後5時です。",
+    "translation": "Beijing sekarang jam berapa? Jam 5 sore."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 2,
+    "sentence": "バンコクは今何時ですか？午後4時です。",
+    "translation": "Bangkok sekarang jam berapa? Jam 4 sore."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 2,
+    "sentence": "ロンドンは今何時ですか？午前9時です。",
+    "translation": "London sekarang jam berapa? Jam 9 pagi."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 2,
+    "sentence": "ロサンゼルスは今何時ですか？午前1時です。",
+    "translation": "Los Angeles sekarang jam berapa? Jam 1 pagi."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 3,
+    "sentence": "今日は何曜日ですか？火曜日です。",
+    "translation": "Hari ini hari apa? Hari Selasa."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 3,
+    "sentence": "明日は何曜日ですか？水曜日です。",
+    "translation": "Besok hari apa? Hari Rabu."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 3,
+    "sentence": "会議は何曜日ですか？金曜日です。",
+    "translation": "Rapatnya hari apa? Hari Jumat."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 3,
+    "sentence": "試験は何曜日ですか？木曜日です。",
+    "translation": "Ujiannya hari apa? Hari Kamis."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 3,
+    "sentence": "休みは何曜日ですか？土曜日と日曜日です。",
+    "translation": "Liburnya hari apa? Hari Sabtu dan Minggu."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 4,
+    "sentence": "銀行は何時から何時までですか？9時から3時までです。",
+    "translation": "Bank buka dari jam berapa sampai jam berapa? Dari jam 9 sampai jam 3."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 4,
+    "sentence": "郵便局は何時から何時までですか？9時から5時までです。",
+    "translation": "Kantor pos buka dari jam berapa sampai jam berapa? Dari jam 9 sampai jam 5."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 4,
+    "sentence": "デパートは何時から何時までですか？10時から8時半までです。",
+    "translation": "Toserba buka dari jam berapa sampai jam berapa? Dari jam 10 sampai jam setengah 9."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 4,
+    "sentence": "図書館は何時から何時までですか？9時から6時半までです。",
+    "translation": "Perpustakaan buka dari jam berapa sampai jam berapa? Dari jam 9 sampai jam setengah 7."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 4,
+    "sentence": "会社は何時から何時までですか？9時15分から5時45分までです。",
+    "translation": "Perusahaan buka dari jam berapa sampai jam berapa? Dari jam 9:15 sampai 5:45."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 5,
+    "sentence": "毎朝何時に起きますか？7時に起きます。",
+    "translation": "Setiap pagi (kamu) bangun jam berapa? (Saya) bangun jam 7."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 5,
+    "sentence": "毎晩何時に寝ますか？11時に寝ます。",
+    "translation": "Setiap malam (kamu) tidur jam berapa? (Saya) tidur jam 11."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 5,
+    "sentence": "明日何時に起きますか？6時半に起きます。",
+    "translation": "Besok (kamu) bangun jam berapa? (Saya) bangun jam setengah 7."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 5,
+    "sentence": "今晩何時に寝ますか？12時に寝ます。",
+    "translation": "Malam ini (kamu) tidur jam berapa? (Saya) tidur jam 12."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 5,
+    "sentence": "日曜日何時に起きますか？10時に起きます。",
+    "translation": "Hari Minggu (kamu) bangun jam berapa? (Saya) bangun jam 10."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 6,
+    "sentence": "毎晩何時から何時まで勉強しますか？7時半から9時半まで勉強します。",
+    "translation": "Setiap malam (kamu) belajar dari jam berapa sampai jam berapa? (Saya) belajar dari jam setengah 8 sampai jam setengah 10."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 6,
+    "sentence": "毎日何時から何時まで働きますか？9時半から5時半まで働きます。",
+    "translation": "Setiap hari (kamu) bekerja dari jam berapa sampai jam berapa? (Saya) bekerja dari jam setengah 10 sampai jam setengah 6."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 6,
+    "sentence": "昼何時から何時まで休みますか？12時から1時まで休みます。",
+    "translation": "Siang (kamu) istirahat dari jam berapa sampai jam berapa? (Saya) istirahat dari jam 12 sampai jam 1."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 6,
+    "sentence": "土曜日何時から何時まで働きますか？9時から2時まで働きます。",
+    "translation": "Hari Sabtu (kamu) bekerja dari jam berapa sampai jam berapa? (Saya) bekerja dari jam 9 sampai jam 2."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 6,
+    "sentence": "毎朝何時から何時まで勉強しますか？7時から8時まで勉強します。",
+    "translation": "Setiap pagi (kamu) belajar dari jam berapa sampai jam berapa? (Saya) belajar dari jam 7 sampai jam 8."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 7,
+    "sentence": "明日働きます。",
+    "translation": "Besok saya bekerja."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 7,
+    "sentence": "毎日勉強します。",
+    "translation": "Setiap hari saya belajar."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 7,
+    "sentence": "昨日の晩働きました。",
+    "translation": "Tadi malam saya bekerja. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 7,
+    "sentence": "明後日勉強します。",
+    "translation": "Lusa saya akan belajar."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 7,
+    "sentence": "一昨日働きました。",
+    "translation": "Kemarin lusa saya bekerja. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "今日勉強しますか？はい、勉強します。",
+    "translation": "Apakah hari ini kamu belajar? Ya, saya belajar."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "昨日勉強しましたか？いいえ、勉強しませんでした。",
+    "translation": "Apakah kemarin kamu belajar? Tidak, saya tidak belajar. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "明後日働きますか？いいえ、働きません。",
+    "translation": "Apakah lusa kamu bekerja? Tidak, saya tidak bekerja."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "毎晩勉強しますか？はい、勉強します。",
+    "translation": "Apakah setiap malam kamu belajar? Ya, saya belajar."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "昨日の晩勉強しましたか？はい、勉強しました。",
+    "translation": "Apakah tadi malam kamu belajar? Ya, saya belajar. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 8,
+    "sentence": "昨日働きましたか？いいえ、働きませんでした。",
+    "translation": "Apakah kemarin kamu bekerja? Tidak, saya tidak bekerja. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "毎朝何時に起きますか？6時に起きます。",
+    "translation": "Setiap pagi (kamu) bangun jam berapa? (Saya) bangun jam 6."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "昨日何時から何時まで働きましたか？9時から5時まで働きました。",
+    "translation": "Kemarin (kamu) bekerja dari jam berapa sampai jam berapa? (Saya) bekerja dari jam 9 sampai jam 5. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "毎晩何時に寝ますか？11時に寝ます。",
+    "translation": "Setiap malam (kamu) tidur jam berapa? (Saya) tidur jam 11."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "今朝何時に起きましたか？7時半に起きました。",
+    "translation": "Tadi pagi (kamu) bangun jam berapa? (Saya) bangun jam setengah 8. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "毎日何時から何時まで働きますか？10時から6時まで働きます。",
+    "translation": "Setiap hari (kamu) bekerja dari jam berapa sampai jam berapa? (Saya) bekerja dari jam 10 sampai jam 6."
+  },
+  {
+    "chapter": "Chapter 4",
+    "number": 9,
+    "sentence": "昨日の晩何時から何時まで勉強しましたか？7時から8時半まで勉強しました。",
+    "translation": "Tadi malam (kamu) belajar dari jam berapa sampai jam berapa? (Saya) belajar dari jam 7 sampai jam setengah 9. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 1,
+    "sentence": "スーパーへ行きます。",
+    "translation": "(Saya) pergi ke supermarket."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 1,
+    "sentence": "郵便局へ行きます。",
+    "translation": "(Saya) pergi ke kantor pos."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 1,
+    "sentence": "デパートへ行きます。",
+    "translation": "(Saya) pergi ke toserba."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 1,
+    "sentence": "銀行へ行きます。",
+    "translation": "(Saya) pergi ke bank."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 1,
+    "sentence": "美術館へ行きます。",
+    "translation": "(Saya) pergi ke museum seni."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 2,
+    "sentence": "今朝どこへ行きましたか？スーパーへ行きました。",
+    "translation": "Tadi pagi (kamu) pergi ke mana? (Saya) pergi ke supermarket. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 2,
+    "sentence": "先月どこへ行きましたか？アメリカへ行きました。",
+    "translation": "Bulan lalu (kamu) pergi ke mana? (Saya) pergi ke Amerika. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 2,
+    "sentence": "昨日の午後どこへ行きましたか？図書館へ行きました。",
+    "translation": "Kemarin sore (kamu) pergi ke mana? (Saya) pergi ke perpustakaan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 2,
+    "sentence": "来週の月曜日どこへ行きますか？パワー電気へ行きます。",
+    "translation": "Hari Senin minggu depan (kamu) pergi ke mana? (Saya) pergi ke Power Denki."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 2,
+    "sentence": "先週の日曜日どこへ行きましたか？どこも行きませんでした。",
+    "translation": "Hari Minggu minggu lalu (kamu) pergi ke mana? (Saya) tidak pergi ke mana-mana. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 3,
+    "sentence": "何で京都へ行きますか？電車で行きます。",
+    "translation": "Pergi ke Kyoto naik apa? (Saya) pergi naik kereta."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 3,
+    "sentence": "何で学校へ行きますか？自転車で行きます。",
+    "translation": "Pergi ke sekolah naik apa? (Saya) pergi naik sepeda."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 3,
+    "sentence": "何で東京へ行きますか？飛行機で行きます。",
+    "translation": "Pergi ke Tokyo naik apa? (Saya) pergi naik pesawat."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 3,
+    "sentence": "何で九州へ行きますか？船で行きます。",
+    "translation": "Pergi ke Kyushu naik apa? (Saya) pergi naik kapal laut."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 3,
+    "sentence": "何で駅へ行きますか？歩いて行きます。",
+    "translation": "Pergi ke stasiun dengan apa? (Saya) pergi jalan kaki."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 4,
+    "sentence": "誰と京都へ行きますか？友達と行きます。",
+    "translation": "Pergi ke Kyoto dengan siapa? (Saya) pergi dengan teman."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 4,
+    "sentence": "誰と美術館へ行きますか？彼女と行きます。",
+    "translation": "Pergi ke museum seni dengan siapa? (Saya) pergi dengan pacar (perempuan)."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 4,
+    "sentence": "誰と広島へ行きますか？会社の人と行きます。",
+    "translation": "Pergi ke Hiroshima dengan siapa? (Saya) pergi dengan orang perusahaan."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 4,
+    "sentence": "誰と北海道へ行きますか？家族と行きます。",
+    "translation": "Pergi ke Hokkaido dengan siapa? (Saya) pergi dengan keluarga."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 4,
+    "sentence": "誰とフランスへ行きますか？一人で行きます。",
+    "translation": "Pergi ke Prancis dengan siapa? (Saya) pergi sendirian."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつ京都へ行きますか？3月3日に行きます。",
+    "translation": "Kapan pergi ke Kyoto? (Saya) pergi tanggal 3 Maret."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつ東京へ行きますか？来週行きます。",
+    "translation": "Kapan pergi ke Tokyo? (Saya) pergi minggu depan."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつ桜大学へ行きますか？9月14日に行きます。",
+    "translation": "Kapan pergi ke Universitas Sakura? (Saya) pergi tanggal 14 September."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつアメリカへ行きますか？来年の3月に行きます。",
+    "translation": "Kapan pergi ke Amerika? (Saya) pergi bulan Maret tahun depan."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつ広島へ行きますか？来月行きます。",
+    "translation": "Kapan pergi ke Hiroshima? (Saya) pergi bulan depan."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 5,
+    "sentence": "いつ病院へ行きますか？今週の水曜日行きます。",
+    "translation": "Kapan pergi ke rumah sakit? (Saya) pergi hari Rabu minggu ini."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 6,
+    "sentence": "いつ日本へ来ましたか？去年の9月に来ました。",
+    "translation": "Kapan datang ke Jepang? (Saya) datang pada bulan September tahun lalu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 6,
+    "sentence": "誰と日本へ来ましたか？一人で来ました。",
+    "translation": "Dengan siapa datang ke Jepang? (Saya) datang sendirian. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 6,
+    "sentence": "先月どこへ行きましたか？韓国へ行きました。",
+    "translation": "Bulan lalu pergi ke mana? (Saya) pergi ke Korea. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 6,
+    "sentence": "何で韓国へ行きましたか？船で行きました。",
+    "translation": "Naik apa pergi ke Korea? (Saya) pergi naik kapal. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 6,
+    "sentence": "いつ国へ帰りますか？来年12月です。",
+    "translation": "Kapan pulang ke negara asal? Bulan Desember tahun depan."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 7,
+    "sentence": "毎朝何時に会社へ行きますか？7時半に行きます。",
+    "translation": "Setiap pagi jam berapa pergi ke perusahaan? (Saya) pergi jam setengah 8."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 7,
+    "sentence": "毎朝何で会社へ行きますか？電車で行きます。",
+    "translation": "Setiap pagi pergi ke perusahaan naik apa? (Saya) pergi naik kereta."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 7,
+    "sentence": "毎晩何時に家へ帰りますか？8時です。",
+    "translation": "Setiap malam pulang ke rumah jam berapa? Jam 8."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 7,
+    "sentence": "一昨日誰と大阪城へ行きましたか？木村さんと行きました。",
+    "translation": "Kemarin lusa pergi ke Istana Osaka dengan siapa? (Saya) pergi dengan Kimura. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 7,
+    "sentence": "土曜日どこへ行きますか？どこも行きません。",
+    "translation": "Hari Sabtu pergi ke mana? (Saya) tidak pergi ke mana-mana."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 8,
+    "sentence": "ミラーさんの誕生日はいつですか？10月6日です。",
+    "translation": "Ulang tahun Miller kapan? Tanggal 6 Oktober."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 8,
+    "sentence": "山田さんの誕生日はいつですか？3月27日です。",
+    "translation": "Ulang tahun Yamada kapan? Tanggal 27 Maret."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 8,
+    "sentence": "カリナさんの誕生日はいつですか？4月10日です。",
+    "translation": "Ulang tahun Karina kapan? Tanggal 10 April."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 8,
+    "sentence": "サントスさんの誕生日はいつですか？11月9日です。",
+    "translation": "Ulang tahun Santos kapan? Tanggal 9 November."
+  },
+  {
+    "chapter": "Chapter 5",
+    "number": 8,
+    "sentence": "マリアさんの誕生日はいつですか？9月1日です。",
+    "translation": "Ulang tahun Maria kapan? Tanggal 1 September."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 1,
+    "sentence": "ラジオを聞きます。",
+    "translation": "(Saya) mendengarkan radio."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 1,
+    "sentence": "水を飲みます。",
+    "translation": "(Saya) minum air."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 1,
+    "sentence": "本を読みます。",
+    "translation": "(Saya) membaca buku."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 1,
+    "sentence": "手紙を書きます。",
+    "translation": "(Saya) menulis surat."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 1,
+    "sentence": "写真を撮ります。",
+    "translation": "(Saya) mengambil foto."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 2,
+    "sentence": "たばこを吸いますか？いいえ、吸いません。",
+    "translation": "Apakah kamu merokok? Tidak, saya tidak merokok."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 2,
+    "sentence": "お酒を飲みますか？いいえ、飲みません。",
+    "translation": "Apakah kamu minum alkohol? Tidak, saya tidak minum."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 2,
+    "sentence": "明日日本語を勉強しますか？はい、勉強します。",
+    "translation": "Apakah besok kamu belajar bahasa Jepang? Ya, saya belajar."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 2,
+    "sentence": "今朝新聞を読みましたか？はい、読みました。",
+    "translation": "Apakah tadi pagi kamu membaca koran? Ya, saya membacanya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 2,
+    "sentence": "昨日の晩テレビを見ましたか？いいえ、見ませんでした。",
+    "translation": "Apakah tadi malam kamu menonton televisi? Tidak, saya tidak menonton. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 3,
+    "sentence": "何を買いますか？カバンを買います。",
+    "translation": "(Kamu) beli apa? (Saya) beli tas."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 3,
+    "sentence": "何を勉強しますか？日本語を勉強します。",
+    "translation": "(Kamu) belajar apa? (Saya) belajar bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 3,
+    "sentence": "何を飲みますか？ジュースを飲みます。",
+    "translation": "(Kamu) minum apa? (Saya) minum jus."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 3,
+    "sentence": "何を食べましたか？魚を食べました。",
+    "translation": "(Kamu) makan apa? (Saya) makan ikan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 3,
+    "sentence": "何を買いましたか？雑誌とCDを買いました。",
+    "translation": "(Kamu) beli apa? (Saya) beli majalah dan CD. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 4,
+    "sentence": "明日何をしますか？サッカーをします。",
+    "translation": "Besok mau melakukan apa? (Saya akan) bermain sepak bola."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 4,
+    "sentence": "今日の午後何をしますか？レポートを書きます。",
+    "translation": "Sore ini mau melakukan apa? (Saya akan) menulis laporan."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 4,
+    "sentence": "今晩何をしますか？テレビを見ます。",
+    "translation": "Malam ini mau melakukan apa? (Saya akan) menonton televisi."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 4,
+    "sentence": "昨日何をしましたか？勉強しました。",
+    "translation": "Kemarin melakukan apa? (Saya) belajar. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 4,
+    "sentence": "一昨日何をしましたか？デパートへ行きました。",
+    "translation": "Kemarin lusa melakukan apa? (Saya) pergi ke toserba. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 5,
+    "sentence": "どこで写真を撮りますか？庭で撮ります。",
+    "translation": "Di mana (kamu) mengambil foto? (Saya) mengambilnya di taman."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 5,
+    "sentence": "どこでミラーさんに会いますか？駅で会います。",
+    "translation": "Di mana (kamu) bertemu Miller? (Saya) bertemu di stasiun."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 5,
+    "sentence": "どこで昼ご飯を食べますか？会社の食堂で食べます。",
+    "translation": "Di mana (kamu) makan siang? (Saya) makan di kantin perusahaan."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 5,
+    "sentence": "どこで牛乳を買いましたか？スーパーで買いました。",
+    "translation": "Di mana (kamu) membeli susu? (Saya) beli di supermarket. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 5,
+    "sentence": "どこで日本語を勉強しましたか？大学で勉強しました。",
+    "translation": "Di mana (kamu) belajar bahasa Jepang? (Saya) belajar di universitas. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 6,
+    "sentence": "今晩何をしますか？家で宿題します。それからCDを聞きます。",
+    "translation": "Malam ini mau melakukan apa? (Saya) mengerjakan PR di rumah. Setelah itu mendengarkan CD."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 6,
+    "sentence": "明日何をしますか？IMCで働きます。それから日本語を勉強します。",
+    "translation": "Besok mau melakukan apa? (Saya) bekerja di IMC. Setelah itu belajar bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 6,
+    "sentence": "来週の土曜日何をしますか？神戸でご飯を食べます。それから映画を見ます。",
+    "translation": "Hari Sabtu minggu depan mau melakukan apa? (Saya) makan di Kobe. Setelah itu menonton film."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 6,
+    "sentence": "昨日の午後何をしましたか？ロビーでテレビを見ました。それから手紙を書きました。",
+    "translation": "Kemarin sore melakukan apa? (Saya) menonton televisi di lobi. Setelah itu menulis surat. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 6,
+    "sentence": "先週の日曜日何をしましたか？庭でサッカーをしました。それからビールを飲みました。",
+    "translation": "Hari Minggu minggu lalu melakukan apa? (Saya) bermain sepak bola di taman. Setelah itu minum bir. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 7,
+    "sentence": "一緒に京都へ行きませんか？ええ、行きましょう。",
+    "translation": "Maukah pergi ke Kyoto bersama-sama? Ya, ayo pergi."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 7,
+    "sentence": "一緒に昼ご飯を食べませんか？ええ、食べましょう。",
+    "translation": "Maukah makan siang bersama-sama? Ya, ayo makan."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 7,
+    "sentence": "一緒にコーヒーを飲みませんか？ええ、飲みましょう。",
+    "translation": "Maukah minum kopi bersama-sama? Ya, ayo minum."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 7,
+    "sentence": "一緒に映画を見ませんか？ええ、見ましょう。",
+    "translation": "Maukah menonton film bersama-sama? Ya, ayo nonton."
+  },
+  {
+    "chapter": "Chapter 6",
+    "number": 7,
+    "sentence": "一緒にテニスをしませんか？ええ、しましょう。",
+    "translation": "Maukah bermain tenis bersama-sama? Ya, ayo main."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 1,
+    "sentence": "箸でご飯を食べます。",
+    "translation": "(Saya) makan nasi menggunakan sumpit."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 1,
+    "sentence": "ボールペンで手帳に書きます。",
+    "translation": "(Saya) menulis di buku agenda menggunakan bolpoin."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 1,
+    "sentence": "はさみで紙を切ります。",
+    "translation": "(Saya) memotong kertas menggunakan gunting."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 1,
+    "sentence": "手でご飯を食べます。",
+    "translation": "(Saya) makan nasi menggunakan tangan."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 1,
+    "sentence": "ケータイで写真を撮ります。",
+    "translation": "(Saya) mengambil foto menggunakan ponsel."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 2,
+    "sentence": "これは日本語で何ですか？「パソコン」です。",
+    "translation": "Ini bahasa Jepangnya apa? \"Pasokon\" (Laptop/PC)."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 2,
+    "sentence": "これは日本語で何ですか？「パンチ」です。",
+    "translation": "Ini bahasa Jepangnya apa? \"Panchi\" (Pembuat lubang kertas)."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 2,
+    "sentence": "これは日本語で何ですか？「セロテープ」です。",
+    "translation": "Ini bahasa Jepangnya apa? \"Seroteepu\" (Selotip)."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 2,
+    "sentence": "これは日本語で何ですか？「ホッチキス」です。",
+    "translation": "Ini bahasa Jepangnya apa? \"Hotchikisu\" (Stapler)."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 2,
+    "sentence": "これは日本語で何ですか？「消しゴム」です。",
+    "translation": "Ini bahasa Jepangnya apa? \"Keshigomu\" (Penghapus)."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 3,
+    "sentence": "テレーザちゃんにノートをあげます。",
+    "translation": "(Saya) memberikan buku catatan kepada Teresa."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 3,
+    "sentence": "イーさんに本を貸します。",
+    "translation": "(Saya) meminjamkan buku kepada Lee."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 3,
+    "sentence": "太朗ちゃんに英語を教えます。",
+    "translation": "(Saya) mengajarkan bahasa Inggris kepada Taro."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 3,
+    "sentence": "母に手紙を書きます。",
+    "translation": "(Saya) menulis surat untuk ibu."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 3,
+    "sentence": "シュミットさんに電話をかけます。",
+    "translation": "(Saya) menelepon Schmidt."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 4,
+    "sentence": "父にシャツをもらいました。",
+    "translation": "(Saya) menerima kemeja dari ayah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 4,
+    "sentence": "カリナさんにCDを借りました。",
+    "translation": "(Saya) meminjam CD dari Karina. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 4,
+    "sentence": "ワンさんに中国語を習いました。",
+    "translation": "(Saya) belajar bahasa Mandarin dari Wang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 4,
+    "sentence": "木村さんにメールをもらいました。",
+    "translation": "(Saya) menerima email dari Kimura. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 4,
+    "sentence": "サントスさんに電話をもらいました。",
+    "translation": "(Saya) menerima telepon dari Santos. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 5,
+    "sentence": "誰に英語を習いましたか？ワットさんに習いました。",
+    "translation": "(Kamu) belajar bahasa Inggris dari siapa? (Saya) belajar dari Watt. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 5,
+    "sentence": "誰に手紙を書きましたか？父に書きました。",
+    "translation": "(Kamu) menulis surat kepada siapa? (Saya) menulis untuk ayah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 5,
+    "sentence": "誰に電話をかけましたか？グプタさんにかけました。",
+    "translation": "(Kamu) menelepon siapa? (Saya) menelepon Gupta. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 5,
+    "sentence": "誰にプレゼントをもらいましたか？母にもらいました。",
+    "translation": "(Kamu) menerima hadiah dari siapa? (Saya) menerima dari ibu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 5,
+    "sentence": "誰にお金を借りましたか？山田さんに借りました。",
+    "translation": "(Kamu) meminjam uang dari siapa? (Saya) meminjam dari Yamada. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 6,
+    "sentence": "お母さんの誕生日に何をあげましたか？花をあげました。",
+    "translation": "(Kamu) memberikan apa pada ulang tahun ibu? (Saya) memberikan bunga. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 6,
+    "sentence": "去年のクリスマスに何をもらいましたか？ネクタイと本をもらいました。",
+    "translation": "(Kamu) menerima apa pada Natal tahun lalu? (Saya) menerima dasi dan buku. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 6,
+    "sentence": "どこで日本語を習いましたか？アメリカの大学で習いました。",
+    "translation": "(Kamu) belajar bahasa Jepang di mana? (Saya) belajar di universitas di Amerika. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 6,
+    "sentence": "いつ先生にレポートを送りますか？明日送ります。",
+    "translation": "Kapan (kamu) mengirimkan laporan kepada guru? (Saya) mengirimnya besok."
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 6,
+    "sentence": "誰にこのCDを借りましたか？友達に借りました。",
+    "translation": "(Kamu) meminjam CD ini dari siapa? (Saya) meminjam dari teman. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "もう切符を買いましたか？はい、もう買いました。",
+    "translation": "Apakah sudah membeli tiket? Ya, sudah membeli. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "もうレポートを送りましたか？いいえ、まだです。",
+    "translation": "Apakah sudah mengirim laporan? Belum. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "もう宿題をしましたか？いいえ、まだです。",
+    "translation": "Apakah sudah mengerjakan PR? Belum. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "もう京都へ行きましたか？はい、もう行きました。",
+    "translation": "Apakah sudah pergi ke Kyoto? Ya, sudah pergi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "ミラーさんはもう帰りましたか？いいえ、まだです。",
+    "translation": "Apakah Miller sudah pulang? Belum. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 7",
+    "number": 7,
+    "sentence": "テレーザちゃんはもう寝ましたか？はい、もう寝ました。",
+    "translation": "Apakah Teresa sudah tidur? Ya, sudah tidur. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 1,
+    "sentence": "ミラーさんは親切です。",
+    "translation": "Miller baik hati."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 1,
+    "sentence": "サントスさんは元気です。",
+    "translation": "Santos sehat/bersemangat."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 1,
+    "sentence": "カリナさんはきれいです。",
+    "translation": "Karina cantik."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 1,
+    "sentence": "富士山は高いです。",
+    "translation": "Gunung Fuji tinggi."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 1,
+    "sentence": "8月は暑いです。",
+    "translation": "Bulan Agustus panas."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 2,
+    "sentence": "山田さんは元気じゃありません。",
+    "translation": "Yamada tidak sehat."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 2,
+    "sentence": "イーさんは暇じゃありません。",
+    "translation": "Lee tidak punya waktu luang/sedang sibuk."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 2,
+    "sentence": "ワンさんの部屋はきれいじゃありません。",
+    "translation": "Kamar Wang tidak bersih/indah."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 2,
+    "sentence": "大学の寮は便利じゃありません。",
+    "translation": "Asrama universitas tidak praktis."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 2,
+    "sentence": "IMCは有名じゃありません。",
+    "translation": "IMC tidak terkenal."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 3,
+    "sentence": "この自転車は新しくないです。",
+    "translation": "Sepeda ini tidak baru."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 3,
+    "sentence": "ミラーさんは忙しくないです。",
+    "translation": "Miller tidak sibuk."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 3,
+    "sentence": "日本語は易しくないです。",
+    "translation": "Bahasa Jepang tidak mudah."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 3,
+    "sentence": "このお茶は熱くないです。",
+    "translation": "Teh ini tidak panas."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 3,
+    "sentence": "この辞書は良くないです。",
+    "translation": "Kamus ini tidak bagus."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "ミラーさんはハンサムですか？はい、ハンサムです。",
+    "translation": "Apakah Miller tampan? Ya, dia tampan."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "日本のカメラは高いですか？いいえ、高くないです。",
+    "translation": "Apakah kamera Jepang mahal? Tidak, tidak mahal."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "あのレストランは静かですか？いいえ、静かじゃありません。",
+    "translation": "Apakah restoran itu tenang? Tidak, tidak tenang."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "会社の食堂は安いですか？はい、安いです。",
+    "translation": "Apakah kantin perusahaan murah? Ya, murah."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "そのパソコンは良いですか？いいえ、あまり良くないです。",
+    "translation": "Apakah komputer itu bagus? Tidak, tidak terlalu bagus."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 4,
+    "sentence": "その手帳は便利ですか？はい、とても便利です。",
+    "translation": "Apakah buku agenda itu praktis? Ya, sangat praktis."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "日本の地下鉄はどうですか？便利です。そして、きれいです。",
+    "translation": "Bagaimana kereta bawah tanah di Jepang? Praktis. Dan juga bersih."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "日本の車はどうですか？高いですが、良いです。",
+    "translation": "Bagaimana mobil Jepang? Mahal, tetapi bagus."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "会社の寮はどうですか？新しいです。そして、きれいです。",
+    "translation": "Bagaimana asrama perusahan? Baru. Dan juga bersih."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "先生はどうですか？親切です。そして、面白いです。",
+    "translation": "Bagaimana gurunya? Baik hati. Dan juga menarik/menyenangkan."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "日本の食べ物はどうですか？美味しいですが、高いです。",
+    "translation": "Bagaimana makanan Jepang? Enak, tetapi mahal."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 5,
+    "sentence": "日本の生活はどうですか？忙しいですが、面白いです。",
+    "translation": "Bagaimana kehidupan di Jepang? Sibuk, tetapi menarik/menyenangkan."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "大阪は賑やかな町です。",
+    "translation": "Osaka adalah kota yang ramai."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "東京駅は大きい駅です。",
+    "translation": "Stasiun Tokyo adalah stasiun yang besar."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "IMCは新しい会社です。",
+    "translation": "IMC adalah perusahaan baru."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "神戸病院は有名な病院です。",
+    "translation": "Rumah Sakit Kobe adalah rumah sakit terkenal."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "ワットさんは良い先生です。",
+    "translation": "Watt adalah guru yang baik."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 6,
+    "sentence": "富士山はきれいな山です。",
+    "translation": "Gunung Fuji adalah gunung yang indah."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 7,
+    "sentence": "奈良はどんな町ですか？静かな町です。",
+    "translation": "Nara itu kota yang seperti apa? Kota yang tenang."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 7,
+    "sentence": "「七人の侍」はどんな映画ですか？面白い映画です。",
+    "translation": "Shichinin no Samurai\" (Seven Samurai) itu film yang seperti apa? Film yang menarik/seru."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 7,
+    "sentence": "サントスさんはどんな人ですか？親切な人です。",
+    "translation": "Santos itu orang yang seperti apa? Orang yang baik hati."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 7,
+    "sentence": "桜大学はどんな大学ですか？新しい大学です。",
+    "translation": "Universitas Sakura itu universitas yang seperti apa? Universitas yang baru."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 7,
+    "sentence": "スイスはどんな国ですか？きれいな国です。",
+    "translation": "Swiss itu negara yang seperti apa? Negara yang indah."
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "きれいな花を買いました。",
+    "translation": "(Saya) membeli bunga yang indah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "青い傘を買いました。",
+    "translation": "(Saya) membeli payung berwarna biru. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "冷たい牛乳を飲みました。",
+    "translation": "(Saya) meminum susu yang dingin. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "昨日の晩有名なレストランで食べました。",
+    "translation": "Tadi malam (saya) makan di restoran yang terkenal. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "誕生日に素敵なプレゼントをもらいました。",
+    "translation": "Di hari ulang tahun, (saya) menerima hadiah yang bagus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 8",
+    "number": 8,
+    "sentence": "友達に新しいCDを借りました。",
+    "translation": "(Saya) meminjam CD baru dari teman. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 1,
+    "sentence": "ダンスが好きですか？いいえ、好きじゃありません。",
+    "translation": "Apakah kamu suka menari? Tidak, saya tidak suka."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 1,
+    "sentence": "日本料理が好きですか？はい、好きです。",
+    "translation": "Apakah kamu suka masakan Jepang? Ya, saya suka."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 1,
+    "sentence": "カラオケが好きですか？いいえ、あまり好きじゃありません。",
+    "translation": "Apakah kamu suka karaoke? Tidak, saya tidak terlalu suka."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 1,
+    "sentence": "旅行が好きですか？はい、とても好きです。",
+    "translation": "Apakah kamu suka bepergian/traveling? Ya, sangat suka."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 1,
+    "sentence": "魚が好きですか？いいえ、あまり好きじゃありません。",
+    "translation": "Apakah kamu suka ikan? Tidak, saya tidak terlalu suka."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 2,
+    "sentence": "どんなスポーツが好きですか？野球が好きです。",
+    "translation": "Suka olahraga apa? Suka bisbol."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 2,
+    "sentence": "どんな飲み物が好きですか？ビールが好きです。",
+    "translation": "Suka minuman apa? Suka bir."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 2,
+    "sentence": "どんな料理が好きですか？インド料理が好きです。",
+    "translation": "Suka masakan apa? Suka masakan India."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 2,
+    "sentence": "どんな映画が好きですか？アメリカの映画が好きです。",
+    "translation": "Suka film apa? Suka film Amerika."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 2,
+    "sentence": "どんな音楽が好きですか？ジャズが好きです。",
+    "translation": "Suka musik apa? Suka musik Jazz."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "佐藤さんは歌が上手です。",
+    "translation": "Sato pintar menyanyi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "ミラーさんは歌が上手じゃありません。",
+    "translation": "Miller tidak pintar menyanyi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "マリアさんはダンスが上手です。",
+    "translation": "Maria pintar menari."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "松本さんはテニスが上手じゃありません。",
+    "translation": "Matsumoto tidak pandai bermain tenis."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "山田さんは料理があまり上手じゃありません。",
+    "translation": "Yamada tidak terlalu pandai memasak."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 3,
+    "sentence": "カリナさんは絵がとても上手です。",
+    "translation": "Karina sangat pandai menggambar."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 4,
+    "sentence": "マリアさんはカタカナが分かりますか？はい、少し分かります。",
+    "translation": "Apakah Maria mengerti Katakana? Ya, dia mengerti sedikit."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 4,
+    "sentence": "シュミットさんは英語が分かりますか？はい、よく分かります。",
+    "translation": "Apakah Schmidt mengerti bahasa Inggris? Ya, dia mengerti dengan baik."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 4,
+    "sentence": "テレーザちゃんは漢字が分かりますか？いいえ、あまり分かりません。",
+    "translation": "Apakah Teresa mengerti Kanji? Tidak, dia tidak terlalu mengerti."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 4,
+    "sentence": "サントスさんは日本語が分かりますか？はい、だいたい分かります。",
+    "translation": "Apakah Santos mengerti bahasa Jepang? Ya, dia lumayan mengerti (sebagian besar)."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 4,
+    "sentence": "山田さんの奥さんはフランス語が分かりますか？いいえ、全然分かりません。",
+    "translation": "Apakah istri Yamada mengerti bahasa Prancis? Tidak, dia sama sekali tidak mengerti."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 5,
+    "sentence": "消しゴムがありますか？はい、あります。",
+    "translation": "Apakah ada penghapus? Ya, ada."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 5,
+    "sentence": "辞書がありますか？はい、あります。",
+    "translation": "Apakah ada kamus? Ya, ada."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 5,
+    "sentence": "名刺がありますか？いいえ、ありません。",
+    "translation": "Apakah ada kartu nama? Tidak, tidak ada."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 5,
+    "sentence": "傘がありますか？いいえ、ありません。",
+    "translation": "Apakah ada payung? Tidak, tidak ada."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 5,
+    "sentence": "細かいお金がありますか？はい、あります。",
+    "translation": "Apakah ada uang receh/kecil? Ya, ada."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 6,
+    "sentence": "私は月曜日約束があります。",
+    "translation": "Saya ada janji pada hari Senin."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 6,
+    "sentence": "私は日曜日試験があります。",
+    "translation": "Saya ada ujian pada hari Minggu."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 6,
+    "sentence": "私は火曜日用事があります。",
+    "translation": "Saya ada urusan pada hari Selasa."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 6,
+    "sentence": "私は水曜日アルバイトがあります。",
+    "translation": "Saya ada kerja paruh waktu pada hari Rabu."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 6,
+    "sentence": "私は金曜日時間があります。",
+    "translation": "Saya punya waktu luang pada hari Jumat."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 7,
+    "sentence": "時間がありませんから、タクシーで行きます。",
+    "translation": "Karena tidak ada waktu, saya pergi naik taksi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 7,
+    "sentence": "映画が好きですから、毎晩見ます。",
+    "translation": "Karena suka film, saya menontonnya setiap malam."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 7,
+    "sentence": "日本語が分かりませんから、テレビを見ません。",
+    "translation": "Karena tidak mengerti bahasa Jepang, saya tidak menonton televisi."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 7,
+    "sentence": "妻の誕生日ですから、花を買います。",
+    "translation": "Karena ini ulang tahun istri saya, saya membeli bunga."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 7,
+    "sentence": "お金がありませんから、カメラを買いません。",
+    "translation": "Karena tidak punya uang, saya tidak membeli kamera."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 8,
+    "sentence": "どうして東京へ行きませんか？約束がありますから。",
+    "translation": "Kenapa tidak pergi ke Tokyo? Karena saya punya janji."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 8,
+    "sentence": "どうして料理を習いますか？料理が下手ですから。",
+    "translation": "Kenapa kamu belajar memasak? Karena saya tidak pandai memasak."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 8,
+    "sentence": "どうしてご主人はテニスをしませんか？夫はスポーツが嫌いですから。",
+    "translation": "Kenapa suami Anda tidak bermain tenis? Karena suami saya tidak suka olahraga."
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 8,
+    "sentence": "どうしてタイ語の本を買いましたか？来月タイへ行きますから。",
+    "translation": "Kenapa kamu membeli buku bahasa Thailand? Karena bulan depan saya akan pergi ke Thailand. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 9",
+    "number": 8,
+    "sentence": "どうして昨日神戸へ行きませんでしたか？仕事がたくさんありましたから。",
+    "translation": "Kenapa kemarin tidak pergi ke Kobe? Karena ada banyak pekerjaan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "あそこにポストがあります。",
+    "translation": "Di sana ada kotak pos."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "教室に学生がいます。",
+    "translation": "Di kelas ada siswa/mahasiswa."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "ロビーに自動販売機があります。",
+    "translation": "Di lobi ada mesin penjual otomatis."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "レストランに山田さんがいます。",
+    "translation": "Di restoran ada Yamada."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "公園に木があります。",
+    "translation": "Di taman ada pohon."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 1,
+    "sentence": "受付に男の人がいます。",
+    "translation": "Di meja resepsionis ada seorang pria."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 2,
+    "sentence": "ドアの右にスイッチがあります。",
+    "translation": "Di sebelah kanan pintu ada sakelar."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 2,
+    "sentence": "いすの下に猫がいます。",
+    "translation": "Di bawah kursi ada kucing."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 2,
+    "sentence": "店の前に車があります。",
+    "translation": "Di depan toko ada mobil."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 2,
+    "sentence": "木の上に男の子がいます。",
+    "translation": "Di atas pohon ada anak laki-laki."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 2,
+    "sentence": "冷蔵庫の中に色々な物があります。",
+    "translation": "Di dalam kulkas ada bermacam-macam barang."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 3,
+    "sentence": "テーブルの上に何がありますか？カバンがあります。",
+    "translation": "Di atas meja ada apa? Ada tas."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 3,
+    "sentence": "ベッドの下に何がありますか？箱があります。",
+    "translation": "Di bawah kasur ada apa? Ada kotak."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 3,
+    "sentence": "部屋の中に誰がいますか？女の子がいます。",
+    "translation": "Di dalam kamar ada siapa? Ada anak perempuan."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 3,
+    "sentence": "窓の右に何がありますか？棚があります。",
+    "translation": "Di sebelah kanan jendela ada apa? Ada rak."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 3,
+    "sentence": "庭に誰がいますか？誰もいません。",
+    "translation": "Di halaman/taman ada siapa? Tidak ada siapa-siapa."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "はさみはどこにありますか？箱の中にあります。",
+    "translation": "Gunting ada di mana? Ada di dalam kotak."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "ミラーさんはどこにいますか？事務所にいます。",
+    "translation": "Miller ada di mana? Ada di kantor."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "自転車はどこにありますか？車の上にあります。",
+    "translation": "Sepeda ada di mana? Ada di atas mobil."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "男の子はどこにいますか？ドアの後ろにいます。",
+    "translation": "Anak laki-laki ada di mana? Ada di belakang pintu."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "写真はどこにありますか？本の下にあります。",
+    "translation": "Foto ada di mana? Ada di bawah buku."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 4,
+    "sentence": "犬はどこにいますか？男の子と女の子の間にいます。",
+    "translation": "Anjing ada di mana? Ada di antara anak laki-laki dan perempuan."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "バス乗り場はどこにありますか？トイレの前にあります。",
+    "translation": "Halte bus ada di mana? Ada di depan toilet."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "パンダはどこにいますか？大きい木の下にいます。",
+    "translation": "Panda ada di mana? Ada di bawah pohon besar."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "レストランはどこにありますか？事務所の隣にあります。",
+    "translation": "Restoran ada di mana? Ada di sebelah kantor."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "象はどこにいますか？あの山の後ろにいます。",
+    "translation": "Gajah ada di mana? Ada di belakang gunung itu."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "自動販売機はどこにありますか？事務所の近くにあります。",
+    "translation": "Mesin penjual otomatis ada di mana? Ada di dekat kantor."
+  },
+  {
+    "chapter": "Chapter 10",
+    "number": 5,
+    "sentence": "お土産屋はどこにありますか？大きい時計の左にあります。",
+    "translation": "Toko oleh-oleh ada di mana? Ada di sebelah kiri jam besar."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 1,
+    "sentence": "りんごがいくつありますか？3つあります。",
+    "translation": "Ada berapa buah apel? Ada 3 buah."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 1,
+    "sentence": "いすがいくつありますか？1つあります。",
+    "translation": "Ada berapa kursi? Ada 1 buah."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 1,
+    "sentence": "卵がいくつありますか？4つあります。",
+    "translation": "Ada berapa telur? Ada 4 butir."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 1,
+    "sentence": "カバンがいくつありますか？2つあります。",
+    "translation": "Ada berapa tas? Ada 2 buah."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 1,
+    "sentence": "部屋がいくつありますか？6つあります。",
+    "translation": "Ada berapa kamar? Ada 6 ruangan."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "テレビが何台ありますか？2台あります。",
+    "translation": "Ada berapa unit televisi? Ada 2 unit."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "シャツが何枚ありますか？1枚あります。",
+    "translation": "Ada berapa helai kemeja? Ada 1 helai."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "CDが何枚ありますか？5枚あります。",
+    "translation": "Ada berapa keping CD? Ada 5 keping."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "コンピューターが何台ありますか？3台あります。",
+    "translation": "Ada berapa unit komputer? Ada 3 unit."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "封筒が何枚ありますか？2枚あります。",
+    "translation": "Ada berapa lembar amplop? Ada 2 lembar."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 2,
+    "sentence": "車が何台ありますか？5台あります。",
+    "translation": "Ada berapa unit mobil? Ada 5 unit."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 3,
+    "sentence": "はがきを何枚買いましたか？10枚買いました。",
+    "translation": "(Kamu) membeli berapa lembar kartu pos? (Saya) membeli 10 lembar. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 3,
+    "sentence": "写真を何枚撮りましたか？5枚撮りました。",
+    "translation": "(Kamu) mengambil berapa lembar foto? (Saya) mengambil 5 lembar. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 3,
+    "sentence": "自転車を何台買いましたか？2台買いました。",
+    "translation": "(Kamu) membeli berapa unit sepeda? (Saya) membeli 2 unit. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 3,
+    "sentence": "みかんをいくつ食べましたか？5つ食べました。",
+    "translation": "(Kamu) makan berapa buah jeruk? (Saya) makan 5 buah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 3,
+    "sentence": "りんごをいくつ送りましたか？9つ送りました。",
+    "translation": "(Kamu) mengirim berapa buah apel? (Saya) mengirim 9 buah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 4,
+    "sentence": "女の人が何人いますか？6人います。",
+    "translation": "Ada berapa orang perempuan? Ada 6 orang."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 4,
+    "sentence": "男の人が何人いますか？9人います。",
+    "translation": "Ada berapa orang laki-laki? Ada 9 orang."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 4,
+    "sentence": "子供が何人いますか？2人います。",
+    "translation": "Ada berapa orang anak? Ada 2 orang."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 4,
+    "sentence": "女の子が何人いますか？一人います。",
+    "translation": "Ada berapa orang anak perempuan? Ada 1 orang."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 4,
+    "sentence": "学生が何人いますか？4人います。",
+    "translation": "Ada berapa orang siswa? Ada 4 orang."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 5,
+    "sentence": "1ヶ月に何回映画を見ますか？1回見ます。",
+    "translation": "Dalam 1 bulan (kamu) berapa kali menonton film? (Saya) menonton 1 kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 5,
+    "sentence": "1日に何回彼女に電話をかけますか？2回かけます。",
+    "translation": "Dalam 1 hari (kamu) berapa kali menelepon pacar? (Saya) menelepon 2 kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 5,
+    "sentence": "1週間に何回日本語を習いますか？3回習います。",
+    "translation": "Dalam 1 minggu (kamu) berapa kali belajar bahasa Jepang? (Saya) belajar 3 kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 5,
+    "sentence": "1ヶ月に何回東京へ行きますか？1回行きます。",
+    "translation": "Dalam 1 bulan (kamu) berapa kali pergi ke Tokyo? (Saya) pergi 1 kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 5,
+    "sentence": "1年に何回国へ帰りますか？1回帰ります。",
+    "translation": "Dalam 1 tahun (kamu) berapa kali pulang ke negara asal? (Saya) pulang 1 kali."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 6,
+    "sentence": "何日会社を休みましたか？4日休みました。",
+    "translation": "Berapa hari (kamu) libur dari perusahaan? (Saya) libur 4 hari. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 6,
+    "sentence": "大学で何年勉強しますか？4年勉強します。",
+    "translation": "Berapa tahun (kamu) belajar di universitas? (Saya) belajar 4 tahun."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 6,
+    "sentence": "何週間旅行しましたか？2週間旅行しました。",
+    "translation": "Berapa minggu (kamu) bepergian/traveling? (Saya) bepergian selama 2 minggu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 6,
+    "sentence": "何時間コンビニでアルバイトをしますか？5時間します。",
+    "translation": "Berapa jam (kamu) kerja paruh waktu di minimarket? (Saya) bekerja selama 5 jam."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 6,
+    "sentence": "何分休みますか？10分だけ休みます。",
+    "translation": "Berapa menit (kamu) istirahat? (Saya) istirahat hanya 10 menit."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 7,
+    "sentence": "今までどのぐらい日本語を勉強しましたか？3ヶ月勉強しました。",
+    "translation": "Sampai sekarang sudah berapa lama (kamu) belajar bahasa Jepang? (Saya) sudah belajar selama 3 bulan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 7,
+    "sentence": "これからどのぐらい日本にいますか？2週間います。",
+    "translation": "Dari sekarang berapa lama (kamu) akan berada di Jepang? (Saya) akan berada selama 2 minggu."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 7,
+    "sentence": "今までどのぐらい中国語を習いましたか？1年ぐらい習いました。",
+    "translation": "Sampai sekarang sudah berapa lama (kamu) belajar bahasa Mandarin? (Saya) sudah belajar sekitar 1 tahun. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 7,
+    "sentence": "昼どのぐらい休みますか？45分休みます。",
+    "translation": "Siang (kamu) istirahat berapa lama? (Saya) istirahat 45 menit."
+  },
+  {
+    "chapter": "Chapter 11",
+    "number": 7,
+    "sentence": "毎日どのぐらい働きますか？8時間働きます。",
+    "translation": "Setiap hari (kamu) bekerja berapa lama? (Saya) bekerja 8 jam."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 1,
+    "sentence": "昨日は良い天気でした。",
+    "translation": "Kemarin cuacanya bagus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 1,
+    "sentence": "一昨日は雨でした。",
+    "translation": "Kemarin lusa hujan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 1,
+    "sentence": "図書館は休みでした。",
+    "translation": "Perpustakaan libur (tutup). [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 1,
+    "sentence": "先週は暇でした。",
+    "translation": "Minggu lalu ada waktu luang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 1,
+    "sentence": "奈良公園は静かでした。",
+    "translation": "Taman Nara tenang/sepi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 2,
+    "sentence": "昨日は涼しかったです。",
+    "translation": "Kemarin udaranya sejuk. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 2,
+    "sentence": "先月は忙しかったです。",
+    "translation": "Bulan lalu sibuk. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 2,
+    "sentence": "お祭りは楽しかったです。",
+    "translation": "Festivalnya menyenangkan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 2,
+    "sentence": "去年の冬は暖かかったです。",
+    "translation": "Musim dingin tahun lalu hangat. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 2,
+    "sentence": "公園は人が多かったです。",
+    "translation": "Taman banyak orangnya (ramai). [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "サントスさんは元気でしたか？はい、元気でした。",
+    "translation": "Apakah Santos sehat (kemarin-kemarin)? Ya, sehat. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "パーティーの料理は美味しかったですか？いいえ、美味しくなかったです。",
+    "translation": "Apakah masakan pestanya enak? Tidak, tidak enak. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "お祭りは賑やかでしたか？はい、とても賑やかでした。",
+    "translation": "Apakah festivalnya meriah? Ya, sangat meriah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "試験は簡単でしたか？いいえ、簡単じゃありませんでした。",
+    "translation": "Apakah ujiannya mudah? Tidak, tidak mudah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "歌舞伎は面白かったですか？はい、面白かったです。",
+    "translation": "Apakah Kabuki-nya menarik? Ya, menarik. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 3,
+    "sentence": "コンサートは良かったですか？いいえ、あまり良くなかったです。",
+    "translation": "Apakah konsernya bagus? Tidak, tidak terlalu bagus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 4,
+    "sentence": "京都はどうでしたか？とてもきれいでした。",
+    "translation": "Bagaimana Kyoto? Sangat indah/bersih. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 4,
+    "sentence": "天気はどうでしたか？曇りでした。",
+    "translation": "Bagaimana cuacanya? Mendung. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 4,
+    "sentence": "タイ料理はどうでしたか？辛かったです。",
+    "translation": "Bagaimana masakan Thailand? Pedas. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 4,
+    "sentence": "北海道はどうでしたか？あまり寒くなかったです。",
+    "translation": "Bagaimana Hokkaido? Tidak terlalu dingin. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 4,
+    "sentence": "ホテルの部屋はどうでしたか？とても素敵でした。",
+    "translation": "Bagaimana kamar hotelnya? Sangat bagus/indah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 5,
+    "sentence": "北海道は大阪より涼しいです。",
+    "translation": "Hokkaido lebih sejuk daripada Osaka."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 5,
+    "sentence": "このカバンはそのカバンより重いです。",
+    "translation": "Tas ini lebih berat daripada tas itu."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 5,
+    "sentence": "牛肉は鶏肉より高いです。",
+    "translation": "Daging sapi lebih mahal daripada daging ayam."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 5,
+    "sentence": "ホンコンはシンガポールより近いです。",
+    "translation": "Hong Kong lebih dekat daripada Singapura."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 5,
+    "sentence": "ミラーさんはサントスさんより上手です。",
+    "translation": "Miller lebih pintar/mahir daripada Santos."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 6,
+    "sentence": "今週と来週とどちらが暇ですか？来週の方が暇です。",
+    "translation": "Antara minggu ini dan minggu depan, mana yang lebih luang? Minggu depan lebih luang."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 6,
+    "sentence": "平仮名と片仮名とどちらが難しいですか？片仮名の方が難しいです。",
+    "translation": "Antara Hiragana dan Katakana, mana yang lebih sulit? Katakana lebih sulit."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 6,
+    "sentence": "大きいみかんと小さいみかんとどちらが甘いですか？小さいみかんの方が甘いです。",
+    "translation": "Antara jeruk besar dan jeruk kecil, mana yang lebih manis? Jeruk kecil lebih manis."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 6,
+    "sentence": "お父さんとお母さんとどちらが料理が上手ですか？父の方が上手です。",
+    "translation": "Antara ayah dan ibu, mana yang lebih pintar memasak? Ayah lebih pintar."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 6,
+    "sentence": "春と秋とどちらが好きですか？どちらも好きです。",
+    "translation": "Antara musim semi dan musim gugur, mana yang lebih disukai? Keduanya (saya) suka."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 7,
+    "sentence": "お母さんの料理で何が一番美味しいですか？カレーが一番美味しいです。",
+    "translation": "Di antara masakan ibu, apa yang paling enak? Kari yang paling enak."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 7,
+    "sentence": "スポーツで何が一番面白いですか？サッカーが一番面白いです。",
+    "translation": "Di antara olahraga, apa yang paling menarik? Sepak bola yang paling menarik."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 7,
+    "sentence": "1年でいつが一番暑いですか？8月が一番暑いです。",
+    "translation": "Dalam 1 tahun, kapan yang paling panas? Bulan Agustus yang paling panas."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 7,
+    "sentence": "家族で誰が一番歌が上手ですか？母が一番上手です。",
+    "translation": "Di dalam keluarga, siapa yang paling pintar menyanyi? Ibu yang paling pintar."
+  },
+  {
+    "chapter": "Chapter 12",
+    "number": 7,
+    "sentence": "スーパーでどこが一番安いですか？ABCストアが一番安いです。",
+    "translation": "Di antara supermarket, mana yang paling murah? ABC Store yang paling murah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 1,
+    "sentence": "私はカメラが欲しいです。",
+    "translation": "Saya ingin kamera."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 1,
+    "sentence": "私はコンピューターが欲しいです。",
+    "translation": "Saya ingin komputer."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 1,
+    "sentence": "私は車が欲しいです。",
+    "translation": "Saya ingin mobil."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 1,
+    "sentence": "私はお金が欲しいです。",
+    "translation": "Saya ingin uang."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 1,
+    "sentence": "私は彼女が欲しいです。",
+    "translation": "Saya ingin pacar (perempuan)."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 2,
+    "sentence": "どんなパソコンが欲しいですか？安いパソコンが欲しいです。",
+    "translation": "(Kamu) ingin komputer yang seperti apa? (Saya) ingin komputer yang murah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 2,
+    "sentence": "どんな車が欲しいですか？赤い車が欲しいです。",
+    "translation": "(Kamu) ingin mobil yang seperti apa? (Saya) ingin mobil yang merah."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 2,
+    "sentence": "どんな靴が欲しいですか？アキックスの靴が欲しいです。",
+    "translation": "(Kamu) ingin sepatu yang seperti apa? (Saya) ingin sepatu merek Akikkusu (Asics)."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 2,
+    "sentence": "どんな時計が欲しいですか？日本の時計が欲しいです。",
+    "translation": "(Kamu) ingin jam yang seperti apa? (Saya) ingin jam buatan Jepang."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 2,
+    "sentence": "どんな家が欲しいですか？広い家が欲しいです。",
+    "translation": "(Kamu) ingin rumah yang seperti apa? (Saya) ingin rumah yang luas."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 3,
+    "sentence": "すき焼きを食べたいです。",
+    "translation": "(Saya) ingin makan sukiyaki."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 3,
+    "sentence": "北海道へ行きたいです。",
+    "translation": "(Saya) ingin pergi ke Hokkaido."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 3,
+    "sentence": "ビールを飲みたいです。",
+    "translation": "(Saya) ingin minum bir."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 3,
+    "sentence": "映画を見たいです。",
+    "translation": "(Saya) ingin menonton film."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 3,
+    "sentence": "サッカーをしたいです。",
+    "translation": "(Saya) ingin bermain sepak bola."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "何を買いたいですか？自転車を買いたいです。",
+    "translation": "(Kamu) ingin membeli apa? (Saya) ingin membeli sepeda."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "いつ北海道へ行きたいですか？2月に行きたいです。",
+    "translation": "Kapan (kamu) ingin pergi ke Hokkaido? (Saya) ingin pergi pada bulan Februari."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "何を習いたいですか？生け花を習いたいです。",
+    "translation": "(Kamu) ingin belajar apa? (Saya) ingin belajar merangkai bunga (Ikebana)."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "誰に会いたいですか？両親に会いたいです。",
+    "translation": "(Kamu) ingin bertemu siapa? (Saya) ingin bertemu orang tua."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "何を食べたいですか？何も食べたくないです。",
+    "translation": "(Kamu) ingin makan apa? (Saya) tidak ingin makan apa pun."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 4,
+    "sentence": "どんな本を読みたいですか？旅行の本を読みたいです。",
+    "translation": "(Kamu) ingin membaca buku yang seperti apa? (Saya) ingin membaca buku tentang traveling."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 5,
+    "sentence": "イタリアへ歌を習いに行きます。",
+    "translation": "(Saya) pergi ke Italia untuk belajar menyanyi."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 5,
+    "sentence": "デパートへお土産を買いに行きます。",
+    "translation": "(Saya) pergi ke toserba untuk membeli oleh-oleh."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 5,
+    "sentence": "コンビニへ荷物を送りに行きます。",
+    "translation": "(Saya) pergi ke minimarket untuk mengirim barang."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 5,
+    "sentence": "図書館へ本を借りに行きます。",
+    "translation": "(Saya) pergi ke perpustakaan untuk meminjam buku."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 5,
+    "sentence": "駅へ友達を迎えに行きます。",
+    "translation": "(Saya) pergi ke stasiun untuk menjemput teman."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "公園へ散歩に行きます。",
+    "translation": "(Saya) pergi ke taman untuk jalan-jalan."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "京都へ花見に行きます。",
+    "translation": "(Saya) pergi ke Kyoto untuk melihat bunga sakura (Hanami)."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "横浜へ買い物に行きます。",
+    "translation": "(Saya) pergi ke Yokohama untuk berbelanja."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "ホテルへ食事に行きます。",
+    "translation": "(Saya) pergi ke hotel untuk makan."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "川へ釣りに行きます。",
+    "translation": "(Saya) pergi ke sungai untuk memancing."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 6,
+    "sentence": "沖縄へ旅行に行きます。",
+    "translation": "(Saya) pergi ke Okinawa untuk berwisata."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 7,
+    "sentence": "どこへ遊びに行きますか？友達の家へ遊びに行きます。",
+    "translation": "Pergi bermain ke mana? (Saya) pergi bermain ke rumah teman."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 7,
+    "sentence": "どこへ泳ぎに行きますか？ホテルのプールへ泳ぎに行きます。",
+    "translation": "Pergi berenang ke mana? (Saya) pergi berenang ke kolam renang hotel."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 7,
+    "sentence": "どこへお土産を買いに行きますか？デパートへ買いに行きます。",
+    "translation": "Pergi membeli oleh-oleh ke mana? (Saya) pergi membeli ke toserba."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 7,
+    "sentence": "どこへ絵を見に行きますか？奈良の美術館へ絵を見に行きます。",
+    "translation": "Pergi melihat lukisan ke mana? (Saya) pergi melihat lukisan ke museum seni Nara."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 7,
+    "sentence": "どこへ食事に行きますか？インド料理のレストランへ食事に行きます。",
+    "translation": "Pergi makan ke mana? (Saya) pergi makan ke restoran masakan India."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 8,
+    "sentence": "誰と映画を見に行きますか？姉と見に行きます。",
+    "translation": "Pergi menonton film dengan siapa? (Saya) pergi menonton dengan kakak perempuan."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 8,
+    "sentence": "何を買いに行きますか？靴を買いに行きます。",
+    "translation": "Pergi membeli apa? (Saya) pergi membeli sepatu."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 8,
+    "sentence": "誰に会いに行きますか？カリナさんに会いに行きます。",
+    "translation": "Pergi bertemu dengan siapa? (Saya) pergi bertemu dengan Karina."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 8,
+    "sentence": "何時に子供を迎えに行きますか？2時ごろ迎えに行きます。",
+    "translation": "Pergi menjemput anak jam berapa? (Saya) pergi menjemput sekitar jam 2."
+  },
+  {
+    "chapter": "Chapter 13",
+    "number": 8,
+    "sentence": "いつ旅行に行きますか？来月旅行に行きます。",
+    "translation": "Kapan pergi berwisata? (Saya) pergi berwisata bulan depan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 1,
+    "sentence": "パスポートを見せてください。",
+    "translation": "Tolong perlihatkan paspornya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 1,
+    "sentence": "荷物を開けてください。",
+    "translation": "Tolong buka barang bawaannya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 1,
+    "sentence": "これをコピーしてください。",
+    "translation": "Tolong fotokopi ini."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 1,
+    "sentence": "真っ直ぐ行ってください。",
+    "translation": "Tolong jalan lurus."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 1,
+    "sentence": "レポートを書いてください。",
+    "translation": "Tolong tulis laporannya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 2,
+    "sentence": "すみませんが、ちょっと手伝ってください。",
+    "translation": "Permisi, tolong bantu sebentar."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 2,
+    "sentence": "すみませんが、エアコンをつけてください。",
+    "translation": "Permisi, tolong nyalakan AC."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 2,
+    "sentence": "すみませんが、ドアを閉めてください。",
+    "translation": "Permisi, tolong tutup pintunya."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 2,
+    "sentence": "すみませんが、写真を撮ってください。",
+    "translation": "Permisi, tolong ambilkan foto (saya)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 2,
+    "sentence": "すみませんが、もう少しゆっくり話してください。",
+    "translation": "Permisi, tolong bicara lebih pelan sedikit."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 3,
+    "sentence": "どうぞ飲んでください。",
+    "translation": "Silakan diminum."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 3,
+    "sentence": "どうぞ入ってください。",
+    "translation": "Silakan masuk."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 3,
+    "sentence": "どうぞ座ってください。",
+    "translation": "Silakan duduk."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 3,
+    "sentence": "どうぞ食べてください。",
+    "translation": "Silakan dimakan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 3,
+    "sentence": "どうぞ使ってください。",
+    "translation": "Silakan dipakai/digunakan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "電気を消しましょうか？はい、お願いします。",
+    "translation": "Mari (saya) matikan lampunya? Ya, tolong."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "塩を取りましょうか？いいえ、けっこうです。",
+    "translation": "Mari (saya) ambilkan garamnya? Tidak, terima kasih (sudah cukup)."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "地図を描きましょうか？ええ、お願いします。",
+    "translation": "Mari (saya) gambarkan petanya? Ya, tolong."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "荷物を持ちましょうか？いいえ、けっこうです。",
+    "translation": "Mari (saya) bawakan barangnya? Tidak, terima kasih."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "エアコンをつけましょうか？ええ、お願いします。",
+    "translation": "Mari (saya) nyalakan AC-nya? Ya, tolong."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 4,
+    "sentence": "駅まで迎えに行きましょうか？いいえ、けっこうです。",
+    "translation": "Mari (saya) jemput sampai stasiun? Tidak, terima kasih."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 5,
+    "sentence": "窓を開けましょうか？ええ、少し開けてください。",
+    "translation": "Mari (saya) bukakan jendelanya? Ya, tolong buka sedikit."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 5,
+    "sentence": "これをコピーしましょうか？ええ、5枚コピーしてください。",
+    "translation": "Mari (saya) fotokopi ini? Ya, tolong fotokopi 5 lembar."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 5,
+    "sentence": "レポートを送りましょうか？ええ、すぐ送ってください。",
+    "translation": "Mari (saya) kirimkan laporannya? Ya, tolong segera kirimkan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 5,
+    "sentence": "タクシーを呼びましょうか？ええ、2台呼んでください。",
+    "translation": "Mari (saya) panggilkan taksi? Ya, tolong panggilkan 2 taksi."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 5,
+    "sentence": "明日も来ましょうか？ええ、10時に来てください。",
+    "translation": "Apakah besok (saya) perlu datang lagi? Ya, tolong datang jam 10."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 6,
+    "sentence": "何をしていますか？レポートを書いています。",
+    "translation": "(Kamu) sedang melakukan apa? (Saya) sedang menulis laporan."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 6,
+    "sentence": "何をしていますか？電話をかけています。",
+    "translation": "(Kamu) sedang melakukan apa? (Saya) sedang menelepon."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 6,
+    "sentence": "何をしていますか？コーヒーを飲んでいます。",
+    "translation": "(Kamu) sedang melakukan apa? (Saya) sedang minum kopi."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 6,
+    "sentence": "何をしていますか？ダンスをしています。",
+    "translation": "(Kamu) sedang melakukan apa? (Saya) sedang menari."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 6,
+    "sentence": "何をしていますか？バスを待っています。",
+    "translation": "(Kamu) sedang melakukan apa? (Saya) sedang menunggu bus."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "カリナさんは何を描いていますか？花を描いています。",
+    "translation": "Karina sedang menggambar apa? (Dia) sedang menggambar bunga."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "山田さんは何をしていますか？子供と遊んでいます。",
+    "translation": "Yamada sedang melakukan apa? (Dia) sedang bermain bersama anak."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "サントスさんはどこで寝ていますか？木の下で寝ています。",
+    "translation": "Santos sedang tidur di mana? (Dia) sedang tidur di bawah pohon."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "ワンさんは何を読んでいますか？新聞を読んでいます。",
+    "translation": "Wang sedang membaca apa? (Dia) sedang membaca koran."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "ミラーさんは誰と話していますか？シュミットさんと話しています。",
+    "translation": "Miller sedang berbicara dengan siapa? (Dia) sedang berbicara dengan Schmidt."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "シュミットさんは釣りをしていますか？いいえ、釣りをしていません。",
+    "translation": "Apakah Schmidt sedang memancing? Tidak, dia tidak sedang memancing."
+  },
+  {
+    "chapter": "Chapter 14",
+    "number": 7,
+    "sentence": "今雨が降っていますか？いいえ、降っていません。",
+    "translation": "Apakah sekarang sedang turun hujan? Tidak, tidak sedang hujan."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 1,
+    "sentence": "パソコンを使ってもいいですか？",
+    "translation": "Bolehkah saya menggunakan komputer?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 1,
+    "sentence": "帰ってもいいですか？",
+    "translation": "Bolehkah saya pulang?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 1,
+    "sentence": "テレビを消してもいいですか？",
+    "translation": "Bolehkah saya mematikan televisi?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 1,
+    "sentence": "辞書を借りてもいいですか？",
+    "translation": "Bolehkah saya meminjam kamus?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 1,
+    "sentence": "窓を開けてもいいですか？",
+    "translation": "Bolehkah saya membuka jendela?"
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "この傘を借りてもいいですか？ええ、いいですよ。どうぞ。",
+    "translation": "Bolehkah saya meminjam payung ini? Ya, boleh. Silakan."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "写真を撮ってもいいですか？すみません。ちょっと...",
+    "translation": "Bolehkah saya mengambil foto? Maaf, tidak bisa (sedikit menolak)."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "ここに座ってもいいですか？ええ、いいですよ。どうぞ。",
+    "translation": "Bolehkah saya duduk di sini? Ya, boleh. Silakan."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "荷物を置いてもいいですか？すみません、ちょっと...",
+    "translation": "Bolehkah saya meletakkan barang bawaan? Maaf, tidak bisa."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "資料を見てもいいですか？すみません、ちょっと...",
+    "translation": "Bolehkah saya melihat dokumennya? Maaf, tidak bisa."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 2,
+    "sentence": "ボールペンを使ってもいいですか？ええ、いいですよ。どうぞ。",
+    "translation": "Bolehkah saya menggunakan bolpoinnya? Ya, boleh. Silakan."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 3,
+    "sentence": "ここでタバコを吸ってはいけません。",
+    "translation": "Tidak boleh merokok di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 3,
+    "sentence": "ここで写真を撮ってはいけません。",
+    "translation": "Tidak boleh mengambil foto di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 3,
+    "sentence": "ここでサッカーをしてはいけません。",
+    "translation": "Tidak boleh bermain sepak bola di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 3,
+    "sentence": "ここに車を止めてはいけません。",
+    "translation": "Tidak boleh memarkir mobil di sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 3,
+    "sentence": "ここに入ってはいけません。",
+    "translation": "Tidak boleh masuk ke sini."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "カリナさんを知っていますか？はい、知っています。",
+    "translation": "Apakah (kamu) kenal Karina? Ya, (saya) kenal."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "車を持っていますか？いいえ、持っていません。",
+    "translation": "Apakah (kamu) memiliki mobil? Tidak, (saya) tidak punya."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "結婚していますか？いいえ、結婚していません。",
+    "translation": "Apakah (kamu) sudah menikah? Tidak, (saya) belum menikah."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "寮に住んでいますか？はい、寮に住んでいます。",
+    "translation": "Apakah (kamu) tinggal di asrama? Ya, (saya) tinggal di asrama."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "自転車を持っていますか？はい、持っています。",
+    "translation": "Apakah (kamu) memiliki sepeda? Ya, (saya) punya."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 4,
+    "sentence": "木村さんの住所を知っていますか？いいえ、知りません。",
+    "translation": "Apakah (kamu) tahu alamat Kimura? Tidak, (saya) tidak tahu."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 5,
+    "sentence": "どこで安い電気製品を売っていますか？大阪の日本橋で売っています。",
+    "translation": "Di mana menjual peralatan elektronik yang murah? Menjual di Nippombashi, Osaka."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 5,
+    "sentence": "IMCは何を作っていますか？コンピューターソフトを作っています。",
+    "translation": "IMC membuat apa? Membuat perangkat lunak komputer."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 5,
+    "sentence": "あの店で何を売っていますか？古い服を売っています。",
+    "translation": "Di toko itu menjual apa? Menjual pakaian bekas/lama."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 5,
+    "sentence": "桜大学はどこのコンピューターを使っていますか？パワー電気のコンピューターを使っています。",
+    "translation": "Universitas Sakura menggunakan komputer buatan mana? Menggunakan komputer buatan Power Denki."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 5,
+    "sentence": "どこでこのお酒を造っていますか？沖縄で造っています。",
+    "translation": "Di mana minuman alkohol ini dibuat? Dibuat di Okinawa."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 6,
+    "sentence": "シュミットさんはどこで働いていますか？パワー電気で働いています。",
+    "translation": "Schmidt bekerja di mana? (Dia) bekerja di Power Denki."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 6,
+    "sentence": "イーさんは何を研究していますか？経済を研究しています。",
+    "translation": "Lee sedang meneliti apa? (Dia) sedang meneliti ilmu ekonomi."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 6,
+    "sentence": "山田友子さんはどこで働いていますか？アップル銀行で働いています。",
+    "translation": "Tomoko Yamada bekerja di mana? (Dia) bekerja di Bank Apple."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 6,
+    "sentence": "カリナさんは何を勉強していますか？美術を勉強しています。",
+    "translation": "Karina sedang belajar apa? (Dia) sedang belajar seni rupa."
+  },
+  {
+    "chapter": "Chapter 15",
+    "number": 6,
+    "sentence": "ワットさんはどこで教えていますか？桜大学で教えています。",
+    "translation": "Watt mengajar di mana? (Dia) mengajar di Universitas Sakura."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 1,
+    "sentence": "日曜日梅田へ行って、友達に会います。",
+    "translation": "Hari Minggu (saya) pergi ke Umeda, lalu bertemu teman."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 1,
+    "sentence": "昼1時間休んで、午後5時まで働きます。",
+    "translation": "Siang (saya) istirahat selama 1 jam, lalu bekerja sampai jam 5 sore."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 1,
+    "sentence": "京都駅からJRに乗って、大阪で地下鉄に乗り換えます。",
+    "translation": "(Saya) naik JR dari Stasiun Kyoto, lalu pindah ke kereta bawah tanah di Osaka."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 1,
+    "sentence": "市役所と銀行へ行って、家へ帰りました。",
+    "translation": "(Saya) pergi ke balai kota dan bank, lalu pulang ke rumah. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 1,
+    "sentence": "サンドイッチを買って、公園で食べました。",
+    "translation": "(Saya) membeli sandwich, lalu memakannya di taman. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 2,
+    "sentence": "6時に起きて、散歩して、それから朝ご飯を食べました。",
+    "translation": "(Saya) bangun jam 6, jalan-jalan, lalu setelah itu makan sarapan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 2,
+    "sentence": "新聞を読んで、コーヒーを飲んで、それから会社へ行きました。",
+    "translation": "(Saya) membaca koran, minum kopi, lalu setelah itu pergi ke perusahaan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 2,
+    "sentence": "食事して、家へ帰って、それから日本語を勉強しました。",
+    "translation": "(Saya) makan, pulang ke rumah, lalu setelah itu belajar bahasa Jepang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 2,
+    "sentence": "シャワーを浴びて、本を読んで、それから寝ました。",
+    "translation": "(Saya) mandi shower, membaca buku, lalu setelah itu tidur. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 3,
+    "sentence": "電話をかけてから、友達の家へ行きます。",
+    "translation": "Setelah menelepon, saya akan pergi ke rumah teman."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 3,
+    "sentence": "お金を下ろしてから、買い物に行きます。",
+    "translation": "Setelah menarik uang, saya akan pergi berbelanja."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 3,
+    "sentence": "昨日仕事が終わってから、飲みに行きました。",
+    "translation": "Kemarin setelah pekerjaan selesai, saya pergi minum-minum. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 3,
+    "sentence": "日本へ来てから、日本語の勉強を始めました。",
+    "translation": "Setelah datang ke Jepang, saya mulai belajar bahasa Jepang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 3,
+    "sentence": "お金を入れてから、ボタンを押してください。",
+    "translation": "Setelah memasukkan uang, silakan tekan tombolnya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 4,
+    "sentence": "もうレポートを出しましたか？いいえ、まだです。もう一度読んでから、出します。",
+    "translation": "Apakah (kamu) sudah menyerahkan laporan? Belum. Setelah membacanya sekali lagi, baru (saya) kumpulkan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 4,
+    "sentence": "もう昼ご飯を食べましたか？いいえ、まだです。この仕事が終わってから、食べます。",
+    "translation": "Apakah (kamu) sudah makan siang? Belum. Setelah pekerjaan ini selesai, baru (saya) makan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 4,
+    "sentence": "もうIMCに電話しましたか？いいえ、まだです。メールを送ってから、電話をします。",
+    "translation": "Apakah (kamu) sudah menelepon IMC? Belum. Setelah mengirim email, baru (saya) telepon. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 4,
+    "sentence": "もう会議の資料をコピーしましたか？いいえ、まだです。松本さんに見せてから、コピーします。",
+    "translation": "Apakah (kamu) sudah memfotokopi dokumen rapat? Belum. Setelah memperlihatkannya kepada Matsumoto, baru (saya) fotokopi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 4,
+    "sentence": "もうパワー電気へ行きましたか？いいえ、まだです。午後の会議が終わってから、行きます。",
+    "translation": "Apakah (kamu) sudah pergi ke Power Denki? Belum. Setelah rapat sore selesai, baru (saya) pergi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 5,
+    "sentence": "北海道は雪が多いです。",
+    "translation": "Hokkaido banyak saljunya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 5,
+    "sentence": "北海道は人が少ないです。",
+    "translation": "Hokkaido sedikit penduduknya."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 5,
+    "sentence": "北海道は冬が長いです。",
+    "translation": "Hokkaido musim dinginnya panjang."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 5,
+    "sentence": "北海道は食べ物が美味しいです。",
+    "translation": "Hokkaido makanannya enak."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 5,
+    "sentence": "北海道は雪祭りが有名です。",
+    "translation": "Hokkaido festival saljunya terkenal."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "このカメラは大きくて、重いです。",
+    "translation": "Kamera ini besar dan berat."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "ワットさんは親切で、素敵です。",
+    "translation": "Watt baik hati dan menawan."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "私の部屋は狭くて、暗いです。",
+    "translation": "Kamar saya sempit dan gelap."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "沖縄の海は青くて、きれいです。",
+    "translation": "Laut Okinawa biru dan indah."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "東京は賑やかで、面白いです。",
+    "translation": "Tokyo ramai dan menarik."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 6,
+    "sentence": "ワットさんは45歳で、独身です。",
+    "translation": "Watt berumur 45 tahun dan masih lajang (belum menikah)."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "奈良はどんな町ですか？緑が多くて、静かな町です。",
+    "translation": "Nara itu kota yang seperti apa? Kota yang banyak pepohonan (hijau) dan tenang."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "昨日のパーティーはどうでしたか？賑やかで、楽しかったです。",
+    "translation": "Pesta kemarin bagaimana? Meriah dan menyenangkan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "ミラーさんはどんな人ですか？頭が良くて、面白い人です。",
+    "translation": "Miller itu orang yang seperti apa? Orang yang pintar dan menarik/menyenangkan."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "サントスさんはどんな人ですか？元気で、親切な人です。",
+    "translation": "Santos itu orang yang seperti apa? Orang yang bersemangat/sehat dan baik hati."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "寮の部屋はどうですか？広くて、明るいです。",
+    "translation": "Bagaimana kamar asramanya? Luas dan terang."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 7,
+    "sentence": "ホテルはどうでしたか？静かで、サービスは良かったです。",
+    "translation": "Bagaimana hotelnya? Tenang dan pelayanannya bagus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "マリアさんはどの人ですか？あの髪が長くて、きれいな人です。",
+    "translation": "Maria itu orang yang mana? Orang yang rambutnya panjang dan cantik itu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "マリアさんのカバンはどれですか？あの白くて、大きいカバンです。",
+    "translation": "Tas Maria yang mana? Tas yang putih dan besar itu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "ミラーさんはどの人ですか？あの若くて、背が高い人です。",
+    "translation": "Miller itu orang yang mana? Orang yang muda dan berbadan tinggi itu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "ワットさんはどの人ですか？あのダンスが上手で、素敵な人です。",
+    "translation": "Watt itu orang yang mana? Orang yang pandai menari dan menawan itu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "ミラーさんのカバンはどれですか？あの黒くて、古いカバンです。",
+    "translation": "Tas Miller yang mana? Tas yang hitam dan sudah tua (lama) itu."
+  },
+  {
+    "chapter": "Chapter 16",
+    "number": 8,
+    "sentence": "カリナさんのカバンはどれですか？あの赤くて、小さいカバンです。",
+    "translation": "Tas Karina yang mana? Tas yang merah dan kecil itu."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 1,
+    "sentence": "ここに自転車を置かないでください。",
+    "translation": "Tolong jangan meletakkan sepeda di sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 1,
+    "sentence": "ここに車を止めないでください。",
+    "translation": "Tolong jangan memarkir mobil di sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 1,
+    "sentence": "ここに入らないでください。",
+    "translation": "Tolong jangan masuk ke sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 1,
+    "sentence": "ここで写真を撮らないでください。",
+    "translation": "Tolong jangan mengambil foto di sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 1,
+    "sentence": "ここで野球をしないでください。",
+    "translation": "Tolong jangan bermain bisbol di sini."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 2,
+    "sentence": "禁煙ですから、たばこを吸わないでください。",
+    "translation": "Karena dilarang merokok, tolong jangan merokok."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 2,
+    "sentence": "危ないですから、押さないでください。",
+    "translation": "Karena berbahaya, tolong jangan mendorong."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 2,
+    "sentence": "大切な資料ですから、なくさないでください。",
+    "translation": "Karena dokumen penting, tolong jangan sampai hilang."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 2,
+    "sentence": "図書館の本ですから、何も書かないでください。",
+    "translation": "Karena ini buku perpustakaan, tolong jangan menulis apa pun."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 2,
+    "sentence": "大丈夫ですから、心配しないでください。",
+    "translation": "Karena tidak apa-apa, tolong jangan khawatir."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 3,
+    "sentence": "早く家へ帰らなければなりません。",
+    "translation": "(Saya) harus cepat pulang ke rumah."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 3,
+    "sentence": "明日病院へ行かなければなりません。",
+    "translation": "Besok (saya) harus pergi ke rumah sakit."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 3,
+    "sentence": "パスポートを見せなければなりません。",
+    "translation": "(Saya) harus memperlihatkan paspor."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 3,
+    "sentence": "毎朝5時に起きなければなりません。",
+    "translation": "Setiap pagi (saya) harus bangun jam 5."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 3,
+    "sentence": "土曜日までに本を返さなければなりません。",
+    "translation": "(Saya) harus mengembalikan buku selambat-lambatnya hari Sabtu."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 4,
+    "sentence": "何時までに寮へ帰らなければなりませんか？12時までに帰らなければなりません。",
+    "translation": "Harus pulang ke asrama selambat-lambatnya jam berapa? Harus pulang selambat-lambatnya jam 12."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 4,
+    "sentence": "何曜日までにその本を返さなければなりませんか？水曜日までに返さなければなりません。",
+    "translation": "Harus mengembalikan buku itu selambat-lambatnya hari apa? Harus mengembalikan selambat-lambatnya hari Rabu."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 4,
+    "sentence": "何枚レポートを書かなければなりませんか？15枚書かなければなりません。",
+    "translation": "Harus menulis laporan berapa lembar? Harus menulis 15 lembar."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 4,
+    "sentence": "1日に何回薬を飲まなければなりませんか？1日に3回飲まなければなりません。",
+    "translation": "Dalam 1 hari harus minum obat berapa kali? Dalam 1 hari harus minum 3 kali."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 4,
+    "sentence": "毎日いくつ漢字を覚えなければなりませんか？6つ覚えなければなりません。",
+    "translation": "Setiap hari harus menghafal berapa Kanji? Harus menghafal 6."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 5,
+    "sentence": "タクシーを呼ばなくてもいいです。",
+    "translation": "Tidak perlu memanggil taksi (tidak panggil taksi pun tidak apa-apa)."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 5,
+    "sentence": "急がなくてもいいです。",
+    "translation": "Tidak perlu terburu-buru."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 5,
+    "sentence": "今日は食事を作らなくてもいいです。",
+    "translation": "Hari ini tidak perlu memasak makanan."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 5,
+    "sentence": "明日は病院へ来なくてもいいです。",
+    "translation": "Besok tidak perlu datang ke rumah sakit."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 5,
+    "sentence": "傘を持って行かなくてもいいです。",
+    "translation": "Tidak perlu membawa payung."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "用事がありますから、出かけなければなりません。",
+    "translation": "Karena ada urusan, saya harus pergi keluar."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "悪い病気じゃありませんから、心配しなくてもいいです。",
+    "translation": "Karena bukan penyakit parah/buruk, tidak perlu khawatir."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "熱がありますから、病院へ行かなければなりません。",
+    "translation": "Karena ada demam, harus pergi ke rumah sakit."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "明日は休みですから、早く起きなくてもいいです。",
+    "translation": "Karena besok libur, tidak perlu bangun cepat."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "会社の人は英語が分かりませんから、日本語で話さなければなりません。",
+    "translation": "Karena orang di perusahaan tidak mengerti bahasa Inggris, harus berbicara dengan bahasa Jepang."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 6,
+    "sentence": "あまり暑くないですから、エアコンをつけなくてもいいです。",
+    "translation": "Karena tidak terlalu panas, tidak perlu menyalakan AC."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "ここで靴を脱がなければなりませんか？はい、脱がなければなりません。",
+    "translation": "Apakah harus melepas sepatu di sini? Ya, harus dilepas."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "レポートを出さなければなりませんか？いいえ、出さなくてもいいです。",
+    "translation": "Apakah harus mengumpulkan laporan? Tidak, tidak dikumpulkan juga tidak apa-apa."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "パスポートを持って行かなければなりませんか？はい、持って行かなければなりません。",
+    "translation": "Apakah harus membawa paspor? Ya, harus dibawa."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "名刺を書かなければなりませんか？いいえ、書かなくてもいいです。",
+    "translation": "Apakah harus menulis kartu nama? Tidak, tidak ditulis juga tidak apa-apa."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "今お金を払わなければなりませんか？はい、払わなければなりません。",
+    "translation": "Apakah harus membayar uang sekarang? Ya, harus dibayar."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 7,
+    "sentence": "明日も来なければなりませんか？いいえ、来なくてもいいです。",
+    "translation": "Apakah besok juga harus datang? Tidak, tidak datang juga tidak apa-apa."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 8,
+    "sentence": "ここに荷物を置いてもいいですか？荷物をあそこに置いてください。",
+    "translation": "Bolehkah saya meletakkan barang bawaan di sini? Tolong letakkan barangnya di sana."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 8,
+    "sentence": "ボールペンで答えを書いてもいいですか？答えは鉛筆で書いてください。",
+    "translation": "Bolehkah saya menulis jawaban pakai bolpoin? Tolong tulis jawabannya pakai pensil."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 8,
+    "sentence": "ここでたばこを吸ってもいいですか？タバコは外で吸ってください。",
+    "translation": "Bolehkah merokok di sini? Tolong merokoknya di luar."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 8,
+    "sentence": "ここでお金を払わなければなりませんか？お金は受付で払ってください。",
+    "translation": "Apakah harus membayar uang di sini? Tolong bayar uangnya di meja resepsionis."
+  },
+  {
+    "chapter": "Chapter 17",
+    "number": 8,
+    "sentence": "明日も保険証を持って来なければなりませんか？保険証は来月持って来てください。",
+    "translation": "Apakah besok juga harus membawa kartu asuransi? Tolong bawa kartu asuransinya bulan depan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 1,
+    "sentence": "ミラーさんはテニスが出来ます。",
+    "translation": "Miller bisa bermain tenis."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 1,
+    "sentence": "ミラーさんは運転が出来ます。",
+    "translation": "Miller bisa menyetir."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 1,
+    "sentence": "ミラーさんは料理が出来ます。",
+    "translation": "Miller bisa memasak."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 1,
+    "sentence": "ミラーさんはサッカーが出来ます。",
+    "translation": "Miller bisa bermain sepak bola."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 1,
+    "sentence": "ミラーさんはダンスが出来ます。",
+    "translation": "Miller bisa menari."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "平仮名を書くことが出来ますか？はい、出来ます。",
+    "translation": "Bisakah (kamu) menulis Hiragana? Ya, (saya) bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "漢字を読むことが出来ますか？いいえ、出来ません。",
+    "translation": "Bisakah (kamu) membaca Kanji? Tidak, (saya) tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "ピアノを弾くことが出来ますか？はい、出来ます。",
+    "translation": "Bisakah (kamu) bermain piano? Ya, (saya) bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "日本語を話すことが出来ますか？いいえ、出来ません。",
+    "translation": "Bisakah (kamu) berbicara bahasa Jepang? Tidak, (saya) tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "泳ぐことが出来ますか？はい、出来ます。",
+    "translation": "Bisakah (kamu) berenang? Ya, (saya) bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 2,
+    "sentence": "ビールを飲むことが出来ますか？いいえ、出来ません。",
+    "translation": "Bisakah (kamu) minum bir? Tidak, (saya) tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 3,
+    "sentence": "どんな外国語を話すことが出来ますか？英語を話すことが出来ます。",
+    "translation": "Bisa berbicara bahasa asing apa? Bisa berbicara bahasa Inggris."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 3,
+    "sentence": "何メートルぐらい泳ぐことが出来ますか？100メートルぐらい泳ぐことが出来ます。",
+    "translation": "Bisa berenang sejauh apa? Bisa berenang sekitar 100 meter."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 3,
+    "sentence": "どんな料理を作ることが出来ますか？てんぷらを作ることが出来ます。",
+    "translation": "Bisa membuat masakan apa? Bisa membuat Tempura."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 3,
+    "sentence": "漢字をいくつ書くことが出来ますか？50ぐらい書くことが出来ます。",
+    "translation": "Bisa menulis berapa Kanji? Bisa menulis sekitar 50."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 3,
+    "sentence": "日本の歌で何を歌うことが出来ますか？故郷を歌うことが出来ます。",
+    "translation": "Dari lagu-lagu Jepang, bisa menyanyikan apa? Bisa menyanyikan lagu \"Furusato\" (Kampung Halaman)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "この公園でサッカーが出来ますか？はい、出来ます。",
+    "translation": "Apakah bisa bermain sepak bola di taman ini? Ya, bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "カードで払うことが出来ますか？いいえ、出来ません。",
+    "translation": "Apakah bisa membayar dengan kartu? Tidak, tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "寮の部屋で料理することが出来ますか？いいえ、出来ません。",
+    "translation": "Apakah bisa memasak di kamar asrama? Tidak, tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "インターネットでホテルの予約が出来ますか？はい、出来ます。",
+    "translation": "Apakah bisa memesan hotel lewat internet? Ya, bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "図書館で辞書を借りることが出来ますか？いいえ、出来ません。",
+    "translation": "Apakah bisa meminjam kamus di perpustakaan? Tidak, tidak bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 4,
+    "sentence": "ホテルからバスで空港へ行くことが出来ますか？はい、出来ます。",
+    "translation": "Apakah bisa pergi ke bandara dari hotel menggunakan bus? Ya, bisa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 5,
+    "sentence": "どこで安いカメラを買うことが出来ますか？秋葉原で買うことが出来ます。",
+    "translation": "Di mana bisa membeli kamera yang murah? Bisa membeli di Akihabara."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 5,
+    "sentence": "この車に何人乗ることが出来ますか？8人乗ることが出来ます。",
+    "translation": "Berapa orang yang bisa naik di mobil ini? Bisa naik 8 orang."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 5,
+    "sentence": "いつ北海道で桜を見ることが出来ますか？5月に見ることが出来ます。",
+    "translation": "Kapan bisa melihat bunga sakura di Hokkaido? Bisa melihat pada bulan Mei."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 5,
+    "sentence": "何日、本を借りることが出来ますか？2週間借りることが出来ます。",
+    "translation": "Berapa hari bisa meminjam buku? Bisa meminjam selama 2 minggu."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 5,
+    "sentence": "何時から何時まで会議室を使うことが出来ますか？9時から6時まで使うことが出来ます。",
+    "translation": "Dari jam berapa sampai jam berapa bisa menggunakan ruang rapat? Bisa menggunakan dari jam 9 sampai jam 6."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 6,
+    "sentence": "趣味は何ですか？絵を描くことです。",
+    "translation": "Hobinya apa? Menggambar lukisan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 6,
+    "sentence": "趣味は何ですか？映画を見ることです。",
+    "translation": "Hobinya apa? Menonton film."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 6,
+    "sentence": "趣味は何ですか？写真を撮ることです。",
+    "translation": "Hobinya apa? Memotret (mengambil foto)."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 6,
+    "sentence": "趣味は何ですか？歌を歌うことです。",
+    "translation": "Hobinya apa? Menyanyikan lagu."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 6,
+    "sentence": "趣味は何ですか？車を運転することです。",
+    "translation": "Hobinya apa? Mengendarai mobil."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 7,
+    "sentence": "寝る前に、お祈りをします。",
+    "translation": "Sebelum tidur, saya berdoa."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 7,
+    "sentence": "食事の前に、手を洗います。",
+    "translation": "Sebelum makan, saya mencuci tangan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 7,
+    "sentence": "泳ぐ前に、シャワーを浴びます。",
+    "translation": "Sebelum berenang, saya mandi shower."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 7,
+    "sentence": "友達の家へ行く前に、電話をかけます。",
+    "translation": "Sebelum pergi ke rumah teman, saya akan menelepon."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 7,
+    "sentence": "旅行に行く前に、お金を換えます。",
+    "translation": "Sebelum pergi berwisata, saya menukar uang."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつこの薬を飲みますか？寝る前に、飲みます。",
+    "translation": "Kapan minum obat ini? Minum sebelum tidur."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつジョギングをしますか？会社へ行く前に、します。",
+    "translation": "Kapan kamu joging? Melakukannya sebelum pergi ke perusahaan."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつそのカメラを買いましたか？日本へ来る前に、買いました。",
+    "translation": "Kapan membeli kamera itu? Membeli sebelum datang ke Jepang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "どこで資料をコピーしますか？会議の前に、コピーします。",
+    "translation": "Di mana Anda akan memfotokopi dokumen? Saya akan fotokopi sebelum rapat."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつ国へ帰りますか？クリスマスの前に、帰ります。",
+    "translation": "Kapan pulang ke negara asal? Pulang sebelum hari Natal."
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつ日本へ来ましたか？5年前に、来ました。",
+    "translation": "Kapan datang ke Jepang? Datang 5 tahun yang lalu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 18",
+    "number": 8,
+    "sentence": "いつ荷物を送りましたか？3日前に、送りました。",
+    "translation": "Kapan mengirim paket/barang? Mengirimnya 3 hari yang lalu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 1,
+    "sentence": "広島へ行ったことがあります。",
+    "translation": "(Saya) pernah pergi ke Hiroshima."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 1,
+    "sentence": "富士山に登ったことがあります。",
+    "translation": "(Saya) pernah mendaki Gunung Fuji."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 1,
+    "sentence": "相撲を見たことがあります。",
+    "translation": "(Saya) pernah menonton Sumo."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 1,
+    "sentence": "お酒を飲んだことがあります。",
+    "translation": "(Saya) pernah meminum sake/alkohol."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 1,
+    "sentence": "スキーをしたことがあります。",
+    "translation": "(Saya) pernah bermain ski."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 2,
+    "sentence": "カラオケに行ったことがありますか？いいえ、ありません。",
+    "translation": "Apakah (kamu) pernah pergi ke karaoke? Tidak, tidak pernah."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 2,
+    "sentence": "お茶を習ったことがありますか？はい、あります。",
+    "translation": "Apakah (kamu) pernah belajar upacara minum teh (sado)? Ya, pernah."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 2,
+    "sentence": "東京スカイツリーに上ったことがありますか？いいえ、ありません。",
+    "translation": "Apakah (kamu) pernah naik ke Tokyo Skytree? Tidak, tidak pernah."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 2,
+    "sentence": "日本人の家に泊まったことがありますか？はい、あります。",
+    "translation": "Apakah (kamu) pernah menginap di rumah orang Jepang? Ya, pernah."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 2,
+    "sentence": "インドネシア料理を食べたことがありますか？いいえ、一度もありません。",
+    "translation": "Apakah (kamu) pernah makan masakan Indonesia? Tidak, belum pernah sekali pun."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 3,
+    "sentence": "日曜日は掃除したり、洗濯したりします。",
+    "translation": "Hari Minggu saya melakukan hal-hal seperti bersih-bersih dan mencuci pakaian."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 3,
+    "sentence": "夜はお風呂に入ったり、テレビを見たりします。",
+    "translation": "Malam hari saya melakukan hal-hal seperti berendam di bak mandi dan menonton televisi."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 3,
+    "sentence": "休みの日は買い物したり、子供と遊んだりします。",
+    "translation": "Hari libur saya melakukan hal-hal seperti berbelanja dan bermain bersama anak."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 3,
+    "sentence": "昨日は本を読んだり、レポートを書いたりしました。",
+    "translation": "Kemarin saya melakukan hal-hal seperti membaca buku dan menulis laporan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 3,
+    "sentence": "去年の夏休みは海で泳いだり、山に登ったりしました。",
+    "translation": "Liburan musim panas tahun lalu saya melakukan hal-hal seperti berenang di laut dan mendaki gunung. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 4,
+    "sentence": "土曜日は何をしますか？散歩したり、絵を描いたりします。",
+    "translation": "Hari Sabtu melakukan apa? Melakukan hal-hal seperti jalan-jalan dan menggambar."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 4,
+    "sentence": "休みの日は何をしますか？ゴルフの練習をしたり、家で本を読んだりします。",
+    "translation": "Hari libur melakukan apa? Melakukan hal-hal seperti berlatih golf dan membaca buku di rumah."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 4,
+    "sentence": "京都で何をしましたか？お寺を見たり、日本料理を食べたりしました。",
+    "translation": "Melakukan apa di Kyoto? Melakukan hal-hal seperti melihat kuil dan makan masakan Jepang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 4,
+    "sentence": "冬休みは何をしたいですか？スキーに行ったり、友達とパーティーをしたりしたいです。",
+    "translation": "Liburan musim dingin ingin melakukan apa? Ingin melakukan hal-hal seperti pergi bermain ski dan berpesta dengan teman."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 4,
+    "sentence": "出張の前に、何をしなければなりませんか？資料を作ったり、ホテルを予約したりしなければなりません。",
+    "translation": "Sebelum perjalanan dinas, harus melakukan apa? Harus melakukan hal-hal seperti membuat dokumen dan memesan hotel."
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "寒くなりました。",
+    "translation": "Menjadi dingin. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "元気になりました。",
+    "translation": "Menjadi sehat/bersemangat. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "暗くなりました。",
+    "translation": "Menjadi gelap. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "強くなりました。",
+    "translation": "Menjadi kuat. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "眠くなりました。",
+    "translation": "Menjadi mengantuk. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "きれいになりました。",
+    "translation": "Menjadi cantik/bersih. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "上手になりました。",
+    "translation": "Menjadi pintar/mahir. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 19",
+    "number": 5,
+    "sentence": "部長になりました。",
+    "translation": "Menjadi manajer bagian. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 1,
+    "sentence": "毎日彼に電話する。",
+    "translation": "Setiap hari saya menelepon dia (laki-laki). [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 1,
+    "sentence": "明日また来る。",
+    "translation": "Besok saya akan datang lagi. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 1,
+    "sentence": "今日は何も買わない。",
+    "translation": "Hari ini saya tidak akan membeli apa pun. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 1,
+    "sentence": "少し疲れた。",
+    "translation": "Saya agak lelah. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 1,
+    "sentence": "昨日日記を書かなかった。",
+    "translation": "Kemarin saya tidak menulis buku harian (diary). [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 2,
+    "sentence": "着物は高い。",
+    "translation": "Kimono itu mahal. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 2,
+    "sentence": "日本語の勉強は面白い。",
+    "translation": "Belajar bahasa Jepang itu menarik. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 2,
+    "sentence": "この辞書は良くない。",
+    "translation": "Kamus ini tidak bagus. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 2,
+    "sentence": "今朝は頭が痛かった。",
+    "translation": "Tadi pagi kepalaku sakit. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 2,
+    "sentence": "昨日のパーティーは楽しくなかった。",
+    "translation": "Pesta kemarin tidak menyenangkan. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 3,
+    "sentence": "コンビニは便利だ。",
+    "translation": "Minimarket itu praktis. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 3,
+    "sentence": "カリナさんは絵が上手だ。",
+    "translation": "Karina itu pintar menggambar. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 3,
+    "sentence": "今日は休みじゃない。",
+    "translation": "Hari ini bukan hari libur. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 3,
+    "sentence": "昨日は雨だった。",
+    "translation": "Kemarin turun hujan. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 3,
+    "sentence": "先週の土曜日は暇じゃなかった。",
+    "translation": "Hari Sabtu minggu lalu tidak luang. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "そっち行ってはいけない。",
+    "translation": "Tidak boleh pergi ke sana. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "もう一度歌舞伎を見たい。",
+    "translation": "Saya ingin menonton Kabuki sekali lagi. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "電話番号を調べなければならない。",
+    "translation": "Harus memeriksa nomor telepon. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "昨日は映画を見たり、音楽を聞いたりした。",
+    "translation": "Kemarin saya melakukan hal-hal seperti menonton film dan mendengarkan musik. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "この電話を使ってもいい。",
+    "translation": "Boleh memakai telepon ini. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "ワンさんは神戸病院で働いている。",
+    "translation": "Wang sedang bekerja di Rumah Sakit Kobe. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "漢字を読むことが出来ない。",
+    "translation": "Tidak bisa membaca Kanji. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "明日までにレポートを出さなくてもいい。",
+    "translation": "Tidak menyerahkan laporan sampai besok juga tidak apa-apa. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 4,
+    "sentence": "富士山を見たことがない。",
+    "translation": "Saya belum pernah melihat Gunung Fuji. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 5,
+    "sentence": "明日家にいる？うん、いる。",
+    "translation": "Apakah besok kamu ada di rumah? Ya, ada. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 5,
+    "sentence": "ビザが要る？ううん、要らない。",
+    "translation": "Apakah butuh visa? Tidak, tidak butuh. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 5,
+    "sentence": "今朝新聞を読んだ？うん、読んだ。",
+    "translation": "Apakah tadi pagi kamu membaca koran? Ya, aku baca. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 5,
+    "sentence": "日曜日どこか行った？ううん、どこも行かなかった。",
+    "translation": "Hari Minggu pergi ke suatu tempat? Tidak, tidak pergi ke mana pun. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 5,
+    "sentence": "いつ木村さんに会う？今月の終わりごろ会う。",
+    "translation": "Kapan bertemu dengan Kimura? Bertemu sekitar akhir bulan ini. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 6,
+    "sentence": "ビールとワインとどちらがいい？ワインの方がいい。",
+    "translation": "Antara bir dan anggur (wine) lebih suka mana? Lebih suka anggur (wine). [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 6,
+    "sentence": "東京は大阪より人が多い？うん、ずっと多い。",
+    "translation": "Apakah Tokyo lebih banyak orangnya daripada Osaka? Ya, jauh lebih banyak. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 6,
+    "sentence": "あの店はサービスがいい？ううん、あまり良くない。",
+    "translation": "Apakah toko itu pelayanannya bagus? Tidak, tidak terlalu bagus. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 6,
+    "sentence": "映画は面白かった？ううん、全然面白くなかった。",
+    "translation": "Apakah filmnya menarik? Tidak, sama sekali tidak menarik. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 6,
+    "sentence": "旅行はどちらが一番楽しかった？イタリア旅行が一番楽しかった。",
+    "translation": "Wisatanya yang mana yang paling menyenangkan? Wisata ke Italia yang paling menyenangkan. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 7,
+    "sentence": "元気？うん、元気。",
+    "translation": "Sehat/Apa kabar? Ya, sehat. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 7,
+    "sentence": "今何時？5時40分だ。",
+    "translation": "Sekarang jam berapa? Jam 5:40. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 7,
+    "sentence": "今日デパートは休み？ううん、休みじゃない。",
+    "translation": "Apakah hari ini toserba libur? Tidak, tidak libur. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 7,
+    "sentence": "犬と猫とどちらが好き？猫の方が好き。",
+    "translation": "Antara anjing dan kucing lebih suka yang mana? Lebih suka kucing. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 7,
+    "sentence": "富士山はどうだった？きれいだった。",
+    "translation": "Bagaimana Gunung Fuji? (Ternyata) indah. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "辞書を持っている？ううん、持っていない。",
+    "translation": "Apakah kamu punya kamus? Tidak, tidak punya. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "今雨が降っている？うん、降っている。",
+    "translation": "Apakah sekarang sedang hujan? Ya, sedang hujan. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "佐藤さんの住所を知っている？ううん、知らない。",
+    "translation": "Apakah tahu alamat Sato? Tidak, tidak tahu. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "九州へ行ったことがある？ううん、ない。",
+    "translation": "Apakah pernah pergi ke Kyushu? Tidak, tidak pernah. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "自転車を修理することが出来る？うん、出来る。",
+    "translation": "Apakah bisa memperbaiki sepeda? Ya, bisa. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "明日も来なければならない？ううん、来なくてもいい。",
+    "translation": "Apakah besok juga harus datang? Tidak, tidak datang juga tidak apa-apa. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "何を食べに行った？タイ料理を食べに行った。",
+    "translation": "Pergi makan apa? Pergi makan masakan Thailand. [Kasual, Lampau]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "どこに住んでいる？京都に住んでいる。",
+    "translation": "Tinggal di mana? Tinggal di Kyoto. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 20",
+    "number": 8,
+    "sentence": "いつまでに本を返さなければならない？来週の木曜日までに返さなければならない。",
+    "translation": "Harus mengembalikan buku selambat-lambatnya kapan? Harus mengembalikan selambat-lambatnya hari Kamis minggu depan. [Kasual]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 1,
+    "sentence": "ミラーさんは会議室にいると思います。",
+    "translation": "(Saya) rasa/pikir Miller ada di ruang rapat."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 1,
+    "sentence": "ミラーさんは9時に来ると思います。",
+    "translation": "(Saya) rasa Miller akan datang jam 9."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 1,
+    "sentence": "マリアさんは運転しないと思います。",
+    "translation": "(Saya) rasa Maria tidak menyetir."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 1,
+    "sentence": "日曜日は人が多いと思います。",
+    "translation": "(Saya) rasa hari Minggu akan banyak orang."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 1,
+    "sentence": "つるやは明日休みだと思います。",
+    "translation": "(Saya) rasa Tsuruya besok libur."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 2,
+    "sentence": "部長は事務所にいますか？いいえ、いないと思います。",
+    "translation": "Apakah manajer ada di kantor? Tidak, (saya) rasa dia tidak ada."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 2,
+    "sentence": "部長はもう帰りましたか？はい、帰ったと思います。",
+    "translation": "Apakah manajer sudah pulang? Ya, (saya) rasa dia sudah pulang."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 2,
+    "sentence": "あのコンビニで薬を売っていますか？いいえ、多分売っていないと思います。",
+    "translation": "Apakah di minimarket itu menjual obat? Tidak, mungkin (saya) rasa tidak menjualnya."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 2,
+    "sentence": "明日はヨーネンとアキックスとどちらが勝ちますか？きっとヨーネンが勝つと思います。",
+    "translation": "Besok antara Yonen dan Akikkusu (Asics) mana yang akan menang? (Saya) rasa pasti Yonen yang akan menang."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 2,
+    "sentence": "かぎはどこですか？あの箱の中だと思います。",
+    "translation": "Kunci ada di mana? (Saya) rasa ada di dalam kotak itu."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 3,
+    "sentence": "漢字の勉強は面白いと思います。",
+    "translation": "(Saya) rasa belajar Kanji itu menarik."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 3,
+    "sentence": "山田さんは本当によく働くと思います。",
+    "translation": "(Saya) rasa Yamada benar-benar sering bekerja keras."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 3,
+    "sentence": "パワー電気の製品はデザインがいいと思います。",
+    "translation": "(Saya) rasa produk Power Denki desainnya bagus."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 3,
+    "sentence": "ミラーさんは時間の使い方が上手だと思います。",
+    "translation": "(Saya) rasa Miller pintar dalam menggunakan waktu."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 3,
+    "sentence": "神戸病院はいい病院だと思います。",
+    "translation": "(Saya) rasa Rumah Sakit Kobe adalah rumah sakit yang bagus."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 4,
+    "sentence": "新しいソフトは便利ですか？はい、便利だと思います。",
+    "translation": "Apakah perangkat lunak (software) yang baru itu praktis? Ya, (saya) rasa praktis."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 4,
+    "sentence": "相撲は面白いですか？いいえ、あまり面白くないと思います。",
+    "translation": "Apakah Sumo itu menarik? Tidak, (saya) rasa tidak terlalu menarik."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 4,
+    "sentence": "ワットさんはいい先生ですか？はい、とてもいい先生だと思います。",
+    "translation": "Apakah Watt adalah guru yang baik? Ya, (saya) rasa dia guru yang sangat baik."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 4,
+    "sentence": "犬と猫とどちらが役に立ちますか？犬の方が役に立つと思います。",
+    "translation": "Antara anjing dan kucing mana yang lebih berguna? (Saya) rasa anjing lebih berguna."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 4,
+    "sentence": "日本でどこが一番きれいですか？奈良が一番きれいだと思います。",
+    "translation": "Di Jepang, mana yang paling indah? (Saya) rasa Nara yang paling indah."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 5,
+    "sentence": "日本の自動車についてどう思いますか？とてもいいと思います。",
+    "translation": "Bagaimana pendapat (kamu) tentang mobil Jepang? (Saya) rasa sangat bagus."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 5,
+    "sentence": "日本のアニメについてどう思いますか？面白いと思います。",
+    "translation": "Bagaimana pendapat (kamu) tentang anime Jepang? (Saya) rasa menarik."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 5,
+    "sentence": "日本の大学についてどう思いますか？休みが多いと思います。",
+    "translation": "Bagaimana pendapat (kamu) tentang universitas di Jepang? (Saya) rasa banyak liburnya."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 5,
+    "sentence": "着物についてどう思いますか？とてもきれいだと思います。",
+    "translation": "Bagaimana pendapat (kamu) tentang Kimono? (Saya) rasa sangat indah."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 5,
+    "sentence": "日本についてどう思いますか？交通が便利だと思います。",
+    "translation": "Bagaimana pendapat (kamu) tentang Jepang? (Saya) rasa transportasinya praktis."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 6,
+    "sentence": "キング牧師は夢があると言いました。",
+    "translation": "Pendeta King (Martin Luther King Jr.) berkata bahwa beliau punya mimpi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 6,
+    "sentence": "ガリレオは地球は動くと言いました。",
+    "translation": "Galileo berkata bahwa bumi bergerak. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 6,
+    "sentence": "アインシュタインは私は天才じゃないと言いました。",
+    "translation": "Einstein berkata bahwa dia bukan jenius. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 6,
+    "sentence": "フランクリンは時間はお金だと言いました。",
+    "translation": "Franklin berkata bahwa waktu adalah uang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 6,
+    "sentence": "ガガーリンは地球は青かったと言いました。",
+    "translation": "Gagarin berkata bahwa bumi itu biru. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 7,
+    "sentence": "明日は休みでしょう？",
+    "translation": "Besok libur kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 7,
+    "sentence": "沖縄は海がきれいでしょう？",
+    "translation": "Okinawa lautnya indah kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 7,
+    "sentence": "ワットさんの話は面白いでしょう？",
+    "translation": "Ceritanya Watt menarik kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 7,
+    "sentence": "木村さんはイーさんを知らないでしょう？",
+    "translation": "Kimura tidak kenal Lee kan?"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 7,
+    "sentence": "昨日サッカーの試合があったでしょう？",
+    "translation": "Kemarin ada pertandingan sepak bola kan? [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "日本は食べ物が高いでしょう？ええ、高いです。",
+    "translation": "Jepang makanannya mahal kan? Ya, mahal."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "そのカメラは高かったでしょう？いいえ、そんなに高くなかったです。",
+    "translation": "Kamera itu mahal kan? Tidak, tidak semahal itu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "ここは冬、雪がすごいでしょう？ええ、本当にすごいです。",
+    "translation": "Di sini saat musim dingin, saljunya lebat/luar biasa kan? Ya, benar-benar luar biasa."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "仕事は大変でしょう？いいえ、そんなに大変じゃありません。",
+    "translation": "Pekerjaannya berat/susah kan? Tidak, tidak seberat itu."
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "北海道は寒かったでしょう？いいえ、あまり寒くなかったです。",
+    "translation": "Hokkaido dingin kan? Tidak, tidak terlalu dingin. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 21",
+    "number": 8,
+    "sentence": "喉が渇いたでしょう？ええ、渇きました。",
+    "translation": "Haus kan? Ya, haus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 1,
+    "sentence": "これはパリで買った帽子です。",
+    "translation": "Ini adalah topi yang (saya) beli di Paris."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 1,
+    "sentence": "これは母にもらったコートです。",
+    "translation": "Ini adalah mantel yang (saya) terima dari ibu."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 1,
+    "sentence": "これは京都で撮った写真です。",
+    "translation": "Ini adalah foto yang (saya) ambil di Kyoto."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 1,
+    "sentence": "これはマリアさんが作ったケーキです。",
+    "translation": "Ini adalah kue yang dibuat oleh Maria."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 1,
+    "sentence": "これはカリナさんが描いた絵です。",
+    "translation": "Ini adalah lukisan yang digambar oleh Karina."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 2,
+    "sentence": "ミラーさんはどの人ですか？電話している人です。",
+    "translation": "Miller itu orang yang mana? Orang yang sedang menelepon."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 2,
+    "sentence": "佐藤さんはどの人ですか？コピーしている人です。",
+    "translation": "Sato itu orang yang mana? Orang yang sedang memfotokopi."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 2,
+    "sentence": "松本さんはどの人ですか？新聞を読んでいる人です。",
+    "translation": "Matsumoto itu orang yang mana? Orang yang sedang membaca koran."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 2,
+    "sentence": "グプタさんはどの人ですか？女の人と話している人です。",
+    "translation": "Gupta itu orang yang mana? Orang yang sedang berbicara dengan perempuan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 2,
+    "sentence": "山田さんはどの人ですか？コーヒーを飲んでいる人です。",
+    "translation": "Yamada itu orang yang mana? Orang yang sedang minum kopi."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 3,
+    "sentence": "着物を着ている人は誰ですか？渡辺さんです。",
+    "translation": "Orang yang memakai Kimono itu siapa? Itu Watanabe."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 3,
+    "sentence": "赤い靴を履いている人は誰ですか？林さんです。",
+    "translation": "Orang yang memakai sepatu merah itu siapa? Itu Hayashi."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 3,
+    "sentence": "赤いネクタイをしている人は誰ですか？鈴木さんです。",
+    "translation": "Orang yang memakai dasi merah itu siapa? Itu Suzuki."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 3,
+    "sentence": "眼鏡をかけている人は誰ですか？高橋さんです。",
+    "translation": "Orang yang memakai kacamata itu siapa? Itu Takahashi."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 3,
+    "sentence": "帽子を被っている人は誰ですか？中村さんです。",
+    "translation": "Orang yang memakai topi itu siapa? Itu Nakamura."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 4,
+    "sentence": "弟が生まれた所は北海道です。",
+    "translation": "Tempat adik laki-laki lahir adalah di Hokkaido."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 4,
+    "sentence": "初めて主人に会った所は大学の図書館です。",
+    "translation": "Tempat pertama kali (saya) bertemu suami adalah di perpustakaan universitas."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 4,
+    "sentence": "先週見学したお寺は金閣寺です。",
+    "translation": "Kuil yang (saya) kunjungi minggu lalu adalah Kinkakuji."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 4,
+    "sentence": "ワンさんが働いている病院は神戸にあります。",
+    "translation": "Rumah sakit tempat Wang bekerja ada di Kobe."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 4,
+    "sentence": "木村さんが毎朝お弁当を買うコンビニは駅の前にあります。",
+    "translation": "Minimarket tempat Kimura membeli bekal setiap pagi ada di depan stasiun."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 5,
+    "sentence": "サントスさんにもらったコーヒーはとても美味しいです。",
+    "translation": "Kopi yang (saya) terima dari Santos sangat enak."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 5,
+    "sentence": "私がいつも買い物するスーパーは野菜が安いです。",
+    "translation": "Supermarket tempat saya selalu berbelanja sayurannya murah."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 5,
+    "sentence": "よく寝る子供は元気です。",
+    "translation": "Anak yang sering tidur itu sehat."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 5,
+    "sentence": "昨日見た映画はとても良かったです。",
+    "translation": "Film yang (saya) tonton kemarin sangat bagus. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 5,
+    "sentence": "昨日私達が行ったお寺はきれいで、静かでした。",
+    "translation": "Kuil yang kami datangi kemarin indah dan tenang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 6,
+    "sentence": "彼にあげるお土産を買います。",
+    "translation": "(Saya) membeli oleh-oleh yang akan diberikan kepada dia (laki-laki)."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 6,
+    "sentence": "奈良で撮った写真を見せてください。",
+    "translation": "Tolong perlihatkan foto yang diambil di Nara."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 6,
+    "sentence": "要らない物を捨てます。",
+    "translation": "(Saya) membuang barang yang tidak diperlukan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 6,
+    "sentence": "病院でもらった薬を飲まなければなりません。",
+    "translation": "(Saya) harus meminum obat yang diterima di rumah sakit."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 6,
+    "sentence": "イーさんの隣に座っている人を知っていますか？",
+    "translation": "Apakah (kamu) tahu orang yang duduk di sebelah Lee?"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 7,
+    "sentence": "外でするスポーツが好きです。",
+    "translation": "(Saya) suka olahraga yang dilakukan di luar."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 7,
+    "sentence": "ユーモアがある人が好きです。",
+    "translation": "(Saya) suka orang yang punya selera humor."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 7,
+    "sentence": "料理を作るロボットが欲しいです。",
+    "translation": "(Saya) ingin robot yang bisa membuat masakan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 7,
+    "sentence": "会社の人が話す日本語が分かりません。",
+    "translation": "(Saya) tidak mengerti bahasa Jepang yang dibicarakan oleh orang perusahaan."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 7,
+    "sentence": "パーティーで着る服が要ります。",
+    "translation": "(Saya) butuh pakaian yang akan dipakai di pesta."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 8,
+    "sentence": "昼ご飯を食べましたか？いいえ、食べる時間がありませんでした。",
+    "translation": "Apakah sudah makan siang? Tidak, tidak ada waktu untuk makan. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 8,
+    "sentence": "明日は都合がいいですか？いいえ、市役所へ行く用事があります。",
+    "translation": "Apakah besok ada waktu (kondisinya pas)? Tidak, ada urusan pergi ke balai kota."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 8,
+    "sentence": "カラオケに行きますか？いいえ、部長と食事する予約があります。",
+    "translation": "Apakah mau pergi ke karaoke? Tidak, ada janji makan bersama manajer."
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 8,
+    "sentence": "今朝ニュースを見ましたか？いいえ、テレビを見る時間がありませんでした。",
+    "translation": "Apakah tadi pagi menonton berita? Tidak, tidak ada waktu untuk menonton televisi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 22",
+    "number": 8,
+    "sentence": "よく本を買いますか？いいえ、本を読む時間がありません。",
+    "translation": "Apakah sering membeli buku? Tidak, tidak ada waktu untuk membaca buku."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 1,
+    "sentence": "新聞を読むとき、眼鏡をかけます。",
+    "translation": "Saat membaca koran, (saya) memakai kacamata."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 1,
+    "sentence": "病院へ行くとき、保険証を忘れないでください。",
+    "translation": "Saat pergi ke rumah sakit, tolong jangan lupakan kartu asuransi."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 1,
+    "sentence": "出かけるとき、いつも傘を持って行きます。",
+    "translation": "Saat pergi keluar, (saya) selalu membawa payung."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 1,
+    "sentence": "漢字が分からないとき、この辞書を使います。",
+    "translation": "Saat tidak mengerti Kanji, (saya) menggunakan kamus ini."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 1,
+    "sentence": "時間がないとき、朝ご飯を食べません。",
+    "translation": "Saat tidak ada waktu, (saya) tidak makan sarapan."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "出かけるとき、「いってきます」と言います。",
+    "translation": "Saat pergi keluar, mengucapkan \"Ittekimasu\" (Saya berangkat)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "家へ帰ったとき、「ただいま」と言います。",
+    "translation": "Saat sudah pulang ke rumah, mengucapkan \"Tadaima\" (Saya pulang)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "寝るとき、「お休みなさい」と言います。",
+    "translation": "Saat akan tidur, mengucapkan \"Oyasuminasai\" (Selamat tidur)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "朝友達に会ったとき、「おはようございます」と言います。",
+    "translation": "Pagi hari saat bertemu teman, mengucapkan \"Ohayou gozaimasu\" (Selamat pagi)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "プレゼントをもらったとき、「ありがとうございます」と言います。",
+    "translation": "Saat menerima hadiah, mengucapkan \"Arigatou gozaimasu\" (Terima kasih)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 2,
+    "sentence": "部長の部屋に入るとき、「失礼します」と言います。",
+    "translation": "Saat masuk ke ruangan manajer, mengucapkan \"Shitsurei shimasu\" (Permisi)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 3,
+    "sentence": "寂しいとき、家族に電話をかけます。",
+    "translation": "Saat kesepian, (saya) menelepon keluarga."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 3,
+    "sentence": "頭が痛いとき、この薬を飲みます。",
+    "translation": "Saat sakit kepala, (saya) meminum obat ini."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 3,
+    "sentence": "暇なとき、ビデオを見ます。",
+    "translation": "Saat luang, (saya) menonton video."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 3,
+    "sentence": "妻が病気のとき、会社を休みます。",
+    "translation": "Saat istri sakit, (saya) libur bekerja (dari perusahaan)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 3,
+    "sentence": "晩ご飯のとき、ワインを飲みます。",
+    "translation": "Saat makan malam, (saya) minum anggur (wine)."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 4,
+    "sentence": "難しい漢字を覚えるとき、どうしますか？何回も書きます。",
+    "translation": "Saat menghafal Kanji yang sulit, apa yang (kamu) lakukan? (Saya) menulisnya berkali-kali."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 4,
+    "sentence": "風邪を引いたとき、どうしますか？薬を飲んで、寝ます。",
+    "translation": "Saat masuk angin, apa yang (kamu) lakukan? (Saya) minum obat, lalu tidur."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 4,
+    "sentence": "道が分からないとき、どうしますか？ケータイで調べます。",
+    "translation": "Saat tidak tahu jalan, apa yang (kamu) lakukan? (Saya) memeriksanya di ponsel."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 4,
+    "sentence": "眠いとき、どうしますか？顔を洗います。",
+    "translation": "Saat mengantuk, apa yang (kamu) lakukan? (Saya) mencuci muka."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 4,
+    "sentence": "明日の天気を知りたいとき、どうしますか？インターネットで見ます。",
+    "translation": "Saat ingin tahu cuaca besok, apa yang (kamu) lakukan? (Saya) melihatnya di internet."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 5,
+    "sentence": "このボタンを押すと、切符が出ます。",
+    "translation": "Jika menekan tombol ini, tiketnya akan keluar."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 5,
+    "sentence": "これを引くと、椅子が動きます。",
+    "translation": "Jika menarik ini, kursinya akan bergerak."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 5,
+    "sentence": "これに触ると、水が出ます。",
+    "translation": "Jika menyentuh ini, airnya akan keluar."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 5,
+    "sentence": "これを左へ回すと、音が小さくなります。",
+    "translation": "Jika memutar ini ke kiri, suaranya akan mengecil."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 5,
+    "sentence": "これを右へ回すと、電気が明るくなります。",
+    "translation": "Jika memutar ini ke kanan, lampunya akan menjadi terang."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 6,
+    "sentence": "銀行はどこですか？あの交差点を右へ曲がると、左にあります。",
+    "translation": "Bank ada di mana? Jika berbelok ke kanan di persimpangan itu, ada di sebelah kiri."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 6,
+    "sentence": "市役所はどこですか？あの角を右へ曲がると、左にあります。",
+    "translation": "Balai kota ada di mana? Jika berbelok ke kanan di sudut itu, ada di sebelah kiri."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 6,
+    "sentence": "美術館はどこですか？あの交差点を左へ曲がると、右にあります。",
+    "translation": "Museum seni ada di mana? Jika berbelok ke kiri di persimpangan itu, ada di sebelah kanan."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 6,
+    "sentence": "駐車場はどこですか？あの橋を渡ると、左にあります。",
+    "translation": "Tempat parkir ada di mana? Jika menyeberangi jembatan itu, ada di sebelah kiri."
+  },
+  {
+    "chapter": "Chapter 23",
+    "number": 6,
+    "sentence": "コンビニはどこですか？真っ直ぐ50メートル行くと、右にあります。",
+    "translation": "Minimarket ada di mana? Jika pergi lurus 50 meter, ada di sebelah kanan."
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 1,
+    "sentence": "サントスさんはコーヒーをくれました。",
+    "translation": "Santos memberikan kopi kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 1,
+    "sentence": "マリアさんは帽子をくれました。",
+    "translation": "Maria memberikan topi kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 1,
+    "sentence": "イーさんは辞書をくれました。",
+    "translation": "Lee memberikan kamus kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 1,
+    "sentence": "シュミットさんはサッカーのチケットをくれました。",
+    "translation": "Schmidt memberikan tiket sepak bola kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 1,
+    "sentence": "ミラーさんは花をくれました。",
+    "translation": "Miller memberikan bunga kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 2,
+    "sentence": "ブラジルのコーヒーですね？ええ、サントスさんがくれました。",
+    "translation": "Kopi Brasil ya? Ya, Santos yang memberikannya kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 2,
+    "sentence": "素敵な帽子ですね？ええ、マリアさんがくれました。",
+    "translation": "Topi yang bagus ya? Ya, Maria yang memberikannya kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 2,
+    "sentence": "新しい辞書ですね？ええ、イーさんがくれました。",
+    "translation": "Kamus baru ya? Ya, Lee yang memberikannya kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 2,
+    "sentence": "サッカーのチケットですね？ええ、シュミットさんがくれました。",
+    "translation": "Tiket sepak bola ya? Ya, Schmidt yang memberikannya kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 2,
+    "sentence": "きれいな花ですね？ええ、ミラーさんがくれました。",
+    "translation": "Bunga yang indah ya? Ya, Miller yang memberikannya kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 3,
+    "sentence": "私はマリアさんに傘を貸してもらいました。",
+    "translation": "Saya dipinjami payung oleh Maria. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 3,
+    "sentence": "私はワンさんに写真を見せてもらいました。",
+    "translation": "Saya diperlihatkan foto oleh Wang. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 3,
+    "sentence": "私はタワポンさんに田中さんを紹介してもらいました。",
+    "translation": "Saya diperkenalkan kepada Tanaka oleh Thawaphon. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 3,
+    "sentence": "私はワットさんに地図を描いてもらいました。",
+    "translation": "Saya digambarkan peta oleh Watt. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 3,
+    "sentence": "私はカリナさんに電話番号を教えてもらいました。",
+    "translation": "Saya diberi tahu nomor telepon oleh Karina. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 4,
+    "sentence": "誰にすき焼きを作ってもらいましたか？松本さんに作ってもらいました。",
+    "translation": "Dibuatkan sukiyaki oleh siapa? Dibuatkan oleh Matsumoto. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 4,
+    "sentence": "誰に日本語を教えてもらいましたか？小林先生に教えてもらいました。",
+    "translation": "Diajari bahasa Jepang oleh siapa? Diajari oleh Guru Kobayashi. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 4,
+    "sentence": "誰に本を貸してもらいましたか？佐藤さんに貸してもらいました。",
+    "translation": "Dipinjami buku oleh siapa? Dipinjami oleh Sato. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 4,
+    "sentence": "誰に料理を手伝ってもらいましたか？山田さんに手伝ってもらいました。",
+    "translation": "Dibantu memasak oleh siapa? Dibantu oleh Yamada. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 4,
+    "sentence": "誰に京都を案内してもらいましたか？木村さんに案内してもらいました。",
+    "translation": "Dipandu berkeliling Kyoto oleh siapa? Dipandu oleh Kimura. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 5,
+    "sentence": "佐藤さんは傘を貸してくれました。",
+    "translation": "Sato meminjamkan payung kepada saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 5,
+    "sentence": "母はセーターを送ってくれました。",
+    "translation": "Ibu mengirimkan sweter untuk saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 5,
+    "sentence": "会社の人は大阪城へ連れて行ってくれました。",
+    "translation": "Orang perusahaan mengajak/membawa saya pergi ke Istana Osaka. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 5,
+    "sentence": "友達は駅まで送ってくれました。",
+    "translation": "Teman mengantar saya sampai stasiun. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 5,
+    "sentence": "サントスさんは荷物を持ってくれました。",
+    "translation": "Santos membawakan barang untuk saya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 6,
+    "sentence": "誰が傘を貸してくれましたか？佐藤さんが貸してくれました。",
+    "translation": "Siapa yang meminjamkan payung kepadamu? Sato yang meminjamkannya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 6,
+    "sentence": "誰がお金を払ってくれましたか？山田さんが払ってくれました。",
+    "translation": "Siapa yang membayarkan uang untukmu? Yamada yang membayarkannya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 6,
+    "sentence": "誰がチケットを予約してくれましたか？小林さんが予約してくれました。",
+    "translation": "Siapa yang memesankan tiket untukmu? Kobayashi yang memesankannya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 6,
+    "sentence": "誰が写真を撮ってくれましたか？ミラーさんが撮ってくれました。",
+    "translation": "Siapa yang mengambilkan foto untukmu? Miller yang mengambilkannya. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 6,
+    "sentence": "誰が引っ越しを手伝ってくれましたか？会社の人が手伝ってくれました。",
+    "translation": "Siapa yang membantu pindahanmu? Orang perusahaan yang membantu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 7,
+    "sentence": "私はおじいさんに道を教えてあげました。",
+    "translation": "Saya memberi tahu jalan kepada kakek itu. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 7,
+    "sentence": "私はタワポンさんに友達を紹介してあげました。",
+    "translation": "Saya memperkenalkan teman kepada Thawaphon. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 7,
+    "sentence": "私は太郎くんに飛行機の雑誌を見せてあげました。",
+    "translation": "Saya memperlihatkan majalah pesawat kepada Taro. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 7,
+    "sentence": "私はおばあさんを病院へ連れて行ってあげました。",
+    "translation": "Saya mengantar/membawa nenek itu pergi ke rumah sakit. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 24",
+    "number": 7,
+    "sentence": "私はテレーザちゃんの自転車を修理してあげました。",
+    "translation": "Saya memperbaiki sepeda Teresa. [Lampau]"
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 1,
+    "sentence": "お金があったら、パソコンを買いたいです。",
+    "translation": "Kalau ada uang, (saya) ingin membeli komputer."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 1,
+    "sentence": "駅まで歩いたら、30分かかります。",
+    "translation": "Kalau berjalan kaki sampai stasiun, memakan waktu 30 menit."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 1,
+    "sentence": "この薬を飲んだら、元気になります。",
+    "translation": "Kalau minum obat ini, (kamu) akan menjadi sehat."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 1,
+    "sentence": "バスが来なかったら、タクシーで行きます。",
+    "translation": "Kalau busnya tidak datang, (saya) akan pergi naik taksi."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 1,
+    "sentence": "意見がなかったら、終わりましょう。",
+    "translation": "Kalau tidak ada pendapat, mari kita akhiri."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "安かったら、パソコンを買います。",
+    "translation": "Kalau murah, (saya) akan membeli komputer."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "雨だったら、出かけません。",
+    "translation": "Kalau hujan, (saya) tidak pergi keluar."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "駅が近かったら、便利です。",
+    "translation": "Kalau stasiunnya dekat, itu praktis."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "暑かったら、エアコンをつけてください。",
+    "translation": "Kalau panas, tolong nyalakan AC."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "使い方が簡単だったら、買います。",
+    "translation": "Kalau cara pakainya mudah, (saya) akan membelinya."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 2,
+    "sentence": "航空便だったら、来週着きます。",
+    "translation": "Kalau pakai pos udara, akan tiba minggu depan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "日曜日雨だったら、何をしますか？家で音楽を聞きます。",
+    "translation": "Kalau hari Minggu hujan, mau melakukan apa? (Saya) mendengarkan musik di rumah."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "ケータイが故障したら、どうしますか？新しいのを買います。",
+    "translation": "Kalau ponselnya rusak, apa yang (kamu) lakukan? (Saya) akan membeli yang baru."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "日曜日天気が良かったら、何をしますか？釣りをします。",
+    "translation": "Kalau hari Minggu cuacanya bagus, mau melakukan apa? (Saya) akan memancing."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "休みが1ヶ月あったら、何をしますか？世界を旅行します。",
+    "translation": "Kalau ada libur 1 bulan, mau melakukan apa? (Saya) akan keliling dunia."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "会議のとき、眠くなったら、どうしますか？コーヒーを飲みます。",
+    "translation": "Saat rapat, kalau mengantuk, apa yang (kamu) lakukan? (Saya) minum kopi."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 3,
+    "sentence": "買い物のとき、お金が足りなかったら、どうしますか？ATMで下ろします。",
+    "translation": "Saat belanja, kalau uangnya tidak cukup, apa yang (kamu) lakukan? (Saya) tarik tunai di ATM."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 4,
+    "sentence": "昼ご飯を食べたら、映画を見に行きませんか？",
+    "translation": "Setelah makan siang, maukah pergi menonton film?"
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 4,
+    "sentence": "駅に着いたら、電話をください。",
+    "translation": "Kalau sudah tiba di stasiun, tolong telepon (saya)."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 4,
+    "sentence": "仕事が終わったら、食事に行きましょう。",
+    "translation": "Setelah pekerjaan selesai, ayo pergi makan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 4,
+    "sentence": "高校を出たら、留学したいです。",
+    "translation": "Setelah lulus SMA, (saya) ingin bersekolah di luar negeri."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 4,
+    "sentence": "60歳になったら、仕事をやめます。",
+    "translation": "Setelah berumur 60 tahun, (saya) akan berhenti bekerja."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 5,
+    "sentence": "考えても、分かりません。",
+    "translation": "Walaupun dipikirkan, (saya) tidak mengerti."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 5,
+    "sentence": "覚えても、すぐ忘れます。",
+    "translation": "Walaupun dihafal, (saya) langsung lupa."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 5,
+    "sentence": "ボタンを押しても、水が出ません。",
+    "translation": "Walaupun tombol ditekan, airnya tidak keluar."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 5,
+    "sentence": "結婚しても、一緒に住みません。",
+    "translation": "Walaupun sudah menikah, (kami) tidak tinggal bersama."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 5,
+    "sentence": "辞書で調べても、分かりません。",
+    "translation": "Walaupun sudah diperiksa di kamus, (saya) tidak mengerti."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "安くても、買いません。",
+    "translation": "Walaupun murah, (saya) tidak akan beli."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "嫌いでも、食べます。",
+    "translation": "Walaupun benci/tidak suka, (saya) akan memakannya."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "眠くても、レポートを書かなければなりません。",
+    "translation": "Walaupun mengantuk, (saya) harus menulis laporan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "旅行に行きたくても、時間がありません。",
+    "translation": "Walaupun ingin pergi berwisata, (saya) tidak ada waktu."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "歌が下手でも、カラオケは楽しいです。",
+    "translation": "Walaupun tidak pintar menyanyi, karaoke itu menyenangkan."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 6,
+    "sentence": "病気でも、病院へ行きません。",
+    "translation": "Walaupun sakit, (saya) tidak pergi ke rumah sakit."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "デザインが良かったら、買いますか？いいえ、デザインがよくても買いません。",
+    "translation": "Kalau desainnya bagus, apakah (kamu) akan membelinya? Tidak, walaupun desainnya bagus saya tidak akan beli."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "高くても、買いますか？いいえ、高かったら、買いません。",
+    "translation": "Walaupun mahal, apakah (kamu) akan membelinya? Tidak, kalau mahal saya tidak akan beli."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "チャンスがあったら、外国に住みますか？いいえ、チャンスがあっても、外国に住みたくないです。",
+    "translation": "Kalau ada kesempatan, apakah (kamu) akan tinggal di luar negeri? Tidak, walaupun ada kesempatan saya tidak ingin tinggal di luar negeri."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "暇だったら、旅行に行きますか？いいえ、暇でも、旅行に行きません。",
+    "translation": "Kalau ada waktu luang, apakah (kamu) akan pergi berwisata? Tidak, walaupun luang saya tidak pergi berwisata."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "年を取っても、働きたいですか？いいえ、年を取ったら、働きたくないです。",
+    "translation": "Walaupun sudah tua, apakah (kamu) ingin tetap bekerja? Tidak, kalau sudah tua saya tidak ingin bekerja."
+  },
+  {
+    "chapter": "Chapter 25",
+    "number": 7,
+    "sentence": "体の調子が悪くても、勉強しますか？いいえ、体の調子が悪かったら、勉強しません。",
+    "translation": "Walaupun kondisi badan sedang buruk, apakah (kamu) akan tetap belajar? Tidak, kalau kondisi badan buruk saya tidak akan belajar."
+  }
+]

@@ -5,7 +5,14 @@ import '../models/renshuu_model.dart';
 import 'renshuu_quiz_screen.dart';
 
 class RenshuuMenuScreen extends StatefulWidget {
-  const RenshuuMenuScreen({super.key});
+  final String title;
+  final String jsonAssetPath;
+
+  const RenshuuMenuScreen({
+    super.key, 
+    required this.title, 
+    required this.jsonAssetPath
+  });
 
   @override
   State<RenshuuMenuScreen> createState() => _RenshuuMenuScreenState();
@@ -24,7 +31,7 @@ class _RenshuuMenuScreenState extends State<RenshuuMenuScreen> {
 
   Future<void> _loadData() async {
     try {
-      final String jsonString = await rootBundle.loadString('assets/renshuu/n5_renshuu_a.json');
+      final String jsonString = await rootBundle.loadString(widget.jsonAssetPath);
       final result = await compute(parseRenshuuDataInBackground, jsonString);
       setState(() {
         _allData = result.allData;
@@ -48,7 +55,7 @@ class _RenshuuMenuScreenState extends State<RenshuuMenuScreen> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: bgColor,
-        title: const Text('Renshuu A', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
+        title: Text(widget.title, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 20.0, letterSpacing: -0.5))
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())

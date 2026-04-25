@@ -2,7 +2,7 @@
   {
     "chapter": "Chapter 1",
     "number": 1,
-    "sentence": "私はマイク・ミラーです。",
+    "sentence": "私はマイクミラーです。",
     "translation": "Saya adalah Mike Miller."
   },
   {
@@ -26,14 +26,14 @@
   {
     "chapter": "Chapter 1",
     "number": 2,
-    "sentence": "私はカール・シュミットじゃありません。",
+    "sentence": "私はカールシュミットじゃありません。",
     "translation": "Saya bukan Karl Schmidt."
   },
   {
     "chapter": "Chapter 1",
     "number": 2,
     "sentence": "私は教師じゃありません。",
-    "translation": "Saya bukan seorang guru."
+    "translation": "Saya bukan seorang guru (Profesi)."
   },
   {
     "chapter": "Chapter 1",
@@ -110,13 +110,13 @@
   {
     "chapter": "Chapter 1",
     "number": 6,
-    "sentence": "たろうちゃんは８歳です。",
+    "sentence": "太郎ちゃんは８歳です。",
     "translation": "Taro berumur 8 tahun."
   },
   {
     "chapter": "Chapter 1",
     "number": 6,
-    "sentence": "たろうちゃんは何歳ですか？",
+    "sentence": "太郎ちゃんは何歳ですか？",
     "translation": "Taro berumur berapa?"
   },
   {

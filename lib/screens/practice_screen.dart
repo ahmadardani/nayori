@@ -3,9 +3,8 @@ import '../models/kanji_model.dart';
 import 'all_words_menu_screen.dart'; 
 import 'renshuu_menu_screen.dart';
 import 'compound_verb_menu_screen.dart';
-import 'verb_menu_screen.dart';
-import 'adjective_menu_screen.dart';
-import 'verb_pair_quiz_screen.dart';
+import 'verb_level_menu_screen.dart'; 
+import 'adjective_level_menu_screen.dart'; 
 
 class PracticeScreen extends StatelessWidget {
   final List<KanjiData> allData;
@@ -73,7 +72,7 @@ class PracticeScreen extends StatelessWidget {
               subtitle: 'Verb conjugation drills and Pairs',
               icon: Icons.transform_rounded,
               cardColor: cardColor, borderColor: borderColor,
-              onTap: () => _showLevelPicker(context, 'Verbs', cardColor, borderColor),
+              onTap: () => _navigateTo(context, const VerbLevelMenuScreen()), 
             ),
             _buildFSOListCard(
               context: context,
@@ -81,7 +80,7 @@ class PracticeScreen extends StatelessWidget {
               subtitle: 'Adjective form change drills',
               icon: Icons.style_rounded,
               cardColor: cardColor, borderColor: borderColor,
-              onTap: () => _showLevelPicker(context, 'Adjectives', cardColor, borderColor),
+              onTap: () => _navigateTo(context, const AdjectiveLevelMenuScreen()), 
             ),
             _buildFSOListCard(
               context: context,
@@ -158,89 +157,6 @@ class PracticeScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-
-  void _showLevelPicker(BuildContext context, String type, Color cardColor, Color borderColor) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true, 
-      backgroundColor: cardColor,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
-      builder: (context) {
-        return SafeArea(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 20.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text('Select $type Level', style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
-                const SizedBox(height: 24.0),
-                ListTile(
-                  title: Text(type == 'Verbs' ? 'Level N5 (All Verbs)' : 'Level N5', style: const TextStyle(fontWeight: FontWeight.w600)),
-                  trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    side: BorderSide(color: borderColor, width: 1.0),
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                    _navigateTo(context, type == 'Verbs' ? const VerbMenuScreen(level: 'N5') : const AdjectiveMenuScreen(level: 'N5'));
-                  },
-                ),
-                const SizedBox(height: 12.0),
-                ListTile(
-                  title: Text(type == 'Verbs' ? 'Level N4 (All Verbs)' : 'Level N4', style: const TextStyle(fontWeight: FontWeight.w600)),
-                  trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    side: BorderSide(color: borderColor, width: 1.0),
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                    _navigateTo(context, type == 'Verbs' ? const VerbMenuScreen(level: 'N4') : const AdjectiveMenuScreen(level: 'N4'));
-                  },
-                ),
-                
-                if (type == 'Verbs') ...[
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16.0),
-                    child: Divider(),
-                  ),
-                  const Text('Jidoushi & Tadoushi Pairs', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
-                  const SizedBox(height: 12.0),
-                  ListTile(
-                    title: const Text('Level N5 Pairs', style: TextStyle(fontWeight: FontWeight.w600)),
-                    trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      side: BorderSide(color: borderColor, width: 1.0),
-                    ),
-                    onTap: () {
-                      Navigator.pop(context);
-                      _navigateTo(context, const VerbPairQuizScreen(level: 'N5'));
-                    },
-                  ),
-                  const SizedBox(height: 12.0),
-                  ListTile(
-                    title: const Text('Level N4 Pairs', style: TextStyle(fontWeight: FontWeight.w600)),
-                    trailing: const Icon(Icons.arrow_forward_rounded, size: 20),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      side: BorderSide(color: borderColor, width: 1.0),
-                    ),
-                    onTap: () {
-                      Navigator.pop(context);
-                      _navigateTo(context, const VerbPairQuizScreen(level: 'N4'));
-                    },
-                  ),
-                ],
-              ],
-            ),
-          ),
-        );
-      },
     );
   }
 }

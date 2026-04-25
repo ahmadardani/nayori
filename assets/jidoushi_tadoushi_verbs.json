@@ -1,0 +1,478 @@
+[
+  {
+    "number": 1,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "聞こえる",
+    "translation": "terdengar"
+  },
+  {
+    "number": 1,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "聞く",
+    "translation": "mendengar / bertanya"
+  },
+  {
+    "number": 2,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "開く",
+    "translation": "terbuka"
+  },
+  {
+    "number": 2,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "開ける",
+    "translation": "membuka"
+  },
+  {
+    "number": 3,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "閉まる (Shimaru)",
+    "translation": "tertutup"
+  },
+  {
+    "number": 3,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "閉める (Shimeru)",
+    "translation": "menutup"
+  },
+  {
+    "number": 4,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "入る (Hairu)",
+    "translation": "masuk"
+  },
+  {
+    "number": 4,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "入れる (Ireru)",
+    "translation": "memasukkan"
+  },
+  {
+    "number": 5,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "出る (Deru)",
+    "translation": "keluar"
+  },
+  {
+    "number": 5,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "出す (Dasu)",
+    "translation": "mengeluarkan"
+  },
+  {
+    "number": 6,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "消える (Kieru)",
+    "translation": "padam / menghilang"
+  },
+  {
+    "number": 6,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "消す (Kesu)",
+    "translation": "mematikan / menghapus"
+  },
+  {
+    "number": 7,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "止まる (Tomaru)",
+    "translation": "berhenti"
+  },
+  {
+    "number": 7,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "止める (Tomeru)",
+    "translation": "menghentikan"
+  },
+  {
+    "number": 8,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "落ちる (Ochiru)",
+    "translation": "jatuh"
+  },
+  {
+    "number": 8,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "落とす (Otosu)",
+    "translation": "menjatuhkan"
+  },
+  {
+    "number": 9,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "直る (Naoru)",
+    "translation": "sembuh / diperbaiki"
+  },
+  {
+    "number": 9,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "直す (Naosu)",
+    "translation": "memperbaiki"
+  },
+  {
+    "number": 10,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "無くなる (Nakunaru)",
+    "translation": "hilang (tidak ada)"
+  },
+  {
+    "number": 10,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "無くす (Nakusu)",
+    "translation": "menghilangkan"
+  },
+  {
+    "number": 11,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "起きる (Okiru)",
+    "translation": "bangun"
+  },
+  {
+    "number": 11,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "起こす (Okosu)",
+    "translation": "membangunkan"
+  },
+  {
+    "number": 12,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "乗る (Noru)",
+    "translation": "naik (kendaraan)"
+  },
+  {
+    "number": 12,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "乗せる (Noseru)",
+    "translation": "menaikkan (penumpang/barang)"
+  },
+  {
+    "number": 13,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "降りる (Oriru)",
+    "translation": "turun (kendaraan)"
+  },
+  {
+    "number": 13,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "降ろす (Orosu)",
+    "translation": "menurunkan"
+  },
+  {
+    "number": 14,
+    "level": "N5",
+    "type": "自動詞",
+    "japanese": "返る (Kaeru)",
+    "translation": "kembali (benda)"
+  },
+  {
+    "number": 14,
+    "level": "N5",
+    "type": "他動詞",
+    "japanese": "返す (Kaesu)",
+    "translation": "mengembalikan"
+  },
+  {
+    "number": 1,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "開く (aku)",
+    "translation": "terbuka"
+  },
+  {
+    "number": 1,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "開ける (akeru)",
+    "translation": "membuka"
+  },
+  {
+    "number": 2,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "点く (tsuku)",
+    "translation": "menyala"
+  },
+  {
+    "number": 2,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "点ける (tsukeru)",
+    "translation": "menyalakan"
+  },
+  {
+    "number": 3,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "続く (tsudzuku)",
+    "translation": "berlanjut"
+  },
+  {
+    "number": 3,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "続ける (tsudukeru)",
+    "translation": "melanjutkan"
+  },
+  {
+    "number": 4,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "焼ける (yakeru)",
+    "translation": "terbakar / terpanggang"
+  },
+  {
+    "number": 4,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "焼く (yaku)",
+    "translation": "membakar / memanggang"
+  },
+  {
+    "number": 5,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "起きる (okiru)",
+    "translation": "bangun"
+  },
+  {
+    "number": 5,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "起こす (okosu)",
+    "translation": "membangunkan"
+  },
+  {
+    "number": 6,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "壊れる (kowareru)",
+    "translation": "rusak"
+  },
+  {
+    "number": 6,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "壊す (kowasu)",
+    "translation": "merusak"
+  },
+  {
+    "number": 7,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "渡る (wataru)",
+    "translation": "menyeberang"
+  },
+  {
+    "number": 7,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "渡す (watasu)",
+    "translation": "menyerahkan / menyeberangkan"
+  },
+  {
+    "number": 8,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "並ぶ (narabu)",
+    "translation": "berbaris"
+  },
+  {
+    "number": 8,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "並べる (naraberu)",
+    "translation": "menyusun / membariskan"
+  },
+  {
+    "number": 9,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "集まる (atsumaru)",
+    "translation": "berkumpul"
+  },
+  {
+    "number": 9,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "集める (atsumeru)",
+    "translation": "mengumpulkan"
+  },
+  {
+    "number": 10,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "上がる (agaru)",
+    "translation": "naik / meningkat"
+  },
+  {
+    "number": 10,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "上げる (ageru)",
+    "translation": "menaikkan"
+  },
+  {
+    "number": 11,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "折れる (oreru)",
+    "translation": "patah"
+  },
+  {
+    "number": 11,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "折る (oru)",
+    "translation": "mematahkan / melipat"
+  },
+  {
+    "number": 12,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "掛かる (kakaru)",
+    "translation": "tergantung"
+  },
+  {
+    "number": 12,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "掛ける (kakeru)",
+    "translation": "menggantungkan"
+  },
+  {
+    "number": 13,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "変わる (kawaru)",
+    "translation": "berubah"
+  },
+  {
+    "number": 13,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "変える (kaeru)",
+    "translation": "mengubah"
+  },
+  {
+    "number": 14,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "決まる (kimaru)",
+    "translation": "diputuskan"
+  },
+  {
+    "number": 14,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "決める (kimeru)",
+    "translation": "memutuskan"
+  },
+  {
+    "number": 15,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "閉まる (shimaru)",
+    "translation": "tertutup"
+  },
+  {
+    "number": 15,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "閉める (shimeru)",
+    "translation": "menutup"
+  },
+  {
+    "number": 16,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "直る (naoru)",
+    "translation": "sembuh / diperbaiki"
+  },
+  {
+    "number": 16,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "直す (naosu)",
+    "translation": "memperbaiki / menyembuhkan"
+  },
+  {
+    "number": 17,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "始まる (hajimaru)",
+    "translation": "mulai"
+  },
+  {
+    "number": 17,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "始める (hajimeru)",
+    "translation": "memulai"
+  },
+  {
+    "number": 18,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "見つかる (mitsukaru)",
+    "translation": "ditemukan"
+  },
+  {
+    "number": 18,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "見つける (mitsukeru)",
+    "translation": "menemukan"
+  },
+  {
+    "number": 19,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "落ちる (ochiru)",
+    "translation": "jatuh"
+  },
+  {
+    "number": 19,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "落とす (otosu)",
+    "translation": "menjatuhkan"
+  },
+  {
+    "number": 20,
+    "level": "N4",
+    "type": "自動詞",
+    "japanese": "入る (hairu)",
+    "translation": "masuk"
+  },
+  {
+    "number": 20,
+    "level": "N4",
+    "type": "他動詞",
+    "japanese": "入れる (ireru)",
+    "translation": "memasukkan"
+  }
+]

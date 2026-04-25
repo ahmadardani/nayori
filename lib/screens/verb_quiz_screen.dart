@@ -60,7 +60,6 @@ class _VerbQuizScreenState extends State<VerbQuizScreen> {
       if (verb.teIru.isNotEmpty) questions.add(VerbQuestion(verb, 'Te Iru', verb.teIru));
     }
 
-    questions.shuffle(); 
     _activeQueue = List.from(questions); 
   }
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'dart:convert';
-import '../models/verb_model.dart';
+import '../models/jt_pair_model.dart';
 
 class VerbPairQuizScreen extends StatefulWidget {
   final String level;
@@ -18,8 +18,8 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
   final FocusNode _focusNode = FocusNode();
   final FlutterTts flutterTts = FlutterTts(); 
   
-  List<VerbData> _activeQueue = [];
-  List<VerbData> _incorrectQueue = [];
+  List<JTPair> _activeQueue = [];
+  List<JTPair> _incorrectQueue = [];
   
   bool _isLoading = true;
   bool _isStarting = true; 
@@ -47,40 +47,35 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
   }
 
   Future<void> _speak(String text) async {
-    await flutterTts.speak(text);
+    String cleanText = text.replaceAll(RegExp(r'\s*\(.*?\)'), '').trim();
+    await flutterTts.speak(cleanText);
   }
 
   Future<void> _loadAndPrepareData() async {
-    final String jsonString = await rootBundle.loadString('assets/${widget.level}-verbs/${widget.level}_Verbs_C1.json');
-    final List<dynamic> parsedJson = json.decode(jsonString);
-    final List<VerbData> allVerbs = parsedJson.map((json) => VerbData.fromJson(json)).toList();
+    try {
+      final String jsonString = await rootBundle.loadString('assets/jidoushi_tadoushi_verbs.json');
+      final List<dynamic> parsedJson = json.decode(jsonString);
+      final List<JTPair> allPairs = parsedJson.map((json) => JTPair.fromJson(json)).toList();
 
-    List<VerbData> pairsOnly = allVerbs.where((v) => v.pair.isNotEmpty && v.pair != '-').toList();
-    
-    List<VerbData> orderedPairs = [];
-    Set<String> processedKanji = {};
+      List<JTPair> levelPairs = allPairs.where((p) => p.level == widget.level).toList();
 
-    for (var v in pairsOnly) {
-      if (processedKanji.contains(v.kanji)) continue;
-      
-      orderedPairs.add(v);
-      processedKanji.add(v.kanji);
+      levelPairs.sort((a, b) {
+        int numCompare = a.number.compareTo(b.number);
+        if (numCompare != 0) return numCompare;
+        
+        if (a.type == '自動詞' && b.type != '自動詞') return -1;
+        if (a.type != '自動詞' && b.type == '自動詞') return 1;
+        return 0;
+      });
 
-      var partner = allVerbs.firstWhere(
-        (p) => p.kanji == v.pair || p.dictionary == v.pair,
-        orElse: () => v, 
-      );
-
-      if (partner != v && !processedKanji.contains(partner.kanji)) {
-        orderedPairs.add(partner);
-        processedKanji.add(partner.kanji);
-      }
+      setState(() {
+        _activeQueue = levelPairs;
+        _isLoading = false;
+      });
+    } catch (e) {
+      debugPrint("Error loading pairs json: $e");
+      setState(() => _isLoading = false);
     }
-
-    setState(() {
-      _activeQueue = orderedPairs;
-      _isLoading = false;
-    });
   }
 
   @override
@@ -118,8 +113,10 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
     }
 
     final userAnswer = normalizeText(_answerController.text);
-    final correctAnswer = normalizeText(currentQ.kanji); 
-    bool isTextMatch = (userAnswer == correctAnswer || userAnswer == normalizeText(currentQ.dictionary));
+    String cleanJapanese = currentQ.japanese.replaceAll(RegExp(r'\s*\(.*?\)'), '').trim();
+    final correctAnswer = normalizeText(cleanJapanese); 
+
+    bool isTextMatch = (userAnswer == correctAnswer);
 
     if (!_isAnswered) {
       setState(() {
@@ -144,7 +141,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
       }
       
       if (_autoPlayAudio) {
-        _speak(currentQ.kanji); 
+        _speak(currentQ.japanese); 
       }
       
     } else {
@@ -285,7 +282,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Guess the verbs based on their meaning. Pairs will appear sequentially!',
+              'Guess the verbs based on their meaning. Pairs will appear sequentially (Intransitive ➔ Transitive)!',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16.0, color: Colors.grey, height: 1.4),
             ),
@@ -330,7 +327,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
 
   Widget _buildQuizContent(Color borderColor) {
     final currentQ = _activeQueue[_currentIndex];
-    final isTransitive = currentQ.verbType == 'Transitive';
+    final isTransitive = currentQ.type == '他動詞'; 
     
     return SingleChildScrollView(
       padding: const EdgeInsets.all(24.0),
@@ -339,13 +336,13 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
         children: [
           Center(
             child: Text(
-              'Pair ${_currentIndex ~/ 2 + 1}  •  Question ${_currentIndex + 1} of ${_activeQueue.length}',
+              'Pair ${currentQ.number}  •  Question ${_currentIndex + 1} of ${_activeQueue.length}',
               style: TextStyle(color: Colors.grey.shade500, fontSize: 14.0, fontWeight: FontWeight.w600),
             ),
           ),
           const SizedBox(height: 32.0),
           Text(
-            currentQ.meaning,
+            currentQ.translation,
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 32.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
           ),
@@ -364,7 +361,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
                 ),
               ),
               child: Text(
-                isTransitive ? '他 (Tadoushi / Transitive)' : '自 (Jidoushi / Intransitive)',
+                isTransitive ? '他動詞 (Tadoushi / Transitive)' : '自動詞 (Jidoushi / Intransitive)',
                 style: TextStyle(
                   color: isTransitive ? Colors.blue.shade700 : Colors.orange.shade700,
                   fontSize: 14.0,
@@ -417,7 +414,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
           if (_showHint)
             Center(
               child: Text(
-                'Hint: starts with ${currentQ.kanji.isNotEmpty ? currentQ.kanji[0] : currentQ.dictionary[0]}...',
+                'Hint: starts with ${currentQ.japanese[0]}...',
                 style: const TextStyle(fontSize: 18.0, fontStyle: FontStyle.italic, color: Colors.grey),
               ),
             )
@@ -496,7 +493,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
                   ),
                   IconButton(
                     icon: Icon(Icons.volume_up_rounded, color: finalTextColor),
-                    onPressed: () => _speak(currentQ.kanji),
+                    onPressed: () => _speak(currentQ.japanese),
                   ),
                 ],
               ),
@@ -505,7 +502,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
                 Text('Correct Answer:', style: TextStyle(color: finalTextColor.withOpacity(0.8), fontSize: 14.0)),
                 const SizedBox(height: 4.0),
                 Text(
-                  currentQ.kanji,
+                  currentQ.japanese,
                   style: TextStyle(color: finalTextColor, fontSize: 24.0, fontWeight: FontWeight.w800, letterSpacing: -0.5),
                 ),
               ],

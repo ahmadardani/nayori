@@ -107,6 +107,93 @@ class _JlptQuizScreenState extends State<JlptQuizScreen> {
     });
   }
 
+  void _showPembahasanBottomSheet(JlptSoal soal) {
+    if (soal.pembahasan == null) return;
+    
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (context) {
+        return DraggableScrollableSheet(
+          expand: false,
+          initialChildSize: 0.7,
+          minChildSize: 0.5,
+          maxChildSize: 0.9,
+          builder: (_, controller) {
+            return ListView(
+              controller: controller,
+              padding: EdgeInsets.fromLTRB(24, 0, 24, MediaQuery.of(context).padding.bottom + 48,),
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.menu_book_rounded, color: Theme.of(context).colorScheme.primary),
+                    const SizedBox(width: 8.0),
+                    const Text('Pembahasan', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+                const Divider(height: 32),
+                
+                // Detail Pilihan
+                if (soal.pembahasan!.detailPilihan.isNotEmpty) ...[
+                  const Text('Pilihan Jawaban:', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8.0),
+                  ...soal.pembahasan!.detailPilihan.map((p) => Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 14.0, height: 1.5),
+                        children: [
+                          TextSpan(text: '${p.teks}: ', style: const TextStyle(fontWeight: FontWeight.bold)),
+                          TextSpan(text: p.arti),
+                          if (p.penjelasan != null) TextSpan(text: ' - ${p.penjelasan}', style: const TextStyle(fontStyle: FontStyle.italic)),
+                          TextSpan(
+                            text: p.isBenar ? ' (Benar)' : ' (Salah)',
+                            style: TextStyle(color: p.isBenar ? Colors.green : Colors.red, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )),
+                  const SizedBox(height: 16.0),
+                ],
+
+                // Kosa Kata
+                if (soal.pembahasan!.kosaKata.isNotEmpty) ...[
+                  const Text('Kosa Kata:', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8.0),
+                  ...soal.pembahasan!.kosaKata.map((k) => Padding(
+                    padding: const EdgeInsets.only(bottom: 4.0),
+                    child: Text('• ${k.kanji} (${k.hiragana}): ${k.arti}', style: const TextStyle(fontSize: 14.0)),
+                  )),
+                  const SizedBox(height: 16.0),
+                ],
+
+                // Grammar
+                if (soal.pembahasan!.grammar.isNotEmpty) ...[
+                  const Text('Tata Bahasa:', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8.0),
+                  ...soal.pembahasan!.grammar.map((g) => Padding(
+                    padding: const EdgeInsets.only(bottom: 12.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('• ${g.pola}', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14.0)),
+                        Text(g.penjelasan, style: const TextStyle(fontSize: 14.0)),
+                        if (g.contoh.isNotEmpty) ...g.contoh.map((c) => Text('  Contoh: $c', style: const TextStyle(fontSize: 13.0, fontStyle: FontStyle.italic, color: Colors.grey))),
+                      ],
+                    ),
+                  )),
+                ],
+              ],
+            );
+          }
+        );
+      },
+    );
+  }
+
+
   Future<bool> _onWillPop() async {
     if (_isQuizFinished) return true;
     final shouldPop = await showDialog<bool>(
@@ -551,6 +638,8 @@ class _JlptQuizScreenState extends State<JlptQuizScreen> {
 
     final finalPanelColor = isDark ? (_isCorrect ? Colors.green.withOpacity(0.15) : Colors.red.withOpacity(0.15)) : panelColor;
     final finalTextColor = isDark ? (_isCorrect ? Colors.green.shade400 : Colors.red.shade400) : textColor;
+    
+    final currentQ = _activeQueue[_currentIndex]; // Ambil data soal saat ini
 
     return Container(
       color: finalPanelColor,
@@ -574,21 +663,47 @@ class _JlptQuizScreenState extends State<JlptQuizScreen> {
                 ],
               ),
               const SizedBox(height: 24.0),
-              SizedBox(
-                height: 50.0,
-                child: ElevatedButton(
-                  onPressed: _nextQuestion,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: _isCorrect ? Colors.green : Colors.red,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-                    elevation: 0.0,
+              
+              // Perubahan: Menggunakan Row untuk membagi 2 tombol
+              Row(
+                children: [
+                  if (currentQ.soal.pembahasan != null) ...[
+                    Expanded(
+                      child: SizedBox(
+                        height: 50.0,
+                        child: OutlinedButton(
+                          onPressed: () => _showPembahasanBottomSheet(currentQ.soal),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: finalTextColor,
+                            side: BorderSide(color: finalTextColor, width: 2.0),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                          ),
+                          child: const Icon(Icons.auto_stories_rounded, size: 24, ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 12.0),
+                  ],
+                  Expanded(
+                    flex: 2, // Tombol continue dibuat sedikit lebih lebar
+                    child: SizedBox(
+                      height: 50.0,
+                      child: ElevatedButton(
+                        onPressed: _nextQuestion,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: _isCorrect ? Colors.green : Colors.red,
+                          foregroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                          elevation: 0.0,
+                        ),
+                        child: Text(
+                          isLast ? 'Finish Practice' : 'Continue', 
+                          style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
+                        ),
+                      ),
+                    ),
                   ),
-                  child: Text(
-                    isLast ? 'Finish Practice' : 'Continue', 
-                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)
-                  ),
-                ),
+                ],
               ),
             ],
           ),

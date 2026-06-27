@@ -1,20 +1,88 @@
 import 'dart:convert';
 
+class DetailPilihan {
+  final String teks;
+  final String arti;
+  final String? penjelasan;
+  final bool isBenar;
+
+  DetailPilihan({required this.teks, required this.arti, this.penjelasan, required this.isBenar});
+
+  factory DetailPilihan.fromJson(Map<String, dynamic> json) {
+    return DetailPilihan(
+      teks: json['teks'] ?? '',
+      arti: json['arti'] ?? '',
+      penjelasan: json['penjelasan'],
+      isBenar: json['is_benar'] ?? false,
+    );
+  }
+}
+
+class KosaKata {
+  final String kanji;
+  final String hiragana;
+  final String arti;
+
+  KosaKata({required this.kanji, required this.hiragana, required this.arti});
+
+  factory KosaKata.fromJson(Map<String, dynamic> json) {
+    return KosaKata(
+      kanji: json['kanji'] ?? '',
+      hiragana: json['hiragana'] ?? '',
+      arti: json['arti'] ?? '',
+    );
+  }
+}
+
+class Grammar {
+  final String pola;
+  final String penjelasan;
+  final List<String> contoh;
+
+  Grammar({required this.pola, required this.penjelasan, required this.contoh});
+
+  factory Grammar.fromJson(Map<String, dynamic> json) {
+    return Grammar(
+      pola: json['pola'] ?? '',
+      penjelasan: json['penjelasan'] ?? '',
+      contoh: List<String>.from(json['contoh'] ?? []),
+    );
+  }
+}
+
+class Pembahasan {
+  final List<DetailPilihan> detailPilihan;
+  final List<KosaKata> kosaKata;
+  final List<Grammar> grammar;
+
+  Pembahasan({required this.detailPilihan, required this.kosaKata, required this.grammar});
+
+  factory Pembahasan.fromJson(Map<String, dynamic> json) {
+    return Pembahasan(
+      detailPilihan: (json['detail_pilihan'] as List?)?.map((i) => DetailPilihan.fromJson(i)).toList() ?? [],
+      kosaKata: (json['kosa_kata'] as List?)?.map((i) => KosaKata.fromJson(i)).toList() ?? [],
+      grammar: (json['grammar'] as List?)?.map((i) => Grammar.fromJson(i)).toList() ?? [],
+    );
+  }
+}
+
 class JlptSoal {
   final String idSoal;
   final bool isContoh;
   final String pertanyaan;
-  final String? terjemahanSoal; // <-- Tambahan Baru
+  final String? terjemahanSoal;
   final List<String> pilihan;
   final int jawabanBenar;
+  final Pembahasan? pembahasan; // <-- Tambahan Baru
 
   JlptSoal({
     required this.idSoal,
     required this.isContoh,
     required this.pertanyaan,
-    this.terjemahanSoal, // <-- Tambahan Baru
+    this.terjemahanSoal,
     required this.pilihan,
     required this.jawabanBenar,
+    this.pembahasan, // <-- Tambahan Baru
   });
 
   factory JlptSoal.fromJson(Map<String, dynamic> json) {
@@ -22,9 +90,10 @@ class JlptSoal {
       idSoal: json['id_soal'] ?? '',
       isContoh: json['is_contoh'] ?? false,
       pertanyaan: json['pertanyaan'] ?? '',
-      terjemahanSoal: json['terjemahan_soal'], // <-- Tambahan Baru
+      terjemahanSoal: json['terjemahan_soal'],
       pilihan: List<String>.from(json['pilihan'] ?? []),
       jawabanBenar: json['jawaban_benar'] ?? 0,
+      pembahasan: json['pembahasan'] != null ? Pembahasan.fromJson(json['pembahasan']) : null, // <-- Tambahan Baru
     );
   }
 }

@@ -838,7 +838,7 @@
               {
                 "id_soal": "2112-N4-MG-M2-Q12",
                 "is_contoh": false,
-                "pertanyaan": "わからないかんじをじしょで（**しらべる**）。",
+                "pertanyaan": "わからない かんじをじしょで しらべる（**しらべる**）。",
                 "terjemahan_soal": "Mencari kanji yang tidak dimengerti di kamus.",
                 "pilihan": ["書く","読む","調べる","見る"],
                 "jawaban_benar": 2

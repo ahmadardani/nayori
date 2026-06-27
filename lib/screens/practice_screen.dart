@@ -5,6 +5,7 @@ import 'renshuu_menu_screen.dart';
 import 'compound_verb_menu_screen.dart';
 import 'verb_level_menu_screen.dart'; 
 import 'adjective_level_menu_screen.dart'; 
+import 'jlpt_menu_screen.dart'; 
 
 class PracticeScreen extends StatelessWidget {
   final List<KanjiData> allData;
@@ -58,6 +59,14 @@ class PracticeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 32.0),
 
+            _buildFSOListCard(
+              context: context,
+              title: 'JLPT Mockup Test',
+              subtitle: 'Latihan ujian JLPT berdasarkan tahun dan sesi',
+              icon: Icons.assignment_rounded,
+              cardColor: cardColor, borderColor: borderColor,
+              onTap: () => _navigateTo(context, const JlptMenuScreen()),
+            ),
             _buildFSOListCard(
               context: context,
               title: 'Vocab Practice',

@@ -530,6 +530,7 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
     );
   }
 
+  // ===== DESAIN BARU RESULT SCREEN =====
   Widget _buildResultScreen() {
     bool isPerfect = _incorrectQueue.isEmpty;
 
@@ -544,46 +545,51 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
         children: [
           Icon(
             isPerfect ? Icons.workspace_premium_rounded : Icons.edit_note_rounded,
-            size: 80.0,
-            color: isPerfect ? Colors.amber : Theme.of(context).colorScheme.primary,
+            size: 90.0,
+            color: isPerfect ? Colors.amber.shade500 : Colors.blueGrey.shade400,
           ),
-          const SizedBox(height: 16.0),
+          const SizedBox(height: 24.0),
           Text(
-            isPerfect ? 'Practice Cleared!' : 'Keep Practicing!',
+            isPerfect ? 'Perfect! Stage Cleared!' : 'Keep Practicing!',
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, letterSpacing: -0.5),
           ),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: 40.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _buildStatColumn('Correct', _totalCorrect, Colors.green),
-              _buildStatColumn('Incorrect', _totalWrong, Colors.red),
+              _buildStatColumn('Correct', _totalCorrect, Colors.green.shade600),
+              _buildStatColumn('Incorrect', _totalWrong, Colors.red.shade600),
             ],
           ),
           const Spacer(),
           if (!isPerfect)
-            ElevatedButton(
+            ElevatedButton.icon(
               onPressed: _retryIncorrect,
+              icon: const Icon(Icons.refresh_rounded),
+              label: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 14.0),
-                backgroundColor: Theme.of(context).colorScheme.errorContainer,
-                foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
-                elevation: 0.0,
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                backgroundColor: Colors.orange.shade700, 
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                elevation: 2.0, 
               ),
-              child: const Text('Retry Incorrect Words', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
             ),
-          const SizedBox(height: 12.0),
-          OutlinedButton(
+          const SizedBox(height: 16.0),
+          ElevatedButton.icon(
             onPressed: () {
               Navigator.pop(context, true); 
             },
-            style: OutlinedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(vertical: 14.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+            icon: const Icon(Icons.home_rounded),
+            label: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              backgroundColor: Theme.of(context).colorScheme.surfaceVariant, 
+              foregroundColor: Theme.of(context).colorScheme.onSurfaceVariant,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              elevation: 0.0,
             ),
-            child: const Text('Back to Menu', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
           ),
           const SizedBox(height: 16.0),
         ],
@@ -594,8 +600,9 @@ class _VerbPairQuizScreenState extends State<VerbPairQuizScreen> {
   Widget _buildStatColumn(String label, int value, Color color) {
     return Column(
       children: [
-        Text(value.toString(), style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w900, color: color)),
-        Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey)),
+        Text(value.toString(), style: TextStyle(fontSize: 36.0, fontWeight: FontWeight.w900, color: color)),
+        const SizedBox(height: 4.0),
+        Text(label, style: const TextStyle(fontSize: 14.0, color: Colors.grey, fontWeight: FontWeight.w600)),
       ],
     );
   }

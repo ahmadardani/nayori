@@ -2108,7 +2108,7 @@
             "detail_pilihan": [
               {
                 "teks": "けっこんすると",
-                "arti": "Bahwa dia akan menikah (konten informasi yang didengar)",
+                "arti": "Bagian ini dipasangkan dengan 『聞いた』 menjadi 『結婚すると聞いた』 yang berarti 'mendengar bahwa akan menikah'. Bukan jawaban ★.",
                 "penjelasan": "けっこんすると berada di posisi pertama: 外国に住んでいる【友達が】けっこんすると. Bukan posisi ★.",
                 "is_benar": false
               },
@@ -2121,13 +2121,13 @@
               {
                 "teks": "作れる",
                 "arti": "Bisa membuat",
-                "penjelasan": "Pilihan ini tidak cocok secara tata bahasa maupun makna dalam kalimat ini. Kalimat tidak menyebutkan kemampuan membuat.",
+                "penjelasan": "Pilihan ini merupakan pengecoh. Selain maknanya tidak sesuai dengan konteks, kata ini juga tidak dapat dihubungkan dengan bagian kalimat lainnya sehingga tidak membentuk kalimat yang benar.",
                 "is_benar": false
               },
               {
                 "teks": "聞いたので",
                 "arti": "Karena mendengar (sebab/alasan)",
-                "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 外国に住んでいる 【けっこんすると】 【聞いたので★】 【プレゼントを送ろうと】 思う. = 'Karena mendengar bahwa teman yang tinggal di luar negeri akan menikah, saya berniat mengirimkan hadiah.'",
+                "penjelasan": "Benar. Digunakan setelah 『けっこんすると』 sehingga membentuk 『結婚すると聞いたので』 yang berarti 'karena mendengar bahwa akan menikah'. Pada soal JLPT, ★ berada tepat setelah bagian ini sehingga jawaban yang dipilih adalah 『聞いたので』.'",
                 "is_benar": true
               }
             ],
@@ -3336,7 +3336,7 @@
         {
           "id_soal": "2112-N4-MG-M2-Q12",
           "is_contoh": false,
-          "pertanyaan": "わからない かんじをじしょで しらべる（**しらべる**）。",
+          "pertanyaan": "わからない かんじをじしょで **しらべる**。",
           "terjemahan_soal": "Mencari kanji yang tidak dimengerti di kamus.",
           "pilihan": ["書く", "読む", "調べる", "見る"],
           "jawaban_benar": 2,
@@ -7600,40 +7600,73 @@
         }
       ]
     },
+ {
+  "nomor_mondai": 2,
+  "instruksi": "＿★＿ に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんで ください。",
+  "teks_bacaan": null,
+  "terjemahan_bacaan": null,
+  "soal_list": [
     {
-      "nomor_mondai": 2,
-      "instruksi": "＿★＿ に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんで ください。",
-      "teks_bacaan": null,
-      "terjemahan_bacaan": null,
-      "soal_list": [
-        {
-          "id_soal": "2412-N4-BUN-M2-Q14",
-          "is_contoh": false,
-          "pertanyaan": "（田中さんの 家で）\n山下「ねえ、田中さんが ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 言う 黒い 虫が 台所に いましたよ。」\n田中「えっ！」",
-          "terjemahan_soal": "(Di rumah Tanaka-san)\nYamashita: \"Hei, ada serangga hitam yang Tanaka-san (katakan) (kalau) (kau juga) (benci/tidak suka) di dapur lho.\"\nTanaka: \"Eh!\"",
-          "pilihan": ["名前を", "のも", "聞く", "いやだと"],
-          "jawaban_benar": 0,
-          "pembahasan": {
-            "detail_pilihan": [
-              {"teks": "名前を", "arti": "Nama + partikel objek (★)", "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 田中さんが 【いやだと】 【聞く】 【名前を★】 【のも】 言う 黒い虫 → 'serangga hitam yang bahkan namanya pun Tanaka-san bilang tidak mau dengar'. Lengkap: 田中さんがいやだと聞くのも言う黒い虫 → frasa yang menyatakan Tanaka bahkan tidak mau mendengar namanya pun.", "is_benar": true},
-              {"teks": "のも", "arti": "Bahkan (hal) itu pun", "penjelasan": "のも berada di posisi ke-4 (terakhir), berfungsi sebagai penanda 'bahkan': 名前を聞くのも = bahkan mendengar namanya pun. Bukan posisi ★.", "is_benar": false},
-              {"teks": "聞く", "arti": "Mendengar / menanyakan", "penjelasan": "聞く berada di posisi ke-3. Bukan posisi ★.", "is_benar": false},
-              {"teks": "いやだと", "arti": "Bilang tidak suka / merasa jijik", "penjelasan": "いやだと berada di posisi pertama setelah 田中さんが: 田中さんが いやだと. Bukan posisi ★.", "is_benar": false}
-            ],
-            "kosa_kata": [
-              {"kanji": "嫌だ", "hiragana": "いやだ", "arti": "Tidak suka / jijik / tidak mau"},
-              {"kanji": "台所", "hiragana": "だいどころ", "arti": "Dapur"},
-              {"kanji": "虫", "hiragana": "むし", "arti": "Serangga / hewan kecil"}
-            ],
-            "grammar": [
-              {
-                "pola": "〜のも + 言う/嫌 (penekanan dengan のも)",
-                "penjelasan": "のも = 'bahkan hal itu pun'. 名前を聞くのもいやだ = bahkan mendengar namanya pun tidak mau. のも menambahkan penekanan ekstrem pada penolakan/ketidaksukaan.",
-                "contoh": ["見るのも嫌だ (Bahkan melihatnya pun tidak mau)", "名前を聞くのも嫌だ (Bahkan mendengar namanya pun tidak mau)"]
-              }
+      "id_soal": "2412-N4-BUN-M2-Q14",
+      "is_contoh": false,
+      "pertanyaan": "（田中さんの 家で）\n山下「ねえ、田中さんが ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 言う 黒い 虫が 台所に いましたよ。」\n田中「えっ！」",
+      "terjemahan_soal": "(Di rumah Tanaka-san)\nYamashita: \"Hei, ada serangga hitam yang bahkan mendengar namanya pun Tanaka-san bilang tidak mau di dapur lho.\"\nTanaka: \"Eh!\"",
+      "pilihan": ["名前を", "のも", "聞く", "いやだと"],
+      "jawaban_benar": 1,
+      "pembahasan": {
+        "detail_pilihan": [
+          {
+            "teks": "名前を",
+            "arti": "Nama + partikel objek を",
+            "penjelasan": "名前を berada di posisi pertama setelah 田中さんが. Berfungsi sebagai objek dari 聞く (mendengar namanya). Bukan posisi ★.",
+            "is_benar": false
+          },
+          {
+            "teks": "のも",
+            "arti": "Bahkan ... pun",
+            "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 田中さんが 【名前を】 【聞く】 【のも★】 【いやだと】 言う 黒い虫 → 'serangga hitam yang bahkan mendengar namanya pun Tanaka-san bilang tidak mau'. のも menambahkan penekanan ekstrem pada tingkat penolakan/ketidaksukaan Tanaka.",
+            "is_benar": true
+          },
+          {
+            "teks": "聞く",
+            "arti": "Mendengar / menanyakan",
+            "penjelasan": "聞く berada di posisi ke-2, sebagai predikat dari 名前を (mendengar namanya). Bukan posisi ★.",
+            "is_benar": false
+          },
+          {
+            "teks": "いやだと",
+            "arti": "Bilang tidak suka / merasa jijik",
+            "penjelasan": "いやだと berada di posisi ke-4 (terakhir sebelum 言う). Berfungsi sebagai isi kutipan: いやだと言う = bilang tidak mau. Bukan posisi ★.",
+            "is_benar": false
+          }
+        ],
+        "kosa_kata": [
+          {"kanji": "嫌だ", "hiragana": "いやだ", "arti": "Tidak suka / jijik / tidak mau"},
+          {"kanji": "台所", "hiragana": "だいどころ", "arti": "Dapur"},
+          {"kanji": "虫", "hiragana": "むし", "arti": "Serangga / hewan kecil"},
+          {"kanji": "名前", "hiragana": "なまえ", "arti": "Nama"}
+        ],
+        "grammar": [
+          {
+            "pola": "〜のも + いやだ",
+            "penjelasan": "のも = 'bahkan ... pun'. Digunakan untuk menekankan bahwa bahkan hal sekecil/seremeh itu pun sudah tidak mau. 名前を聞くのもいやだ = bahkan sekadar mendengar namanya pun sudah tidak mau. Menunjukkan tingkat penolakan atau ketidaksukaan yang sangat kuat.",
+            "contoh": [
+              "見るのも嫌だ (Bahkan melihatnya pun tidak mau)",
+              "名前を聞くのも嫌だ (Bahkan mendengar namanya pun tidak mau)",
+              "話すのも嫌だ (Bahkan berbicara dengannya pun tidak mau)"
+            ]
+          },
+          {
+            "pola": "〜と言う + 名詞 (klausa relatif)",
+            "penjelasan": "いやだと言う黒い虫 = serangga hitam yang (Tanaka-san) bilang tidak mau. Klausa 〜と言う memodifikasi nomina 黒い虫 secara langsung.",
+            "contoh": [
+              "嫌いだと言う食べ物 (makanan yang dia bilang tidak suka)",
+              "怖いと言う映画 (film yang dia bilang menakutkan)"
             ]
           }
-        },
+        ]
+      }
+    },
         {
           "id_soal": "2412-N4-BUN-M2-Q15",
           "is_contoh": false,
@@ -7662,33 +7695,68 @@
             ]
           }
         },
-        {
-          "id_soal": "2412-N4-BUN-M2-Q16",
-          "is_contoh": false,
-          "pertanyaan": "妹「ねえ、週末に お花見に 行かない？」\n姉「いいね。私は 土曜日でも ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ いい？」\n妹「じゃあ、土曜日に 行こうか。」",
-          "terjemahan_soal": "Adik perempuan: \"Hei, maukah pergi melihat bunga (Ohanami) di akhir pekan?\"\nKakak perempuan: \"Boleh. Saya bisa di hari Sabtu (maupun di hari Minggu), (mana saja) (boleh, tapi) kamu bagaimana?\"\nAdik perempuan: \"Kalau begitu, ayo pergi di hari Sabtu.\"",
-          "pilihan": ["いいけど", "どっちでも", "日曜日でも", "どっちが"],
-          "jawaban_benar": 1,
-          "pembahasan": {
-            "detail_pilihan": [
-              {"teks": "いいけど", "arti": "Boleh, tapi... (konsesi)", "penjelasan": "いいけど berada di posisi terakhir (ke-4) sebagai penutup sebelum pertanyaan: 〜いいけど、どっちがいい？. Bukan posisi ★.", "is_benar": false},
-              {"teks": "どっちでも", "arti": "Keduanya boleh / mana saja (★)", "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 土曜日でも 【日曜日でも】 【どっちでも★】 【いいけど】, どっちがいい？ → 'Sabtu maupun Minggu, keduanya boleh, tapi kamu maunya yang mana?'. どっちでも = keduanya boleh / mana saja.", "is_benar": true},
-              {"teks": "日曜日でも", "arti": "Maupun Minggu", "penjelasan": "日曜日でも berada di posisi pertama dalam susunan: 土曜日でも 日曜日でも (membentuk pola A でも B でも = baik A maupun B). Bukan posisi ★.", "is_benar": false},
-              {"teks": "どっちが", "arti": "Yang mana (pertanyaan pilihan antara dua)", "penjelasan": "どっちが berada di posisi terakhir sebagai awal pertanyaan: 〜いいけど、どっちがいい？. Bukan posisi ★.", "is_benar": false}
-            ],
-            "kosa_kata": [
-              {"kanji": "お花見", "hiragana": "おはなみ", "arti": "Melihat bunga (sakura), tradisi Jepang"},
-              {"kanji": "どっちでも", "hiragana": "どっちでも", "arti": "Keduanya boleh / mana saja"}
-            ],
-            "grammar": [
-              {
-                "pola": "A でも B でも どっちでも いい",
-                "penjelasan": "Pola 'A でも B でも + いい' = baik A maupun B sama-sama boleh. どっちでも = mana saja (keduanya). Digunakan untuk menyatakan tidak ada preferensi di antara dua pilihan.",
-                "contoh": ["土曜日でも日曜日でもどっちでもいいです (Sabtu maupun Minggu keduanya boleh)", "コーヒーでも紅茶でもどっちでもいいです (Kopi maupun teh, mana saja boleh)"]
-              }
-            ]
-          }
-        },
+{
+  "id_soal": "2412-N4-BUN-M2-Q16",
+  "is_contoh": false,
+  "pertanyaan": "妹「ねえ、週末に お花見に 行かない？」\n姉「いいね。私は 土曜日でも ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ いい？」\n妹「じゃあ、土曜日に 行こうか。」",
+  "terjemahan_soal": "Adik perempuan: \"Hei, maukah pergi melihat bunga (Ohanami) di akhir pekan?\"\nKakak perempuan: \"Boleh. Saya bisa di hari Sabtu maupun Minggu, keduanya boleh, tapi kamu maunya yang mana?\"\nAdik perempuan: \"Kalau begitu, ayo pergi di hari Sabtu.\"",
+  "pilihan": ["いいけど", "どっちでも", "日曜日でも", "どっちが"],
+  "jawaban_benar": 0,
+  "pembahasan": {
+    "detail_pilihan": [
+      {
+        "teks": "いいけど",
+        "arti": "Boleh, tapi... (konsesi)",
+        "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 土曜日でも 【日曜日でも】 【どっちでも】 【いいけど★】 どっちが いい？ → 'Sabtu maupun Minggu, keduanya boleh, tapi kamu maunya yang mana?'. いいけど berfungsi sebagai konsesi yang menghubungkan pernyataan sebelumnya dengan pertanyaan sesudahnya.",
+        "is_benar": true
+      },
+      {
+        "teks": "どっちでも",
+        "arti": "Keduanya boleh / mana saja",
+        "penjelasan": "どっちでも berada di posisi ke-2, berfungsi menegaskan bahwa kedua hari (Sabtu maupun Minggu) sama-sama boleh. Membentuk pola 土曜日でも日曜日でもどっちでも = baik Sabtu maupun Minggu, mana saja boleh. Bukan posisi ★.",
+        "is_benar": false
+      },
+      {
+        "teks": "日曜日でも",
+        "arti": "Maupun Minggu",
+        "penjelasan": "日曜日でも berada di posisi pertama, membentuk pola 土曜日でも日曜日でも = baik Sabtu maupun Minggu. Berpasangan dengan 土曜日でも yang sudah ada di soal. Bukan posisi ★.",
+        "is_benar": false
+      },
+      {
+        "teks": "どっちが",
+        "arti": "Yang mana (pertanyaan pilihan antara dua)",
+        "penjelasan": "どっちが berada di posisi ke-4 (terakhir), berfungsi sebagai awal pertanyaan: どっちがいい？ = yang mana yang kamu mau? Melengkapi いい？ yang sudah ada di soal. Bukan posisi ★.",
+        "is_benar": false
+      }
+    ],
+    "kosa_kata": [
+      {"kanji": "お花見", "hiragana": "おはなみ", "arti": "Melihat bunga sakura, tradisi Jepang"},
+      {"kanji": "週末", "hiragana": "しゅうまつ", "arti": "Akhir pekan"},
+      {"kanji": "土曜日", "hiragana": "どようび", "arti": "Hari Sabtu"},
+      {"kanji": "日曜日", "hiragana": "にちようび", "arti": "Hari Minggu"},
+      {"kanji": "どっちでも", "hiragana": "どっちでも", "arti": "Keduanya boleh / mana saja"},
+      {"kanji": "どっちが", "hiragana": "どっちが", "arti": "Yang mana (dari dua pilihan)"}
+    ],
+    "grammar": [
+      {
+        "pola": "A でも B でも どっちでも いいけど、〜が いい？",
+        "penjelasan": "Pola lengkap untuk menyatakan tidak ada preferensi antara dua pilihan, lalu menanyakan preferensi lawan bicara. A でも B でも = baik A maupun B. どっちでも = mana saja boleh. いいけど = boleh sih, tapi... (konsesi, menghubungkan ke pertanyaan). どっちがいい？ = kamu maunya yang mana?",
+        "contoh": [
+          "土曜日でも日曜日でもどっちでもいいけど、どっちがいい？ (Sabtu maupun Minggu keduanya boleh, tapi kamu maunya yang mana?)",
+          "コーヒーでも紅茶でもどっちでもいいけど、どっちがいい？ (Kopi maupun teh keduanya boleh, tapi kamu maunya yang mana?)"
+        ]
+      },
+      {
+        "pola": "〜けど (konsesi / penghubung halus)",
+        "penjelasan": "けど digunakan untuk menghubungkan dua klausa secara halus, sering berarti 'tapi' atau 'meskipun begitu'. Di sini いいけど berfungsi melunak sebelum mengajukan pertanyaan kepada lawan bicara.",
+        "contoh": [
+          "私はいいけど、あなたは？ (Saya sih boleh, tapi kamu?)",
+          "行きたいけど、時間がない (Ingin pergi, tapi tidak ada waktu)"
+        ]
+      }
+    ]
+  }
+},
         {
           "id_soal": "2412-N4-BUN-M2-Q17",
           "is_contoh": false,
@@ -8359,21 +8427,42 @@
           "id_soal": "2507-N4-MG-M2-Q9",
           "is_contoh": false,
           "pertanyaan": "わたしは **うんてん**が すきじゃ ありません。",
-          "terjemahan_soal": "Saya tidak suka menyetir.",
-          "pilihan": ["運転", "運動", "運天", "連動"],
-          "jawaban_benar": 0,
+          "terjemahan_soal": "Saya tidak suka mengemudi.",
+          "pilihan": ["連転", "運動", "運転", "連動"],
+          "jawaban_benar": 2,
           "pembahasan": {
             "detail_pilihan": [
-              {"teks": "運転", "arti": "Mengemudi / mengoperasikan (うんてん)", "penjelasan": "Tepat. 運転 dibaca うんてん = mengemudi kendaraan / mengoperasikan mesin. 運 = うん, 転 = てん. 運転する = mengemudi.", "is_benar": true},
-              {"teks": "運動", "arti": "Olahraga (うんどう)", "penjelasan": "Salah. 運動 dibaca うんどう = olahraga/gerakan. 動 (どう) berbeda dengan 転 (てん).", "is_benar": false},
-              {"teks": "運天", "arti": "Bukan kata yang ada", "penjelasan": "Salah. 天 (てん) = langit. Kombinasi 運天 bukan kata standar dalam bahasa Jepang.", "is_benar": false},
-              {"teks": "連動", "arti": "Bergerak bersama / terhubung (れんどう)", "penjelasan": "Salah. 連動 dibaca れんどう = bergerak saling terhubung. 連 (れん) berbeda dengan 運 (うん).", "is_benar": false}
+              {
+                "teks": "連転",
+                "arti": "Bukan kata yang ada",
+                "penjelasan": "Salah. 連転 bukan kata standar dalam bahasa Jepang. 連 dibaca れん, bukan うん. Kombinasi ini tidak memiliki makna.",
+                "is_benar": false
+              },
+              {
+                "teks": "運動",
+                "arti": "Olahraga (うんどう)",
+                "penjelasan": "Salah. 運動 dibaca うんどう = olahraga/gerakan. 動 (どう) berbeda dengan 転 (てん), sehingga bacaannya tidak cocok dengan うんてん.",
+                "is_benar": false
+              },
+              {
+                "teks": "運転",
+                "arti": "Mengemudi / mengoperasikan (うんてん)",
+                "penjelasan": "Tepat. 運転 dibaca うんてん = mengemudi kendaraan / mengoperasikan mesin. 運 = うん, 転 = てん. 運転する = mengemudi.",
+                "is_benar": true
+              },
+              {
+                "teks": "連動",
+                "arti": "Bergerak bersama / terhubung (れんどう)",
+                "penjelasan": "Salah. 連動 dibaca れんどう = bergerak saling terhubung. 連 (れん) berbeda dengan 運 (うん), sehingga bacaannya tidak cocok dengan うんてん.",
+                "is_benar": false
+              }
             ],
             "kosa_kata": [
               {"kanji": "運転", "hiragana": "うんてん", "arti": "Mengemudi / mengoperasikan"},
               {"kanji": "運転する", "hiragana": "うんてんする", "arti": "Mengemudi"},
               {"kanji": "運転手", "hiragana": "うんてんしゅ", "arti": "Pengemudi / sopir"},
-              {"kanji": "運動", "hiragana": "うんどう", "arti": "Olahraga / gerakan"}
+              {"kanji": "運動", "hiragana": "うんどう", "arti": "Olahraga / gerakan"},
+              {"kanji": "連動", "hiragana": "れんどう", "arti": "Bergerak saling terhubung"}
             ],
             "grammar": []
           }
@@ -9391,64 +9480,129 @@
             ]
           }
         },
-        {
-          "id_soal": "2507-N4-BUN-M2-Q16",
-          "is_contoh": false,
-          "pertanyaan": "私は 山に のぼるのが 好きで、ふじ山には ずっと ＿＿＿ ★ ＿＿＿ ＿＿＿ 。",
-          "terjemahan_soal": "Saya suka mendaki gunung, dan karena saya selalu ingin mendaki Gunung Fuji, saya senang bisa mendakinya.",
-          "pilihan": ["のぼることが できて", "うれしかった", "のぼりたかった", "から"],
-          "jawaban_benar": 3,
-          "pembahasan": {
-            "detail_pilihan": [
-              {"teks": "のぼることが できて", "arti": "Bisa mendaki (dan...)", "penjelasan": "のぼることができて berada di posisi ke-3: 〜のぼりたかったから、のぼることができて. Bukan posisi ★.", "is_benar": false},
-              {"teks": "うれしかった", "arti": "Merasa senang (lampau)", "penjelasan": "うれしかった berada di posisi terakhir sebagai predikat. Bukan posisi ★.", "is_benar": false},
-              {"teks": "のぼりたかった", "arti": "Selalu ingin mendaki (keinginan lampau)", "penjelasan": "のぼりたかった berada di posisi pertama: ずっと 【のぼりたかった】. Bukan posisi ★.", "is_benar": false},
-              {"teks": "から", "arti": "Karena (★)", "penjelasan": "Tepat, ini posisi ★. Urutan yang benar: ずっと 【のぼりたかった】 【から★】 【のぼることができて】 【うれしかった】 → 'Karena selalu ingin mendaki Gunung Fuji, saya senang bisa mendakinya'. から menjadi penghubung sebab-akibat.", "is_benar": true}
-            ],
-            "kosa_kata": [
-              {"kanji": "登る", "hiragana": "のぼる", "arti": "Mendaki / naik"},
-              {"kanji": "富士山", "hiragana": "ふじさん", "arti": "Gunung Fuji"},
-              {"kanji": "ずっと", "hiragana": "ずっと", "arti": "Selalu / terus-menerus / sejak lama"}
-            ],
-            "grammar": [
-              {
-                "pola": "〜たかったから、〜ことができて うれしかった",
-                "penjelasan": "Pola ini menyatakan: 'karena selama ini ingin melakukan~ (たかった), akhirnya bisa melakukannya (ことができて) dan merasa senang (うれしかった)'. Menggabungkan keinginan lampau, realisasi, dan perasaan.",
-                "contoh": ["ずっと行きたかったから、行くことができてうれしかった (Karena selalu ingin pergi, saya senang bisa pergi)"]
-              }
-            ]
-          }
-        },
-        {
-          "id_soal": "2507-N4-BUN-M2-Q17",
-          "is_contoh": false,
-          "pertanyaan": "（家で）\n姉「旅行の じゅんびは 終わった？」\n弟「うん、終わったよ。」\n姉「え、その かばん？ 小さすぎるよ。帰りは 荷物が ＿＿＿ ★ ＿＿＿ ＿＿＿ いいと 思うよ。」",
-          "terjemahan_soal": "(Di rumah)\nKakak: \"Persiapan liburannya sudah selesai?\"\nAdik: \"Iya, sudah selesai kok.\"\nKakak: \"Eh, tas itu? Terlalu kecil lho. Menurutku tas yang lebih besar lebih baik karena barang bawaan mungkin akan bertambah saat pulang nanti.\"",
-          "pilihan": ["もっと 大きい", "増える", "かもしれないし", "かばんが"],
-          "jawaban_benar": 2,
-          "pembahasan": {
-            "detail_pilihan": [
-              {"teks": "もっと 大きい", "arti": "Yang lebih besar", "penjelasan": "もっと大きい berada di posisi ke-4 (terakhir) sebelum いいと思う: もっと大きいかばんがいいと思う. Bukan posisi ★.", "is_benar": false},
-              {"teks": "増える", "arti": "Bertambah", "penjelasan": "増える berada di posisi pertama dalam konstruksi: 荷物が 【増える】. Bukan posisi ★.", "is_benar": false},
-              {"teks": "かもしれないし", "arti": "Mungkin saja (dan alasan lain)", "penjelasan": "Tepat, ini posisi ★. Urutan yang benar: 荷物が 【増える】 【かもしれないし★】 【かばんが】 【もっと大きい】 いいと思うよ → 'Karena barang bawaan mungkin saja akan bertambah, tas yang lebih besar lebih baik'. し menambahkan nuansa 'dan ada alasan lain juga'.", "is_benar": true},
-              {"teks": "かばんが", "arti": "Tas + partikel が", "penjelasan": "かばんが berada di posisi ke-3: 増えるかもしれないし 【かばんが】 もっと大きいいいと思う. Bukan posisi ★.", "is_benar": false}
-            ],
-            "kosa_kata": [
-              {"kanji": "荷物", "hiragana": "にもつ", "arti": "Barang bawaan"},
-              {"kanji": "増える", "hiragana": "ふえる", "arti": "Bertambah"},
-              {"kanji": "準備", "hiragana": "じゅんび", "arti": "Persiapan"}
-            ],
-            "grammar": [
-              {
-                "pola": "〜かもしれないし、〜 (mungkin saja A, dan [oleh karena itu] B)",
-                "penjelasan": "かもしれない = mungkin saja. し setelah かもしれない menambahkan nuansa memberikan alasan atau mengisyaratkan ada pertimbangan lain. Digunakan untuk memberikan justifikasi yang bersifat tentatif.",
-                "contoh": ["荷物が増えるかもしれないし、大きいかばんがいいよ (Barang bawaan mungkin bertambah, jadi tas besar lebih baik)"]
-              }
-            ]
-          }
+      {
+        "id_soal": "2507-N4-BUN-M2-Q16",
+        "is_contoh": false,
+        "pertanyaan": "私は 山に のぼるのが 好きで、ふじ山には ずっと ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 。",
+        "terjemahan_soal": "Saya suka mendaki gunung, dan karena selama ini selalu ingin mendaki Gunung Fuji, saya senang bisa mendakinya.",
+        "pilihan": ["のぼることが できて", "うれしかった", "のぼりたかった", "から"],
+        "jawaban_benar": 0,
+        "pembahasan": {
+          "detail_pilihan": [
+            {
+              "teks": "のぼることが できて",
+              "arti": "Bisa mendaki (dan...)",
+              "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: ずっと 【のぼりたかった】 【から】 【のぼることができて★】 【うれしかった】 → 'Karena selama ini selalu ingin mendaki, saya senang bisa mendakinya'. のぼることができて = bisa mendaki (bentuk て menghubungkan ke うれしかった).",
+              "is_benar": true
+            },
+            {
+              "teks": "うれしかった",
+              "arti": "Merasa senang (lampau)",
+              "penjelasan": "うれしかった berada di posisi ke-4 (terakhir) sebagai predikat utama kalimat. Menyatakan perasaan senang setelah berhasil mendaki. Bukan posisi ★.",
+              "is_benar": false
+            },
+            {
+              "teks": "のぼりたかった",
+              "arti": "Selalu ingin mendaki (keinginan lampau)",
+              "penjelasan": "のぼりたかった berada di posisi pertama setelah ずっと: ずっと のぼりたかった = selama ini selalu ingin mendaki. Menyatakan keinginan yang sudah lama ada. Bukan posisi ★.",
+              "is_benar": false
+            },
+            {
+              "teks": "から",
+              "arti": "Karena",
+              "penjelasan": "から berada di posisi ke-2, berfungsi sebagai penghubung sebab-akibat: のぼりたかったから = karena selalu ingin mendaki. Bukan posisi ★.",
+              "is_benar": false
+            }
+          ],
+          "kosa_kata": [
+            {"kanji": "登る", "hiragana": "のぼる", "arti": "Mendaki / naik"},
+            {"kanji": "富士山", "hiragana": "ふじさん", "arti": "Gunung Fuji"},
+            {"kanji": "ずっと", "hiragana": "ずっと", "arti": "Selalu / terus-menerus / sejak lama"},
+            {"kanji": "嬉しい", "hiragana": "うれしい", "arti": "Senang / gembira"}
+          ],
+          "grammar": [
+            {
+              "pola": "ずっと〜たかったから、〜ことができて うれしかった",
+              "penjelasan": "Pola ini menyatakan: 'karena selama ini selalu ingin melakukan~ (ずっと〜たかったから), akhirnya bisa melakukannya (ことができて) dan merasa senang (うれしかった)'. Menggabungkan tiga elemen: keinginan lampau yang sudah lama ada, realisasi keinginan tersebut, dan perasaan positif setelahnya.",
+              "contoh": [
+                "ずっと行きたかったから、行くことができてうれしかった (Karena selalu ingin pergi, saya senang bisa pergi)",
+                "ずっと会いたかったから、会うことができてうれしかった (Karena selalu ingin bertemu, saya senang bisa bertemu)"
+              ]
+            },
+            {
+              "pola": "〜ことができて (realisasi yang menyenangkan)",
+              "penjelasan": "〜ことができて adalah bentuk て dari 〜ことができる (bisa melakukan~). Bentuk て di sini menghubungkan ke perasaan (うれしかった), menyatakan bahwa karena bisa melakukannya, maka merasa senang.",
+              "contoh": [
+                "話すことができてよかった (Syukurlah bisa berbicara)",
+                "参加することができてうれしい (Senang bisa ikut berpartisipasi)"
+              ]
+            }
+          ]
         }
-      ]
-    },
+      },
+{
+  "id_soal": "2507-N4-BUN-M2-Q17",
+  "is_contoh": false,
+  "pertanyaan": "（家で）\n姉「旅行の じゅんびは 終わった？」\n弟「うん、終わったよ。」\n姉「え、その かばん？ 小さすぎるよ。帰りは 荷物が ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ いいと 思うよ。」",
+  "terjemahan_soal": "(Di rumah)\nKakak: \"Persiapan liburannya sudah selesai?\"\nAdik: \"Iya, sudah selesai kok.\"\nKakak: \"Eh, tas itu? Terlalu kecil lho. Saat pulang barang bawaan mungkin saja akan bertambah, jadi menurutku tas yang lebih besar lebih baik lho.\"",
+  "pilihan": ["もっと 大きい", "増える", "かもしれないし", "かばんが"],
+  "jawaban_benar": 0,
+  "pembahasan": {
+    "detail_pilihan": [
+      {
+        "teks": "もっと 大きい",
+        "arti": "Yang lebih besar",
+        "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 荷物が 【増える】 【かもしれないし】 【もっと大きい★】 【かばんが】 いいと思うよ → 'Karena barang bawaan mungkin saja bertambah, tas yang lebih besar lebih baik'. もっと大きい memodifikasi かばん yang mengikutinya.",
+        "is_benar": true
+      },
+      {
+        "teks": "増える",
+        "arti": "Bertambah",
+        "penjelasan": "増える berada di posisi pertama: 荷物が 増える = barang bawaan bertambah. Berfungsi sebagai predikat klausa alasan sebelum かもしれないし. Bukan posisi ★.",
+        "is_benar": false
+      },
+      {
+        "teks": "かもしれないし",
+        "arti": "Mungkin saja (dan...)",
+        "penjelasan": "かもしれないし berada di posisi ke-2: 増えるかもしれないし = mungkin saja bertambah. し di sini memberikan nuansa alasan yang mengarah ke saran berikutnya. Bukan posisi ★.",
+        "is_benar": false
+      },
+      {
+        "teks": "かばんが",
+        "arti": "Tas + partikel が",
+        "penjelasan": "かばんが berada di posisi ke-4 (terakhir): もっと大きいかばんが いいと思う = tas yang lebih besar lebih baik. かばんが berfungsi sebagai subjek dari いいと思う. Bukan posisi ★.",
+        "is_benar": false
+      }
+    ],
+    "kosa_kata": [
+      {"kanji": "荷物", "hiragana": "にもつ", "arti": "Barang bawaan"},
+      {"kanji": "増える", "hiragana": "ふえる", "arti": "Bertambah"},
+      {"kanji": "準備", "hiragana": "じゅんび", "arti": "Persiapan"},
+      {"kanji": "帰り", "hiragana": "かえり", "arti": "Perjalanan pulang"},
+      {"kanji": "小さすぎる", "hiragana": "ちいさすぎる", "arti": "Terlalu kecil"}
+    ],
+    "grammar": [
+      {
+        "pola": "〜かもしれないし、〜 (mungkin saja A, dan oleh karena itu B)",
+        "penjelasan": "かもしれない = mungkin saja. し setelah かもしれない menambahkan nuansa memberikan alasan atau mengisyaratkan ada pertimbangan lain. Di sini berfungsi untuk memberikan justifikasi tentatif sebelum memberikan saran.",
+        "contoh": [
+          "雨が降るかもしれないし、かさを持って行ったほうがいいよ (Mungkin saja hujan, jadi lebih baik bawa payung)",
+          "荷物が増えるかもしれないし、大きいかばんがいいよ (Barang bawaan mungkin bertambah, jadi tas besar lebih baik)"
+        ]
+      },
+      {
+        "pola": "もっと + い形容詞 + 名詞 (modifikasi nomina dengan perbandingan)",
+        "penjelasan": "もっと = lebih (komparatif). もっと大きいかばん = tas yang lebih besar. もっと diletakkan sebelum adjektiva untuk menyatakan perbandingan derajat.",
+        "contoh": [
+          "もっと大きいかばんがいい (Tas yang lebih besar lebih baik)",
+          "もっと安いものはありますか (Apakah ada yang lebih murah?)"
+        ]
+      }
+    ]
+  }
+  }
+  ]
+},
     {
       "nomor_mondai": 3,
       "instruksi": "[ 18 ] から [ 21 ] に 何を 入れますか。文章の 意味を 考えて、1・2・3・4から いちばん いい ものを 一つ えらんで ください。",

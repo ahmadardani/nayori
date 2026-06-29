@@ -2092,80 +2092,92 @@
             ]
           }
         },
-        {
-          "id_soal": "2107-N4-BUN-M2-Q17",
-          "is_contoh": false,
-          "pertanyaan": "外国に 住んで いる ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 思う。",
-          "terjemahan_soal": "Karena saya mendengar dia akan menikah, saya bermaksud membuat dan mengirimkan hadiah kepada teman yang tinggal di luar negeri.",
-          "pilihan": [
-            "けっこんすると",
-            "プレゼントを 送ろうと",
-            "作れる",
-            "聞いたので"
-          ],
-          "jawaban_benar": 3,
-          "pembahasan": {
-            "detail_pilihan": [
-              {
-                "teks": "けっこんすると",
-                "arti": "Bagian ini dipasangkan dengan 『聞いた』 menjadi 『結婚すると聞いた』 yang berarti 'mendengar bahwa akan menikah'. Bukan jawaban ★.",
-                "penjelasan": "けっこんすると berada di posisi pertama: 外国に住んでいる【友達が】けっこんすると. Bukan posisi ★.",
-                "is_benar": false
-              },
-              {
-                "teks": "プレゼントを送ろうと",
-                "arti": "Berniat mengirimkan hadiah",
-                "penjelasan": "プレゼントを送ろうと berada di posisi ke-3, sebelum 思う: 送ろうと思う = berniat mengirimkan. Bukan posisi ★.",
-                "is_benar": false
-              },
-              {
-                "teks": "作れる",
-                "arti": "Bisa membuat",
-                "penjelasan": "Pilihan ini merupakan pengecoh. Selain maknanya tidak sesuai dengan konteks, kata ini juga tidak dapat dihubungkan dengan bagian kalimat lainnya sehingga tidak membentuk kalimat yang benar.",
-                "is_benar": false
-              },
-              {
-                "teks": "聞いたので",
-                "arti": "Karena mendengar (sebab/alasan)",
-                "penjelasan": "Benar. Digunakan setelah 『けっこんすると』 sehingga membentuk 『結婚すると聞いたので』 yang berarti 'karena mendengar bahwa akan menikah'. Pada soal JLPT, ★ berada tepat setelah bagian ini sehingga jawaban yang dipilih adalah 『聞いたので』.'",
-                "is_benar": true
-              }
-            ],
-            "kosa_kata": [
-              {
-                "kanji": "外国",
-                "hiragana": "がいこく",
-                "arti": "Luar negeri"
-              },
-              {
-                "kanji": "結婚",
-                "hiragana": "けっこん",
-                "arti": "Pernikahan"
-              },
-              {
-                "kanji": "プレゼント",
-                "hiragana": "ぷれぜんと",
-                "arti": "Hadiah"
-              },
-              {
-                "kanji": "送る",
-                "hiragana": "おくる",
-                "arti": "Mengirimkan"
-              }
-            ],
-            "grammar": [
-              {
-                "pola": "〜と聞いたので、〜ようと思う",
-                "penjelasan": "〜と聞く = mendengar bahwa~. 〜ので = karena~ (alasan). 〜ようと思う = berniat / bermaksud melakukan~. Kombinasi ketiganya membentuk: 'Karena mendengar bahwa A, saya berniat melakukan B.'",
-                "contoh": [
-                  "試験があると聞いたので、勉強しようと思います (Karena mendengar ada ujian, saya berniat belajar)"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
+{
+  "id_soal": "2107-N4-BUN-M2-Q17",
+  "is_contoh": false,
+  "pertanyaan": "外国に 住んで いる ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 思う。",
+  "terjemahan_soal": "Karena mendengar bahwa teman yang tinggal di luar negeri akan menikah, saya bermaksud mengirimkan hadiah untuknya.",
+  "pilihan": [
+    "けっこんすると",
+    "プレゼントを 送ろうと",
+    "作れる",
+    "聞いたので"
+  ],
+  "jawaban_benar": 1,
+  "pembahasan": {
+    "detail_pilihan": [
+      {
+        "teks": "けっこんすると",
+        "arti": "Bahwa akan menikah",
+        "penjelasan": "けっこんすると berada di posisi pertama setelah 外国に住んでいる: けっこんすると聞いたので = karena mendengar bahwa akan menikah. と di sini berfungsi sebagai penanda kutipan/isi informasi yang didengar. Bukan posisi ★.",
+        "is_benar": false
+      },
+      {
+        "teks": "プレゼントを 送ろうと",
+        "arti": "Berniat mengirimkan hadiah",
+        "penjelasan": "Tepat, ini adalah posisi ★. Urutan yang benar: 外国に住んでいる 【けっこんすると】 【聞いたので】 【プレゼントを送ろうと★】 思う → 'Karena mendengar bahwa akan menikah, saya bermaksud mengirimkan hadiah'. プレゼントを送ろうと membentuk pola 〜ようと思う = berniat melakukan~.",
+        "is_benar": true
+      },
+      {
+        "teks": "作れる",
+        "arti": "Bisa membuat",
+        "penjelasan": "作れる adalah pengecoh. Secara makna maupun gramatikal tidak dapat dihubungkan dengan bagian kalimat lainnya secara alami. Tidak ada posisi yang cocok untuk kata ini dalam kalimat ini.",
+        "is_benar": false
+      },
+      {
+        "teks": "聞いたので",
+        "arti": "Karena mendengar",
+        "penjelasan": "聞いたので berada di posisi ke-2: けっこんすると聞いたので = karena mendengar bahwa akan menikah. ので berfungsi sebagai penanda alasan/sebab yang mengarah ke niat di klausa berikutnya. Bukan posisi ★.",
+        "is_benar": false
+      }
+    ],
+    "kosa_kata": [
+      {
+        "kanji": "外国",
+        "hiragana": "がいこく",
+        "arti": "Luar negeri"
+      },
+      {
+        "kanji": "結婚",
+        "hiragana": "けっこん",
+        "arti": "Pernikahan"
+      },
+      {
+        "kanji": "プレゼント",
+        "hiragana": "ぷれぜんと",
+        "arti": "Hadiah"
+      },
+      {
+        "kanji": "送る",
+        "hiragana": "おくる",
+        "arti": "Mengirimkan"
+      },
+      {
+        "kanji": "聞く",
+        "hiragana": "きく",
+        "arti": "Mendengar / menanyakan"
+      }
+    ],
+    "grammar": [
+      {
+        "pola": "〜と聞いたので、〜ようと思う",
+        "penjelasan": "〜と聞く = mendengar bahwa~. と berfungsi sebagai penanda isi informasi. 〜ので = karena~ (alasan). 〜ようと思う = berniat / bermaksud melakukan~. Kombinasi ketiganya membentuk: 'Karena mendengar bahwa A, saya berniat melakukan B.'",
+        "contoh": [
+          "試験があると聞いたので、勉強しようと思います (Karena mendengar ada ujian, saya berniat belajar)",
+          "雨が降ると聞いたので、傘を持って行こうと思う (Karena mendengar akan hujan, saya berniat membawa payung)"
+        ]
+      },
+      {
+        "pola": "〜ようと思う (niat / rencana)",
+        "penjelasan": "〜よう adalah bentuk volitional (kemauan) dari verba. 〜ようと思う = bermaksud / berniat melakukan~. Menyatakan niat atau rencana pembicara sendiri.",
+        "contoh": [
+          "プレゼントを送ろうと思う (Berniat mengirimkan hadiah)",
+          "来年、日本へ行こうと思っています (Saya berencana pergi ke Jepang tahun depan)"
+        ]
+      }
+    ]
+  }
+}]},
     {
       "nomor_mondai": 3,
       "instruksi": "[ 18 ]から[ 21 ] に なにを 入れますか。文章の 意味を 考えて、１・２・３・４から いちばん いいもの 一つえらんで ください。",
